@@ -31,7 +31,7 @@
 | flex | 멀티 포지션 | 연도별 파일에서 2개 이상 포지션으로 주전 | 다른 포지션으로 뛸 때 능력치 페널티 절반 |
 | steady | 꾸준함의 대명사 | vol 1~2, 주전 시즌 5개 이상 | 컨디션 '최악'을 '나쁨'으로 처리 |
 | choker | 큰 무대 울렁증 | clutch −1 이하이고 결승 패배 3회 이상 | 결승 장면 −10 (부정 특성) |
-| dade_award | 다데상 | Leaguepedia 'dade Award' 공식 수상(Summoning Insight 선정): dade 2013, NaMei 2014, GodV 2015, Clearlove 2016, Doinb 2021 — [Dade Award](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Dade_Award) | 월즈 토너먼트 장면 −10, 월즈 기간 압박 상황 멘탈 −10 (부정 특성) |
+| dade_award | 다데상 | (커뮤니티 집계는 참고만: `_work/traits/dade_award.md`) Leaguepedia 'dade Award' 공식 수상(Summoning Insight 선정): dade 2013, NaMei 2014, GodV 2015, Clearlove 2016, Doinb 2021 — [Dade Award](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Dade_Award) | 월즈 토너먼트 장면 −10, 월즈 기간 압박 상황 멘탈 −10 (부정 특성) |
 | intl_choke | 월즈의 벽 | **우승 후보로 나간** 월즈 3회 이상이고, 커리어 월즈 결승(주전) 0회. 우승 후보 = 그해 월즈 직전 파워랭킹 상위 3팀(`_work/redo/power_rankings.csv`), 파워랭킹을 못 찾은 해(2013·2014·2015·2018)는 강한 리그(리그 보정 −5 이상) 우승팀 또는 MSI 우승팀 | 월즈 토너먼트(8강 이상) 장면 −10 (부정 특성) |
 
 ## 2. 유니크 특성

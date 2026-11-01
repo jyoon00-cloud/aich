@@ -78,3 +78,29 @@
 - https://mein-mmo.de/en/lol-dade-award-abgeschafft-nuguri-bjergsen-ruler,438246/ (검색 결과 링크만, 본문 미확인)
 
 접속 실패: https://old.reddit.com/..., https://www.reddit.com/r/leagueoflegends/comments/jjlmuh/... (프록시 차단), https://dotesports.com/... (DNS 실패), https://namu.wiki/w/다데상 (본문 없음).
+
+## 커뮤니티 집계 (Reddit 보관본, arctic-shift)
+
+- 방법: arctic-shift 보관 API로 r/leagueoflegends 제목 검색(`title=dade`, 연도별 10월~다음해 1월), 연도별 상위 최대 3개 스레드 선정. 댓글은 `link_id` 검색으로 수집(스레드당 최대 100개씩 `created_utc` 역순 페이징, 최대 400개). 댓글 본문에 그해 월즈 참가 선수 이름(`intl_games.csv`)이 나오면 그 댓글 score를 해당 선수에 더한 합계가 점수다. 대소문자 구분, 단어 경계 매칭. 흔한 단어와 겹치는 이름(Scout, Impact, Caps, Rest 등)은 제외.
+- 한계: 점수는 "언급된 댓글의 추천 합"이라 지지와 다르다. 비교·반박 댓글도 포함된다. 수집 댓글은 스레드 전체가 아니다(2017 76c0yc는 1053개 중 400개).
+- 제목으로 수상자를 지목한 스레드는 아래 메모에 따로 적었다(점수는 스레드 score).
+
+| 연도 | 1위 선수(점수) | 2위 | 3위 | 근거 스레드(제목, score, 링크) | 메모 |
+|---|---|---|---|---|---|
+| 2017 | Bjergsen (1492, 언급 135) | Khan (556, 87) | SwordArt (297) | "Who will win the Dade Award?" 1546, https://www.reddit.com/r/leagueoflegends/comments/76c0yc/ ; "Who won the Dade award in your opinion?" 136, https://www.reddit.com/r/leagueoflegends/comments/7aq5yx/ ; "So who earned the Dade Award of Worlds s7?" 53, https://www.reddit.com/r/leagueoflegends/comments/7ajo8j/ | 1·2위 점수차 936. 최고점 댓글 다수가 Bjergsen 추천. 76c0yc는 400/1053개만 수집. |
+| 2018 | Uzi (285, 언급 105) | Jensen (268, 24) | SwordArt (217, 27) | "Who do you think won the Dade award this year? [SPOILERS]" 59, https://www.reddit.com/r/leagueoflegends/comments/9tt5eh/ ; "Dade Award for 2018" 54, https://www.reddit.com/r/leagueoflegends/comments/9vbvah/ ; "Dade award 2018" 6, https://www.reddit.com/r/leagueoflegends/comments/9s5ogu/ | 1·2위 점수차 17(사실상 동률). Jensen 상위 댓글 2개는 Kuro, Caps 비교 문맥. Ruler 94(4위)는 기존 위키 표 수상자. |
+| 2019 | Nuguri (87, 언급 75) | Jensen (49, 27) | Khan (43) | "The real Dade award this worlds should go to Ekko jungle" 3540, https://www.reddit.com/r/leagueoflegends/comments/duryxh/ ; "Nomination of LS for the dade award." 2592, https://www.reddit.com/r/leagueoflegends/comments/drql3e/ ; "Nuguri Won the Dade Award for S9 World Championship" 393, https://www.reddit.com/r/leagueoflegends/comments/do8jpp/ | 제목 지목: Nuguri 393(do8jpp), "LS" 2592(drql3e, CSV 2019 명단에 없는 약칭이라 집계 미매칭, 이름 미확인). Ekko는 챔피언이라 메모만. |
+| 2020 | Knight (87, 언급 30) | Kanavi (70, 30) | Zoom (53, 15) | "Dade Award this Year goes to Drops" 491, https://www.reddit.com/r/leagueoflegends/comments/jmkeep/ ; "Dade award for the worlds 2020." 0, https://www.reddit.com/r/leagueoflegends/comments/jjlmuh/ ; "Thoughts about Worlds 2020 Dade award and 2015 LGD award" 0, https://www.reddit.com/r/leagueoflegends/comments/jg0urs/ | 1·2위 점수차 17. 제목 지목 "Drops" 491은 2020 CSV 명단에 없음(미매칭). JackeyLove 20(4위, 언급 10). 기존 위키 표(Jackeylove)와 불일치. |
+| 2021 | Doinb (2257, 언급 77) | Nuguri (806, 45) | ShowMaker (232, 9) | "There Is A Large Possibility The Recipient Of The Dade Award Has Already Been Determined." 1375, https://www.reddit.com/r/leagueoflegends/comments/q8yy91/ ; "FPX's Collapse Practically Guarantees Doinb Receives The Dade Award" 2, https://www.reddit.com/r/leagueoflegends/comments/q8wkuq/ ; "Dade award for Doinb?" 16, https://www.reddit.com/r/leagueoflegends/comments/q8tnxd/ | 제목 지목: Doinb(q8wkuq). Doinb 최고점 댓글 1344는 "FPX 전체가 더 받을 만하다"는 글이라 언급이지 지지가 아닐 수 있음. |
+| 2022 | Knight (613, 언급 72) | Chovy (128, 28) | Faker (115, 12) | "Dade Awards" 47, https://www.reddit.com/r/leagueoflegends/comments/y44jsy/ ; "Who gets the Dade award for this worlds?" 0, https://www.reddit.com/r/leagueoflegends/comments/yk8i8o/ ; "We have the winner of Dade award 2022" 0, https://www.reddit.com/r/leagueoflegends/comments/y4zdb7/ | 최고점 댓글 185("Tian or Knight")가 합계를 크게 끌어올림. 기존 위키 표(Tian)와 불일치. Leaguepedia 근거와 별개. |
+| 2023 | Tarzan (931, 언급 66) | Chovy (927, 언급 129) | Faker (421, 28) | "Quarterfinals are over. We can now pick the 2023 Dade awards." 20, https://www.reddit.com/r/leagueoflegends/comments/17ob0y8/ ; "Dade award Worlds 2023 discussion" 23, https://www.reddit.com/r/leagueoflegends/comments/17n1gd8/ ; "Dade award Worlds 2023 discussion" 23, https://www.reddit.com/r/leagueoflegends/comments/17mx2hw/ | 1·2위 점수차 4(사실상 동률). Tarzan 합계의 절반(490)이 한 댓글. 언급 수는 Chovy가 최다. Doran 187, Peanut 104(4·5위). 기존 위키 표(Chovy)와 일치하지만 근거는 약함. |
+| 2024 | 집계 불가 | - | - | "2024 Dade Award" 0, https://www.reddit.com/r/leagueoflegends/comments/1g1j5f4/ ; "who deserves the Dade award at worlds 2024?" 0, https://www.reddit.com/r/leagueoflegends/comments/1h29rq4/ | 스레드 2개, 댓글 22개뿐. 어떤 선수도 2회 이상 언급되지 않아 순위 없음. |
+| 2025 | Knight (81, 언급 24) | Chovy (44, 17) | Ruler (14, 5) | "2025 Dade Award" 2, https://www.reddit.com/r/leagueoflegends/comments/1olpl51/ ; "This worlds Dade Award?" 0, https://www.reddit.com/r/leagueoflegends/comments/1oto3bz/ ; "Who do you think will win the Dade Award 2025?" 0, https://www.reddit.com/r/leagueoflegends/comments/1om79jp/ | 1·2위 점수차 37. Zeka 7(4위). |
+
+### 집계 메모
+
+- 기존 표와 어긋나는 연도: 2018 (기존 Ruler, 집계 Uzi 1위·Ruler 4위), 2020 (기존 Jackeylove, 집계 Knight 1위·Jackeylove 4위), 2022 (기존 Tian, 집계 Knight 1위·Tian 미상위권). 2019·2021·2023은 기존 표와 같은 이름이 1위.
+- 1위와 2위 점수차가 작은 해: 2018(17), 2020(17), 2023(4). 이 해는 1위가 확정이라고 보기 어렵다.
+- 2024는 집계 근거가 없다. 기존 메모의 "2024 수상자 없음" 문구도 이번 집계로 확인하지 못했다.
+- 제목 지목 스레드 점수(참고): Nuguri 393(2019 do8jpp), Drops 491(2020 jmkeep, CSV 미매칭), Doinb 2(2021 q8wkuq), "LS" 2592(2019 drql3e, 이름 미확인).
+- 2019 "Ekko jungle"(3540), 2019 Jensen 등 비선수 대상 또는 맥락 언급은 메모에만 두었다.
