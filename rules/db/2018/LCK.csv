@@ -1,0 +1,66 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+kiin,Afreeca Freecs,TOP,450,444,450,444,425,라인전형
+kuro,Afreeca Freecs,MID,450,438,462,456,450,교전형
+tusin,Afreeca Freecs,SUP,431,419,438,450,462,안정형
+kramer,Afreeca Freecs,AD,431,444,444,444,412,캐리형
+spirit,Afreeca Freecs,JUNGLE,419,419,438,431,425,교전형
+mowgli,Afreeca Freecs,JUNGLE,406,412,419,419,412,성장형
+aiming,Afreeca Freecs,AD,400,412,412,412,394,안정형
+crazy,bbq Olivers,TOP,431,431,438,431,419,안정형
+tempt,bbq Olivers,MID,438,431,450,444,438,운영형
+ghost,bbq Olivers,AD,431,438,444,444,412,캐리형
+ignar,bbq Olivers,SUP,412,406,419,425,438,보호형
+trick,bbq Olivers,JUNGLE,431,431,450,444,438,교전형
+bon0,bbq Olivers,JUNGLE,394,400,406,406,400,안정형
+sohwan,Jin Air Green Wings,TOP,450,450,456,450,431,라인전형
+umti,Jin Air Green Wings,JUNGLE,438,438,456,450,438,교전형
+teddy,Jin Air Green Wings,AD,450,469,462,462,431,캐리형
+wraith,Jin Air Green Wings,SUP,425,419,431,444,462,보호형
+yaharong,Jin Air Green Wings,MID,412,406,425,425,419,안정형
+justice,Jin Air Green Wings,MID,394,394,406,400,394,안정형
+bdd,Kingzone DragonX,MID,456,450,469,462,456,교전형
+pray,Kingzone DragonX,AD,456,469,462,469,431,캐리형
+gorilla,Kingzone DragonX,SUP,456,438,456,475,490,보호형
+peanut,Kingzone DragonX,JUNGLE,462,462,475,475,462,교전형
+khan,Kingzone DragonX,TOP,456,450,462,456,438,라인전형
+rascal,Kingzone DragonX,TOP,412,412,419,419,400,성장형
+cuzz,Kingzone DragonX,JUNGLE,400,406,419,412,406,성장형
+roach,Kongdoo Monster,TOP,431,431,438,431,412,라인전형
+edge,Kongdoo Monster,MID,425,412,438,438,431,안정형
+ssol,Kongdoo Monster,AD,419,431,431,438,406,안정형
+secret,Kongdoo Monster,SUP,412,406,419,425,444,보호형
+raise,Kongdoo Monster,JUNGLE,406,412,419,419,412,안정형
+wiz,Kongdoo Monster,JUNGLE,394,400,406,406,400,성장형
+cuvee,KSV eSports,TOP,450,450,450,450,438,안정형
+crown,KSV eSports,MID,450,444,469,456,444,교전형
+ruler,KSV eSports,AD,444,462,456,456,425,캐리형
+corejj,KSV eSports,SUP,425,425,438,444,456,교전형
+ambition,KSV eSports,JUNGLE,425,412,431,444,462,운영형
+haru,KSV eSports,JUNGLE,412,412,431,425,419,안정형
+smeb,KT Rolster,TOP,456,456,462,450,431,캐리형
+deft,KT Rolster,AD,444,456,450,456,425,캐리형
+mata,KT Rolster,SUP,438,419,438,456,469,보호형
+score,KT Rolster,JUNGLE,431,438,444,444,431,교전형
+pawn,KT Rolster,MID,431,425,444,438,431,운영형
+ucal,KT Rolster,MID,419,412,431,425,419,안정형
+rush,KT Rolster,JUNGLE,394,394,406,400,400,성장형
+add,MVP,TOP,425,425,431,425,412,안정형
+beyond,MVP,JUNGLE,412,419,431,425,419,교전형
+ian,MVP,MID,419,412,431,425,419,안정형
+max,MVP,SUP,400,394,406,419,431,보호형
+pilot,MVP,AD,412,425,425,425,400,안정형
+maha,MVP,AD,406,419,419,419,394,안정형
+lindarang,ROX Tigers,TOP,419,419,425,419,406,라인전형
+sangyoon,ROX Tigers,AD,438,450,450,450,419,캐리형
+key,ROX Tigers,SUP,431,419,438,450,462,보호형
+seonghwan,ROX Tigers,JUNGLE,431,431,450,444,431,교전형
+lava,ROX Tigers,MID,425,419,438,438,425,안정형
+mightybear,ROX Tigers,JUNGLE,400,406,412,412,406,안정형
+kuzan,ROX Tigers,MID,406,400,419,412,406,안정형
+untara,SK Telecom T1,TOP,412,412,419,412,400,안정형
+thal,SK Telecom T1,TOP,412,412,419,412,400,안정형
+blank,SK Telecom T1,JUNGLE,412,412,425,425,425,교전형
+wolf,SK Telecom T1,JUNGLE,412,394,412,431,444,보호형
+blossom,SK Telecom T1,JUNGLE,400,400,412,406,400,안정형
+faker,SK Telecom T1,MID,475,462,481,488,494,운영형
+bang,SK Telecom T1,AD,444,456,450,456,425,캐리형

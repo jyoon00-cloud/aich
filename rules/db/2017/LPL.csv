@@ -1,0 +1,82 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+scout,EDward Gaming,MID,460,450,465,460,440,운영형
+zet,EDward Gaming,AD,445,450,445,445,420,캐리형
+meiko,EDward Gaming,SUP,450,440,455,460,475,이니시형
+fireloli,EDward Gaming,JUNGLE,445,440,450,445,435,교전형
+mouse,EDward Gaming,TOP,440,435,445,440,420,라인전형
+korol,EDward Gaming,TOP,435,430,440,435,420,안정형
+clearlove,EDward Gaming,JUNGLE,430,425,440,435,435,운영형
+gimgoon,Game Talents,TOP,440,435,445,440,425,라인전형
+grail,Game Talents,MID,430,425,440,435,420,안정형
+savoki,Game Talents,SUP,425,420,430,430,440,보호형
+aqiu,Game Talents,JUNGLE,425,425,430,425,415,로밍형
+west,Game Talents,AD,425,430,425,425,410,캐리형
+wynn,Game Talents,AD,415,415,420,415,405,성장형
+wushuang,Game Talents,JUNGLE,410,405,410,410,400,성장형
+amazingj,I May,TOP,450,445,455,450,430,라인전형
+athena,I May,MID,445,435,455,450,430,안정형
+jinjiao,I May,AD,445,450,445,445,425,캐리형
+ben4,I May,JUNGLE,435,430,440,435,425,로밍형
+road,I May,SUP,435,430,440,445,455,보호형
+flawless,I May,JUNGLE,430,425,435,430,420,로밍형
+starlight,I May,SUP,415,410,420,420,430,보호형
+duke,Invictus Gaming,TOP,445,440,450,445,425,라인전형
+kid,Invictus Gaming,JUNGLE,430,425,435,435,430,안정형
+rio,Invictus Gaming,JUNGLE,415,410,420,415,405,성장형
+rookie,Invictus Gaming,MID,460,450,470,460,440,라인전형
+marge,Invictus Gaming,AD,440,445,440,440,420,캐리형
+baolan,Invictus Gaming,SUP,440,430,445,450,465,이니시형
+funny,LGD Gaming,TOP,430,430,435,430,415,안정형
+eimy,LGD Gaming,JUNGLE,440,435,445,440,430,로밍형
+1ntruder,LGD Gaming,JUNGLE,425,420,430,425,415,성장형
+godv,LGD Gaming,MID,445,435,455,450,435,운영형
+jinoo,LGD Gaming,MID,420,415,425,420,410,성장형
+imp,LGD Gaming,AD,455,460,455,455,430,캐리형
+pyl,LGD Gaming,SUP,440,430,445,450,455,로밍형
+swift,Newbee,JUNGLE,450,445,455,450,435,교전형
+mor,Newbee,SUP,435,430,440,445,455,보호형
+lwx,Newbee,AD,435,440,435,435,415,캐리형
+v,Newbee,TOP,435,430,440,435,420,안정형
+cool,Newbee,MID,435,425,445,440,425,안정형
+coco,Newbee,MID,425,420,430,425,415,성장형
+skye,Newbee,TOP,430,430,435,430,415,안정형
+xiyang,Oh My God,TOP,445,440,450,445,425,안정형
+juejue,Oh My God,JUNGLE,425,420,430,425,415,안정형
+world6,Oh My God,JUNGLE,440,435,445,440,430,로밍형
+icon,Oh My God,MID,445,435,455,450,430,운영형
+smlz,Oh My God,AD,455,460,455,455,430,캐리형
+cold,Oh My God,SUP,440,435,445,450,460,보호형
+kabe,Qiao Gu Reapers,TOP,435,430,440,435,420,안정형
+doinb,Qiao Gu Reapers,MID,450,440,460,450,435,라인전형
+clid,Qiao Gu Reapers,JUNGLE,440,435,445,440,430,로밍형
+alone,Qiao Gu Reapers,AD,430,430,430,430,410,안정형
+ali,Qiao Gu Reapers,SUP,425,420,430,430,440,보호형
+cl0ud,Qiao Gu Reapers,SUP,415,410,420,420,430,보호형
+candyseven,Qiao Gu Reapers,AD,420,420,420,420,405,안정형
+letme,Royal Never Give Up,TOP,460,455,465,460,440,라인전형
+xiaohu,Royal Never Give Up,MID,465,455,470,465,445,운영형
+ming,Royal Never Give Up,SUP,445,440,455,460,465,보호형
+uzi,Royal Never Give Up,AD,475,485,475,470,440,캐리형
+mlxg,Royal Never Give Up,JUNGLE,460,455,465,460,440,교전형
+y1han,Royal Never Give Up,JUNGLE,415,410,420,415,405,성장형
+windy,Royal Never Give Up,AD,410,410,415,410,400,성장형
+flandre,Snake Esports,TOP,445,440,450,450,430,라인전형
+sofm,Snake Esports,JUNGLE,435,430,440,435,425,로밍형
+zzr,Snake Esports,JUNGLE,410,405,415,410,400,성장형
+tank,Snake Esports,MID,435,425,445,440,425,안정형
+zz1tai,Snake Esports,MID,435,430,445,440,425,안정형
+mint,Snake Esports,AD,425,425,425,425,410,성장형
+ohq,Snake Esports,AD,435,440,435,435,415,캐리형
+957,Team WE,TOP,450,445,455,450,425,안정형
+condi,Team WE,JUNGLE,450,445,455,450,440,로밍형
+xiye,Team WE,MID,450,440,460,450,430,운영형
+mystic,Team WE,AD,450,455,450,450,425,캐리형
+ben,Team WE,SUP,435,430,440,445,455,보호형
+zero,Team WE,SUP,415,410,420,420,430,보호형
+jotaro,Vici Gaming,TOP,405,405,410,405,395,성장형
+loong,Vici Gaming,TOP,435,430,440,435,415,안정형
+bengi,Vici Gaming,JUNGLE,445,435,450,445,440,로밍형
+papillon,Vici Gaming,JUNGLE,405,400,410,405,395,성장형
+easyhoon,Vici Gaming,MID,440,430,450,440,430,운영형
+peng,Vici Gaming,MID,405,400,405,405,395,성장형
+xuanxuanpi,Vici Gaming,AD,430,430,430,430,410,안정형

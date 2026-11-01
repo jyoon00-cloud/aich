@@ -1,0 +1,51 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+balis,Cloud9,TOP,441,429,435,429,405,라인전형
+meteos,Cloud9,JUNGLE,429,441,459,459,435,교전형
+hai,Cloud9,MID,453,429,453,459,441,운영형
+sneaky,Cloud9,AD,447,465,459,447,405,캐리형
+lemonnation,Cloud9,SUP,417,411,435,435,465,보호형
+nien,Counter Logic Gaming,TOP,417,411,417,411,399,안정형
+link,Counter Logic Gaming,JUNGLE,429,417,435,429,417,안정형
+dexter,Counter Logic Gaming,JUNGLE,405,411,417,411,399,안정형
+hotshotgg,Counter Logic Gaming,MID,411,405,411,405,399,안정형
+chauster,Counter Logic Gaming,MID,393,387,399,399,393,성장형
+doublelift,Counter Logic Gaming,AD,459,465,459,453,411,캐리형
+aphromoo,Counter Logic Gaming,SUP,423,417,441,441,465,이니시형
+innox,Evil Geniuses,TOP,435,423,429,423,405,안정형
+pobelter,Evil Geniuses,MID,453,435,453,441,417,라인전형
+snoopeh,Evil Geniuses,JUNGLE,417,417,435,441,429,운영형
+yellowpete,Evil Geniuses,AD,411,423,429,423,399,안정형
+krepo,Evil Geniuses,SUP,399,393,411,411,429,보호형
+ken,Evil Geniuses,SUP,387,387,393,393,399,성장형
+thinkcard,Evil Geniuses,JUNGLE,387,387,393,387,387,성장형
+darshan,Team Coast,TOP,411,405,405,411,399,안정형
+nintendudex,Team Coast,JUNGLE,411,411,423,417,411,안정형
+shiphtur,Team Coast,MID,417,405,423,417,399,안정형
+apollo,Team Coast,AD,417,429,429,417,393,캐리형
+daydreamin,Team Coast,SUP,399,393,411,411,417,보호형
+quas,Curse,TOP,441,429,429,423,405,라인전형
+iwdominate,Curse,JUNGLE,417,423,435,441,417,교전형
+voyboy,Curse,MID,435,417,435,429,405,안정형
+cop,Curse,AD,423,435,435,429,393,한타형
+bunnyfufuu,Curse,SUP,399,399,417,417,435,보호형
+zekent,Curse,SUP,387,381,399,393,399,성장형
+saintvicious,Curse,SUP,405,411,429,429,411,이니시형
+cruzer,Team Dignitas,TOP,405,399,405,405,399,안정형
+crumbz,Team Dignitas,JUNGLE,405,411,417,417,405,안정형
+imaqtpie,Team Dignitas,AD,435,441,441,429,393,캐리형
+kiwikid,Team Dignitas,SUP,405,399,411,417,417,보호형
+scarra,Team Dignitas,MID,435,417,435,429,405,운영형
+goldenglue,Team Dignitas,MID,387,381,393,387,381,성장형
+dyrus,Team SoloMid,TOP,441,429,429,429,405,안정형
+theoddone,Team SoloMid,JUNGLE,411,417,435,435,429,운영형
+wildturtle,Team SoloMid,AD,429,435,441,429,387,캐리형
+xpecial,Team SoloMid,SUP,411,405,423,423,447,시야형
+bjergsen,Team SoloMid,MID,453,435,453,441,417,캐리형
+reginaid,Team SoloMid,MID,417,399,423,417,405,안정형
+benny,XDG Gaming,TOP,405,399,405,399,393,안정형
+zuna,XDG Gaming,JUNGLE,393,399,405,399,387,안정형
+nickwu,XDG Gaming,JUNGLE,387,387,393,387,387,성장형
+mancloud,XDG Gaming,MID,429,417,429,423,399,안정형
+xmithie,XDG Gaming,AD,405,411,429,429,417,이니시형
+bloodwater,XDG Gaming,SUP,387,381,399,399,405,보호형
+sheep,XDG Gaming,SUP,387,381,399,399,411,보호형

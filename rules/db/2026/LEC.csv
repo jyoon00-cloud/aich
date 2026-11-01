@@ -1,0 +1,51 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+empyros,Fnatic,TOP,415,410,410,405,395,성장형
+razork,Fnatic,JUNGLE,420,420,445,440,430,교전형
+vladi,Fnatic,MID,440,425,440,430,420,캐리형
+upset,Fnatic,AD,445,440,440,430,415,캐리형
+lospa,Fnatic,SUP,395,395,405,410,420,성장형
+brokenblade,G2 Esports,TOP,440,435,440,435,415,교전형
+skewmond,G2 Esports,JUNGLE,415,420,430,425,420,교전형
+caps,G2 Esports,MID,460,440,460,450,425,캐리형
+hanssama,G2 Esports,AD,430,430,430,425,410,안정형
+labrov,G2 Esports,SUP,410,405,430,435,445,보호형
+lot,GIANTX,TOP,425,425,425,420,405,라인전형
+isma,GIANTX,JUNGLE,410,415,430,425,420,운영형
+jackies,GIANTX,MID,430,415,430,425,415,안정형
+noah,GIANTX,AD,435,435,435,425,415,캐리형
+jun,GIANTX,SUP,410,410,435,440,450,보호형
+canna,Karmine Corp,TOP,450,445,445,435,415,교전형
+yike,Karmine Corp,JUNGLE,425,430,455,450,445,이니시형
+kyeahoo,Karmine Corp,MID,430,410,430,420,410,성장형
+caliste,Karmine Corp,AD,455,450,455,445,425,캐리형
+busio,Karmine Corp,SUP,405,405,425,430,435,보호형
+myrwn,Movistar KOI,TOP,425,425,425,420,405,안정형
+elyoya,Movistar KOI,JUNGLE,425,430,445,445,445,로밍형
+jojopyun,Movistar KOI,MID,440,420,440,430,420,캐리형
+supa,Movistar KOI,AD,430,430,430,420,410,안정형
+alvaro,Movistar KOI,SUP,405,405,425,430,440,보호형
+maynter,Natus Vincere,TOP,420,420,420,410,400,성장형
+rhilech,Natus Vincere,JUNGLE,410,415,430,425,420,운영형
+poby,Natus Vincere,MID,425,410,425,420,410,성장형
+samd,Natus Vincere,AD,425,425,425,415,405,안정형
+parus,Natus Vincere,SUP,400,400,420,425,435,보호형
+rooster,Shifters,TOP,415,415,410,405,395,안정형
+boukada,Shifters,JUNGLE,410,415,430,425,420,교전형
+nuc,Shifters,MID,425,410,425,420,410,안정형
+paduck,Shifters,AD,415,415,415,405,395,성장형
+trymbi,Shifters,SUP,405,405,425,430,440,보호형
+wunder,SK Gaming,TOP,430,435,435,430,410,교전형
+skeanz,SK Gaming,JUNGLE,410,410,420,420,415,운영형
+lider,SK Gaming,MID,410,395,410,405,395,성장형
+jopa,SK Gaming,AD,410,410,410,400,395,성장형
+mikyx,SK Gaming,SUP,405,400,430,440,460,보호형
+tracyn,Team Heretics,TOP,410,415,410,405,395,성장형
+sheo,Team Heretics,JUNGLE,420,425,445,445,440,교전형
+serin,Team Heretics,MID,420,405,420,415,405,성장형
+ice,Team Heretics,AD,435,435,435,425,410,캐리형
+stend,Team Heretics,SUP,405,405,425,430,440,보호형
+naaknako,Team Vitality,TOP,425,425,425,420,405,안정형
+lyncas,Team Vitality,JUNGLE,425,430,445,440,435,교전형
+humanoid,Team Vitality,MID,435,415,435,435,425,운영형
+carzzy,Team Vitality,AD,435,435,435,425,410,안정형
+fleshy,Team Vitality,SUP,400,395,415,420,425,보호형

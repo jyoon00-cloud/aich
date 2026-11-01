@@ -1,0 +1,59 @@
+id,name_en,release,class,attack,resource
+karthus,Karthus,2009-06-12,마법사,원거리,Mana
+kassadin,Kassadin,2009-08-07,암살자,근거리,Mana
+katarina,Katarina,2009-09-19,암살자,근거리,None
+kayle,Kayle,2009-02-21,전사,근거리,Mana
+kayn,Kayn,2017-07-12,전사,근거리,Mana
+kennen,Kennen,2010-04-08,마법사,원거리,Energy
+khazix,Kha'Zix,2012-09-27,암살자,근거리,Mana
+kindred,Kindred,2015-10-14,원거리딜러,원거리,Mana
+kled,Kled,2016-08-10,전사,근거리,Courage
+kogmaw,Kog'Maw,2010-06-24,원거리딜러,원거리,Mana
+ksante,K'Sante,2022-11-02,탱커,근거리,Mana
+leblanc,LeBlanc,2010-11-02,암살자,원거리,Mana
+leesin,Lee Sin,2011-04-01,전사,근거리,Energy
+leona,Leona,2011-07-13,탱커,근거리,Mana
+lillia,Lillia,2020-07-22,전사,원거리,Mana
+lissandra,Lissandra,2013-04-30,마법사,원거리,Mana
+locke,Locke,2026-06-24,암살자,근거리,Mana
+lucian,Lucian,2013-08-22,원거리딜러,원거리,Mana
+lulu,Lulu,2012-03-20,서포터,원거리,Mana
+lux,Lux,2010-10-19,마법사,원거리,Mana
+malphite,Malphite,2009-09-02,탱커,근거리,Mana
+malzahar,Malzahar,2010-06-01,마법사,원거리,Mana
+maokai,Maokai,2011-02-16,탱커,근거리,Mana
+masteryi,Master Yi,2009-02-21,암살자,근거리,Mana
+mel,Mel,2025-01-23,마법사,원거리,Mana
+milio,Milio,2023-03-23,서포터,원거리,Mana
+missfortune,Miss Fortune,2010-09-08,원거리딜러,원거리,Mana
+mordekaiser,Mordekaiser,2010-02-24,전사,근거리,Shield
+morgana,Morgana,2009-02-21,마법사,원거리,Mana
+naafiri,Naafiri,2023-07-19,암살자,근거리,None
+nami,Nami,2012-12-07,서포터,원거리,Mana
+nasus,Nasus,2009-10-01,전사,근거리,Mana
+nautilus,Nautilus,2012-02-14,탱커,근거리,Mana
+neeko,Neeko,2018-12-05,마법사,원거리,Mana
+nidalee,Nidalee,2009-12-17,암살자,원거리,Mana
+nilah,Nilah,2022-07-13,전사,근거리,Mana
+nocturne,Nocturne,2011-03-15,암살자,근거리,Mana
+nunu,Nunu & Willump,2009-02-21,탱커,근거리,Mana
+olaf,Olaf,2010-06-08,전사,근거리,Mana
+orianna,Orianna,2011-06-01,마법사,원거리,Mana
+ornn,Ornn,2017-08-23,탱커,근거리,Mana
+pantheon,Pantheon,2010-02-02,전사,근거리,Mana
+poppy,Poppy,2010-01-13,탱커,근거리,Mana
+pyke,Pyke,2018-05-31,서포터,근거리,Mana
+qiyana,Qiyana,2019-06-28,암살자,근거리,Mana
+quinn,Quinn,2013-03-01,원거리딜러,원거리,Mana
+rakan,Rakan,2017-04-19,서포터,원거리,Mana
+rammus,Rammus,2009-07-10,탱커,근거리,Mana
+reksai,Rek'Sai,2014-12-11,전사,근거리,Rage
+rell,Rell,2020-12-09,탱커,근거리,Mana
+renataglasc,Renata Glasc,2022-02-17,서포터,원거리,Mana
+renekton,Renekton,2011-01-18,전사,근거리,Fury
+rengar,Rengar,2012-08-21,암살자,근거리,Ferocity
+riven,Riven,2011-09-14,전사,근거리,None
+rumble,Rumble,2011-04-26,전사,근거리,Heat
+ryze,Ryze,2009-02-21,마법사,원거리,Mana
+samira,Samira,2020-09-21,원거리딜러,원거리,Mana
+sejuani,Sejuani,2012-01-17,탱커,근거리,Mana

@@ -1,0 +1,61 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+ikssu,Afreeca Freecs,TOP,431,438,431,431,412,안정형
+lira,Afreeca Freecs,JUNGLE,425,425,438,431,425,교전형
+mickey,Afreeca Freecs,MID,431,419,444,438,431,교전형
+sangyoon,Afreeca Freecs,AD,419,431,431,431,406,안정형
+snowflower,Afreeca Freecs,SUP,419,406,425,438,450,보호형
+untara,CJ Entus,TOP,425,425,425,419,406,안정형
+bubbling,CJ Entus,JUNGLE,406,412,425,419,412,교전형
+kramer,CJ Entus,AD,425,438,438,444,406,성장형
+madlife,CJ Entus,SUP,425,406,425,438,456,보호형
+sky,CJ Entus,MID,419,406,425,425,419,안정형
+bdd,CJ Entus,MID,406,400,419,419,412,성장형
+winged,Jin Air Green Wings,JUNGLE,431,438,450,444,431,교전형
+kuzan,Jin Air Green Wings,MID,431,425,444,438,431,안정형
+pilot,Jin Air Green Wings,AD,431,444,444,444,412,캐리형
+chei,Jin Air Green Wings,SUP,412,406,419,431,444,보호형
+trace,Jin Air Green Wings,TOP,431,438,438,431,419,안정형
+sohwan,Jin Air Green Wings,TOP,394,394,400,400,388,성장형
+crush,Kongdoo Monster,JUNGLE,406,412,425,419,412,성장형
+edge,Kongdoo Monster,MID,425,412,438,438,425,안정형
+ssol,Kongdoo Monster,AD,419,431,431,438,406,안정형
+guger,Kongdoo Monster,SUP,406,400,412,425,438,보호형
+hipo,Kongdoo Monster,TOP,412,419,412,412,394,안정형
+roach,Kongdoo Monster,TOP,400,400,400,400,388,성장형
+ssumday,KT Rolster,TOP,450,450,450,444,431,라인전형
+score,KT Rolster,JUNGLE,444,450,450,456,444,교전형
+fly,KT Rolster,MID,438,431,450,450,444,안정형
+arrow,KT Rolster,AD,438,450,444,444,412,캐리형
+hachani,KT Rolster,SUP,419,412,425,431,450,보호형
+ignar,KT Rolster,SUP,394,388,400,406,419,성장형
+pure,Longzhu Gaming,SUP,425,412,431,444,456,보호형
+coco,Longzhu Gaming,MID,425,412,431,438,431,안정형
+chaser,Longzhu Gaming,JUNGLE,412,412,431,425,412,안정형
+cptjack,Longzhu Gaming,AD,412,425,425,431,400,안정형
+expession,Longzhu Gaming,TOP,419,419,425,419,406,안정형
+flame,Longzhu Gaming,TOP,431,425,438,431,412,라인전형
+fury,Longzhu Gaming,AD,412,419,419,425,400,안정형
+smeb,ROX Tigers,TOP,475,469,469,462,444,캐리형
+peanut,ROX Tigers,JUNGLE,450,450,469,462,456,교전형
+kuro,ROX Tigers,MID,456,438,462,462,450,교전형
+pray,ROX Tigers,AD,450,462,462,469,425,캐리형
+gorilla,ROX Tigers,SUP,450,431,450,469,488,보호형
+cuvee,Samsung Galaxy,TOP,444,444,450,450,431,안정형
+ambition,Samsung Galaxy,JUNGLE,444,431,444,456,475,운영형
+crown,Samsung Galaxy,MID,438,431,456,444,431,교전형
+wraith,Samsung Galaxy,SUP,412,412,419,431,450,보호형
+corejj,Samsung Galaxy,AD,406,419,419,419,400,성장형
+stitch,Samsung Galaxy,AD,400,406,406,412,394,안정형
+flawless,SBENU Sonicboom,JUNGLE,406,412,425,419,412,안정형
+sasin,SBENU Sonicboom,MID,412,406,425,419,412,안정형
+nuclear,SBENU Sonicboom,AD,406,419,419,425,394,안정형
+secret,SBENU Sonicboom,SUP,400,394,406,412,431,보호형
+soul,SBENU Sonicboom,TOP,406,406,412,406,394,안정형
+soar,SBENU Sonicboom,TOP,394,394,400,400,388,안정형
+duke,SK Telecom T1,TOP,444,444,450,444,425,안정형
+bang,SK Telecom T1,AD,462,475,469,475,431,캐리형
+wolf,SK Telecom T1,SUP,444,419,444,462,475,보호형
+faker,SK Telecom T1,MID,475,462,481,488,494,운영형
+blank,SK Telecom T1,JUNGLE,425,425,444,438,438,교전형
+bengi,SK Telecom T1,JUNGLE,425,425,438,438,444,운영형
+scout,SK Telecom T1,MID,406,394,419,412,400,성장형

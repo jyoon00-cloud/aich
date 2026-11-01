@@ -1,0 +1,53 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+armut,MAD Lions,TOP,460,453,459,452,436,교전형
+elyoya,MAD Lions,JUNGLE,454,458,464,464,450,이니시형
+humanoid,MAD Lions,MID,468,462,466,458,446,캐리형
+carzzy,MAD Lions,AD,458,458,464,462,438,캐리형
+kaiser,MAD Lions,SUP,444,446,458,464,458,이니시형
+wunder,G2 Esports,TOP,459,464,451,456,440,안정형
+jankos,G2 Esports,JUNGLE,444,449,458,469,450,운영형
+caps,G2 Esports,MID,472,465,475,465,423,캐리형
+rekkles,G2 Esports,AD,454,460,448,462,436,안정형
+mikyx,G2 Esports,SUP,446,442,450,458,464,운영형
+odoamne,Rogue,TOP,452,446,452,452,448,안정형
+inspired,Rogue,JUNGLE,446,454,454,464,442,운영형
+larssen,Rogue,MID,456,448,458,444,434,캐리형
+hanssama,Rogue,AD,454,458,452,458,428,캐리형
+trymbi,Rogue,SUP,438,440,446,452,454,보호형
+bwipo,Fnatic,TOP,452,454,458,458,418,교전형
+selfmade,Fnatic,JUNGLE,430,446,452,452,430,교전형
+nisqy,Fnatic,MID,450,438,450,442,430,캐리형
+upset,Fnatic,AD,448,452,444,458,428,캐리형
+hylissang,Fnatic,SUP,432,438,444,460,456,이니시형
+whiteknight,Astralis,TOP,446,442,440,425,427,교전형
+zanzarah,Astralis,JUNGLE,427,441,433,447,442,이니시형
+nukeduck,Astralis,MID,438,430,442,438,432,운영형
+jeskla,Astralis,AD,431,444,430,444,431,캐리형
+promisq,Astralis,SUP,428,433,441,431,447,보호형
+brokenblade,Schalke 04,TOP,438,436,436,418,402,캐리형
+gilius,Schalke 04,JUNGLE,429,437,440,431,423,이니시형
+abbedagge,Schalke 04,MID,436,440,436,432,416,운영형
+neon,Schalke 04,AD,429,442,434,440,415,캐리형
+limit,Schalke 04,SUP,420,424,438,434,444,보호형
+szygenda,Team Vitality,TOP,435,436,437,415,417,교전형
+skeanz,Team Vitality,JUNGLE,421,436,429,432,422,이니시형
+milica,Team Vitality,MID,433,426,436,431,414,운영형
+comp,Team Vitality,AD,434,432,430,434,410,캐리형
+labrov,Team Vitality,SUP,420,422,430,430,438,보호형
+kryze,Excel Esports,TOP,430,436,431,415,408,교전형
+dan,Excel Esports,JUNGLE,411,429,421,431,428,이니시형
+czekolad,Excel Esports,MID,424,424,430,428,414,운영형
+patrik,Excel Esports,AD,429,431,419,431,410,캐리형
+tore,Excel Esports,SUP,413,413,423,432,439,보호형
+jenax,SK Gaming,TOP,430,418,427,413,402,교전형
+trnx,SK Gaming,JUNGLE,411,416,421,422,420,이니시형
+blue,SK Gaming,MID,417,424,427,412,410,운영형
+jezu,SK Gaming,AD,419,417,415,431,408,캐리형
+treatz,SK Gaming,SUP,405,409,429,418,429,보호형
+agresivoo,Misfits Gaming,TOP,420,417,412,413,398,교전형
+hirit,Misfits Gaming,TOP,419,412,418,412,399,교전형
+razork,Misfits Gaming,JUNGLE,408,414,416,428,404,이니시형
+vetheo,Misfits Gaming,MID,420,414,422,408,396,캐리형
+kobbe,Misfits Gaming,AD,411,421,405,415,408,캐리형
+denyk,Misfits Gaming,SUP,388,398,404,412,408,보호형
+vander,Misfits Gaming,SUP,390,397,411,400,412,보호형

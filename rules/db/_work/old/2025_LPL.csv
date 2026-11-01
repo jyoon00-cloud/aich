@@ -1,0 +1,11 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+bin,BLG,TOP,474,484,481,462,449,캐리형
+beichuan,BLG,JUNGLE,457,456,469,463,430,교전형
+knight,BLG,MID,477,485,480,463,445,캐리형
+elk,BLG,AD,477,473,480,450,445,캐리형
+on,BLG,SUP,442,452,454,462,465,보호형
+flandre,AL,TOP,448,463,460,464,440,교전형
+tarzan,AL,JUNGLE,457,464,461,455,438,교전형
+shanks,AL,MID,440,435,445,460,470,운영형
+hope,AL,AD,464,466,469,444,432,캐리형
+kael,AL,SUP,431,445,445,443,461,보호형
