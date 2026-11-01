@@ -54,9 +54,11 @@
 | 대성공 | 1d100 대성공 범위 |
 | 대실패 | 1d100 대실패 범위 |
 | 컨디션 | 5.3 2d6 |
+| 에이징 | 4.2 하락 판정 (무효·확률 감소·하락량 절반 등) |
+| 성장 | 4.1 훈련 성장량 배율 |
 
 | id | 이름 | 효과 | 근거 |
 |---|---|---|---|
-| faker_u | 불사대마왕 | 승부처 각 능력치를 max(현재, 480)으로 판정 / 승부처 +20 / 큰 무대 +15 / 열세 시 +15 / 승부처 대성공 1~15, 대실패 없음 / 승부처 컨디션 '나쁨·최악'을 '보통'으로 / 마지막 세트 한타 때 팀원 4명 +10 / 맞상대는 승부처에서 압박 판정 | 월즈 우승 6회(2013·2015·2016·2023·2024·2025), 2023~25는 OVR 450대에서 우승 — [Tournament_Results](https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Faker/Tournament_Results) |
+| faker_u | 불사대마왕 | 승부처 각 능력치를 max(현재, 480)으로 판정 / 승부처 +20 / 큰 무대 +15 / 열세 시 +15 / 승부처 대성공 1~15, 대실패 없음 / 승부처 컨디션 '나쁨·최악'을 '보통'으로 / 마지막 세트 한타 때 팀원 4명 +10 / 맞상대는 승부처에서 압박 판정 / 에이징 하락 확률 절반·하락량 절반 | 월즈 우승 6회(2013·2015·2016·2023·2024·2025), 2023~25는 OVR 450대에서 우승 — [Tournament_Results](https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Faker/Tournament_Results) |
 
 <!-- 나머지 유니크 특성 행은 Opus가 _work/traits/unique_targets.md 근거로 추가 -->
