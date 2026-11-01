@@ -21,8 +21,8 @@
 7. 시작 연도의 리그 구조(형제팀·승강제·2군 리그 유무 등)는 `league_history.md`를 읽고 판단한다.
 
 ## 열 정의
-potential: `id,name,pos,birth_year,potential,men,clutch,pro,vol,debut_year`
-- id: 소문자 닉네임 (중복 시 `_2`). debut_year: 1부 첫 출전 연도, 미데뷔면 비움.
+potential: `id,name,pos,birth_year,potential,men,clutch,pro,vol,debut_year,traits`
+- id: 소문자 닉네임 (중복 시 `_2`). debut_year: 1부 첫 출전 연도, 미데뷔면 비움. traits: 보유 특성 id를 `;`로 연결(`traits.md`).
 - men(멘탈 1~5), clutch(−2~+3), pro(프로의식 1~5), vol(기복 1~5, 1=안정): 히든 스탯, 고정값 (lolpro §2.8). 커리어 전체 평판 기준. 클러치 +3은 명예의 전당급만. 플레이어에게 수치를 직접 공개하지 않는다.
 
 연도별: `id,team,pos,lan,phy,skr,tf,vis,style`

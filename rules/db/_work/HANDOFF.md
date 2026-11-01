@@ -67,3 +67,6 @@
 ## 결정사항
 - 채팅 앱(사용자 API 키, OpenRouter/OrcaRouter 등 OpenAI 호환 가능) 만들 때 장기 기억은 PDF가 아니라 텍스트: 상태 카드 + 연대기 요약 + 최근 대화 몇 턴.
 - 검색이 반복 실패하면 Opus가 원인·조회 방법을 정하고 하이쿠에는 단순 반복만 시킨다(CLAUDE.md).
+
+## 특성 — 완료
+- traits.md: 일반 특성 15종(근거 조건) + 유니크 27명(선수 전용 다중 효과). potential/*.csv에 traits 열. 부여 스크립트 _work/traits/assign.py, 로그 log.md, 유니크 근거 unique_targets.md.
