@@ -93,8 +93,8 @@ def parse_stats(line):
     m = re.search(r'CS/M ([\d.]+)', body); d['CS'] = float(m.group(1)) if m else None
     return d
 
-def parse_ev(y, lg):
-    path = f'{RE}/ev/{y}_{lg}.md'
+def parse_ev(y, lg, suffix=''):
+    path = f'{RE}/ev/{y}_{lg}{suffix}.md'
     lines = open(path, encoding='utf-8').read().split('\n')
     head = {'rank_line': None}
     players = collections.OrderedDict()
@@ -130,7 +130,7 @@ def parse_ev(y, lg):
             cur['prior'] = ln
     # 보강 통계 (ev에서 이름 불일치로 결측이던 주전을 Leaguepedia 표 링크명으로 재매칭한 것)
     xp = RE + '/ev_extra.csv'
-    if os.path.exists(xp):
+    if os.path.exists(xp) and not suffix:
         for x in csv.DictReader(open(xp, encoding='utf-8')):
             if int(x['year']) == y and x['league'] == lg and x['id'] in players:
                 pl = players[x['id']]
@@ -408,6 +408,77 @@ def prior_perf(p, y):
                 items.append(f'수상 {nm} ({yrs}) +{v}x{cnt}')
     return pts, items
 
+
+# ---------------------------------------------------------------- 5b. 컵+정규 리그 병합 (2025·2026 LCK, 2026 LCS)
+MERGE = {(2025, 'LCK'), (2026, 'LCK'), (2026, 'LCS')}
+TEAM_CANON = {  # 리그 근거의 팀 표기 -> csv 표기 (이름만 다른 경우)
+    (2025, 'LCK'): {'Hanwha Life': 'Hanwha Life Esports', 'NS RedForce': 'Nongshim RedForce',
+                    'Dplus Kia': 'Dplus KIA', 'OK BRION': 'OKSavingsBank BRION'},
+    (2026, 'LCK'): {'Hanwha Life': 'Hanwha Life Esports', 'Dplus Kia': 'Dplus KIA', 'HANJIN BRION': 'BRION',
+                    'Kiwoom DRX': 'DRX', 'NS RedForce': 'Nongshim RedForce'},
+    (2026, 'LCS'): {},
+}
+
+def merge_stats(a, b):
+    """두 대회 성적을 합친다: G·W·L은 합, KDA·KP·DMG/M·CS/M은 G 가중 평균."""
+    srcs = [x for x in (a, b) if x and x['G']]
+    if not srcs:
+        return (a or b), ''
+    d = dict(G=sum(x['G'] for x in srcs), W=None, L=None, KDA=None, KP=None, DMG=None, CS=None)
+    for k in ('W', 'L'):
+        v = [x[k] for x in srcs if x[k] is not None]
+        d[k] = sum(v) if v else None
+    for k in ('KDA', 'KP', 'DMG', 'CS'):
+        v = [(x[k], x['G']) for x in srcs if x[k] is not None]
+        if v:
+            d[k] = round(sum(a_ * g for a_, g in v) / sum(g for _, g in v), 2)
+    note = ' + '.join(f'{n} G {x["G"]}' for n, x in (('컵', a), ('리그', b)) if x and x['G'])
+    return d, note
+
+def merge_ev(y, lg, rows):
+    """컵 ev + 리그 ev(+신규 직전 해 근거)를 하나의 ev로 합친다. rows는 이미 리그 기준 팀·포지션으로 정리된 csv 행."""
+    canon = TEAM_CANON[(y, lg)]
+    _, cup = parse_ev(y, lg)
+    hl, lgv = parse_ev(y, lg, '_league')
+    pri = {}
+    if os.path.exists(f'{RE}/ev/{y}_{lg}_leagueprior.md'):
+        _, pri = parse_ev(y, lg, '_leagueprior')
+    ids = {r['id']: r for r in rows}
+    for pid, p in lgv.items():
+        t = canon.get(p['evteam'], p['evteam'])
+        assert pid in ids, f'{y} {lg}: 리그 선수 {pid} 가 csv에 없음(로스터 단계 필요)'
+        assert ids[pid]['team'] == t and ids[pid]['pos'] == p['pos'], f'{pid} 팀·포지션 불일치 {ids[pid]["team"]}/{ids[pid]["pos"]} vs {t}/{p["pos"]}'
+    ev = collections.OrderedDict()
+    gnote = {}
+    for r in rows:
+        pid = r['id']
+        c, l, q = cup.get(pid), lgv.get(pid), pri.get(pid)
+        stats, gn = merge_stats(c['stats'] if c else None, l['stats'] if l else None)
+        base = c if c else dict(prior='', prior_ev='', url_ev='')
+        pr = base['prior']; pre = base['prior_ev']; uev = base['url_ev']
+        if not c and q:
+            pr, pre, uev = q['prior'], q['prior_ev'], q['url_ev']
+        urls = [x['url_stats'] for x in (c, l) if x and x['url_stats']]
+        ev[pid] = dict(id=pid, evteam=r['team'], pos=r['pos'], mark='', stats=stats, prior=pr, prior_ev=pre,
+                       url_stats=', '.join(urls), url_ev=uev)
+        gnote[pid] = gn + ('' if (c and l) else (' (컵만)' if c else ' (리그만)'))
+    # 팀 경기 수: 리그 팀 최다 G + 컵 팀 최다 G (컵 소속팀 기준)
+    tg = collections.defaultdict(int)
+    for src, pl in ((lgv, 'l'), (cup, 'c')):
+        best = collections.defaultdict(int)
+        for pid, p in src.items():
+            if p['stats'] and p['stats']['G']:
+                t = canon.get(p['evteam'], p['evteam'])  # 컵은 컵 근거의 소속팀 기준(리그와 팀이 다를 수 있음)
+                best[t] = max(best[t], p['stats']['G'])
+        for t, g in best.items():
+            tg[t] += g
+    # 순위: 정규 리그 순위표 (팀 표기를 csv 기준으로, 전적 괄호 제거)
+    rl = hl['rank_line']
+    rl = re.sub(r'\s*\(\d+-\d+\)', '', rl)
+    for ln_, cn_ in canon.items():
+        rl = re.sub(r'(\d+(?:-\d+)? )' + re.escape(ln_) + r'(?=,| —|$)', lambda m: m.group(1) + cn_, rl)
+    return ev, dict(rank_line=rl), tg, gnote
+
 # ---------------------------------------------------------------- 6. main compute
 POS_FRAME = {
     'TOP': (6, 4, 2, -2, -10), 'JUNGLE': (-6, 0, 6, 4, -4), 'MID': (4, 6, 2, 0, -12),
@@ -431,16 +502,21 @@ def process(y, lg, offsets):
         rd = csv.DictReader(f)
         header = rd.fieldnames
         rows = list(rd)
-    head, ev = parse_ev(y, lg)
+    gnote = {}
+    if (y, lg) in MERGE:
+        ev, head, team_g, gnote = merge_ev(y, lg, rows)
+        marked = False
+    else:
+        head, ev = parse_ev(y, lg)
+        marked = any(p['mark'] in ('[주전]', '[주전?]') for p in ev.values())
+        # 팀 경기 수
+        team_g = collections.defaultdict(int)
+        for r in rows:
+            p = ev.get(r['id'])
+            if p and p['stats'] and p['stats']['G']:
+                team_g[r['team']] = max(team_g[r['team']], p['stats']['G'])
     S, off = offsets[(y, lg)]
     fmap, fnote = assign_f(rows, ev, head)
-    marked = any(p['mark'] in ('[주전]', '[주전?]') for p in ev.values())
-    # 팀 경기 수
-    team_g = collections.defaultdict(int)
-    for r in rows:
-        p = ev.get(r['id'])
-        if p and p['stats'] and p['stats']['G']:
-            team_g[r['team']] = max(team_g[r['team']], p['stats']['G'])
     # 주전 판정
     starter = {}
     slot = collections.defaultdict(list)
@@ -558,7 +634,7 @@ def process(y, lg, offsets):
         R['style'] = style
         out_rows.append(nr)
     return dict(header=header, rows=rows, out=out_rows, result=result, starter=starter, ev=ev,
-                head=head, fnote=fnote, fmap=fmap, notes=notes, off=off, S=S, marked=marked)
+                head=head, fnote=fnote, fmap=fmap, notes=notes, off=off, S=S, marked=marked, gnote=gnote)
 
 def fit(raw, ovr):
     lo = [ovr - 30] * 5
@@ -630,13 +706,16 @@ def write_changes(y, lg, P):
     for r in P['rows']:
         pid = r['id']; R = res[pid]
         old = cur_ovr(r)
+        if old == 0:
+            old = '신규'
         new_vals = [int(x) for x in [P['out'][P['rows'].index(r)][k] for k in ('lan', 'phy', 'skr', 'tf', 'vis')]]
         new = round(sum(new_vals) / 5)
         p = ev.get(pid)
         st = p['stats'] if p else None
         sline = '스플릿 지표 없음'
         if st and st['G'] is not None:
-            sline = f'G {st["G"]}, KDA {st["KDA"]}, KP {st["KP"]}, DMG/M {st["DMG"]}, CS/M {st["CS"]}'
+            gtxt = f'합산 G {st["G"]}({P["gnote"][pid]})' if P['gnote'].get(pid) else f'G {st["G"]}'
+            sline = f'{gtxt}, KDA {st["KDA"]}, KP {st["KP"]}, DMG/M {st["DMG"]}, CS/M {st["CS"]}'
         urls = []
         if p:
             if p['url_stats']: urls.append(p['url_stats'])

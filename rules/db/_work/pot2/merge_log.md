@@ -4,6 +4,63 @@
 - 490 초과: {'faker': '500', 'caps': '495', 'uzi': '495'}
 
 ## 연도별 능력치 자름 (potential 초과)
+- 2017/LCK.csv bang phy 491→490
+- 2020/LCK.csv teddy phy 493→490
+- 2021/LCK.csv canyon phy 491→490
+- 2021/LCK.csv showmaker phy 494→490
+- 2021/LCK.csv beryl vis 494→490
+- 2022/LCK.csv canyon skr 491→490
+- 2022/LCK.csv keria tf 492→490
+- 2022/LCK.csv keria vis 500→490
+- 2024/LCK.csv zeus lan 493→490
+- 2024/LCK.csv zeus phy 492→490
+- 2025/LCK.csv chovy lan 500→490
+- 2025/LCK.csv chovy phy 500→490
+- 2025/LCK.csv chovy skr 492→490
+- 2025/LCK.csv chovy tf 493→490
+- 2025/LCK.csv zeus lan 496→490
+- 2025/LCK.csv keria skr 500→490
+- 2025/LCK.csv keria tf 500→490
+- 2025/LCK.csv keria vis 500→490
+- 2026/LCK.csv kiin phy 493→490
+- 2026/LCK.csv kiin skr 491→490
+- 2026/LCK.csv chovy lan 494→490
+- 2026/LCK.csv chovy phy 500→490
+- 2026/LCK.csv duro tf 491→490
+- 2026/LCK.csv duro vis 495→490
+
+## potential 하한 반영 (31명)
+- bang 491→490
+- bvoy 434→438
+- career 443→450
+- cryogen 443→458
+- duro 495→490
+- oner 485→486
+- vulcan 463→467
+- zeus 493→490
+- canyon 491→490
+- saint 447→449
+- showmaker 494→490
+- slayer 411→423
+- bluffing 410→429
+- calix 420→428
+- fisher 446→447
+- kiin 500→490
+- ceos 413→426
+- doran 482→490
+- gakgos 439→451
+- gryffinn 436→442
+- ruler 491→490
+- casting 434→438
+- chovy 494→490
+- peter 460→464
+- quantum 430→431
+- teddy 493→490
+- beryl 494→490
+- castle 438→442
+- keria 500→490
+- srtty 410→433
+- thanatos 445→454
 
 ## vol 재계산 (추세 제거 잔차 기준, 348명 변경)
 - able 4→2
@@ -29,10 +86,8 @@
 - griffin 2→3
 - imp 5→4
 - irrelevant 4→3
-- jiwoo 3→4
 - kakao 3→1
 - kellin 4→3
-- kingen 4→5
 - kobbe 5→4
 - kuzan 5→3
 - light 5→3
@@ -56,7 +111,7 @@
 - smoothie 4→3
 - spica 5→3
 - swift 3→2
-- taeyoon 5→2
+- taeyoon 5→3
 - tian 5→3
 - twila 4→3
 - xiaohao 5→4
@@ -89,7 +144,6 @@
 - langx 3→4
 - leave 1→4
 - lira 5→3
-- morgan 3→4
 - namei 5→3
 - nrated 3→2
 - onfleek 3→2
@@ -129,7 +183,6 @@
 - destiny 5→2
 - duan 5→3
 - dyrus 4→2
-- effort 5→4
 - flandre 4→3
 - fly 5→3
 - goldenglue 2→3
@@ -146,9 +199,11 @@
 - kiin 5→3
 - korol 5→3
 - larssen 5→3
+- lehends 3→2
 - letme 5→2
 - licorice 5→3
 - looper 5→4
+- lucid 4→3
 - lvmao 4→5
 - meiko 3→4
 - monki 5→3
@@ -179,9 +234,7 @@
 - caps 5→4
 - closer 4→3
 - coco 5→3
-- cuzz 4→3
 - dndn 2→3
-- dudu 4→3
 - execute 4→3
 - froggen 4→3
 - h0r0 2→3
@@ -208,13 +261,13 @@
 - prince 2→3
 - quad 3→2
 - rascal 5→4
-- rich 4→5
 - roach 5→3
 - ruler 4→3
 - ryu 3→4
 - shanji 4→3
 - space 4→3
 - trace 3→4
+- ucal 4→3
 - untara 4→3
 - vampire 5→4
 - vicla 5→3
@@ -231,9 +284,10 @@
 - abbedagge 5→3
 - adam 4→3
 - aiming 5→4
-- andil 4→5
+- andil 4→3
 - apa 4→3
 - beichuan 5→4
+- berserker 3→4
 - blaber 5→3
 - brokenblade 3→4
 - busio 3→4
@@ -269,7 +323,6 @@
 - ninja 4→3
 - nuguri 3→2
 - olleh 3→4
-- peter 3→2
 - puff 4→2
 - road 5→3
 - saken 2→3
@@ -313,7 +366,9 @@
 - dreams 4→3
 - duke 5→2
 - eimy 4→2
+- fbi 3→4
 - fiesta 2→3
+- fudge 4→5
 - galen 4→3
 - gumayusi 5→4
 - hachani 5→3
@@ -354,3 +409,5 @@
 - wildturtle 5→4
 - wolf 5→4
 - wunder 5→4
+- yeon 3→2
+- zeka 4→3

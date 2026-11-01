@@ -1,53 +1,65 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-clear,BNK FEARX,TOP,434,430,431,428,422,라인전형
-raptor,BNK FEARX,JUNGLE,428,448,452,450,442,교전형
-vicla,BNK FEARX,MID,455,464,450,452,439,캐리형
-diable,BNK FEARX,AD,450,454,443,451,432,캐리형
-kellin,BNK FEARX,SUP,437,443,454,459,462,보호형
-casting,BRION,TOP,432,428,429,425,416,라인전형
-gideon,BRION,JUNGLE,416,408,416,414,406,라인전형
-roamer,BRION,MID,408,412,421,412,402,교전형
-teddy,BRION,AD,418,419,419,420,404,한타형
-namgung,BRION,SUP,428,427,441,435,449,이니시형
-dudu,DN SOOPers,TOP,463,458,458,455,441,라인전형
-pyosik,DN SOOPers,JUNGLE,436,433,453,450,443,이니시형
-clozer,DN SOOPers,MID,451,444,444,442,429,라인전형
-deokdam,DN SOOPers,AD,433,440,432,437,423,캐리형
-life,DN SOOPers,SUP,407,410,416,418,424,보호형
-peter,DN SOOPers,SUP,433,421,440,443,448,보호형
-siwoo,Dplus KIA,TOP,442,430,423,420,420,라인전형
-lucid,Dplus KIA,JUNGLE,428,442,444,442,434,교전형
-showmaker,Dplus KIA,MID,434,443,431,430,422,캐리형
-smash,Dplus KIA,AD,467,465,454,463,441,라인전형
-career,Dplus KIA,SUP,427,421,434,441,442,보호형
-rich,DRX,TOP,436,445,441,437,426,캐리형
-willer,DRX,JUNGLE,422,429,431,432,421,한타형
-ucal,DRX,MID,428,426,426,422,413,라인전형
-jiwoo,DRX,AD,432,450,444,446,423,캐리형
-andil,DRX,SUP,418,423,443,440,451,보호형
-kiin,Gen.G,TOP,490,490,490,488,471,캐리형
-canyon,Gen.G,JUNGLE,484,490,484,488,474,캐리형
-chovy,Gen.G,MID,490,490,475,481,468,캐리형
-ruler,Gen.G,AD,487,490,466,480,461,캐리형
-duro,Gen.G,SUP,463,477,487,490,490,보호형
-zeus,Hanwha Life Esports,TOP,420,428,431,419,412,교전형
-kanavi,Hanwha Life Esports,JUNGLE,424,432,441,432,431,교전형
-zeka,Hanwha Life Esports,MID,414,414,422,415,405,교전형
-gumayusi,Hanwha Life Esports,AD,460,458,454,456,437,라인전형
-delight,Hanwha Life Esports,SUP,427,407,440,438,448,이니시형
-perfect,KT Rolster,TOP,451,432,434,431,427,라인전형
-cuzz,KT Rolster,JUNGLE,432,431,444,439,434,교전형
-bdd,KT Rolster,MID,459,455,459,454,438,라인전형
-aiming,KT Rolster,AD,428,424,430,432,411,한타형
-pollu,KT Rolster,SUP,394,391,405,407,413,보호형
-ghost,KT Rolster,SUP,407,401,424,421,432,보호형
-kingen,Nongshim RedForce,TOP,425,425,416,413,411,라인전형
-sponge,Nongshim RedForce,JUNGLE,413,424,442,434,432,이니시형
-scout,Nongshim RedForce,MID,455,459,459,456,436,캐리형
-taeyoon,Nongshim RedForce,AD,414,419,403,409,400,캐리형
-lehends,Nongshim RedForce,SUP,421,420,422,427,430,보호형
-doran,T1,TOP,478,481,471,470,460,캐리형
-oner,T1,JUNGLE,474,480,470,476,460,캐리형
-faker,T1,MID,455,460,446,448,441,캐리형
-peyz,T1,AD,454,464,441,452,434,캐리형
-keria,T1,SUP,451,451,464,472,472,한타형
+clear,BNK FEARX,TOP,424,415,417,414,410,라인전형
+raptor,BNK FEARX,JUNGLE,414,427,437,430,427,교전형
+vicla,BNK FEARX,MID,431,427,424,420,413,라인전형
+diable,Nongshim RedForce,AD,428,439,427,429,412,캐리형
+kellin,BNK FEARX,SUP,417,424,442,442,450,보호형
+casting,BRION,TOP,432,427,438,432,421,교전형
+gideon,BRION,JUNGLE,439,431,445,445,435,교전형
+roamer,BRION,MID,411,412,412,411,404,캐리형
+teddy,BRION,AD,438,441,433,438,420,캐리형
+namgung,BRION,SUP,429,429,428,433,436,보호형
+loki,BRION,MID,397,397,401,396,384,교전형
+dudu,DN SOOPers,TOP,436,424,424,418,413,라인전형
+pyosik,DN SOOPers,JUNGLE,404,404,427,418,417,이니시형
+clozer,DN SOOPers,MID,429,416,418,412,405,라인전형
+deokdam,DN SOOPers,AD,414,418,413,416,404,캐리형
+life,DN SOOPers,SUP,407,407,417,419,425,보호형
+peter,DN SOOPers,SUP,423,412,442,438,450,이니시형
+quantum,DN SOOPers,SUP,404,397,423,420,431,보호형
+enosh,DN SOOPers,AD,401,405,396,401,387,캐리형
+ddoiv,DN SOOPers,JUNGLE,393,399,405,403,395,교전형
+siwoo,Dplus KIA,TOP,444,432,422,418,419,라인전형
+lucid,Dplus KIA,JUNGLE,429,438,438,437,428,캐리형
+showmaker,Dplus KIA,MID,436,440,428,430,421,캐리형
+smash,Dplus KIA,AD,449,438,426,436,421,라인전형
+career,Dplus KIA,SUP,431,425,442,447,450,보호형
+sharvel,Dplus KIA,JUNGLE,416,412,418,421,408,한타형
+rich,DRX,TOP,426,432,431,425,416,캐리형
+willer,DRX,JUNGLE,422,423,435,430,425,교전형
+ucal,DRX,MID,441,434,438,436,421,라인전형
+jiwoo,DRX,AD,383,397,394,394,372,캐리형
+andil,DRX,SUP,398,396,411,411,419,보호형
+lazyfeel,DRX,AD,407,410,398,405,395,캐리형
+kiin,Gen.G,TOP,489,490,490,487,470,캐리형
+canyon,Gen.G,JUNGLE,480,484,481,484,471,캐리형
+chovy,Gen.G,MID,490,490,483,485,468,캐리형
+ruler,Gen.G,AD,482,488,470,481,459,캐리형
+duro,Gen.G,SUP,460,472,487,490,490,보호형
+zeus,Hanwha Life Esports,TOP,454,464,465,461,446,교전형
+kanavi,Hanwha Life Esports,JUNGLE,462,472,465,466,455,캐리형
+zeka,Hanwha Life Esports,MID,468,474,471,470,452,캐리형
+gumayusi,Hanwha Life Esports,AD,477,483,480,484,461,한타형
+delight,Hanwha Life Esports,SUP,442,422,447,449,455,보호형
+bluffing,Hanwha Life Esports,SUP,400,405,421,420,429,보호형
+perfect,KT Rolster,TOP,454,446,443,444,438,라인전형
+cuzz,KT Rolster,JUNGLE,435,440,444,447,434,한타형
+bdd,KT Rolster,MID,461,470,472,468,449,교전형
+aiming,KT Rolster,AD,461,455,457,461,436,라인전형
+pollu,KT Rolster,SUP,405,403,419,421,427,보호형
+ghost,KT Rolster,SUP,404,400,421,421,429,보호형
+effort,KT Rolster,SUP,433,431,458,457,466,이니시형
+fenrir,KT Rolster,AD,413,425,417,420,400,캐리형
+kingen,Nongshim RedForce,TOP,423,430,419,413,410,캐리형
+sponge,Nongshim RedForce,JUNGLE,402,416,431,420,421,이니시형
+scout,Nongshim RedForce,MID,428,442,438,430,417,캐리형
+taeyoon,BNK FEARX,AD,431,442,434,436,417,캐리형
+daystar,BNK FEARX,MID,411,412,410,408,399,캐리형
+slayer,BNK FEARX,AD,420,423,411,417,404,캐리형
+lehends,Nongshim RedForce,SUP,411,407,414,416,422,보호형
+pleata,Nongshim RedForce,SUP,395,391,399,403,407,보호형
+doran,T1,TOP,489,490,482,480,469,캐리형
+oner,T1,JUNGLE,471,478,470,476,460,캐리형
+faker,T1,MID,452,460,447,449,442,캐리형
+peyz,T1,AD,461,471,446,458,439,캐리형
+keria,T1,SUP,467,473,480,487,488,보호형

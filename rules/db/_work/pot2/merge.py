@@ -31,9 +31,18 @@ for i, r in new.items():
         if all(y >= 0.7 for y in ys): v = 1
     if str(v) != r['vol']: volchg.append((i, r['vol'], v))
     r['vol'] = str(v)
+# potential 하한: 연도별 단일 능력치 최댓값(490 이하에서). 컵+리그 병합으로 1부에 새로 들어온 CL 출신 선수 등은 올려 준다.
+_mx = {}
+for f in glob.glob(DB + '/20*/*.csv'):
+    for r in csv.DictReader(open(f)):
+        _mx[r['id']] = max(_mx.get(r['id'], 0), max(int(r[k]) for k in ('lan','phy','skr','tf','vis')))
+raised = []
 for i, r in new.items():
     p = int(r['potential'])
-    r['potential'] = str(HOF[i] if i in HOF else min(p, 490))
+    if i in HOF: r['potential'] = str(HOF[i]); continue
+    q = min(max(p, _mx.get(i, 0)), 490)
+    if q != p: raised.append((i, p, q))
+    r['potential'] = str(q)
 # 연도별 능력치 자르기
 clipped = []
 for f in sorted(glob.glob(DB + '/20*/*.csv')):
@@ -61,6 +70,8 @@ with open(DB + '/_work/pot2/merge_log.md', 'w') as o:
     o.write('# merge.py 결과\n\n- 산정 선수 %d명, potential 파일에 있으나 산정 결과 없음: %s\n- 490 초과: %s\n\n## 연도별 능력치 자름 (potential 초과)\n' % (
         len(new), sorted(miss) or '없음', {i: new[i]['potential'] for i in new if int(new[i]['potential']) > 490}))
     for c in clipped: o.write('- %s %s %s %s→%s\n' % c)
+    o.write('\n## potential 하한 반영 (%d명)\n' % len(raised))
+    for c in raised: o.write('- %s %s→%s\n' % c)
     o.write('\n## vol 재계산 (추세 제거 잔차 기준, %d명 변경)\n' % len(volchg))
     for c in volchg: o.write('- %s %s→%s\n' % c)
 print(len(new), 'missing', sorted(miss), 'clipped', len(clipped))

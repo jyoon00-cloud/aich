@@ -27,7 +27,7 @@ boukada,Boukada,JUNGLE,2002,410,3,0,3,3,2026,
 brokenblade,BrokenBlade,TOP,2000,460,3,1,4,4,2019,domestic_king;intl_choke;survivor
 broxah,Broxah,JUNGLE,1997,476,2,1,3,3,2017,globetrotter
 busio,Busio,SUP,2003,461,3,-1,3,4,2023,choker;globetrotter
-bvoy,Bvoy,AD,1997,434,3,0,3,5,2019,globetrotter
+bvoy,Bvoy,AD,1997,438,3,0,3,5,2019,globetrotter
 bwipo,Bwipo,TOP,1998,460,3,1,3,3,2018,carry;globetrotter
 cabochard,Cabochard,TOP,1997,475,3,0,3,5,2015,
 caedrel,Caedrel,JUNGLE,1996,435,3,0,3,3,2018,
@@ -208,7 +208,7 @@ patrik,Patrik,AD,2000,464,3,0,4,3,2018,skirmisher
 peach,Peach,JUNGLE,2000,416,3,0,3,3,2022,
 perkz,Perkz,MID,1998,475,2,1,4,4,2016,domestic_king;lane_king;big_stage
 phaxi,Phaxi,TOP,1997,410,3,0,3,3,2017,
-photon,Photon,TOP,2001,473,3,0,3,2,2023,carry;prodigy;globetrotter
+photon,Photon,TOP,2001,473,3,0,3,2,2023,prodigy
 pirean,Pirean,MID,1998,442,3,0,3,3,2016,late_bloomer;globetrotter
 poby,Poby,MID,2006,440,3,0,3,3,2026,
 powerofevil,PowerOfEvil,MID,1997,452,3,-1,4,4,2015,choker;skirmisher;globetrotter
@@ -216,7 +216,7 @@ pridestalkr,Pridestalkr,JUNGLE,1999,432,3,0,3,3,2018,globetrotter;prodigy
 profit,Profit,TOP,1995,440,3,0,3,3,2017,
 promisq,promisq,SUP,1994,448,3,0,3,2,2016,
 ptt,ptt,MID,,411,3,0,3,3,2015,
-rahel,Rahel,AD,2004,465,3,1,3,3,2025,globetrotter
+rahel,Rahel,AD,2004,465,3,1,3,3,2025,
 razork,Razork,JUNGLE,2000,460,3,-1,3,4,2020,choker;carry;intl_choke
 reeker,Reeker,MID,2001,410,3,0,3,3,2022,
 reignover,Reignover,JUNGLE,1995,460,3,1,3,4,2014,globetrotter;lane_king
@@ -299,4 +299,4 @@ youngbuck,YoungBuck,TOP,1991,408,3,1,3,3,2014,
 zanzarah,Zanzarah,JUNGLE,1996,408,3,0,3,3,2021,
 zoelys,Zoelys,SUP,2003,389,3,0,3,3,2024,
 zorozero,Zorozero,TOP,1995,410,3,0,3,3,2014,
-zven,Zven,AD,1997,462,3,1,4,3,2016,intl_choke;lane_king;domestic_king
+zven,Zven,AD,1997,462,3,1,4,3,2016,intl_choke;domestic_king;flex

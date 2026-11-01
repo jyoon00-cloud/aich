@@ -9,56 +9,49 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 ## 특성별 부여 인원 (선수 수, 중복 id 한 번만)
 | 특성 | 부여(상위3 채택) | 조건 충족 전체 |
 |---|---|---|
-| lane_king | 55 | 58 |
-| skirmisher | 40 | 41 |
-| teamfighter | 13 | 15 |
-| carry | 36 | 37 |
-| survivor | 49 | 55 |
+| lane_king | 52 | 54 |
+| skirmisher | 38 | 40 |
+| teamfighter | 14 | 17 |
+| carry | 31 | 31 |
+| survivor | 50 | 56 |
 | big_stage | 25 | 26 |
 | intl_champ | 38 | 49 |
-| domestic_king | 15 | 21 |
-| iron | 14 | 20 |
-| late_bloomer | 49 | 50 |
+| domestic_king | 15 | 20 |
+| iron | 13 | 16 |
+| late_bloomer | 45 | 46 |
 | prodigy | 71 | 85 |
-| globetrotter | 136 | 150 |
-| flex | 32 | 39 |
-| steady | 10 | 10 |
+| globetrotter | 129 | 142 |
+| flex | 32 | 38 |
+| steady | 11 | 11 |
 | choker | 21 | 22 |
-| intl_choke | 36 | 41 |
+| intl_choke | 35 | 40 |
 
-유니크 대상 27명. 특성이 하나라도 있는 선수 360명 / 전체 1328명.
+유니크 대상 28명. 특성이 하나라도 있는 선수 349명 / 전체 1328명.
 
 ## 선수별 부여 이유
-- berserker: survivor(4/5시즌 백분위 0.85↑(평균 0.86)) / globetrotter(주전 리그 LCK/LCS)
-- bulldog: carry(2/4시즌 백분위 0.8↑(평균 0.71)) / globetrotter(주전 리그 LCK/LPL)
-- callme: globetrotter(주전 리그 LCK/LCS)
-- castle: skirmisher(2/3시즌 백분위 0.8↑(평균 0.81)) / carry(2/3시즌 백분위 0.8↑(평균 0.69))
+- berserker: survivor(3/3시즌 백분위 0.85↑(평균 0.93))
+- bulldog: globetrotter(주전 리그 LCK/LPL)
 - diable: prodigy(신인상: LCK Rookie of the Year x1 (2025))
 - effort: prodigy(데뷔(2020) OVR 460)
 - execute: globetrotter(주전 리그 LCK/LEC)
-- fisher: globetrotter(주전 리그 LCK/LPL)
 - gideon: globetrotter(주전 리그 LCK/LPL)
-- hambak: globetrotter(주전 리그 LCK/LCS)
 - ice: lane_king(2/4시즌 백분위 0.8↑(평균 0.71)) / globetrotter(주전 리그 LCK/LEC)
 - jun: choker(clutch -1, 결승 패배 3회) / globetrotter(주전 리그 LCK/LEC)
 - kael: late_bloomer(첫 주전 2022 OVR 405 → 최고 2026 OVR 466(데뷔 2022)) / globetrotter(주전 리그 LCK/LPL)
 - lucid: prodigy(신인상: LCK Rookie of the Year (2024))
 - malrang: skirmisher(2/4시즌 백분위 0.8↑(평균 0.65)) / globetrotter(주전 리그 LCK/LEC)
 - noah: choker(clutch -1, 결승 패배 3회)
-- peter: skirmisher(2/3시즌 백분위 0.8↑(평균 0.68))
-- peyz: prodigy(데뷔(2023) OVR 462) / carry(2/4시즌 백분위 0.8↑(평균 0.77)) / globetrotter(주전 리그 LCK/LPL)
-- photon: carry(2/3시즌 백분위 0.8↑(평균 0.66)) / prodigy(데뷔(2023) OVR 463) / globetrotter(주전 리그 LCS/LEC)
-- quid: carry(3/3시즌 백분위 0.8↑(평균 0.90))
-- rahel: globetrotter(주전 리그 LCS/LEC)
+- peyz: prodigy(데뷔(2023) OVR 462) / globetrotter(주전 리그 LCK/LPL)
+- photon: prodigy(데뷔(2023) OVR 463)
 - rekkles: lane_king(8/9시즌 백분위 0.8↑(평균 0.87)) / survivor(5/9시즌 백분위 0.85↑(평균 0.78))
 - roach: late_bloomer(첫 주전 2017 OVR 398 → 최고 2019 OVR 440(데뷔 2016))
 - setab: globetrotter(주전 리그 LCK/LPL)
 - smash: prodigy(신인상: LCK Rookie of the Year (2026))
 - taeyoon: globetrotter(주전 리그 LCK/LPL)
-- vicla: globetrotter(주전 리그 LCK/LCS/LPL) / prodigy(신인상: KR Rookie of the Year (2022))
+- vicla: globetrotter(주전 리그 LCS/LPL) / prodigy(신인상: KR Rookie of the Year (2022))
 - acorn: globetrotter(주전 리그 LCK/LPL)
 - add: skirmisher(2/3시즌 백분위 0.8↑(평균 0.79)) / globetrotter(주전 리그 LCK/LPL)
-- aiming: late_bloomer(첫 주전 2019 OVR 407 → 최고 2025 OVR 460(데뷔 2018)) / globetrotter(주전 리그 LCK/LPL)
+- aiming: late_bloomer(첫 주전 2019 OVR 407 → 최고 2020 OVR 453(데뷔 2018)) / globetrotter(주전 리그 LCK/LPL)
 - ambition: lane_king(3/4시즌 백분위 0.8↑(평균 0.90)) / flex(주전 포지션 JUNGLE/MID) / intl_champ(월즈 우승 주전 1회(Worlds 2017))
 - arrow: globetrotter(주전 리그 LCK/LCS)
 - bang: big_stage(월즈·MSI 결승 진출 6회(MSI 2015, Worlds 2015, MSI 2016, Worlds 2016, MSI 2017, Worlds 2017)) / intl_champ(월즈 우승 주전 2회(Worlds 2015, Worlds 2016)) / survivor(4/8시즌 백분위 0.85↑(평균 0.66)) [4위 이하 탈락: globetrotter, late_bloomer]
@@ -69,13 +62,12 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - burdol: globetrotter(주전 리그 LCK/LPL)
 - cain: prodigy(데뷔(2013) OVR 459)
 - canna: survivor(4/6시즌 백분위 0.85↑(평균 0.82)) / prodigy(데뷔(2020) OVR 460) / globetrotter(주전 리그 LCK/LEC)
-- canyon: big_stage(월즈·MSI 결승 진출 5회(Worlds 2020, MSI 2021, Worlds 2021, MSI 2024, MSI 2025)) / late_bloomer(첫 주전 2019 OVR 431 → 최고 2021 OVR 485(데뷔 2019)) / carry(4/6시즌 백분위 0.8↑(평균 0.83)) [4위 이하 탈락: survivor, intl_champ]
+- canyon: big_stage(월즈·MSI 결승 진출 5회(Worlds 2020, MSI 2021, Worlds 2021, MSI 2024, MSI 2025)) / late_bloomer(첫 주전 2019 OVR 431 → 최고 2021 OVR 485(데뷔 2019)) / carry(2/4시즌 백분위 0.8↑(평균 0.78)) [4위 이하 탈락: survivor, intl_champ]
 - chaser: globetrotter(주전 리그 LCK/LCS)
 - chei: globetrotter(주전 리그 LCK/LEC)
-- chovy: carry(6/6시즌 백분위 0.8↑(평균 0.95)) / lane_king(7/8시즌 백분위 0.8↑(평균 0.90)) / intl_choke(월즈 주전 출전 7회(2019, 2020, 2021, 2022, 2023, 2024, 2025), 결승 0회) [4위 이하 탈락: domestic_king, survivor]
+- chovy: carry(4/4시즌 백분위 0.8↑(평균 0.95)) / lane_king(6/6시즌 백분위 0.8↑(평균 0.93)) / intl_choke(월즈 주전 출전 7회(2019, 2020, 2021, 2022, 2023, 2024, 2025), 결승 0회) [4위 이하 탈락: survivor]
 - clid: globetrotter(주전 리그 LCK/LPL)
-- clozer: lane_king(3/5시즌 백분위 0.8↑(평균 0.79))
-- corejj: late_bloomer(첫 주전 2015 OVR 380 → 최고 2019 OVR 459(데뷔 2015)) / iron(1부 주전 12시즌) / big_stage(월즈·MSI 결승 진출 3회(Worlds 2016, Worlds 2017, MSI 2019)) [4위 이하 탈락: flex, globetrotter, intl_champ]
+- corejj: late_bloomer(첫 주전 2015 OVR 380 → 최고 2019 OVR 459(데뷔 2015)) / iron(1부 주전 11시즌) / big_stage(월즈·MSI 결승 진출 3회(Worlds 2016, Worlds 2017, MSI 2019)) [4위 이하 탈락: flex, globetrotter, intl_champ]
 - crazy: globetrotter(주전 리그 LCK/LPL)
 - croco: late_bloomer(첫 주전 2021 OVR 415 → 최고 2026 OVR 469(데뷔 2021)) / globetrotter(주전 리그 LCK/LPL) / prodigy(신인상: LCK Rookie of the Year (2021))
 - crown: lane_king(2/4시즌 백분위 0.8↑(평균 0.61)) / globetrotter(주전 리그 LCK/LCS) / intl_champ(월즈 우승 주전 1회(Worlds 2017))
@@ -83,23 +75,23 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - dade: prodigy(데뷔(2013) OVR 471) / globetrotter(주전 리그 LCK/LPL)
 - dandy: prodigy(데뷔(2013) OVR 457) / survivor(2/4시즌 백분위 0.85↑(평균 0.83)) / globetrotter(주전 리그 LCK/LPL) [4위 이하 탈락: intl_champ]
 - deft: late_bloomer(첫 주전 2013 OVR 414 → 최고 2023 OVR 479(데뷔 2013)) / iron(1부 주전 12시즌) / carry(2/4시즌 백분위 0.8↑(평균 0.78)) [4위 이하 탈락: globetrotter, intl_champ]
-- delight: skirmisher(3/6시즌 백분위 0.8↑(평균 0.77)) / late_bloomer(첫 주전 2021 OVR 426 → 최고 2025 OVR 466(데뷔 2021))
+- delight: skirmisher(2/4시즌 백분위 0.8↑(평균 0.78))
 - deokdam: globetrotter(주전 리그 LCK/LPL)
-- doran: carry(4/6시즌 백분위 0.8↑(평균 0.78)) / intl_champ(월즈 우승 주전 1회(Worlds 2025))
+- doran: carry(3/4시즌 백분위 0.8↑(평균 0.80)) / intl_champ(월즈 우승 주전 1회(Worlds 2025))
 - dove: globetrotter(주전 리그 LCK/LCS/LPL) / flex(주전 포지션 MID/TOP)
-- dudu: late_bloomer(첫 주전 2022 OVR 406 → 최고 2026 OVR 455(데뷔 2021)) / lane_king(3/5시즌 백분위 0.8↑(평균 0.65))
+- dudu: lane_king(2/3시즌 백분위 0.8↑(평균 0.62))
 - duke: survivor(2/3시즌 백분위 0.85↑(평균 0.71)) / globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2016))
 - easyhoon: globetrotter(주전 리그 LCK/LPL) / steady(vol 2, 주전 5시즌)
 - emperor: globetrotter(주전 리그 LCK/LEC)
 - expect: late_bloomer(첫 주전 2014 OVR 394 → 최고 2017 OVR 442(데뷔 2014)) / globetrotter(주전 리그 LCK/LEC)
-- faker: intl_champ(월즈 우승 주전 6회(Worlds Season 3, Worlds 2015, Worlds 2016, Worlds 2023, Worlds 2024, Worlds 2025)) / big_stage(월즈·MSI 결승 진출 13회(Worlds Season 3, MSI 2015, Worlds 2015, MSI 2016, Worlds 2016, MSI 2017, Worlds 2017, MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2025, Worlds 2025)) / iron(1부 주전 14시즌) [4위 이하 탈락: prodigy, lane_king]
+- faker: intl_champ(월즈 우승 주전 6회(Worlds Season 3, Worlds 2015, Worlds 2016, Worlds 2023, Worlds 2024, Worlds 2025)) / big_stage(월즈·MSI 결승 진출 13회(Worlds Season 3, MSI 2015, Worlds 2015, MSI 2016, Worlds 2016, MSI 2017, Worlds 2017, MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2025, Worlds 2025)) / iron(1부 주전 12시즌) [4위 이하 탈락: lane_king, prodigy]
 - flame: prodigy(데뷔(2013) OVR 470) / survivor(2/4시즌 백분위 0.85↑(평균 0.63)) / globetrotter(주전 리그 LCK/LCS)
 - flawless: late_bloomer(첫 주전 2016 OVR 400 → 최고 2018 OVR 444(데뷔 2016)) / globetrotter(주전 리그 LCK/LPL)
 - fly: globetrotter(주전 리그 LCK/LCS)
 - fury: globetrotter(주전 리그 LCK/LPL)
 - gbm: globetrotter(주전 리그 LCK/LCS)
 - ggoong: globetrotter(주전 리그 LCK/LPL)
-- ghost: late_bloomer(첫 주전 2017 OVR 430 → 최고 2021 OVR 477(데뷔 2017)) / big_stage(월즈·MSI 결승 진출 3회(Worlds 2020, MSI 2021, Worlds 2021)) / flex(주전 포지션 AD/SUP) [4위 이하 탈락: intl_champ]
+- ghost: late_bloomer(첫 주전 2017 OVR 430 → 최고 2021 OVR 477(데뷔 2017)) / big_stage(월즈·MSI 결승 진출 3회(Worlds 2020, MSI 2021, Worlds 2021)) / intl_champ(월즈 우승 주전 1회(Worlds 2020))
 - gorilla: globetrotter(주전 리그 LCK/LEC)
 - gumayusi: intl_champ(월즈 우승 주전 3회(Worlds 2023, Worlds 2024, Worlds 2025)) / big_stage(월즈·MSI 결승 진출 7회(MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2025, Worlds 2025, MSI 2026))
 - h0r0: globetrotter(주전 리그 LCK/LEC)
@@ -111,19 +103,20 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - huni: globetrotter(주전 리그 LCK/LCS/LEC) / skirmisher(5/8시즌 백분위 0.8↑(평균 0.76)) / lane_king(4/8시즌 백분위 0.8↑(평균 0.62)) [4위 이하 탈락: prodigy]
 - ignar: globetrotter(주전 리그 LCK/LCS/LEC) / choker(clutch -1, 결승 패배 3회)
 - imp: prodigy(데뷔(2013) OVR 477) / globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2014))
-- impact: iron(1부 주전 14시즌) / globetrotter(주전 리그 LCK/LCS) / intl_champ(월즈 우승 주전 1회(Worlds Season 3))
+- impact: iron(1부 주전 13시즌) / globetrotter(주전 리그 LCK/LCS) / intl_champ(월즈 우승 주전 1회(Worlds Season 3))
 - insec: globetrotter(주전 리그 LCK/LPL)
 - kakao: globetrotter(주전 리그 LCK/LEC/LPL) / survivor(2/4시즌 백분위 0.85↑(평균 0.79)) / lane_king(2/4시즌 백분위 0.8↑(평균 0.77))
-- kanavi: lane_king(5/7시즌 백분위 0.8↑(평균 0.82)) / carry(4/6시즌 백분위 0.8↑(평균 0.85)) / prodigy(데뷔(2020) OVR 468) [4위 이하 탈락: domestic_king, globetrotter, intl_choke]
+- kanavi: lane_king(5/6시즌 백분위 0.8↑(평균 0.88)) / carry(4/5시즌 백분위 0.8↑(평균 0.91)) / prodigy(데뷔(2020) OVR 468) [4위 이하 탈락: teamfighter, domestic_king, intl_choke]
 - karis: globetrotter(주전 리그 LCK/LPL)
-- keria: intl_champ(월즈 우승 주전 3회(Worlds 2023, Worlds 2024, Worlds 2025)) / survivor(7/7시즌 백분위 0.85↑(평균 0.91)) / big_stage(월즈·MSI 결승 진출 6회(MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2025, Worlds 2025)) [4위 이하 탈락: teamfighter, prodigy]
+- kellin: skirmisher(2/4시즌 백분위 0.8↑(평균 0.76))
+- keria: intl_champ(월즈 우승 주전 3회(Worlds 2023, Worlds 2024, Worlds 2025)) / survivor(5/5시즌 백분위 0.85↑(평균 0.91)) / big_stage(월즈·MSI 결승 진출 6회(MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2025, Worlds 2025)) [4위 이하 탈락: teamfighter, prodigy]
 - khan: survivor(3/3시즌 백분위 0.85↑(평균 0.92)) / big_stage(월즈·MSI 결승 진출 3회(MSI 2018, MSI 2021, Worlds 2021)) / domestic_king(리그 플레이오프 우승 5회, 월즈 우승 0)
-- kiin: late_bloomer(첫 주전 2018 OVR 440 → 최고 2026 OVR 486(데뷔 2018)) / survivor(5/9시즌 백분위 0.85↑(평균 0.72)) / intl_choke(월즈 주전 출전 4회(2018, 2023, 2024, 2025), 결승 0회)
+- kiin: survivor(4/7시즌 백분위 0.85↑(평균 0.69)) / intl_choke(월즈 주전 출전 4회(2018, 2023, 2024, 2025), 결승 0회)
 - kingen: globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2022))
 - kramer: globetrotter(주전 리그 LCK/LPL)
 - kuro: survivor(4/7시즌 백분위 0.85↑(평균 0.79)) / globetrotter(주전 리그 LCK/LPL)
 - lava: skirmisher(4/4시즌 백분위 0.8↑(평균 0.93)) / late_bloomer(첫 주전 2018 OVR 413 → 최고 2022 OVR 455(데뷔 2018))
-- lehends: intl_choke(월즈 주전 출전 4회(2019, 2022, 2023, 2024), 결승 0회)
+- lehends: intl_choke(월즈 주전 출전 4회(2019, 2022, 2023, 2024), 결승 0회) / steady(vol 2, 주전 5시즌)
 - life: globetrotter(주전 리그 LCK/LPL)
 - lilac: flex(주전 포지션 JUNGLE/TOP)
 - lira: lane_king(4/4시즌 백분위 0.8↑(평균 0.87)) / globetrotter(주전 리그 LCK/LCS)
@@ -133,33 +126,33 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - marin: lane_king(3/5시즌 백분위 0.8↑(평균 0.79)) / globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2015))
 - mata: prodigy(데뷔(2013) OVR 476) / globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2014))
 - mickey: skirmisher(2/3시즌 백분위 0.8↑(평균 0.73)) / globetrotter(주전 리그 LCK/LEC)
-- morgan: globetrotter(주전 리그 LCK/LCS/LPL)
+- morgan: globetrotter(주전 리그 LCK/LPL)
 - mystic: late_bloomer(첫 주전 2014 OVR 412 → 최고 2018 OVR 454(데뷔 2014)) / globetrotter(주전 리그 LCK/LPL)
 - nagne: prodigy(데뷔(2014) OVR 458)
 - ninja: globetrotter(주전 리그 LCK/LPL)
 - nuclear: globetrotter(주전 리그 LCK/LEC)
 - nuguri: lane_king(2/3시즌 백분위 0.8↑(평균 0.90)) / skirmisher(2/3시즌 백분위 0.8↑(평균 0.58)) / globetrotter(주전 리그 LCK/LPL) [4위 이하 탈락: intl_champ]
 - ohq: globetrotter(주전 리그 LCK/LPL)
-- oner: intl_champ(월즈 우승 주전 3회(Worlds 2023, Worlds 2024, Worlds 2025)) / big_stage(월즈·MSI 결승 진출 6회(MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2025, Worlds 2025)) / survivor(3/5시즌 백분위 0.85↑(평균 0.81)) [4위 이하 탈락: carry, lane_king, prodigy]
+- oner: intl_champ(월즈 우승 주전 3회(Worlds 2023, Worlds 2024, Worlds 2025)) / big_stage(월즈·MSI 결승 진출 6회(MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2025, Worlds 2025)) / survivor(2/3시즌 백분위 0.85↑(평균 0.82)) [4위 이하 탈락: prodigy]
 - onfleek: lane_king(2/3시즌 백분위 0.8↑(평균 0.85))
 - pawn: globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2014))
-- peanut: domestic_king(리그 플레이오프 우승 8회, 월즈 우승 0) / prodigy(데뷔(2016) OVR 458) / survivor(5/10시즌 백분위 0.85↑(평균 0.73)) [4위 이하 탈락: big_stage, globetrotter, iron]
+- peanut: domestic_king(리그 플레이오프 우승 7회, 월즈 우승 0) / survivor(5/9시즌 백분위 0.85↑(평균 0.75)) / prodigy(데뷔(2016) OVR 458) [4위 이하 탈락: big_stage, globetrotter]
 - piglet: prodigy(데뷔(2013) OVR 463) / globetrotter(주전 리그 LCK/LCS) / intl_champ(월즈 우승 주전 1회(Worlds Season 3))
 - poohmandu: intl_champ(월즈 우승 주전 1회(Worlds Season 3))
 - pray: survivor(3/6시즌 백분위 0.85↑(평균 0.60))
 - prince: globetrotter(주전 리그 LCK/LCS/LPL)
-- pyosik: prodigy(데뷔(2020) OVR 456) / globetrotter(주전 리그 LCK/LCS) / intl_champ(월즈 우승 주전 1회(Worlds 2022))
+- pyosik: prodigy(데뷔(2020) OVR 456) / carry(2/4시즌 백분위 0.8↑(평균 0.50)) / globetrotter(주전 리그 LCK/LCS) [4위 이하 탈락: intl_champ]
 - quad: globetrotter(주전 리그 LCK/LCS)
 - reignover: globetrotter(주전 리그 LCK/LCS/LEC) / lane_king(3/5시즌 백분위 0.8↑(평균 0.64))
-- rich: globetrotter(주전 리그 LCK/LCS/LPL)
+- rich: globetrotter(주전 리그 LCK/LCS/LPL) / carry(2/3시즌 백분위 0.8↑(평균 0.80))
 - rookie: carry(4/6시즌 백분위 0.8↑(평균 0.84)) / iron(1부 주전 13시즌) / globetrotter(주전 리그 LCK/LPL) [4위 이하 탈락: intl_champ]
-- ruler: big_stage(월즈·MSI 결승 진출 4회(Worlds 2016, Worlds 2017, MSI 2023, MSI 2025)) / prodigy(데뷔(2017) OVR 456) / carry(3/6시즌 백분위 0.8↑(평균 0.75)) [4위 이하 탈락: lane_king, survivor, globetrotter, intl_champ, iron]
+- ruler: big_stage(월즈·MSI 결승 진출 4회(Worlds 2016, Worlds 2017, MSI 2023, MSI 2025)) / prodigy(데뷔(2017) OVR 456) / survivor(4/8시즌 백분위 0.85↑(평균 0.72)) [4위 이하 탈락: globetrotter, intl_champ]
 - ryu: globetrotter(주전 리그 LCK/LCS/LEC)
 - samd: globetrotter(주전 리그 LCK/LEC/LPL) / lane_king(2/3시즌 백분위 0.8↑(평균 0.74))
 - save: flex(주전 포지션 MID/TOP) / globetrotter(주전 리그 LCK/LPL)
 - score: flex(주전 포지션 AD/JUNGLE)
-- scout: late_bloomer(첫 주전 2017 OVR 439 → 최고 2023 OVR 481(데뷔 2016)) / globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2021)) [4위 이하 탈락: iron]
-- showmaker: survivor(4/8시즌 백분위 0.85↑(평균 0.73)) / big_stage(월즈·MSI 결승 진출 3회(Worlds 2020, MSI 2021, Worlds 2021)) / intl_champ(월즈 우승 주전 1회(Worlds 2020))
+- scout: late_bloomer(첫 주전 2017 OVR 439 → 최고 2023 OVR 481(데뷔 2016)) / intl_champ(월즈 우승 주전 1회(Worlds 2021))
+- showmaker: survivor(3/6시즌 백분위 0.85↑(평균 0.75)) / big_stage(월즈·MSI 결승 진출 3회(Worlds 2020, MSI 2021, Worlds 2021)) / intl_champ(월즈 우승 주전 1회(Worlds 2020))
 - shy: prodigy(데뷔(2013) OVR 458)
 - smeb: late_bloomer(첫 주전 2013 OVR 411 → 최고 2016 OVR 474(데뷔 2013)) / choker(clutch -1, 결승 패배 4회)
 - spirit: globetrotter(주전 리그 LCK/LEC/LPL) / lane_king(4/6시즌 백분위 0.8↑(평균 0.69)) / prodigy(데뷔(2014) OVR 477)
@@ -167,28 +160,26 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - summit: carry(3/3시즌 백분위 0.8↑(평균 0.88)) / lane_king(3/5시즌 백분위 0.8↑(평균 0.81)) / globetrotter(주전 리그 LCK/LCS)
 - swift: globetrotter(주전 리그 LCK/LPL)
 - tarzan: intl_choke(월즈 주전 출전 6회(2019, 2021, 2023, 2024, 2025, 2026), 결승 0회) / choker(clutch -1, 결승 패배 4회) / prodigy(데뷔(2019) OVR 459) [4위 이하 탈락: globetrotter]
-- teddy: skirmisher(4/8시즌 백분위 0.8↑(평균 0.76)) / lane_king(4/8시즌 백분위 0.8↑(평균 0.65)) / carry(2/4시즌 백분위 0.8↑(평균 0.62)) [4위 이하 탈락: survivor]
+- teddy: carry(2/3시즌 백분위 0.8↑(평균 0.78)) / skirmisher(4/7시즌 백분위 0.8↑(평균 0.77)) / lane_king(4/7시즌 백분위 0.8↑(평균 0.69)) [4위 이하 탈락: survivor]
 - totoro: globetrotter(주전 리그 LCK/LEC)
 - trick: lane_king(2/4시즌 백분위 0.8↑(평균 0.63)) / globetrotter(주전 리그 LCK/LEC)
 - tusin: steady(vol 2, 주전 5시즌)
 - ucal: globetrotter(주전 리그 LCK/LPL)
 - umti: globetrotter(주전 리그 LCK/LCS)
-- viper: carry(4/6시즌 백분위 0.8↑(평균 0.77)) / survivor(4/8시즌 백분위 0.85↑(평균 0.77)) / globetrotter(주전 리그 LCK/LPL) [4위 이하 탈락: intl_champ]
+- viper: carry(3/5시즌 백분위 0.8↑(평균 0.75)) / survivor(4/7시즌 백분위 0.85↑(평균 0.79)) / globetrotter(주전 리그 LCK/LPL) [4위 이하 탈락: intl_champ]
 - vsta: flex(주전 포지션 AD/SUP)
-- willer: lane_king(2/3시즌 백분위 0.8↑(평균 0.72))
 - wisdom: globetrotter(주전 리그 LCK/LEC)
 - wolf: big_stage(월즈·MSI 결승 진출 6회(MSI 2015, Worlds 2015, MSI 2016, Worlds 2016, MSI 2017, Worlds 2017)) / intl_champ(월즈 우승 주전 2회(Worlds 2015, Worlds 2016)) / late_bloomer(첫 주전 2014 OVR 406 → 최고 2017 OVR 479(데뷔 2013)) [4위 이하 탈락: survivor]
-- zeka: globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2022))
+- zeka: lane_king(2/4시즌 백분위 0.8↑(평균 0.73)) / globetrotter(주전 리그 LCK/LPL) / intl_champ(월즈 우승 주전 1회(Worlds 2022))
 - zero: flex(주전 포지션 MID/SUP) / globetrotter(주전 리그 LCK/LPL)
-- zeus: intl_champ(월즈 우승 주전 2회(Worlds 2023, Worlds 2024)) / big_stage(월즈·MSI 결승 진출 5회(MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2026)) / carry(3/5시즌 백분위 0.8↑(평균 0.77)) [4위 이하 탈락: prodigy]
+- zeus: carry(3/3시즌 백분위 0.8↑(평균 0.95)) / intl_champ(월즈 우승 주전 2회(Worlds 2023, Worlds 2024)) / big_stage(월즈·MSI 결승 진출 5회(MSI 2022, Worlds 2022, Worlds 2023, Worlds 2024, MSI 2026)) [4위 이하 탈락: survivor, lane_king, prodigy]
 - abbedagge: globetrotter(주전 리그 LCS/LEC)
 - alexich: globetrotter(주전 리그 LCS/LEC)
 - alphari: lane_king(4/6시즌 백분위 0.8↑(평균 0.82)) / survivor(3/6시즌 백분위 0.85↑(평균 0.83)) / globetrotter(주전 리그 LCS/LEC)
-- apa: skirmisher(2/3시즌 백분위 0.8↑(평균 0.81)) / carry(2/3시즌 백분위 0.8↑(평균 0.77))
 - armut: globetrotter(주전 리그 LCS/LEC) / intl_choke(월즈 주전 출전 4회(2019, 2020, 2021, 2022), 결승 0회)
 - balis: prodigy(데뷔(2014) OVR 456)
 - bjergsen: survivor(7/10시즌 백분위 0.85↑(평균 0.86)) / teamfighter(7/10시즌 백분위 0.8↑(평균 0.80)) / intl_choke(월즈 주전 출전 5회(2014, 2015, 2016, 2017, 2020), 결승 0회) [4위 이하 탈락: domestic_king, globetrotter, iron]
-- blaber: lane_king(7/7시즌 백분위 0.8↑(평균 0.94)) / carry(5/6시즌 백분위 0.8↑(평균 0.76)) / intl_choke(월즈 주전 출전 5회(2019, 2021, 2022, 2023, 2026), 결승 0회) [4위 이하 탈락: prodigy]
+- blaber: lane_king(6/6시즌 백분위 0.8↑(평균 0.94)) / carry(4/5시즌 백분위 0.8↑(평균 0.75)) / teamfighter(3/6시즌 백분위 0.8↑(평균 0.70)) [4위 이하 탈락: skirmisher, intl_choke, prodigy]
 - blue: globetrotter(주전 리그 LCS/LEC)
 - brokenblade: domestic_king(리그 플레이오프 우승 13회, 월즈 우승 0) / intl_choke(월즈 주전 출전 6회(2020, 2022, 2023, 2024, 2025, 2026), 결승 0회) / survivor(5/8시즌 백분위 0.85↑(평균 0.75)) [4위 이하 탈락: globetrotter]
 - broxah: globetrotter(주전 리그 LCS/LEC)
@@ -199,16 +190,15 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - contractz: prodigy(신인상: LCS Rookie of the Split (2017 Spring))
 - danny: prodigy(신인상: LCS Rookie of the Year (2021))
 - destiny: globetrotter(주전 리그 LCS/LEC)
-- dhokla: late_bloomer(첫 주전 2019 OVR 386 → 최고 2026 OVR 438(데뷔 2018))
 - doublelift: domestic_king(리그 플레이오프 우승 8회, 월즈 우승 0) / lane_king(7/9시즌 백분위 0.8↑(평균 0.87)) / intl_choke(월즈 주전 출전 6회(2015, 2016, 2017, 2018, 2019, 2020), 결승 0회)
 - eika: globetrotter(주전 리그 LCS/LEC)
-- fbi: carry(5/6시즌 백분위 0.8↑(평균 0.89)) / skirmisher(5/7시즌 백분위 0.8↑(평균 0.75)) / teamfighter(5/7시즌 백분위 0.8↑(평균 0.73)) [4위 이하 탈락: intl_choke]
+- fbi: teamfighter(5/6시즌 백분위 0.8↑(평균 0.75)) / carry(4/5시즌 백분위 0.8↑(평균 0.88)) / skirmisher(4/6시즌 백분위 0.8↑(평균 0.72)) [4위 이하 탈락: intl_choke]
 - febiven: survivor(3/6시즌 백분위 0.85↑(평균 0.73)) / globetrotter(주전 리그 LCS/LEC)
 - finn: globetrotter(주전 리그 LCS/LEC)
 - fleshy: late_bloomer(첫 주전 2023 OVR 385 → 최고 2026 OVR 446(데뷔 2023)) / globetrotter(주전 리그 LCS/LEC)
 - freeze: globetrotter(주전 리그 LCS/LEC)
 - froggen: skirmisher(7/7시즌 백분위 0.8↑(평균 0.91)) / teamfighter(5/7시즌 백분위 0.8↑(평균 0.83)) / prodigy(데뷔(2013) OVR 458) [4위 이하 탈락: globetrotter]
-- fudge: survivor(4/6시즌 백분위 0.85↑(평균 0.66)) / lane_king(3/6시즌 백분위 0.8↑(평균 0.76)) / flex(주전 포지션 MID/TOP) [4위 이하 탈락: intl_choke]
+- fudge: survivor(4/5시즌 백분위 0.85↑(평균 0.78)) / flex(주전 포지션 MID/TOP) / intl_choke(월즈 주전 출전 4회(2019, 2021, 2022, 2023), 결승 0회)
 - gamsu: globetrotter(주전 리그 LCS/LEC)
 - gate: flex(주전 포지션 MID/SUP)
 - gori: globetrotter(주전 리그 LCS/LPL)
@@ -217,9 +207,9 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - hanssama: domestic_king(리그 플레이오프 우승 11회, 월즈 우승 0) / intl_choke(월즈 주전 출전 7회(2017, 2020, 2021, 2023, 2024, 2025, 2026), 결승 0회) / globetrotter(주전 리그 LCS/LEC) [4위 이하 탈락: iron]
 - hauntzer: skirmisher(3/6시즌 백분위 0.8↑(평균 0.65)) / teamfighter(3/6시즌 백분위 0.8↑(평균 0.64))
 - hotshotgg: flex(주전 포지션 MID/TOP)
-- huhi: flex(주전 포지션 MID/SUP) / iron(1부 주전 10시즌)
+- huhi: flex(주전 포지션 MID/SUP)
 - impaler: globetrotter(주전 리그 LCS/LEC)
-- inspired: survivor(5/7시즌 백분위 0.85↑(평균 0.87)) / intl_choke(월즈 주전 출전 5회(2020, 2021, 2022, 2024, 2025), 결승 0회) / globetrotter(주전 리그 LCS/LEC) [4위 이하 탈락: prodigy]
+- inspired: survivor(4/6시즌 백분위 0.85↑(평균 0.86)) / intl_choke(월즈 주전 출전 5회(2020, 2021, 2022, 2024, 2025), 결승 0회) / globetrotter(주전 리그 LCS/LEC) [4위 이하 탈락: prodigy]
 - jensen: intl_choke(월즈 주전 출전 8회(2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022), 결승 0회) / choker(clutch -1, 결승 패배 5회) / survivor(4/8시즌 백분위 0.85↑(평균 0.73))
 - jesiz: flex(주전 포지션 MID/SUP)
 - jiizuke: globetrotter(주전 리그 LCS/LEC) / prodigy(신인상: LEC Rookie of the Split (2018 Spring))
@@ -251,7 +241,6 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - swordart: prodigy(데뷔(2019) OVR 464) / skirmisher(2/4시즌 백분위 0.8↑(평균 0.71)) / globetrotter(주전 리그 LCS/LPL)
 - tactical: prodigy(신인상: LCS Rookie of the Year (2020))
 - voyboy: flex(주전 포지션 MID/TOP)
-- vulcan: intl_choke(월즈 주전 출전 4회(2019, 2021, 2022, 2026), 결승 0회)
 - wildturtle: lane_king(5/9시즌 백분위 0.8↑(평균 0.72)) / intl_choke(월즈 주전 출전 4회(2013, 2014, 2015, 2020), 결승 0회)
 - xerxe: survivor(4/7시즌 백분위 0.85↑(평균 0.66)) / globetrotter(주전 리그 LCS/LEC) / prodigy(신인상: Outstanding Rookie of the 2017 Season EU LCS Spring Split.)
 - xmithie: intl_choke(월즈 주전 출전 6회(2013, 2015, 2016, 2017, 2018, 2019), 결승 0회) / domestic_king(리그 플레이오프 우승 6회, 월즈 우승 0) / lane_king(4/8시즌 백분위 0.8↑(평균 0.60)) [4위 이하 탈락: flex]
@@ -260,7 +249,7 @@ late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 �
 - yeon: prodigy(신인상: LCS Rookie of the Year (2023))
 - zeyzal: survivor(2/4시즌 백분위 0.85↑(평균 0.52))
 - zuna: flex(주전 포지션 AD/JUNGLE)
-- zven: intl_choke(월즈 주전 출전 6회(2015, 2016, 2017, 2021, 2022, 2023), 결승 0회) / lane_king(4/8시즌 백분위 0.8↑(평균 0.66)) / domestic_king(리그 플레이오프 우승 5회, 월즈 우승 0) [4위 이하 탈락: flex, globetrotter, prodigy]
+- zven: intl_choke(월즈 주전 출전 6회(2015, 2016, 2017, 2021, 2022, 2023), 결승 0회) / domestic_king(리그 플레이오프 우승 5회, 월즈 우승 0) / flex(주전 포지션 AD/SUP) [4위 이하 탈락: globetrotter, prodigy]
 - adam: late_bloomer(첫 주전 2022 OVR 385 → 최고 2024 OVR 426(데뷔 2022)) / lane_king(2/4시즌 백분위 0.8↑(평균 0.72))
 - betsy: lane_king(2/4시즌 백분위 0.8↑(평균 0.74))
 - caps: domestic_king(리그 플레이오프 우승 18회, 월즈 우승 0) / late_bloomer(첫 주전 2017 OVR 417 → 최고 2020 OVR 460(데뷔 2017)) / big_stage(월즈·MSI 결승 진출 3회(Worlds 2018, MSI 2019, Worlds 2019)) [4위 이하 탈락: flex, iron]
