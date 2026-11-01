@@ -6,26 +6,27 @@ ucal,Afreeca Freecs,MID,409,411,415,409,401,교전형
 ssun_2,Afreeca Freecs,MID,397,402,399,397,390,캐리형
 hoon_2,Afreeca Freecs,MID,398,400,396,394,382,캐리형
 aiming,Afreeca Freecs,AD,406,412,409,412,396,캐리형
+jelly,Afreeca Freecs,SUP,392,388,409,409,417,보호형
 showmaker,DAMWON Gaming,MID,449,455,449,448,429,캐리형
 nuclear,DAMWON Gaming,AD,433,444,432,439,417,캐리형
 nuguri,DAMWON Gaming,TOP,454,440,448,439,429,라인전형
-hoit,DAMWON Gaming,SUP,433,436,456,456,464,이니시형
+hoit,DAMWON Gaming,SUP,436,439,459,459,467,이니시형
 canyon,DAMWON Gaming,JUNGLE,426,432,436,435,426,교전형
 punch,DAMWON Gaming,JUNGLE,398,406,413,410,403,이니시형
-beryl,DAMWON Gaming,SUP,402,394,407,411,416,보호형
+beryl,DAMWON Gaming,SUP,401,394,408,411,416,보호형
 cuvee,Gen.G,TOP,411,408,408,403,400,라인전형
 roach,Gen.G,TOP,442,444,447,441,426,교전형
 peanut,Gen.G,JUNGLE,417,421,426,425,416,교전형
 fly,Gen.G,MID,411,415,413,410,401,캐리형
 ruler,Gen.G,AD,443,441,442,443,421,라인전형
-life,Gen.G,SUP,408,411,437,434,445,이니시형
+life,Gen.G,SUP,413,419,444,442,452,이니시형
 sw0rd,Griffin,TOP,446,448,430,434,427,캐리형
 tarzan,Griffin,JUNGLE,452,461,464,464,454,교전형
 chovy,Griffin,MID,463,465,448,452,437,캐리형
 viper,Griffin,AD,453,459,432,447,429,캐리형
-lehends,Griffin,SUP,438,443,450,456,458,보호형
+lehends,Griffin,SUP,443,446,454,460,462,보호형
 sangyoon,Hanwha Life Esports,AD,436,435,433,435,416,라인전형
-key,Hanwha Life Esports,SUP,422,413,434,434,442,보호형
+key,Hanwha Life Esports,SUP,428,421,441,441,449,보호형
 bon0,Hanwha Life Esports,JUNGLE,398,405,416,411,405,교전형
 thal,Hanwha Life Esports,TOP,429,429,432,425,415,교전형
 lava,Hanwha Life Esports,MID,428,432,439,431,415,교전형
@@ -38,14 +39,15 @@ seize,Jin Air Green Wings,JUNGLE,378,384,390,388,380,교전형
 cheongo,Jin Air Green Wings,MID,402,404,400,398,391,캐리형
 yaharong,Jin Air Green Wings,MID,425,412,419,411,403,라인전형
 route,Jin Air Green Wings,AD,395,396,388,393,383,캐리형
+kellin,Jin Air Green Wings,SUP,376,372,389,391,397,보호형
 rascal,Kingzone DragonX,TOP,422,427,417,417,412,캐리형
 cuzz,Kingzone DragonX,JUNGLE,443,447,440,445,430,캐리형
 deft,Kingzone DragonX,AD,450,457,451,455,432,캐리형
-tusin,Kingzone DragonX,SUP,441,441,452,456,460,보호형
+tusin,Kingzone DragonX,SUP,445,445,456,460,464,보호형
 pawn,Kingzone DragonX,MID,433,439,424,427,417,캐리형
 naehyun,Kingzone DragonX,MID,404,412,412,408,394,캐리형
 bdd,KT Rolster,MID,428,432,436,430,414,교전형
-snowflower,KT Rolster,SUP,387,380,402,401,410,보호형
+snowflower,KT Rolster,SUP,399,392,412,412,420,보호형
 smeb,KT Rolster,TOP,409,408,412,405,401,교전형
 score,KT Rolster,JUNGLE,414,418,431,426,421,교전형
 zenit,KT Rolster,AD,394,400,391,396,384,캐리형
@@ -53,7 +55,7 @@ gango,KT Rolster,AD,381,386,378,383,372,캐리형
 umti,KT Rolster,JUNGLE,407,403,411,408,401,교전형
 dove,SANDBOX Gaming,MID,445,450,445,443,427,캐리형
 ghost,SANDBOX Gaming,AD,434,439,427,434,416,캐리형
-joker,SANDBOX Gaming,SUP,406,389,403,406,411,보호형
+joker,SANDBOX Gaming,SUP,413,399,412,416,420,보호형
 summit,SANDBOX Gaming,TOP,453,448,446,442,431,라인전형
 onfleek,SANDBOX Gaming,JUNGLE,440,441,437,440,427,캐리형
 wizer,SANDBOX Gaming,TOP,419,407,405,401,398,라인전형
@@ -62,4 +64,4 @@ khan,SK Telecom T1,TOP,460,461,447,449,438,캐리형
 clid,SK Telecom T1,JUNGLE,446,455,462,460,452,이니시형
 faker,SK Telecom T1,MID,446,442,428,431,423,라인전형
 teddy,SK Telecom T1,AD,459,461,441,452,432,캐리형
-mata,SK Telecom T1,SUP,419,424,433,438,441,보호형
+mata,SK Telecom T1,SUP,427,430,438,444,446,보호형

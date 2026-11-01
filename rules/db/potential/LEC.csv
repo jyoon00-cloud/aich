@@ -63,7 +63,7 @@ dioud,Dioud,SUP,1990,416,3,0,3,3,2013,
 djoko,Djoko,JUNGLE,1997,420,3,0,3,3,2016,
 doss,Doss,SUP,1999,460,3,0,3,3,2023,
 dreams,Dreams,SUP,1996,435,3,0,3,3,2019,
-edward,Edward,SUP,1994,479,3,1,3,3,2013,prodigy
+edward,Edward,SUP,1994,479,3,1,3,5,2013,prodigy
 eika,Eika,MID,1996,410,3,0,3,3,2016,globetrotter
 elyoya,Elyoya,JUNGLE,2000,460,3,1,3,4,2021,survivor;teamfighter;skirmisher
 emperor,Emperor,AD,1993,434,3,1,3,3,2014,globetrotter
@@ -73,7 +73,7 @@ execute,Execute,SUP,2000,432,3,0,3,3,2023,globetrotter
 exile,Exile,MID,1997,437,3,0,3,3,2017,
 expect,Expect,TOP,1996,460,3,1,3,5,2014,late_bloomer;globetrotter
 exter,Exter,MID,,410,3,0,3,3,2013,
-extinkt,extinkt,SUP,1993,406,3,0,3,3,2016,
+extinkt,extinkt,SUP,1993,412,3,0,3,3,2016,
 febiven,FEBIVEN,MID,1996,460,3,1,3,3,2015,survivor;globetrotter
 finn,Finn,TOP,1999,419,3,0,3,2,2019,globetrotter
 fjoompbun,fjoompbun,TOP,1996,410,3,0,3,3,2017,
@@ -136,7 +136,7 @@ kaiser,Kaiser,SUP,1998,468,3,1,3,3,2020,skirmisher;teamfighter
 kakao,KaKAO,JUNGLE,1995,466,3,0,3,1,2013,globetrotter;survivor;lane_king
 kamiloo,Kamiloo,MID,2005,415,3,0,3,3,2025,
 karalius,Karalius,SUP,1986,435,3,0,3,3,2013,
-kasing,Kasing,SUP,1993,466,3,1,3,2,2015,
+kasing,Kasing,SUP,1993,466,3,1,3,2,2015,skirmisher
 kerp,Kerp,MID,1993,410,3,0,3,3,2014,
 kev1n,Kev1n,TOP,1993,460,3,0,3,3,2013,
 kikis,Kikis,JUNGLE,1996,435,3,1,3,3,2015,flex
@@ -166,7 +166,7 @@ maynter,Maynter,TOP,2000,448,3,0,3,3,2026,
 memento,Memento,JUNGLE,,433,3,1,3,2,2017,
 mersa,Mersa,SUP,2002,428,3,0,3,3,2022,
 mickey,Mickey,MID,1997,452,3,0,3,3,2016,skirmisher;globetrotter
-migxa,Migxa,SUP,1995,422,3,0,3,3,2014,
+migxa,Migxa,SUP,1995,424,3,0,3,3,2014,
 mikyx,Mikyx,SUP,1998,490,3,2,4,5,2017,mikyx_u;domestic_king;late_bloomer;iron
 milica,Milica,MID,,412,3,0,3,3,2021,
 mimer,Mimer,TOP,1994,409,3,0,3,3,2014,
@@ -185,7 +185,7 @@ nemesis,Nemesis,MID,1999,468,3,-1,3,3,2019,choker;prodigy
 neon,Neon,AD,1999,437,3,0,3,2,2021,
 night,NighT,MID,1994,410,3,0,3,3,2017,prodigy
 niq,niQ,MID,1994,411,3,0,3,3,2015,
-nisbeth,Nisbeth,SUP,1995,419,3,0,3,3,2015,
+nisbeth,Nisbeth,SUP,1995,422,3,0,3,3,2015,
 nisqy,Nisqy,MID,1998,462,3,1,3,4,2018,survivor;teamfighter;globetrotter
 noah,Noah,AD,2001,441,3,-1,3,4,2024,choker
 nono,Nono,AD,1989,433,3,0,3,3,2013,
@@ -195,7 +195,7 @@ nuc,nuc,MID,2002,436,3,0,3,4,2022,late_bloomer
 nuclear,Nuclear,AD,1997,460,3,1,3,3,2016,globetrotter
 nukeduck,Nukeduck,MID,1996,462,3,1,4,4,2014,
 nulu,Nulu,MID,1997,456,3,0,3,3,2014,
-nyph,Nyph,SUP,1990,468,3,1,3,3,2013,
+nyph,Nyph,SUP,1990,468,3,1,3,2,2013,
 ocelote,ocelote,MID,1990,440,3,0,3,3,2013,
 odoamne,Odoamne,TOP,1995,458,3,-1,4,4,2015,choker;iron
 orome,Orome,TOP,1998,435,3,0,3,3,2019,
@@ -270,7 +270,7 @@ trick,Trick,JUNGLE,1995,450,3,1,3,3,2016,lane_king;globetrotter
 trymbi,Trymbi,SUP,2000,464,3,-1,3,4,2021,choker;survivor
 tynx,TynX,JUNGLE,1999,430,3,1,3,3,2021,
 unf0rgiven,UNF0RGIVEN,AD,2000,428,3,0,3,3,2022,
-unlimited,Unlimited,SUP,1990,443,3,0,3,3,2014,
+unlimited,Unlimited,SUP,1990,445,3,0,3,3,2014,
 upset,Upset,AD,1999,467,3,0,4,3,2018,survivor
 vander,Vander,SUP,1994,460,3,0,3,4,2014,
 vardags,Vardags,AD,1995,410,3,0,3,3,2015,
@@ -300,3 +300,4 @@ zanzarah,Zanzarah,JUNGLE,1996,408,3,0,3,3,2021,
 zoelys,Zoelys,SUP,2003,389,3,0,3,3,2024,
 zorozero,Zorozero,TOP,1995,410,3,0,3,3,2014,
 zven,Zven,AD,1997,462,3,1,4,3,2016,domestic_king;flex;globetrotter
+g0dfred,G0DFRED,SUP,,430,3,0,3,3,2016,

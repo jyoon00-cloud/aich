@@ -1,6 +1,6 @@
 # merge.py 결과
 
-- 산정 선수 1328명, potential 파일에 있으나 산정 결과 없음: 없음
+- 산정 선수 1331명, potential 파일에 있으나 산정 결과 없음: 없음
 - 490 초과: {'faker': '500', 'caps': '495', 'uzi': '495'}
 
 ## 연도별 능력치 자름 (potential 초과)
@@ -29,40 +29,66 @@
 - 2026/LCK.csv duro tf 491→490
 - 2026/LCK.csv duro vis 495→490
 
-## potential 하한 반영 (31명)
+## potential 하한 반영 (57명)
 - bang 491→490
+- big 440→442
 - bvoy 434→438
 - career 443→450
 - cryogen 443→458
 - duro 495→490
+- joker 413→420
 - oner 485→486
 - vulcan 463→467
+- xuanxuanpi 417→419
 - zeus 493→490
+- 694 465→466
+- ali 426→428
 - canyon 491→490
+- domhox 440→442
+- nisbeth 419→422
 - saint 447→449
 - showmaker 494→490
 - slayer 411→423
 - bluffing 410→429
 - calix 420→428
+- conan 459→463
+- duan 451→452
+- extinkt 406→412
 - fisher 446→447
+- fzzf 479→480
 - kiin 500→490
+- meiko 483→484
+- migxa 422→424
+- southwind 446→448
+- unlimited 443→445
 - ceos 413→426
 - doran 482→490
 - gakgos 439→451
 - gryffinn 436→442
+- hoit 464→467
+- key 442→449
+- marge 416→418
 - ruler 491→490
 - casting 434→438
 - chovy 494→490
+- killua 471→472
+- ming 482→483
 - peter 460→464
+- pyl 438→441
 - quantum 430→431
+- road 476→477
 - teddy 493→490
+- alone 429→430
 - beryl 494→490
 - castle 438→442
+- hudie 433→434
 - keria 500→490
+- mark 468→470
 - srtty 410→433
 - thanatos 445→454
+- zet 431→433
 
-## vol 재계산 (추세 제거 잔차 기준, 348명 변경)
+## vol 재계산 (추세 제거 잔차 기준, 345명 변경)
 - able 4→2
 - alexich 5→2
 - alphari 3→4
@@ -73,7 +99,6 @@
 - blank 5→3
 - bunnyfufuu 4→3
 - bvoy 4→5
-- cold 4→3
 - cop 2→3
 - creme 4→3
 - crown 5→4
@@ -87,7 +112,7 @@
 - imp 5→4
 - irrelevant 4→3
 - kakao 3→1
-- kellin 4→3
+- kellin 4→5
 - kobbe 5→4
 - kuzan 5→3
 - light 5→3
@@ -123,7 +148,6 @@
 - cptjack 4→3
 - crownie 4→2
 - cube 3→4
-- edward 5→3
 - elk 3→2
 - faker 4→3
 - fireloli 5→3
@@ -199,15 +223,13 @@
 - kiin 5→3
 - korol 5→3
 - larssen 5→3
-- lehends 3→2
 - letme 5→2
 - licorice 5→3
 - looper 5→4
 - lucid 4→3
-- lvmao 4→5
 - meiko 3→4
 - monki 5→3
-- nyph 5→3
+- nyph 5→2
 - ohq 3→2
 - saintvicious 5→3
 - san 5→3
@@ -314,6 +336,7 @@
 - jinoo 4→3
 - kael 5→4
 - keith 2→3
+- killua 3→5
 - kitties 4→3
 - kramer 4→3
 - lemonnation 5→3

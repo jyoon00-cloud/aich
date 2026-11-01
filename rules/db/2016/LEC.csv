@@ -8,13 +8,13 @@ gamsu,Fnatic,TOP,409,412,417,409,398,교전형
 spirit,Fnatic,JUNGLE,414,412,413,413,403,라인전형
 febiven,Fnatic,MID,439,439,439,435,418,라인전형
 rekkles,Fnatic,AD,431,433,420,428,408,캐리형
-noxiak,Fnatic,SUP,391,382,393,398,401,보호형
-klaj,Fnatic,SUP,372,367,383,386,392,보호형
+noxiak,Fnatic,SUP,392,382,391,396,399,보호형
+klaj,Fnatic,SUP,372,368,383,386,391,보호형
 kikis,G2 Esports,TOP,407,419,410,409,400,캐리형
 trick,G2 Esports,JUNGLE,435,443,444,444,434,교전형
 perkz,G2 Esports,MID,444,444,433,435,419,라인전형
 emperor,G2 Esports,AD,415,426,404,416,399,캐리형
-hybrid,G2 Esports,SUP,421,424,430,437,438,보호형
+hybrid,G2 Esports,SUP,420,423,427,435,435,한타형
 atom,Giants Gaming,TOP,386,382,393,382,377,교전형
 jaeger,Giants Gaming,TOP,386,384,382,378,370,라인전형
 k0u,Giants Gaming,JUNGLE,373,379,387,384,377,교전형
@@ -22,35 +22,36 @@ betongjocke,Giants Gaming,JUNGLE,388,382,397,391,387,교전형
 wisdom,Giants Gaming,JUNGLE,373,379,387,384,377,교전형
 ptt,Giants Gaming,MID,391,393,389,387,375,캐리형
 adryh,Giants Gaming,AD,384,388,395,393,375,교전형
+g0dfred,Giants Gaming,SUP,366,364,388,386,396,보호형
 odoamne,H2k-Gaming,TOP,428,433,427,425,412,캐리형
 jankos,H2k-Gaming,JUNGLE,414,427,438,433,428,이니시형
 ryu,H2k-Gaming,MID,429,437,422,426,411,캐리형
 nulu,H2k-Gaming,MID,391,393,389,387,375,캐리형
 forg1ven,H2k-Gaming,AD,391,395,385,391,373,캐리형
-vander,H2k-Gaming,SUP,422,430,448,449,456,이니시형
+vander,H2k-Gaming,SUP,424,432,450,451,458,이니시형
 soaz,Origen,TOP,424,415,407,406,403,라인전형
 amazing,Origen,JUNGLE,407,411,412,413,402,한타형
 powerofevil,Origen,MID,402,404,395,396,388,캐리형
 xpeke,Origen,MID,391,386,383,380,370,라인전형
 zven,Origen,AD,430,423,407,416,404,라인전형
-mithy,Origen,SUP,406,406,417,421,425,보호형
+mithy,Origen,SUP,407,408,417,423,425,보호형
 wunder,Splyce,TOP,393,391,389,385,377,라인전형
 kold,Splyce,JUNGLE,381,387,393,391,383,교전형
 sencux,Splyce,MID,389,394,405,395,382,교전형
 kobbe,Splyce,AD,392,396,399,398,380,교전형
-nisbeth,Splyce,SUP,391,386,411,408,419,보호형
+nisbeth,Splyce,SUP,394,389,414,411,422,이니시형
 fredy122,Team ROCCAT,TOP,406,391,389,385,384,라인전형
 airwaks,Team ROCCAT,JUNGLE,395,389,400,396,390,교전형
 betsy,Team ROCCAT,MID,414,405,408,402,391,라인전형
 safir,Team ROCCAT,AD,382,386,376,382,374,캐리형
 tabzz,Team ROCCAT,AD,386,390,380,386,373,캐리형
-edward,Team ROCCAT,SUP,377,367,382,384,390,보호형
-extinkt,Team ROCCAT,SUP,374,375,398,397,406,보호형
+edward,Team ROCCAT,SUP,379,367,383,385,391,보호형
+extinkt,Team ROCCAT,SUP,381,381,404,402,412,보호형
 cabochard,Team Vitality,TOP,439,443,441,437,420,캐리형
 shook,Team Vitality,JUNGLE,402,415,420,418,410,교전형
 nukeduck,Team Vitality,MID,424,431,427,425,408,캐리형
 hjarnan,Team Vitality,AD,431,440,428,435,411,캐리형
-kasing,Team Vitality,SUP,421,414,432,433,440,보호형
+kasing,Team Vitality,SUP,424,419,436,437,444,이니시형
 vizicsacsi,Unicorns of Love,TOP,411,414,410,407,398,캐리형
 diamondprox,Unicorns of Love,JUNGLE,386,389,390,390,380,교전형
 djoko,Unicorns of Love,JUNGLE,385,386,392,390,382,교전형
@@ -58,3 +59,4 @@ mirror,Unicorns of Love,JUNGLE,381,387,393,391,383,교전형
 loulex,Unicorns of Love,JUNGLE,399,418,425,423,415,이니시형
 fox,Unicorns of Love,MID,395,404,395,395,386,캐리형
 steeelback,Unicorns of Love,AD,437,443,427,436,412,캐리형
+hylissang,Unicorns of Love,SUP,405,398,414,416,422,보호형
