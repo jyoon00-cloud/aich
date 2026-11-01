@@ -61,4 +61,31 @@
 |---|---|---|---|
 | faker_u | 불사대마왕 | 승부처 각 능력치를 max(현재, 480)으로 판정 / 승부처 +20 / 큰 무대 +15 / 열세 시 +15 / 승부처 대성공 1~15, 대실패 없음 / 승부처 컨디션 '나쁨·최악'을 '보통'으로 / 마지막 세트 한타 때 팀원 4명 +10 / 맞상대는 승부처에서 압박 판정 / 에이징 하락 확률 절반·하락량 절반 | 월즈 우승 6회(2013·2015·2016·2023·2024·2025), 2023~25는 OVR 450대에서 우승 — [Tournament_Results](https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Faker/Tournament_Results) |
 
-<!-- 나머지 유니크 특성 행은 Opus가 _work/traits/unique_targets.md 근거로 추가 -->
+| uzi_u | 小狗 (Puppy) [명예의 전당] | 라인전 +20 / 소규모 교전 +15 / 큰 무대 +10 / 성장 ×1.3 | CS/M 백분위 0.93, KP 0.69 — [Uzi_(Jian_Zi-Hao)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Uzi_(Jian_Zi-Hao)) |
+| caps_u | Baby Faker [명예의 전당] | 지역 리그 승부처 +20 / 큰 무대 +15 / 소규모 교전 +10 / 에이징 하락 확률 −15%p / 다른 포지션 페널티 없음 | 리그 MVP 4회, 결승 다수, 미드·원딜 출전 — [Caps](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Caps) |
+| chovy_u | Anchovy | 라인전 +20 / 25분 이후 한타 +15 / 지역 리그 승부처 +15 / 컨디션 최악→나쁨 | 리그 MVP 5회, DMG/M 0.95·CS/M 0.90 — [Chovy](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Chovy) |
+| knight_u | Knight | 지역 리그 승부처 +15 / 25분 이후 한타 +10 / 큰 무대 +10 / 대실패 99~100 | 리그 MVP 5회, KDA 0.85·DMG/M 0.82 — [Knight_(Zhuo_Ding)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Knight_(Zhuo_Ding)) |
+| rookie_u | Faker Junior | 25분 이후 한타 +15 / 라인전 +10 / 에이징 하락 확률 −15%p / 해외 적응 기간 없음 | 리그 MVP 4회, 월즈 우승 1회, DMG/M 0.84 — [Rookie](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Rookie) |
+| doinb_u | Doinb | 소규모 교전 +15 / 마지막 세트 한타 때 팀원 4명 +5 / 큰 무대 +10 / 성장 ×1.2 | 리그 MVP 4회, 월즈 우승 1회, KP 0.74 — [Doinb](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Doinb) |
+| rekkles_u | 欧洲成哥 (European WeiXiao) | 라인전 +15 / 대실패 99~100 / 지역 리그 승부처 +10 / 컨디션 최악→나쁨 | 리그 MVP 4회, CS/M 0.87·KDA 0.78 — [Rekkles](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Rekkles) |
+| bdd_u | 보똥 (Boddong) | 라인전 +10 / 지역 리그 승부처 +10 / 대실패 98~100 | 리그 MVP 3회 — [Bdd](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bdd) |
+| bang_u | Bang | 큰 무대 +15 / 한타 +10 / 대실패 99~100 / 성장 ×1.2 | 월즈 우승 2회 — [Bang](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bang) |
+| bengi_u | Bengi | 큰 무대 +15 / 마지막 세트 한타 때 팀원 4명 +5 / 압박 상황 멘탈 +10 | 월즈 우승 2회 — [Bengi](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bengi) |
+| wolf_u | Wolf | 큰 무대 +15 / 한타 때 팀원 4명 +5 / 성장 ×1.2 | 월즈 우승 2회 — [Wolf_(Lee_Jae-wan)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Wolf_(Lee_Jae-wan)) |
+| beryl_u | BeryL | 큰 무대 +15 / 소규모 교전 +10 / 성장 ×1.2 | 월즈 우승 2회, 서폿 DMG/M 0.63 — [BeryL](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=BeryL) |
+| gumayusi_u | Unkillable Demon Prince | 큰 무대 +15 / 승부처 +10 / 라인전 +10 | 월즈 우승 2회 이상 — [Gumayusi](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Gumayusi) |
+| zeus_u | Zeus | 소규모 교전 +15 / 큰 무대 +15 / 25분 이후 한타 +10 / 데뷔 후 2년 성장 ×1.3 | 월즈 우승 2회, DMG/M 0.77 — [Zeus](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Zeus) |
+| oner_u | Oner | 큰 무대 +15 / 소규모 교전 +10 / 대실패 99~100 | 월즈 우승 3회, KDA 0.81 — [Oner](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Oner) |
+| keria_u | Keria | 한타 +15 / 큰 무대 +15 / 대실패 99~100 / 데뷔 후 2년 성장 ×1.3 | 월즈 우승 3회, KDA 0.91·DMG/M 0.85 — [Keria](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Keria) |
+| canyon_u | Canyon | 소규모 교전 +15 / 큰 무대 +10 / 대실패 99~100 / 성장 ×1.2 | 월즈 우승 1회, DMG/M 0.83·KDA 0.77 — [Canyon](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Canyon) |
+| showmaker_u | ShowMaker | 큰 무대 +15 / 소규모 교전 +10 / 대실패 99~100 | 월즈 우승 1회, KDA 0.73 — [ShowMaker](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=ShowMaker) |
+| deft_u | 알파카 (Alpaca) | 에이징 하락 확률 −20%p / 25분 이후 한타 +15 / 큰 무대 +10 / 성장 ×1.2 | 월즈 우승 1회, 장기 주전, DMG/M 0.78 — [Deft](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Deft) |
+| ruler_u | Ruler | 25분 이후 한타 +15 / 라인전 +10 / 큰 무대 +10 / 에이징 하락 확률 −10%p | 월즈 우승 1회, DMG/M 0.75·CS/M 0.73 — [Ruler](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Ruler) |
+| imp_u | Doubleimp | 라인전 +15 / 큰 무대 +10 / 데뷔 후 2년 성장 ×1.3 / 해외 적응 기간 없음 | 월즈 우승 1회, 데뷔 시즌 상위권 — [Imp](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Imp) |
+| kiin_u | Kiinsante | 대실패 99~100 / 라인전 +10 / 성장 ×1.3 / 에이징 하락 확률 −10%p | potential 490, DMG/M 0.77·KDA 0.72 — [Kiin](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Kiin) |
+| teddy_u | Walking Nexus | 열세 시 +15 / 소규모 교전 +10 / 라인전 +10 | potential 490, KP 0.76 — [Teddy](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Teddy) |
+| mikyx_u | Mikyx | 지역 리그 승부처 +15 / 에이징 하락 확률 −10%p / 성장 ×1.2 | potential 490, 리그 우승 다수 — [Mikyx](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Mikyx) |
+| 369_u | The Dice Man | 25분 이후 한타 +15 / 대성공 1~10 / 대실패 99~100 | potential 490, DMG/M 0.78 — [369](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=369) |
+| duro_u | Duro | 한타 +10 / 큰 무대 +10 / 성장 ×1.3 | potential 490 (2026 LCK 서폿 최상위) — [Duro](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Duro) |
+
+이름은 Leaguepedia 별명(없으면 닉네임). 근거 상세는 `_work/traits/unique_targets.md`, 일반 특성 판정은 `_work/traits/log.md`.
