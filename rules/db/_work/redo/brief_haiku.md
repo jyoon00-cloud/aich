@@ -11,6 +11,8 @@
 2. **최종 순위**: `<이벤트 페이지>` 자체를 같은 방식(prop=text)으로 받아 팀 순위를 확인한다.
 3. **직전 해 평판**: 직전 해 수상(올프로/퍼스트팀, MVP, 파이널 MVP, 월즈·MSI 성적)을 확인한다. 선수 페이지를 Bash curl로 받는다: `https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=<leaguepedia_page>` (수상·커리어 결과가 있다). 주전 선수는 전원 확인한다.
 
+   월즈·MSI·리그 순위 등 대회 성적은 wikitext에 없는 경우가 많다. `page=<leaguepedia_page>/Tournament_Results` 를 prop=text로 받아 그 해 행(날짜·순위·대회명·팀)에서 뽑는다.
+
 **중요: WebFetch는 시간당 100회 공용 제한이 있어 쓰지 않는다. 모든 조회는 Bash curl로 lol.fandom.com api.php만 쓴다.**
 4. 결과를 `_work/redo/ev/{연도}_{리그}.md`에 쓴다:
 
