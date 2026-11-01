@@ -1,14 +1,14 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 korol,EDward Gaming,TOP,416,419,415,412,403,캐리형
 deft,EDward Gaming,AD,428,442,431,437,412,캐리형
-meiko,EDward Gaming,SUP,427,430,444,447,452,이니시형
+meiko,EDward Gaming,SUP,430,433,447,450,455,이니시형
 clearlove,EDward Gaming,JUNGLE,425,437,436,437,425,캐리형
 pawn,EDward Gaming,MID,413,415,404,406,397,캐리형
 athena,EDward Gaming,MID,386,398,394,392,375,캐리형
 fireloli,EDward Gaming,JUNGLE,384,388,395,393,385,교전형
 gimgoon,Energy Pacemaker,TOP,396,390,388,384,382,라인전형
 grail,Energy Pacemaker,MID,393,395,391,389,377,캐리형
-jiezou,Energy Pacemaker,SUP,376,372,385,389,393,보호형
+jiezou,Energy Pacemaker,SUP,373,369,382,386,390,보호형
 crisis,Energy Pacemaker,JUNGLE,377,386,403,396,393,교전형
 romantic,Energy Pacemaker,AD,395,393,379,387,376,라인전형
 moon,Energy Pacemaker,AD,392,389,370,381,368,라인전형
@@ -16,13 +16,13 @@ zzz2,Energy Pacemaker,JUNGLE,374,380,386,384,376,교전형
 ss17,Hyper Youth Gaming,TOP,395,393,391,387,379,라인전형
 xero,Hyper Youth Gaming,MID,393,395,391,389,377,캐리형
 xq,Hyper Youth Gaming,AD,393,395,400,399,383,교전형
-x1u,Hyper Youth Gaming,SUP,387,383,416,410,424,이니시형
+x1u,Hyper Youth Gaming,SUP,393,389,422,416,430,이니시형
 chimin,Hyper Youth Gaming,JUNGLE,386,385,394,391,384,교전형
 deemo,Hyper Youth Gaming,JUNGLE,374,380,386,384,376,교전형
 zz1tai,Invictus Gaming,TOP,430,427,424,420,409,라인전형
 kid,Invictus Gaming,JUNGLE,394,405,415,411,405,교전형
 rookie,Invictus Gaming,MID,438,433,436,430,413,라인전형
-kitties,Invictus Gaming,SUP,400,393,413,413,421,보호형
+kitties,Invictus Gaming,SUP,396,389,409,409,417,보호형
 rain,Invictus Gaming,AD,405,418,406,413,393,캐리형
 time,Invictus Gaming,AD,390,399,383,392,381,캐리형
 godv,LGD Gaming,MID,393,395,391,389,377,캐리형
@@ -38,7 +38,7 @@ yolo,Masters 3,JUNGLE,400,389,396,394,386,라인전형
 juejue,Masters 3,JUNGLE,374,380,386,384,376,교전형
 raphael,Masters 3,MID,384,384,380,378,374,라인전형
 pentaq,Masters 3,AD,397,392,385,389,377,라인전형
-savoki,Masters 3,SUP,394,375,398,397,406,보호형
+savoki,Masters 3,SUP,380,361,384,383,392,보호형
 smlz,Oh My God,AD,393,397,387,393,375,캐리형
 cold,Oh My God,SUP,379,377,393,395,401,보호형
 xiyang,Oh My God,TOP,399,412,401,402,391,캐리형
@@ -56,21 +56,21 @@ try,Qiao Gu Reapers,MID,393,395,391,389,377,캐리형
 looper,Royal Never Give Up,TOP,429,441,438,434,418,캐리형
 mlxg,Royal Never Give Up,JUNGLE,432,438,436,438,426,캐리형
 xiaohu,Royal Never Give Up,MID,427,440,429,431,413,캐리형
-mata,Royal Never Give Up,SUP,395,408,410,419,418,한타형
+mata,Royal Never Give Up,SUP,404,417,419,428,427,한타형
 wuxx,Royal Never Give Up,AD,428,434,412,424,407,캐리형
 namei,Royal Never Give Up,AD,397,399,384,392,373,캐리형
 letme,Royal Never Give Up,TOP,395,394,392,388,376,라인전형
 flandre,Snake eSports,TOP,440,425,436,425,414,라인전형
 zzr,Snake eSports,JUNGLE,394,401,406,404,395,교전형
 tank,Snake eSports,MID,398,398,398,394,387,라인전형
-ella,Snake eSports,SUP,416,407,422,425,430,보호형
+ella,Snake eSports,SUP,407,398,413,416,421,보호형
 kryst4l,Snake eSports,AD,421,416,408,413,397,라인전형
 martin,Snake eSports,AD,397,396,385,392,375,라인전형
 957,Team WE,TOP,421,417,419,413,405,라인전형
 condi,Team WE,JUNGLE,419,430,438,435,428,이니시형
 xiye,Team WE,MID,440,440,435,433,417,라인전형
 mystic,Team WE,AD,415,423,416,420,401,캐리형
-zero,Team WE,SUP,396,407,424,426,432,보호형
+zero,Team WE,SUP,411,422,439,441,447,보호형
 loong,Vici Gaming,TOP,430,430,427,423,410,라인전형
 dandy,Vici Gaming,JUNGLE,423,426,437,432,427,이니시형
 easyhoon,Vici Gaming,MID,425,419,416,414,406,라인전형

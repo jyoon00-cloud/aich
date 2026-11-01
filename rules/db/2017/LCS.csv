@@ -1,8 +1,8 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 contractz,Cloud9,JUNGLE,410,426,426,427,416,한타형
-jensen,Cloud9,MID,458,458,454,452,433,라인전형
+jensen,Cloud9,MID,460,460,456,454,435,라인전형
 sneaky,Cloud9,AD,417,432,413,424,404,캐리형
-smoothie,Cloud9,SUP,404,417,427,432,435,보호형
+smoothie,Cloud9,SUP,418,431,441,446,449,보호형
 impact,Cloud9,TOP,433,440,438,434,420,캐리형
 ray,Cloud9,TOP,397,389,387,383,379,라인전형
 darshan,Counter Logic Gaming,TOP,403,408,413,405,396,교전형
@@ -15,21 +15,21 @@ looper,Echo Fox,TOP,389,387,387,382,380,라인전형
 akaadian,Echo Fox,JUNGLE,400,396,404,401,394,교전형
 froggen,Echo Fox,MID,426,429,429,425,406,캐리형
 keith,Echo Fox,AD,381,386,378,383,372,캐리형
-gate,Echo Fox,SUP,389,377,395,396,403,보호형
+gate,Echo Fox,SUP,379,367,385,386,393,보호형
 balis,FlyQuest,TOP,393,391,389,385,377,라인전형
 galen,FlyQuest,JUNGLE,408,422,415,420,405,캐리형
 hai,FlyQuest,MID,402,408,409,404,392,교전형
 altec,FlyQuest,AD,412,423,408,416,396,캐리형
-lemonnation,FlyQuest,SUP,402,392,411,411,419,보호형
+lemonnation,FlyQuest,SUP,394,384,403,403,411,보호형
 flame,Immortals,TOP,398,392,385,383,382,라인전형
 dardoch,Immortals,JUNGLE,404,405,419,413,409,교전형
 pobelter,Immortals,MID,401,393,390,388,383,라인전형
 codysun,Immortals,AD,391,395,385,391,373,캐리형
-olleh,Immortals,SUP,416,409,421,425,429,보호형
+olleh,Immortals,SUP,408,401,413,417,421,보호형
 dshao,Phoenix1,TOP,408,411,406,403,397,캐리형
 ryu,Phoenix1,MID,422,427,417,418,406,캐리형
 arrow,Phoenix1,AD,433,445,435,442,415,캐리형
-adrian,Phoenix1,SUP,406,409,431,430,439,이니시형
+adrian,Phoenix1,SUP,415,418,440,439,448,이니시형
 inori,Phoenix1,JUNGLE,410,418,433,426,423,이니시형
 meteos,Phoenix1,JUNGLE,372,390,395,393,385,이니시형
 stunt,Phoenix1,SUP,376,374,392,393,400,보호형
@@ -37,13 +37,13 @@ ssumday,Team Dignitas,TOP,435,429,424,422,410,라인전형
 chaser,Team Dignitas,JUNGLE,396,414,421,418,411,이니시형
 keane,Team Dignitas,MID,411,414,408,407,395,캐리형
 b3nji,Team Dignitas,AD,405,418,412,416,394,캐리형
-xpecial,Team Dignitas,SUP,392,395,417,416,425,이니시형
+xpecial,Team Dignitas,SUP,401,404,426,425,434,이니시형
 seraph,Team EnVyUs,TOP,398,383,383,378,378,라인전형
 ninja,Team EnVyUs,MID,386,382,382,378,372,라인전형
 lira,Team EnVyUs,JUNGLE,412,413,419,417,409,교전형
 alexich,Team EnVyUs,MID,384,386,382,380,373,캐리형
 apollo,Team EnVyUs,AD,408,397,389,394,382,라인전형
-hakuho,Team EnVyUs,SUP,381,377,388,393,396,보호형
+hakuho,Team EnVyUs,SUP,375,371,382,387,390,보호형
 lourlo,Team Liquid,TOP,411,409,405,402,393,라인전형
 reignover,Team Liquid,JUNGLE,399,392,403,398,393,교전형
 goldenglue,Team Liquid,MID,388,388,385,383,376,라인전형
@@ -55,4 +55,4 @@ hauntzer,Team SoloMid,TOP,451,451,449,445,429,라인전형
 svenskeren,Team SoloMid,JUNGLE,395,406,406,407,396,한타형
 bjergsen,Team SoloMid,MID,447,451,442,442,423,캐리형
 wildturtle,Team SoloMid,AD,418,419,400,411,397,캐리형
-biofrost,Team SoloMid,SUP,428,426,440,443,448,보호형
+biofrost,Team SoloMid,SUP,426,424,438,441,446,보호형

@@ -3,38 +3,38 @@ flandre,Anyone's Legend,TOP,445,446,435,435,424,캐리형
 tarzan,Anyone's Legend,JUNGLE,430,439,439,443,429,한타형
 shanks,Anyone's Legend,MID,424,433,425,426,412,캐리형
 hope,Anyone's Legend,AD,447,458,443,451,426,캐리형
-kael,Anyone's Legend,SUP,420,423,433,439,440,보호형
-bin,Bilibili Gaming,TOP,451,432,429,432,426,라인전형
+kael,Anyone's Legend,SUP,423,426,436,442,443,보호형
+bin,Bilibili Gaming,TOP,458,439,436,439,433,라인전형
 wei,Bilibili Gaming,JUNGLE,416,435,427,430,417,캐리형
-knight,Bilibili Gaming,MID,456,457,443,445,434,캐리형
-elk,Bilibili Gaming,AD,459,462,447,457,435,캐리형
-on,Bilibili Gaming,SUP,441,430,443,446,450,보호형
+knight,Bilibili Gaming,MID,469,470,456,458,447,캐리형
+elk,Bilibili Gaming,AD,460,463,448,458,436,캐리형
+on,Bilibili Gaming,SUP,437,426,439,442,446,보호형
 zdz,EDward Gaming,TOP,413,414,415,405,398,교전형
 xiaohao,EDward Gaming,JUNGLE,391,396,410,408,400,교전형
 angel,EDward Gaming,MID,419,416,424,418,403,교전형
 assum,EDward Gaming,AD,406,405,407,407,390,교전형
-wink,EDward Gaming,SUP,400,403,421,423,428,보호형
+wink,EDward Gaming,SUP,405,408,425,428,434,보호형
 sheer,FunPlus Phoenix,TOP,399,393,407,395,386,교전형
 care,FunPlus Phoenix,MID,414,413,417,407,394,교전형
 bat,FunPlus Phoenix,AD,382,385,388,388,372,교전형
-jwei,FunPlus Phoenix,SUP,394,382,405,402,412,보호형
+jwei,FunPlus Phoenix,SUP,386,374,397,394,404,보호형
 shad0w,FunPlus Phoenix,JUNGLE,399,408,412,404,402,교전형
 sorrow,FunPlus Phoenix,JUNGLE,384,387,397,395,387,교전형
 theshy,Invictus Gaming,TOP,437,438,424,422,414,캐리형
 jiejie,Invictus Gaming,JUNGLE,428,437,437,437,426,캐리형
 rookie,Invictus Gaming,MID,435,437,439,437,417,교전형
-gala,Invictus Gaming,AD,414,421,405,415,400,캐리형
-meiko,Invictus Gaming,SUP,432,437,450,453,458,이니시형
+gala,Invictus Gaming,AD,418,425,409,419,404,캐리형
+meiko,Invictus Gaming,SUP,440,445,458,461,466,이니시형
 ale,JD Gaming,TOP,433,437,425,428,417,캐리형
 xun,JD Gaming,JUNGLE,426,433,429,433,419,캐리형
 scout,JD Gaming,MID,449,454,444,445,428,캐리형
-peyz,JD Gaming,AD,458,460,437,449,431,캐리형
-missing,JD Gaming,SUP,404,411,415,418,422,보호형
+peyz,JD Gaming,AD,470,472,449,461,443,캐리형
+missing,JD Gaming,SUP,405,412,416,419,423,보호형
 sasi,LGD Gaming,TOP,413,423,424,417,403,교전형
 climber,LGD Gaming,JUNGLE,387,399,406,407,396,한타형
 xqw,LGD Gaming,MID,398,404,407,402,389,교전형
 shaoye,LGD Gaming,AD,397,408,394,401,385,캐리형
-ycx,LGD Gaming,SUP,418,414,433,434,441,이니시형
+ycx,LGD Gaming,SUP,417,413,432,433,440,이니시형
 zika,LNG Esports,TOP,408,399,403,394,391,라인전형
 weiwei,LNG Esports,JUNGLE,380,382,390,388,380,교전형
 haichao,LNG Esports,MID,409,393,396,393,384,라인전형
@@ -44,17 +44,17 @@ shanji,Ninjas in Pyjamas.CN,TOP,424,426,420,422,413,캐리형
 aki,Ninjas in Pyjamas.CN,JUNGLE,439,440,433,440,423,캐리형
 doinb,Ninjas in Pyjamas.CN,MID,439,436,437,438,420,라인전형
 leave,Ninjas in Pyjamas.CN,AD,451,455,437,447,425,캐리형
-ppgod,Ninjas in Pyjamas.CN,SUP,423,415,438,443,446,보호형
+ppgod,Ninjas in Pyjamas.CN,SUP,424,416,439,444,447,보호형
 hery,Oh My God,TOP,412,419,420,412,402,교전형
 heng,Oh My God,JUNGLE,398,404,411,410,402,교전형
 linfeng,Oh My God,MID,401,408,405,401,390,캐리형
 starry,Oh My God,AD,416,420,419,421,399,한타형
-moham,Oh My God,SUP,410,398,416,417,424,보호형
+moham,Oh My God,SUP,402,390,408,409,416,보호형
 xiaoxu,Royal Never Give Up,TOP,398,389,388,386,384,라인전형
 milkyway,Royal Never Give Up,JUNGLE,406,403,421,414,411,이니시형
 tangyuan,Royal Never Give Up,MID,418,404,397,399,392,라인전형
 jiaqi,Royal Never Give Up,AD,399,402,400,403,386,한타형
-lele,Royal Never Give Up,SUP,375,375,397,398,405,보호형
+lele,Royal Never Give Up,SUP,379,379,401,402,409,보호형
 niket,Royal Never Give Up,SUP,367,367,386,386,394,보호형
 cube,Team WE,TOP,417,412,415,408,398,라인전형
 karis,Team WE,MID,388,386,380,377,374,라인전형
@@ -66,19 +66,19 @@ hoya,ThunderTalk Gaming,TOP,411,416,418,416,404,교전형
 beichuan,ThunderTalk Gaming,JUNGLE,431,434,445,441,434,이니시형
 setab,ThunderTalk Gaming,MID,422,428,417,417,406,캐리형
 1xn,ThunderTalk Gaming,AD,443,446,440,443,418,캐리형
-feather,ThunderTalk Gaming,SUP,421,418,437,439,445,보호형
-369,Top Esports,TOP,440,435,421,418,416,라인전형
+feather,ThunderTalk Gaming,SUP,422,419,438,440,446,보호형
+369,Top Esports,TOP,442,437,423,420,418,라인전형
 kanavi,Top Esports,JUNGLE,426,437,439,434,429,교전형
 creme,Top Esports,MID,434,448,440,437,421,캐리형
-jackeylove,Top Esports,AD,437,442,437,441,418,캐리형
-crisp,Top Esports,SUP,405,403,434,431,442,이니시형
+jackeylove,Top Esports,AD,439,444,439,443,420,캐리형
+crisp,Top Esports,SUP,411,409,440,437,448,이니시형
 1jiang,Ultra Prime,TOP,393,395,400,392,385,교전형
 junhao,Ultra Prime,JUNGLE,410,408,418,411,408,교전형
 saber,Ultra Prime,MID,381,384,382,379,374,캐리형
 wako,Ultra Prime,AD,403,397,394,398,383,라인전형
-rosielove,Ultra Prime,SUP,381,395,396,399,404,보호형
+rosielove,Ultra Prime,SUP,387,401,402,405,410,보호형
 breathe,Weibo Gaming,TOP,431,420,415,415,409,라인전형
-tian,Weibo Gaming,JUNGLE,405,409,416,414,406,교전형
+tian,Weibo Gaming,JUNGLE,411,415,422,420,412,교전형
 xiaohu,Weibo Gaming,MID,410,427,411,410,402,캐리형
 light,Weibo Gaming,AD,432,435,413,426,409,캐리형
-hang,Weibo Gaming,SUP,407,406,418,423,426,보호형
+hang,Weibo Gaming,SUP,406,405,417,422,425,보호형

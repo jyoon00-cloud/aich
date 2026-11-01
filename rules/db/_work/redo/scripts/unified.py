@@ -332,71 +332,68 @@ def first_num(pl):
     m = re.match(r'(\d+)', pl.replace(' ', ''))
     return int(m.group(1)) if m else None
 
+def wpts(a):
+    return 12 if a == 1 else 9 if a == 2 else 6 if a <= 4 else 3 if a <= 8 else 0
+
+def mpts(a):
+    return 4 if a == 1 else 2 if a == 2 else 1 if a <= 4 else 0
+
 def prior_perf(p, y):
-    """-> (점수, 근거 목록)"""
+    """직전 해 실적: 항목을 전부 더한다(상한 없음). -> (점수, 근거 목록)"""
     py = y - 1
     items = []
-    best_w = best_m = None
-    fs = ewc = lpo = False
+    pts = 0
+    found_w = found_m = False
     ents = []
     if p['prior_ev']:
         body = p['prior_ev'].split(': ', 1)[1] if ': ' in p['prior_ev'] else ''
         body = re.split(r' — https?://', body)[0]
         ents = [e.strip() for e in body.split(';') if e.strip()]
-    seen_w = seen_m = False
     for e in ents:
         m = ENT_RE.match(e)
         if not m:
             continue
         name, pl, team = m.group(1).strip(), m.group(2), m.group(3)
         a = first_num(pl) if pl[0].isdigit() else None
-        mw = re.match(r'^Worlds (\d{4})$', name)
-        if mw and int(mw.group(1)) == py and a:
-            best_w = a if best_w is None else min(best_w, a)
-            items.append(f'Worlds {py} {pl}위 ({team})'); continue
-        if name == 'Worlds Season 3' and py == 2013 and a:
-            best_w = a if best_w is None else min(best_w, a)
-            items.append(f'Worlds S3 {pl}위 ({team})'); continue
-        if name == 'Worlds Season 2' and py == 2012 and a:
-            best_w = a if best_w is None else min(best_w, a)
-            items.append(f'Worlds S2 {pl}위 ({team})'); continue
-        if name == f'MSI {py}' and a:
-            best_m = a if best_m is None else min(best_m, a)
-            items.append(f'MSI {py} {pl}위 ({team})'); continue
+        if re.match(r'^Worlds %d$' % py, name) or (name == 'Worlds Season 3' and py == 2013) or (name == 'Worlds Season 2' and py == 2012):
+            if a:
+                found_w = True
+                v = wpts(a); pts += v
+                items.append(f'Worlds {py} {pl}위 ({team}) +{v}')
+            continue
+        if name == f'MSI {py}':
+            if a:
+                found_m = True
+                v = mpts(a); pts += v
+                items.append(f'MSI {py} {pl}위 ({team}) +{v}')
+            continue
         if name == f'First Stand {py}' and a == 1:
-            fs = True; items.append(f'First Stand {py} 우승 ({team})'); continue
+            pts += 1; items.append(f'First Stand {py} 우승 ({team}) +1'); continue
         if name == f'Esports World Cup {py}' and a == 1:
-            ewc = True; items.append(f'EWC {py} 우승 ({team})'); continue
+            pts += 1; items.append(f'EWC {py} 우승 ({team}) +1'); continue
         if a == 1 and not EXCL.search(name):
             mp = LEAGUE_PO.match(name)
             mo = OLD_CHAMP.match(name)
             if (mp and int(mp.group(2)) == py) or (mo and int(mo.group(1)) == py):
-                lpo = True; items.append(f'{name} 우승 ({team})')
+                pts += 1; items.append(f'{name} 우승 ({team}) +1')
     # 보조: 직전 해 줄의 월즈/MSI 표기 (대회 줄에 없을 때만)
     pl_line = p['prior']
-    if best_w is None:
+    if not found_w:
         m = re.search(r'Worlds %d 팀 성적 (?:[A-Za-z0-9.]+ )?(\d+)' % py, pl_line) or re.search(r'월즈 %d (\d+)위' % py, pl_line)
         if m:
-            best_w = int(m.group(1)); items.append(f'Worlds {py} {best_w}위(직전 해 줄)')
-    if best_m is None:
+            v = wpts(int(m.group(1))); pts += v; items.append(f'Worlds {py} {m.group(1)}위(직전 해 줄) +{v}')
+    if not found_m:
         m = re.search(r'MSI %d 팀 성적 (?:[A-Za-z0-9.]+ )?(\d+)' % py, pl_line) or re.search(r'MSI %d (\d+)위' % py, pl_line)
         if m:
-            best_m = int(m.group(1)); items.append(f'MSI {py} {best_m}위(직전 해 줄)')
-    pts = 0
-    if best_w is not None:
-        pts += 12 if best_w == 1 else 9 if best_w == 2 else 6 if best_w <= 4 else 3 if best_w <= 8 else 0
-    if best_m is not None:
-        pts += 4 if best_m == 1 else 2 if best_m == 2 else 1 if best_m <= 4 else 0
-    pts += (1 if fs else 0) + (1 if ewc else 0) + (1 if lpo else 0)
-    # 수상 (직전 해 것만, 최고 1개)
-    aw_pts = 0
-    aw_txt = ''
+            v = mpts(int(m.group(1))); pts += v; items.append(f'MSI {py} {m.group(1)}위(직전 해 줄) +{v}')
+    # 수상: 직전 해 스플릿마다 더한다
     m = re.search(r'수상:?\s*(.*?)(?:\s*\|\s*직전해 팀|\s*\|\s*[A-Za-z가-힣 ]*(?:팀 성적)|\s+— |$)', pl_line)
     if m:
         t = m.group(1)
         for am in re.finditer(r'([A-Za-z0-9\-\. ]*?(?:All.?Pro|MVP|Player of the Split)[A-Za-z0-9\-\. ]*?)\s*(?:x\d+\s*)?\(([^)]*)\)', t):
             nm, yrs = am.group(1).strip(), am.group(2)
-            if not re.search(r'\b%d\b' % py, yrs):
+            cnt = sum(1 for lab in yrs.split(',') if re.search(r'\b%d\b' % py, lab))
+            if not cnt:
                 continue
             v = 0
             if re.search(r'Rookie|Finals|Worlds|MSI|Week|Team of|Role', nm) and not re.search(r'All.?Pro', nm):
@@ -405,11 +402,10 @@ def prior_perf(p, y):
             elif re.search(r'2nd', nm): v = 4
             elif re.search(r'3rd', nm): v = 2
             elif re.search(r'MVP|Player of the Split|Most Valuable', nm): v = 6
-            if v > aw_pts:
-                aw_pts = v; aw_txt = f'{nm} ({yrs})'
-    if aw_pts:
-        items.append(f'수상 {aw_txt}')
-    return pts + aw_pts, items
+            if v:
+                pts += v * cnt
+                items.append(f'수상 {nm} ({yrs}) +{v}x{cnt}')
+    return pts, items
 
 # ---------------------------------------------------------------- 6. main compute
 POS_FRAME = {
@@ -493,7 +489,12 @@ def process(y, lg, offsets):
             starter[r['id']] = False  # 근거 없음 -> 비주전 규칙
             notes[r['id']] = '주전이나 스플릿 지표 없음 -> 비주전 규칙'
             continue
-        p0 = sum(pc.values()) / len(pc)
+        pb = {k: v for k, v in pc.items() if not (k == 'CS' and r['pos'] == 'SUP')}  # SUP은 CS/M 제외
+        if not pb:
+            starter[r['id']] = False
+            notes[r['id']] = '주전이나 SUP 기본값 지표(KDA/KP/DMG) 없음 -> 비주전 규칙'
+            continue
+        p0 = sum(pb.values()) / len(pb)
         st = ev[r['id']]['stats']
         shrunk = False
         g = st['G']

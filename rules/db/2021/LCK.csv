@@ -3,41 +3,41 @@ kiin,Afreeca Freecs,TOP,432,434,423,420,416,캐리형
 dread,Afreeca Freecs,JUNGLE,433,439,449,445,439,이니시형
 fly,Afreeca Freecs,MID,405,406,404,400,395,캐리형
 bang,Afreeca Freecs,AD,403,411,397,405,394,캐리형
-lehends,Afreeca Freecs,SUP,426,422,434,436,442,보호형
-mapssi,Afreeca Freecs,SUP,408,408,416,419,424,보호형
+lehends,Afreeca Freecs,SUP,422,418,430,432,438,보호형
+mapssi,Afreeca Freecs,SUP,406,406,414,417,422,보호형
 kingen,DRX,TOP,445,443,452,444,431,교전형
 pyosik,DRX,JUNGLE,449,453,455,448,445,교전형
 quad,DRX,MID,434,437,433,431,420,캐리형
 bao,DRX,AD,430,433,425,428,414,캐리형
-pleata,DRX,SUP,423,417,436,435,444,보호형
+pleata,DRX,SUP,420,414,433,432,441,보호형
 khan,DWG KIA,TOP,457,469,463,460,446,캐리형
 canyon,DWG KIA,JUNGLE,480,488,483,486,473,캐리형
-showmaker,DWG KIA,MID,483,490,480,482,465,캐리형
+showmaker,DWG KIA,MID,489,496,486,488,471,캐리형
 ghost,DWG KIA,AD,472,484,472,480,457,캐리형
-beryl,DWG KIA,SUP,478,476,487,489,495,보호형
+beryl,DWG KIA,SUP,474,472,483,485,491,보호형
 hoya,Fredit BRION,TOP,403,398,398,393,393,라인전형
 umti,Fredit BRION,JUNGLE,421,427,444,434,434,이니시형
 chieftain,Fredit BRION,JUNGLE,410,413,423,416,413,교전형
 lava,Fredit BRION,MID,425,423,433,424,410,교전형
 yaharong,Fredit BRION,MID,410,412,413,409,396,교전형
 hena,Fredit BRION,AD,441,431,436,437,415,라인전형
-delight,Fredit BRION,SUP,405,402,433,429,441,이니시형
-rascal,Gen.G,TOP,468,449,451,450,442,라인전형
+delight,Fredit BRION,SUP,409,406,437,433,445,이니시형
+rascal,Gen.G,TOP,470,451,453,452,444,라인전형
 ruler,Gen.G,AD,470,464,448,460,443,라인전형
-life,Gen.G,SUP,426,430,437,447,445,한타형
-bdd,Gen.G,MID,460,460,448,451,441,라인전형
-clid,Gen.G,JUNGLE,441,448,455,456,445,한타형
+life,Gen.G,SUP,432,436,443,453,451,한타형
+bdd,Gen.G,MID,468,468,456,459,449,라인전형
+clid,Gen.G,JUNGLE,445,452,459,460,449,한타형
 flawless,Gen.G,JUNGLE,408,416,420,421,410,한타형
 karis,Gen.G,MID,422,419,415,413,406,라인전형
-chovy,Hanwha Life Esports,MID,481,483,474,472,455,캐리형
-deft,Hanwha Life Esports,AD,449,465,449,456,436,캐리형
-vsta,Hanwha Life Esports,SUP,442,442,447,454,455,보호형
+chovy,Hanwha Life Esports,MID,485,487,478,476,459,캐리형
+deft,Hanwha Life Esports,AD,451,467,451,458,438,캐리형
+vsta,Hanwha Life Esports,SUP,441,441,446,453,454,보호형
 morgan,Hanwha Life Esports,TOP,441,437,430,435,427,라인전형
 mir,Hanwha Life Esports,JUNGLE,421,435,432,435,422,캐리형
 yohan,Hanwha Life Esports,JUNGLE,414,420,415,416,405,캐리형
 dudu,Hanwha Life Esports,TOP,425,424,412,409,405,라인전형
 doran,KT Rolster,TOP,459,452,450,444,435,라인전형
-zzus,KT Rolster,SUP,409,398,420,420,428,보호형
+zzus,KT Rolster,SUP,404,393,415,415,423,보호형
 hybrid_2,KT Rolster,AD,426,418,414,417,405,라인전형
 ucal,KT Rolster,MID,446,447,435,433,424,캐리형
 gideon,KT Rolster,JUNGLE,413,409,419,415,409,교전형
@@ -45,7 +45,7 @@ blank,KT Rolster,JUNGLE,392,400,401,406,391,한타형
 dove,KT Rolster,MID,426,418,411,413,407,라인전형
 summit,Liiv SANDBOX,TOP,448,448,446,436,427,라인전형
 fate,Liiv SANDBOX,MID,449,448,448,443,427,라인전형
-effort,Liiv SANDBOX,SUP,398,393,410,411,418,보호형
+effort,Liiv SANDBOX,SUP,395,390,407,408,415,보호형
 croco,Liiv SANDBOX,JUNGLE,402,412,425,421,415,교전형
 prince,Liiv SANDBOX,AD,439,440,422,429,415,캐리형
 route,Liiv SANDBOX,AD,420,420,411,416,403,라인전형
@@ -54,8 +54,8 @@ rich,Nongshim RedForce,TOP,421,429,427,419,414,캐리형
 peanut,Nongshim RedForce,JUNGLE,442,448,455,450,445,교전형
 bay,Nongshim RedForce,MID,414,411,407,406,402,라인전형
 deokdam,Nongshim RedForce,AD,444,448,442,446,425,캐리형
-kellin,Nongshim RedForce,SUP,413,421,443,442,451,이니시형
-keria,T1,SUP,462,461,475,479,483,보호형
+kellin,Nongshim RedForce,SUP,424,432,454,453,462,이니시형
+keria,T1,SUP,466,465,479,483,487,보호형
 canna,T1,TOP,454,447,447,446,436,라인전형
 faker,T1,MID,434,443,445,445,428,교전형
 teddy,T1,AD,454,474,463,470,444,캐리형

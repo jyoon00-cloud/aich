@@ -9,7 +9,7 @@ aiming,Afreeca Freecs,AD,406,412,409,412,396,캐리형
 showmaker,DAMWON Gaming,MID,449,455,449,448,429,캐리형
 nuclear,DAMWON Gaming,AD,433,444,432,439,417,캐리형
 nuguri,DAMWON Gaming,TOP,454,440,448,439,429,라인전형
-hoit,DAMWON Gaming,SUP,423,426,448,447,456,이니시형
+hoit,DAMWON Gaming,SUP,433,436,456,456,464,이니시형
 canyon,DAMWON Gaming,JUNGLE,426,432,436,435,426,교전형
 punch,DAMWON Gaming,JUNGLE,398,406,413,410,403,이니시형
 beryl,DAMWON Gaming,SUP,402,394,407,411,416,보호형
@@ -18,14 +18,14 @@ roach,Gen.G,TOP,442,444,447,441,426,교전형
 peanut,Gen.G,JUNGLE,416,420,425,424,415,교전형
 fly,Gen.G,MID,411,415,413,410,401,캐리형
 ruler,Gen.G,AD,443,441,442,443,421,라인전형
-life,Gen.G,SUP,397,400,426,423,434,이니시형
+life,Gen.G,SUP,408,411,437,434,445,이니시형
 sw0rd,Griffin,TOP,446,448,430,434,427,캐리형
 tarzan,Griffin,JUNGLE,452,461,464,464,454,교전형
 chovy,Griffin,MID,463,465,448,452,437,캐리형
 viper,Griffin,AD,453,459,432,447,429,캐리형
-lehends,Griffin,SUP,435,441,446,454,454,한타형
+lehends,Griffin,SUP,438,443,450,456,458,보호형
 sangyoon,Hanwha Life Esports,AD,436,435,433,435,416,라인전형
-key,Hanwha Life Esports,SUP,428,419,440,440,448,보호형
+key,Hanwha Life Esports,SUP,422,413,434,434,442,보호형
 bon0,Hanwha Life Esports,JUNGLE,398,405,416,411,405,교전형
 thal,Hanwha Life Esports,TOP,429,429,432,425,415,교전형
 lava,Hanwha Life Esports,MID,428,432,439,431,415,교전형
@@ -45,7 +45,7 @@ tusin,Kingzone DragonX,SUP,439,439,450,454,458,보호형
 pawn,Kingzone DragonX,MID,433,439,424,427,417,캐리형
 naehyun,Kingzone DragonX,MID,404,412,412,408,394,캐리형
 bdd,KT Rolster,MID,427,431,435,429,413,교전형
-snowflower,KT Rolster,SUP,391,384,404,404,412,보호형
+snowflower,KT Rolster,SUP,387,380,402,401,410,보호형
 smeb,KT Rolster,TOP,407,406,410,403,399,교전형
 score,KT Rolster,JUNGLE,412,416,429,424,419,교전형
 zenit,KT Rolster,AD,394,400,391,396,384,캐리형
@@ -53,7 +53,7 @@ gango,KT Rolster,AD,381,386,378,383,372,캐리형
 umti,KT Rolster,JUNGLE,406,402,410,407,400,교전형
 dove,SANDBOX Gaming,MID,445,450,445,443,427,캐리형
 ghost,SANDBOX Gaming,AD,434,439,427,434,416,캐리형
-joker,SANDBOX Gaming,SUP,425,408,422,425,430,보호형
+joker,SANDBOX Gaming,SUP,406,389,403,406,411,보호형
 summit,SANDBOX Gaming,TOP,453,448,446,442,431,라인전형
 onfleek,SANDBOX Gaming,JUNGLE,440,441,437,440,427,캐리형
 wizer,SANDBOX Gaming,TOP,419,407,405,401,398,라인전형
@@ -62,4 +62,4 @@ khan,SK Telecom T1,TOP,459,460,446,448,437,캐리형
 clid,SK Telecom T1,JUNGLE,446,455,462,460,452,이니시형
 faker,SK Telecom T1,MID,446,442,428,431,423,라인전형
 teddy,SK Telecom T1,AD,459,461,441,452,432,캐리형
-mata,SK Telecom T1,SUP,413,418,427,432,435,보호형
+mata,SK Telecom T1,SUP,417,422,431,436,439,보호형

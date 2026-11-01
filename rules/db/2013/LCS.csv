@@ -2,7 +2,7 @@ id,team,pos,lan,phy,skr,tf,vis,style
 nickwu,compLexity,TOP,421,417,426,416,405,교전형
 lautemortis,compLexity,JUNGLE,392,393,399,397,389,교전형
 brunch,compLexity,AD,405,404,399,403,389,라인전형
-meyea,compLexity,SUP,387,388,411,410,419,보호형
+meyea,compLexity,SUP,394,395,418,417,426,보호형
 chuuper,compLexity,MID,389,388,386,383,379,라인전형
 pr0lly,compLexity,MID,386,384,381,378,371,라인전형
 hotshotgg,Counter Logic Gaming,TOP,408,406,407,401,398,라인전형
@@ -10,12 +10,12 @@ chauster,Counter Logic Gaming,JUNGLE,398,411,420,416,410,교전형
 link,Counter Logic Gaming,MID,438,443,444,439,421,교전형
 bigfatlp,Counter Logic Gaming,MID,410,404,400,398,388,라인전형
 doublelift,Counter Logic Gaming,AD,448,443,443,444,422,라인전형
-aphromoo,Counter Logic Gaming,SUP,408,409,434,432,442,이니시형
+aphromoo,Counter Logic Gaming,SUP,417,417,444,440,452,이니시형
 voyboy,Curse,TOP,450,445,432,433,425,라인전형
 saintvicious,Curse,JUNGLE,438,447,453,450,442,이니시형
 nyjacky,Curse,MID,437,449,438,439,422,캐리형
 cop,Curse,AD,432,448,431,441,418,캐리형
-elementz,Curse,SUP,433,428,441,444,449,보호형
+elementz,Curse,SUP,428,423,436,439,444,보호형
 darshan,Good Game University,TOP,399,397,395,391,383,라인전형
 fat,Good Game University,TOP,412,409,413,406,400,교전형
 nintendudex,Good Game University,JUNGLE,393,407,402,406,392,캐리형
@@ -26,7 +26,7 @@ anjo,Good Game University,SUP,390,388,404,406,412,보호형
 kiwikid,dignitas,TOP,431,429,416,417,412,라인전형
 scarra,dignitas,MID,438,440,421,426,415,캐리형
 imaqtpie,dignitas,AD,432,437,417,428,411,캐리형
-patoy,dignitas,SUP,433,431,429,440,437,한타형
+patoy,dignitas,SUP,423,421,419,430,427,한타형
 crumbz,dignitas,JUNGLE,432,436,437,438,427,한타형
 djlambo,dignitas,JUNGLE,397,401,404,404,394,교전형
 megazero,Team MRN,TOP,418,419,422,416,405,교전형
@@ -35,16 +35,16 @@ ecco,Team MRN,MID,420,415,414,410,401,라인전형
 nien,Team MRN,MID,401,403,399,397,385,캐리형
 heartbeat,Team MRN,AD,385,388,378,384,375,캐리형
 nysyli,Team MRN,AD,381,383,384,385,367,한타형
-atomicn,Team MRN,SUP,374,372,390,391,398,보호형
+atomicn,Team MRN,SUP,376,374,392,393,400,보호형
 dyrus,Team SoloMid,TOP,458,459,448,449,436,캐리형
 theoddone,Team SoloMid,JUNGLE,433,451,457,456,448,이니시형
 reginaid,Team SoloMid,MID,428,435,426,426,415,캐리형
-xpecial,Team SoloMid,SUP,427,425,439,442,447,보호형
+xpecial,Team SoloMid,SUP,426,424,438,441,446,보호형
 chaox,Team SoloMid,AD,446,450,445,448,426,캐리형
 wildturtle,Team SoloMid,AD,449,452,432,443,424,캐리형
 benny,Vulcun,TOP,406,404,402,398,390,라인전형
 xmithie,Vulcun,JUNGLE,414,415,429,423,419,교전형
 mancloud,Vulcun,MID,445,436,440,434,420,라인전형
 zuna,Vulcun,AD,411,418,415,417,399,캐리형
-muffinqt,Vulcun,SUP,399,392,410,411,418,보호형
-bloodwater,Vulcun,SUP,426,427,443,444,450,이니시형
+muffinqt,Vulcun,SUP,395,388,406,407,414,보호형
+bloodwater,Vulcun,SUP,429,429,445,448,454,이니시형

@@ -2,52 +2,52 @@ id,team,pos,lan,phy,skr,tf,vis,style
 vizicsacsi,FC Schalke 04,TOP,410,405,401,398,396,라인전형
 pridestalkr,FC Schalke 04,JUNGLE,421,425,424,426,414,한타형
 nukeduck,FC Schalke 04,MID,407,417,409,409,398,캐리형
-vander,FC Schalke 04,SUP,421,407,424,426,432,보호형
+vander,FC Schalke 04,SUP,407,393,410,412,418,보호형
 upset,FC Schalke 04,AD,436,435,431,434,414,라인전형
-krepo,FC Schalke 04,SUP,395,393,409,411,417,보호형
+krepo,FC Schalke 04,SUP,383,381,397,399,405,보호형
 broxah,Fnatic,JUNGLE,433,447,444,447,434,캐리형
 caps,Fnatic,MID,448,450,437,440,430,캐리형
-rekkles,Fnatic,AD,480,484,471,478,452,캐리형
-hylissang,Fnatic,SUP,413,423,428,435,436,보호형
+rekkles,Fnatic,AD,490,494,481,488,462,캐리형
+hylissang,Fnatic,SUP,421,431,436,443,444,보호형
 soaz,Fnatic,TOP,426,429,423,421,416,캐리형
 bwipo,Fnatic,TOP,411,409,407,403,395,라인전형
 wunder,G2 Esports,TOP,471,469,464,461,445,라인전형
-jankos,G2 Esports,JUNGLE,448,456,465,461,455,이니시형
-perkz,G2 Esports,MID,461,465,458,457,439,캐리형
+jankos,G2 Esports,JUNGLE,452,460,469,465,459,이니시형
+perkz,G2 Esports,MID,462,466,459,458,440,캐리형
 hjarnan,G2 Esports,AD,436,442,433,439,420,캐리형
-wadid,G2 Esports,SUP,436,439,451,455,459,보호형
+wadid,G2 Esports,SUP,438,441,453,457,461,보호형
 ruin,Giants Gaming,TOP,430,428,430,424,413,라인전형
 djoko,Giants Gaming,JUNGLE,397,405,420,413,410,교전형
 betsy,Giants Gaming,MID,408,405,403,400,394,라인전형
 steeelback,Giants Gaming,AD,391,395,389,393,382,캐리형
-targamas,Giants Gaming,SUP,408,404,423,424,431,보호형
+targamas,Giants Gaming,SUP,407,403,422,423,430,보호형
 jaeger,H2k-Gaming,TOP,431,420,436,423,415,교전형
 santorin,H2k-Gaming,JUNGLE,378,384,390,388,380,교전형
 shook,H2k-Gaming,JUNGLE,392,400,405,403,395,교전형
 caedrel,H2k-Gaming,MID,409,411,407,405,393,캐리형
 nulu,H2k-Gaming,MID,454,447,453,446,430,라인전형
 patrik,H2k-Gaming,AD,426,431,433,433,412,교전형
-promisq,H2k-Gaming,SUP,413,406,438,432,446,이니시형
+promisq,H2k-Gaming,SUP,415,408,440,434,448,이니시형
 alphari,Misfits Gaming,TOP,444,445,433,434,424,캐리형
 maxlore,Misfits Gaming,JUNGLE,435,431,437,435,427,교전형
 sencux,Misfits Gaming,MID,411,427,418,419,405,캐리형
 hanssama,Misfits Gaming,AD,441,452,438,446,423,캐리형
-mikyx,Misfits Gaming,SUP,428,421,443,442,451,이니시형
-odoamne,Splyce,TOP,429,429,432,426,419,교전형
+mikyx,Misfits Gaming,SUP,427,420,442,441,450,이니시형
+odoamne,Splyce,TOP,433,433,436,430,423,교전형
 xerxe,Splyce,JUNGLE,427,448,452,451,442,이니시형
 nisqy,Splyce,MID,420,421,411,412,406,캐리형
 kobbe,Splyce,AD,437,441,422,433,417,캐리형
-kasing,Splyce,SUP,406,422,423,433,431,한타형
+kasing,Splyce,SUP,417,433,434,444,442,한타형
 profit,Team ROCCAT,TOP,437,436,430,428,419,라인전형
 memento,Team ROCCAT,JUNGLE,419,420,430,426,420,교전형
 blanc,Team ROCCAT,MID,455,460,454,453,433,캐리형
 heaq,Team ROCCAT,AD,406,410,403,407,394,캐리형
-tore,Team ROCCAT,SUP,434,427,445,446,453,보호형
+tore,Team ROCCAT,SUP,431,424,442,443,450,보호형
 cabochard,Team Vitality,TOP,455,450,446,443,431,라인전형
 gilius,Team Vitality,JUNGLE,401,402,408,406,398,교전형
 jiizuke,Team Vitality,MID,431,427,429,424,414,라인전형
 attila,Team Vitality,AD,433,426,412,420,409,라인전형
-jactroll,Team Vitality,SUP,395,388,404,406,412,보호형
+jactroll,Team Vitality,SUP,391,384,400,402,408,보호형
 whiteknight,Unicorns of Love,TOP,389,389,386,383,383,라인전형
 kold,Unicorns of Love,JUNGLE,425,426,434,431,424,교전형
 exile,Unicorns of Love,MID,403,402,410,402,393,교전형
