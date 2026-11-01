@@ -1,52 +1,52 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-whiteknight,Astralis,TOP,415,415,410,405,400,안정형
-zanzarah,Astralis,JUNGLE,400,405,410,410,410,안정형
-dajor,Astralis,MID,410,400,410,405,395,성장형
-kobbe,Astralis,AD,420,420,420,410,400,안정형
-promisq,Astralis,SUP,400,395,410,415,430,보호형
-finn,Excel Esports,TOP,425,425,425,415,405,교전형
-markoon,Excel Esports,JUNGLE,410,415,430,425,425,운영형
-nukeduck,Excel Esports,MID,435,415,430,425,420,안정형
-patrik,Excel Esports,AD,425,425,425,420,405,안정형
-mikyx,Excel Esports,SUP,395,390,415,425,450,보호형
-advienne,Excel Esports,SUP,390,390,395,395,405,성장형
-wunder,Fnatic,TOP,445,450,450,445,420,교전형
-razork,Fnatic,JUNGLE,430,430,455,450,445,교전형
-humanoid,Fnatic,MID,445,425,445,445,430,운영형
-upset,Fnatic,AD,460,455,455,445,425,캐리형
-hylissang,Fnatic,SUP,410,410,435,450,465,보호형
-brokenblade,G2 Esports,TOP,445,440,445,440,420,교전형
-jankos,G2 Esports,JUNGLE,425,425,445,455,465,이니시형
-caps,G2 Esports,MID,470,450,470,460,430,캐리형
-flakked,G2 Esports,AD,425,420,425,415,405,성장형
-targamas,G2 Esports,SUP,405,405,420,430,440,보호형
-armut,MAD Lions,TOP,435,435,435,430,410,안정형
-elyoya,MAD Lions,JUNGLE,435,440,455,455,455,로밍형
-reeker,MAD Lions,MID,415,400,415,410,400,성장형
-unf0rgiven,MAD Lions,AD,415,420,420,415,400,안정형
-kaiser,MAD Lions,SUP,410,415,435,445,455,이니시형
-hirit,Misfits Gaming,TOP,435,435,435,425,410,라인전형
-shlatan,Misfits Gaming,JUNGLE,415,420,430,425,415,교전형
-vetheo,Misfits Gaming,MID,445,425,450,445,430,캐리형
-neon,Misfits Gaming,AD,430,425,430,420,410,안정형
-mersa,Misfits Gaming,SUP,405,405,425,430,440,이니시형
-odoamne,Rogue,TOP,440,445,445,440,425,안정형
-malrang,Rogue,JUNGLE,430,440,460,455,445,교전형
-larssen,Rogue,MID,450,435,450,450,440,안정형
-comp,Rogue,AD,450,450,450,440,430,캐리형
-trymbi,Rogue,SUP,420,420,440,445,455,보호형
-jnx,SK Gaming,TOP,415,410,410,410,400,안정형
-gilius,SK Gaming,JUNGLE,400,405,420,420,415,교전형
-sertuss,SK Gaming,MID,405,395,405,400,395,성장형
-jezu,SK Gaming,AD,415,410,415,405,395,안정형
-treatz,SK Gaming,SUP,400,395,410,415,430,보호형
-adam,Team BDS,TOP,405,405,400,395,390,성장형
-cinkrof,Team BDS,JUNGLE,395,400,405,405,405,성장형
-nuc,Team BDS,MID,410,400,410,405,400,안정형
-xmatty,Team BDS,AD,405,405,400,395,390,성장형
-limit_2,Team BDS,SUP,395,395,405,410,425,보호형
-alphari,Team Vitality,TOP,430,430,430,425,410,라인전형
-selfmade,Team Vitality,JUNGLE,420,435,450,440,440,교전형
-perkz,Team Vitality,MID,445,430,450,445,430,운영형
-carzzy,Team Vitality,AD,435,435,435,425,410,캐리형
-labrov,Team Vitality,SUP,410,410,430,435,445,보호형
+whiteknight,Astralis,TOP,395,405,415,415,400,교전형
+zanzarah,Astralis,JUNGLE,385,390,415,425,420,이니시형
+dajor,Astralis,MID,400,405,405,400,405,성장형
+kobbe,Astralis,AD,425,405,405,400,395,성장형
+promisq,Astralis,SUP,390,390,400,400,430,보호형
+finn,Excel Esports,TOP,430,435,430,435,420,안정형
+markoon,Excel Esports,JUNGLE,425,425,440,435,435,운영형
+nukeduck,Excel Esports,MID,445,430,425,415,420,안정형
+patrik,Excel Esports,AD,420,440,435,440,420,캐리형
+mikyx,Excel Esports,SUP,420,425,445,455,465,교전형
+advienne,Excel Esports,SUP,400,400,415,415,435,성장형
+wunder,Fnatic,TOP,450,465,450,455,445,안정형
+razork,Fnatic,JUNGLE,445,450,455,445,445,교전형
+humanoid,Fnatic,MID,470,455,455,450,445,라인전형
+upset,Fnatic,AD,460,460,460,450,435,성장형
+hylissang,Fnatic,SUP,445,435,455,455,470,보호형
+brokenblade,G2 Esports,TOP,445,440,440,445,425,교전형
+jankos,G2 Esports,JUNGLE,435,440,445,445,450,운영형
+caps,G2 Esports,MID,445,440,445,450,440,운영형
+flakked,G2 Esports,AD,440,435,435,435,425,성장형
+targamas,G2 Esports,SUP,430,425,440,435,450,보호형
+armut,MAD Lions,TOP,430,435,430,430,420,안정형
+elyoya,MAD Lions,JUNGLE,425,435,445,440,440,이니시형
+reeker,MAD Lions,MID,410,415,425,425,420,성장형
+unf0rgiven,MAD Lions,AD,425,420,425,425,410,안정형
+kaiser,MAD Lions,SUP,410,410,435,445,455,이니시형
+hirit,Misfits Gaming,TOP,455,455,430,430,425,캐리형
+shlatan,Misfits Gaming,JUNGLE,430,435,440,435,445,운영형
+vetheo,Misfits Gaming,MID,450,445,455,450,430,캐리형
+neon,Misfits Gaming,AD,435,455,440,445,430,캐리형
+mersa,Misfits Gaming,SUP,420,420,435,445,460,보호형
+odoamne,Rogue,TOP,475,475,470,460,445,라인전형
+malrang,Rogue,JUNGLE,445,450,455,450,450,로밍형
+larssen,Rogue,MID,465,470,470,465,445,캐리형
+comp,Rogue,AD,465,450,450,455,435,성장형
+trymbi,Rogue,SUP,450,450,460,460,470,보호형
+jnx,SK Gaming,TOP,435,415,420,420,405,라인전형
+gilius,SK Gaming,JUNGLE,395,405,415,420,425,운영형
+sertuss,SK Gaming,MID,425,410,420,420,410,교전형
+jezu,SK Gaming,AD,410,410,420,420,410,안정형
+treatz,SK Gaming,SUP,400,405,415,415,440,보호형
+adam,Team BDS,TOP,435,410,410,410,405,성장형
+cinkrof,Team BDS,JUNGLE,395,405,410,410,420,성장형
+nuc,Team BDS,MID,410,405,415,410,410,안정형
+xmatty,Team BDS,AD,400,425,410,410,405,캐리형
+limit_2,Team BDS,SUP,390,400,410,415,435,보호형
+alphari,Team Vitality,TOP,455,440,435,435,420,라인전형
+selfmade,Team Vitality,JUNGLE,410,435,425,430,435,교전형
+perkz,Team Vitality,MID,460,435,435,430,430,라인전형
+carzzy,Team Vitality,AD,440,440,425,420,420,안정형
+labrov,Team Vitality,SUP,410,410,420,425,450,보호형
