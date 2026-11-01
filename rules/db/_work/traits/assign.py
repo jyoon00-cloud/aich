@@ -71,6 +71,15 @@ for f in sorted(glob.glob(f'{ROOT}/_work/pot2/dossier/p*.md')):
             elif ln.startswith('- 출처:'):
                 D[cur]['src'] = ln
 
+# 월즈·MSI 주전 판정: 그 대회 출전 경기 수 기준(intl_games.csv, 팀 내 최다의 50% 이상). 없으면 연도별 파일 주전 여부.
+_IG = {}
+for _r in csv.DictReader(open(ROOT + '/_work/traits/intl_games.csv')):
+    _IG[(int(_r['year']), _r['event'], _r['player'].replace('_', ' ').lower())] = _r['starter'] == '1'
+_MP = {r['id']: r['leaguepedia_page'] for r in csv.DictReader(open(ROOT + '/_work/players_master.csv'))}
+def intl_starter(i, y, ev):
+    k = (y, ev, _MP.get(i, '').replace('_', ' ').lower())
+    return _IG[k] if k in _IG else is_starter_in(i, y)
+
 def is_starter_in(i, y):
     return any(s['year'] == y for s in seasons.get(i, []))
 
@@ -114,7 +123,7 @@ for (f, i), pr in pot.items():
             if not (name.startswith('Worlds') or name.startswith('MSI')): continue
             if pl not in places: continue
             y = year_of(name, d)
-            if y and is_starter_in(i, y): out.append(name)
+            if y and intl_starter(i, y, 'Worlds' if name.startswith('Worlds') else 'MSI'): out.append(name)
         return out
     finals = fin(('1', '2')); wins = fin(('1',)); loses_intl = fin(('2',))
     anyworld = [1 for n, p, t in d['intl'] if (n.startswith('Worlds') and p == '1')]
@@ -214,7 +223,7 @@ if WRITE:
     for (f, i), v in res.items(): persons.setdefault(i, v)
     L = ['# 특성 부여 판정 근거 (assign.py)', '',
          '해석: 백분위는 같은 연도·리그 파일의 같은 포지션 주전끼리(unified.py 방식, 동률은 중간 순위). 주전은 changes2에서 "주전, G n" 표기 + 지표가 있는 시즌.',
-         '대회 결승·우승은 해당 연도 파일에서 그 선수가 주전(어느 리그든)일 때만 센다. 연도별 파일이 없는 해(2012 등)는 세지 않는다. 리그 플레이오프 집계에서 Regional Finals는 제외했다.',
+         '월즈·MSI 결승·우승은 그 대회 출전 경기 수가 팀 내 최다의 50% 이상일 때 주전으로 센다(intl_games.csv). 리그 결승·우승은 해당 연도 파일에서 주전일 때만 센다. 연도별 파일이 없는 해(2012 등)는 세지 않는다. 리그 플레이오프 집계에서 Regional Finals는 제외했다.',
          'late_bloomer의 "3년 차"는 데뷔 연도+2년 이후, 최고 OVR은 주전 시즌 중에서 본다. prodigy 신인상은 LCK·LPL·LEC/EU·LCS/NA·LTA 신인상(CL·Esports Awards 제외).',
          '선택: 조건을 만족한 특성이 4개 이상이면 (달성 수치/기준치) 큰 순으로 3개. 백분위형은 (조건을 넘은 시즌 비율/0.5), 횟수형은 (횟수/기준), late_bloomer는 (OVR 상승/40), prodigy는 (OVR/455 또는 신인상 1.0). 동률은 평균 백분위.',
          '리그 MVP 3회 이상은 위키 수상 원문의 "MVP xN (시즌 목록)" 문구로 직접 판정: chovy 5, knight 5, doinb 4, rekkles 4, rookie 4, caps 4(split MVP x3 + season MVP x1), bdd 3. (dade는 시즌 MVP 2회, smeb 2회 등 3회 미만)', '']

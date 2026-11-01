@@ -73,7 +73,7 @@
 | bengi_u | Bengi | 큰 무대 +15 / 마지막 세트 한타 때 팀원 4명 +5 / 압박 상황 멘탈 +10 | 월즈 우승 2회 — [Bengi](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bengi) |
 | wolf_u | Wolf | 큰 무대 +15 / 한타 때 팀원 4명 +5 / 성장 ×1.2 | 월즈 우승 2회 — [Wolf_(Lee_Jae-wan)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Wolf_(Lee_Jae-wan)) |
 | beryl_u | BeryL | 큰 무대 +15 / 소규모 교전 +10 / 성장 ×1.2 | 월즈 우승 2회, 서폿 DMG/M 0.63 — [BeryL](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=BeryL) |
-| gumayusi_u | Unkillable Demon Prince | 큰 무대 +15 / 승부처 +10 / 라인전 +10 | 월즈 우승 2회 이상 — [Gumayusi](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Gumayusi) |
+| gumayusi_u | Unkillable Demon Prince | 큰 무대 +15 / 승부처 +10 / 라인전 +10 | 월즈 우승 주전 3회(2023·2024·2025) — [Gumayusi](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Gumayusi) |
 | zeus_u | Zeus | 소규모 교전 +15 / 큰 무대 +15 / 25분 이후 한타 +10 / 데뷔 후 2년 성장 ×1.3 | 월즈 우승 2회, DMG/M 0.77 — [Zeus](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Zeus) |
 | oner_u | Oner | 큰 무대 +15 / 소규모 교전 +10 / 대실패 99~100 | 월즈 우승 3회, KDA 0.81 — [Oner](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Oner) |
 | keria_u | Keria | 한타 +15 / 큰 무대 +15 / 대실패 99~100 / 데뷔 후 2년 성장 ×1.3 | 월즈 우승 3회, KDA 0.91·DMG/M 0.85 — [Keria](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Keria) |

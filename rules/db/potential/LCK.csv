@@ -4,7 +4,7 @@ acorn,Acorn,TOP,1990,475,3,0,3,3,2013,globetrotter
 add,ADD,TOP,1998,453,3,0,3,2,2017,skirmisher;globetrotter
 aiming,Aiming,AD,2000,470,3,1,2,4,2018,late_bloomer;globetrotter
 alvingo,Alvingo,MID,1992,410,3,0,3,3,2014,
-ambition,Ambition,JUNGLE,1992,478,3,1,3,5,2013,lane_king;flex
+ambition,Ambition,JUNGLE,1992,478,3,1,3,5,2013,lane_king;flex;intl_champ
 andil,Andil,SUP,2002,451,3,0,3,5,2024,
 apple,Apple,TOP,1993,418,3,0,3,3,2014,
 ares,Ares,JUNGLE,1995,424,3,1,3,3,2015,
@@ -99,7 +99,7 @@ fury,Fury,AD,1995,437,3,0,3,3,2014,globetrotter
 gango,Gango,AD,1997,390,3,0,3,3,2019,
 gbm,GBM,MID,1994,451,3,0,3,3,2014,globetrotter
 ggoong,Ggoong,MID,1993,460,3,1,3,3,2014,globetrotter
-ghost,Ghost,AD,1999,488,3,2,3,5,2017,late_bloomer;flex
+ghost,Ghost,AD,1999,488,3,2,3,5,2017,late_bloomer;big_stage;flex
 gideon,GIDEON,JUNGLE,2003,451,3,0,3,3,2021,globetrotter
 gorilla,GorillA,SUP,1994,483,3,1,3,4,2014,globetrotter
 guger,GuGer,SUP,1994,440,3,0,3,3,2016,
@@ -108,7 +108,7 @@ guwon,Guwon,JUNGLE,2003,458,3,0,3,3,2024,
 h0r0,H0R0,JUNGLE,1996,430,3,0,3,3,2013,globetrotter
 hachani,Hachani,SUP,1994,472,3,-1,3,3,2014,prodigy;globetrotter
 hambak,HamBak,JUNGLE,2002,435,3,1,3,3,2025,globetrotter
-haru,Haru,JUNGLE,1998,470,3,0,3,3,2017,prodigy;intl_champ
+haru,Haru,JUNGLE,1998,470,3,0,3,3,2017,prodigy
 heart,Heart,JUNGLE,1988,488,3,0,3,3,2013,
 helios,Helios,JUNGLE,1993,438,3,0,3,2,2013,globetrotter
 hena,Hena,AD,1999,445,3,0,3,5,2021,globetrotter;skirmisher
@@ -239,7 +239,7 @@ roach,Roach,TOP,1999,460,3,1,3,3,2016,late_bloomer
 roamer,Roamer,MID,2003,421,3,0,3,3,2026,
 rookie,Rookie,MID,1997,478,3,1,4,5,2014,rookie_u;carry;iron;globetrotter
 route,Route,AD,1999,443,3,0,3,3,2019,
-ruler,Ruler,AD,1998,490,3,2,2,3,2017,ruler_u;prodigy;carry;lane_king
+ruler,Ruler,AD,1998,490,3,2,2,3,2017,ruler_u;big_stage;prodigy;carry
 rush,Rush,JUNGLE,1993,435,3,0,3,2,2015,
 ryu,Ryu,MID,1994,460,3,1,3,4,2013,globetrotter
 samd,SamD,AD,2001,460,3,0,3,2,2021,globetrotter;lane_king
