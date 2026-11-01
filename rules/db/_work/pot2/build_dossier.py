@@ -64,7 +64,7 @@ for gi, g in enumerate(groups, 1):
             lines.append('- 최고 %d, 평균 %d, 연도 간 변동(표준편차) %s' % (max(vals), round(statistics.mean(vals)), round(statistics.pstdev(vals), 1) if len(vals) > 1 else '-'))
         else:
             lines.append('- 연도별 OVR: 1부 연도별 파일에 없음 (CL 등)')
-        if p in ('', 'MISSING'):
+        if p == '' or (p == 'MISSING' and i != 'missing'):
             lines.append('- Leaguepedia 페이지 없음'); lines.append(''); continue
         rows = tr_rows(p)
         if rows is None: lines.append('- 대회 성적: 미수집')

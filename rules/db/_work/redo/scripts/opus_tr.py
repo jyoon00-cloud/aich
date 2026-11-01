@@ -61,7 +61,7 @@ if sys.argv[1]=='apply':
             if m: cur=m.group(1)
             if l.startswith('- 직전 해') and cur:
                 p=master.get(cur,'')
-                if p in ('','MISSING'): stat['nopage']=stat.get('nopage',0)+1; continue
+                if p=='' or (p=='MISSING' and cur!='missing'): stat['nopage']=stat.get('nopage',0)+1; continue
                 rs=rows(p)
                 if rs is None: stat['nofetch']=stat.get('nofetch',0)+1; continue
                 url='https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page='+urllib.parse.quote(p.replace(' ','_')+'/Tournament_Results')
