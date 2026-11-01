@@ -31,7 +31,7 @@
 | flex | 멀티 포지션 | 연도별 파일에서 2개 이상 포지션으로 주전 | 다른 포지션으로 뛸 때 능력치 페널티 절반 |
 | steady | 꾸준함의 대명사 | vol 1~2, 주전 시즌 5개 이상 | 컨디션 '최악'을 '나쁨'으로 처리 |
 | choker | 큰 무대 울렁증 | clutch −1 이하이고 결승 패배 3회 이상 | 결승 장면 −10 (부정 특성) |
-| intl_choke | 월즈의 벽 | 월즈 주전 출전 4회 이상, 월즈 결승 진출 0회 (주전 판정은 그 대회 출전 경기 수) | 월즈 토너먼트(8강 이상) 장면 −10 (부정 특성) |
+| intl_choke | 월즈의 벽 | **우승 후보로 나간** 월즈 3회 이상이고, 커리어 월즈 결승(주전) 0회. 우승 후보 = 그해 강한 리그(리그 보정 −5 이상) 플레이오프 우승팀 또는 그해 MSI 우승팀 주전 | 월즈 토너먼트(8강 이상) 장면 −10 (부정 특성) |
 
 ## 2. 유니크 특성
 한 선수 전용 특성이다. 이름 하나에 **여러 효과(능력치 보정, 주사위 범위, 컨디션·멘탈 처리 등)**를 짧게 붙인다.
@@ -43,7 +43,7 @@
 - **id:** `{id}_u`
 - **traits 열:** `{id}_u`와 일반 특성(최대 3개)을 함께 적는다.
 - **효과 크기:** 효과는 3~5개이고, 각 ±5~20 범위다. Faker만 예외로 더 강하다.
-- **부정 효과:** 기록상 약점이 뚜렷하면 부정 효과도 넣는다(예: 월즈 결승 반복 패배, 월즈 4강 벽). 일반 특성이 부정 특성이어도 traits 열에 그대로 둔다.
+- **부정 효과:** (부정 일반 특성은 3개 제한에서 우선 포함) 기록상 약점이 뚜렷하면 부정 효과도 넣는다(예: 월즈 결승 반복 패배, 월즈 4강 벽). 일반 특성이 부정 특성이어도 traits 열에 그대로 둔다.
 - **효과 근거:** 그 선수의 기록(우승·결승, 강한 지표)에 맞춰 고른다.
 
 효과 표기 약어:
@@ -69,7 +69,7 @@
 | knight_u | Knight | 지역 리그 승부처 +15 / 25분 이후 한타 +10 / 큰 무대 +10 / 대실패 99~100 / **월즈 결승 −10** | 리그 MVP 5회, KDA 0.85·DMG/M 0.82; 월즈 결승 1회 준우승 — [Knight_(Zhuo_Ding)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Knight_(Zhuo_Ding)) |
 | rookie_u | Faker Junior | 25분 이후 한타 +15 / 라인전 +10 / 에이징 하락 확률 −15%p / 해외 적응 기간 없음 | 리그 MVP 4회, 월즈 우승 1회, DMG/M 0.84 — [Rookie](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Rookie) |
 | doinb_u | Doinb | 소규모 교전 +15 / 마지막 세트 한타 때 팀원 4명 +5 / 큰 무대 +10 / 성장 ×1.2 | 리그 MVP 4회, 월즈 우승 1회, KP 0.74 — [Doinb](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Doinb) |
-| rekkles_u | 欧洲成哥 (European WeiXiao) | 라인전 +15 / 대실패 99~100 / 지역 리그 승부처 +10 / 컨디션 최악→나쁨 / **월즈 토너먼트 −10** | 리그 MVP 4회, CS/M 0.87·KDA 0.78; 월즈 6회 우승 0회 — [Rekkles](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Rekkles) |
+| rekkles_u | 欧洲成哥 (European WeiXiao) | 라인전 +15 / 대실패 99~100 / 지역 리그 승부처 +10 / 컨디션 최악→나쁨 | 리그 MVP 4회, CS/M 0.87·KDA 0.78 — [Rekkles](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Rekkles) |
 | bdd_u | 보똥 (Boddong) | 라인전 +10 / 지역 리그 승부처 +10 / 대실패 98~100 | 리그 MVP 3회 — [Bdd](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bdd) |
 | bang_u | Bang | 큰 무대 +15 / 한타 +10 / 대실패 99~100 / 성장 ×1.2 | 월즈 우승 2회 — [Bang](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bang) |
 | bengi_u | Bengi | 큰 무대 +15 / 마지막 세트 한타 때 팀원 4명 +5 / 압박 상황 멘탈 +10 | 월즈 우승 2회 — [Bengi](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bengi) |
