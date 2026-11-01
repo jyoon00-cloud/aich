@@ -226,3 +226,4 @@ sejuani: note 궁극기 한타 이니시 탱커→중반 스커미시 R 이니�
 - Mobalytics 가이드(검색 요약): 라인 주도형, 6레벨 첫 파워 스파이크, 킬을 먹어야 성장, 후반 한타에서 묶이기 쉬움 https://mobalytics.gg/lol/champions/locke/guide , https://mobalytics.gg/lol/guides/how-to-play-locke
 - 사용자 정정: lan 4→3, tf 2→3 (라인전·한타는 암살자 기준으로 무난, 교전이 강점)
 - 사용자 정정: curve 초반→중반(초중반 강세, note에 표기)
+- 사용자 정정: curve 중반→초반(스노우볼형)
