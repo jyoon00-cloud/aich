@@ -13,8 +13,8 @@ bdd,CJ Entus,MID,410,416,432,425,411,교전형
 winged,Jin Air Green Wings,JUNGLE,441,438,449,449,446,교전형
 kuzan,Jin Air Green Wings,MID,448,446,447,441,432,안정형
 pilot,Jin Air Green Wings,AD,430,450,444,448,429,교전형
-chei,Jin Air Green Wings,SUP,431,429,442,449,450,보호형
-trace,Jin Air Green Wings,TOP,447,447,445,443,433,안정형
+chei,Jin Air Green Wings,SUP,431,429,442,449,458,보호형
+trace,Jin Air Green Wings,TOP,449,452,445,443,433,안정형
 sohwan,Jin Air Green Wings,TOP,418,416,407,405,399,성장형
 crush,Kongdoo Monster,JUNGLE,400,402,410,410,408,운영형
 edge,Kongdoo Monster,MID,420,415,417,409,405,안정형
@@ -22,11 +22,11 @@ ssol,Kongdoo Monster,AD,405,410,405,409,396,안정형
 guger,Kongdoo Monster,SUP,390,393,406,412,425,보호형
 hipo,Kongdoo Monster,TOP,412,414,398,396,399,안정형
 roach,Kongdoo Monster,TOP,407,405,396,393,388,성장형
-ssumday,KT Rolster,TOP,465,465,465,464,452,라인전형
-score,KT Rolster,JUNGLE,455,452,462,462,462,교전형
+ssumday,KT Rolster,TOP,476,470,466,466,453,라인전형
+score,KT Rolster,JUNGLE,460,457,473,474,469,교전형
 fly,KT Rolster,MID,452,458,458,453,443,안정형
-arrow,KT Rolster,AD,454,466,459,464,447,안정형
-hachani,KT Rolster,SUP,444,442,455,455,455,보호형
+arrow,KT Rolster,AD,454,471,459,464,447,안정형
+hachani,KT Rolster,SUP,445,442,455,463,471,보호형
 ignar,KT Rolster,SUP,401,399,411,418,427,보호형
 pure,Longzhu Gaming,SUP,416,413,423,428,439,보호형
 coco,Longzhu Gaming,MID,432,423,421,415,412,안정형
@@ -35,10 +35,10 @@ cptjack,Longzhu Gaming,AD,426,428,411,415,407,안정형
 expession,Longzhu Gaming,TOP,437,433,420,416,413,안정형
 flame,Longzhu Gaming,TOP,417,415,406,403,398,안정형
 fury,Longzhu Gaming,AD,408,416,408,411,396,안정형
-smeb,ROX Tigers,TOP,484,484,474,471,462,캐리형
+smeb,ROX Tigers,TOP,488,487,474,471,462,캐리형
 peanut,ROX Tigers,JUNGLE,467,460,471,471,468,교전형
-kuro,ROX Tigers,MID,468,468,468,464,456,운영형
-pray,ROX Tigers,AD,467,470,469,470,457,안정형
+kuro,ROX Tigers,MID,475,487,478,470,462,운영형
+pray,ROX Tigers,AD,470,486,472,476,459,안정형
 gorilla,ROX Tigers,SUP,471,464,474,480,487,보호형
 cuvee,Samsung Galaxy,TOP,439,433,425,424,418,안정형
 ambition,Samsung Galaxy,JUNGLE,424,423,435,435,431,운영형
@@ -51,8 +51,8 @@ sasin,SBENU Sonicboom,MID,418,409,418,412,404,안정형
 nuclear,SBENU Sonicboom,AD,416,415,412,417,402,안정형
 secret,SBENU Sonicboom,SUP,394,396,408,415,428,보호형
 soul,SBENU Sonicboom,TOP,417,414,406,405,402,안정형
-soar,SBENU Sonicboom,TOP,411,410,401,398,393,안정형
-duke,SK Telecom T1,TOP,462,460,446,444,439,안정형
+soar,SBENU Sonicboom,TOP,412,410,401,398,393,안정형
+duke,SK Telecom T1,TOP,468,460,446,444,440,안정형
 bang,SK Telecom T1,AD,473,480,467,471,454,캐리형
 wolf,SK Telecom T1,SUP,462,457,462,468,477,보호형
 faker,SK Telecom T1,MID,478,470,472,467,457,운영형

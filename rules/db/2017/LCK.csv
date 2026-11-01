@@ -10,7 +10,7 @@ tempt,bbq Olivers,MID,425,418,426,418,409,운영형
 ghost,bbq Olivers,AD,411,419,420,424,405,교전형
 totoro,bbq Olivers,SUP,408,406,425,429,440,보호형
 crazy,bbq Olivers,TOP,423,426,422,417,410,안정형
-part,bbq Olivers,TOP,411,411,404,401,396,안정형
+part,bbq Olivers,TOP,415,413,404,401,396,안정형
 kuzan,Jin Air Green Wings,MID,415,413,413,405,401,안정형
 teddy,Jin Air Green Wings,AD,424,421,419,420,404,성장형
 snowflower,Jin Air Green Wings,SUP,396,397,411,417,429,보호형
@@ -35,10 +35,10 @@ fly,Longzhu Gaming,MID,430,428,430,423,417,안정형
 pray,Longzhu Gaming,AD,433,436,426,431,419,안정형
 gorilla,Longzhu Gaming,SUP,418,418,427,434,446,보호형
 add,MVP,TOP,446,447,441,441,434,안정형
-beyond,MVP,JUNGLE,438,439,446,446,446,교전형
+beyond,MVP,JUNGLE,440,441,454,455,450,교전형
 ian,MVP,MID,436,440,440,437,431,운영형
-maha,MVP,AD,432,440,440,440,431,안정형
-max,MVP,SUP,431,430,443,443,443,보호형
+maha,MVP,AD,434,449,445,450,433,안정형
+max,MVP,SUP,434,434,447,454,464,보호형
 mickey,ROX Tigers,MID,436,422,437,433,419,교전형
 sangyoon,ROX Tigers,AD,422,434,427,430,415,안정형
 key,ROX Tigers,SUP,413,413,425,432,442,보호형
@@ -46,17 +46,17 @@ seonghwan,ROX Tigers,JUNGLE,418,420,429,431,426,운영형
 shy,ROX Tigers,TOP,441,438,423,420,417,라인전형
 lindarang,ROX Tigers,TOP,417,415,406,403,398,안정형
 mightybear,ROX Tigers,JUNGLE,405,404,413,413,410,운영형
-cuvee,Samsung Galaxy,TOP,472,472,462,461,456,안정형
-crown,Samsung Galaxy,MID,478,475,470,464,456,캐리형
-corejj,Samsung Galaxy,SUP,466,459,467,472,480,보호형
+cuvee,Samsung Galaxy,TOP,474,478,462,461,456,안정형
+crown,Samsung Galaxy,MID,482,475,470,464,456,캐리형
+corejj,Samsung Galaxy,SUP,466,459,467,472,481,보호형
 ruler,Samsung Galaxy,AD,465,479,465,470,454,안정형
-haru,Samsung Galaxy,JUNGLE,446,442,449,449,449,교전형
+haru,Samsung Galaxy,JUNGLE,454,450,461,461,458,교전형
 ambition,Samsung Galaxy,JUNGLE,410,409,418,419,415,운영형
 stitch,Samsung Galaxy,AD,412,420,412,417,400,안정형
 faker,SK Telecom T1,MID,486,484,480,473,463,캐리형
-bang,SK Telecom T1,AD,474,485,473,476,460,캐리형
-wolf,SK Telecom T1,SUP,473,465,475,478,478,보호형
+bang,SK Telecom T1,AD,474,490,473,476,460,캐리형
+wolf,SK Telecom T1,SUP,473,465,475,480,487,보호형
 peanut,SK Telecom T1,JUNGLE,473,467,472,472,470,교전형
-huni,SK Telecom T1,TOP,462,462,462,459,446,캐리형
+huni,SK Telecom T1,TOP,484,481,474,470,458,캐리형
 profit,SK Telecom T1,TOP,423,421,412,411,404,성장형
 blank,SK Telecom T1,JUNGLE,413,412,421,422,418,운영형
