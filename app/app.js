@@ -36,18 +36,24 @@ function head(md) { return md.split(/^## \d{4}\b/m)[0]; }
 function csvIds(text) {
   return new Set(text.trim().split(/\r?\n/).slice(1).map((l) => l.split(',')[0]));
 }
-async function buildSystem(year) {
+async function buildSystem(year, size) {
+  size = size || 'full';
   const files = [];
   const add = (name, body) => files.push(`=== 파일: ${name} ===\n${body.trim()}\n`);
   add('lolpro.md (지침)', await fetchText('lolpro.md'));
+  if (size === 'minimal') {
+    return `너는 아래 '지침'을 따르는 AI 디렉터다. 시작 연도는 ${year}년이다. 선수 DB는 이번 대화에 없으니, 실존 선수는 알려진 범위에서 일반적으로만 다루고 수치는 '추정'으로 기록한다.\n\n` + files.join('\n');
+  }
   add('db/README.md', await fetchText('db/README.md'));
-  add('db/league_history.md', await fetchText('db/league_history.md'));
   const comp = await fetchText('db/competition.md');
-  add(`db/competition.md (공통 + ${year})`, head(comp) + '\n' + section(comp, year));
-  add('db/salary.md', await fetchText('db/salary.md'));
-  add('db/traits.md', await fetchText('db/traits.md'));
-  add('db/champions/README.md', await fetchText('db/champions/README.md'));
-  add('db/champions/champions.csv', await fetchText('db/champions/champions.csv'));
+  add(`db/competition.md (${year})`, section(comp, year));
+  if (size === 'full') {
+    add('db/league_history.md', await fetchText('db/league_history.md'));
+    add('db/salary.md', await fetchText('db/salary.md'));
+    add('db/traits.md', await fetchText('db/traits.md'));
+    add('db/champions/README.md', await fetchText('db/champions/README.md'));
+    add('db/champions/champions.csv', await fetchText('db/champions/champions.csv'));
+  }
   try { add(`db/champions/meta/${year}.csv`, await fetchText(`db/champions/meta/${year}.csv`)); } catch { /* 메타 없음 */ }
   const ids = new Set();
   for (const lg of LEAGUES) {
@@ -58,6 +64,7 @@ async function buildSystem(year) {
     } catch { /* 그해 파일 없음 */ }
   }
   // potential: 그해 1부 선수 + CL 전원(미래 신인·2군) — 전체를 넣으면 너무 커서 거른다
+  if (size !== 'full') return `너는 아래 '지침'을 따르는 AI 디렉터다. 시작 연도는 ${year}년이다. 아래는 축약된 참조 자료다(연봉·특성·챔피언 상세·포텐셜 파일 생략 — 필요하면 지침의 일반 규칙으로 판단하고 '추정'으로 기록).\n\n` + files.join('\n');
   const potRows = new Map(); let header = '';
   for (const f of ['LCK', 'LPL', 'LEC', 'LCS', 'CL']) {
     const lines = (await fetchText(`db/potential/${f}.csv`)).trim().split(/\r?\n/);
@@ -207,7 +214,7 @@ async function send(text) {
 // ---------- 이벤트 ----------
 function fillSettings() {
   $('provider').value = settings.provider; $('baseUrl').value = settings.baseUrl; $('apiKey').value = settings.apiKey;
-  $('model').value = settings.model; $('keepTurns').value = settings.keepTurns; $('maxTokens').value = settings.maxTokens;
+  $('model').value = settings.model; $('promptSize').value = settings.promptSize || 'full'; $('keepTurns').value = settings.keepTurns; $('maxTokens').value = settings.maxTokens;
 }
 $('provider').addEventListener('change', () => {
   const p = PRESETS[$('provider').value];
@@ -216,7 +223,7 @@ $('provider').addEventListener('change', () => {
 $('btnSettings').onclick = () => { fillSettings(); $('dlgSettings').showModal(); };
 $('btnSaveSettings').onclick = () => {
   settings = { provider: $('provider').value, baseUrl: $('baseUrl').value.trim(), apiKey: $('apiKey').value.trim(),
-    model: $('model').value.trim(), keepTurns: Number($('keepTurns').value) || 10, maxTokens: Number($('maxTokens').value) || 4096 };
+    model: $('model').value.trim(), promptSize: $('promptSize').value, keepTurns: Number($('keepTurns').value) || 10, maxTokens: Number($('maxTokens').value) || 4096 };
   store.set('lp_settings', settings); status('설정을 저장했습니다.');
 };
 $('btnClearKey').onclick = () => { settings.apiKey = ''; $('apiKey').value = ''; store.set('lp_settings', settings); status('키를 지웠습니다.'); };
@@ -227,7 +234,7 @@ $('btnStart').onclick = async () => {
   const year = Number($('startYear').value);
   status('DB 파일을 불러오는 중…');
   try {
-    game = { year, system: await buildSystem(year), messages: [], latestSave: null };
+    game = { year, system: await buildSystem(year, settings.promptSize), messages: [], latestSave: null };
     persist(); redraw();
     status(`준비 완료 (참조 자료 약 ${Math.round(game.system.length / 1000)}천 자).`);
     send(`${year}년 1월에 새 커리어를 시작한다. lolpro.md 2장대로 캐릭터 생성을 진행해 줘(배경은 3지선다).`);

@@ -41,6 +41,13 @@
     <label>API 주소 <input id="baseUrl" placeholder="https://api.orcarouter.ai/v1"></label>
     <label>API 키 <input id="apiKey" type="password" autocomplete="off" placeholder="키는 이 브라우저에만 저장됩니다"></label>
     <label>모델 이름 <input id="model" placeholder="제공자가 안내하는 모델 이름"></label>
+    <label>참조 자료 크기 (무료 등급은 '가벼움'이나 '최소')
+      <select id="promptSize">
+        <option value="full">전체 (약 8.5만 자, 권장)</option>
+        <option value="lite">가벼움 (약 3만 자: 지침 + 그해 선수·대회·메타)</option>
+        <option value="minimal">최소 (약 1.1만 자: 지침만, DB 없음)</option>
+      </select>
+    </label>
     <label>원문으로 기억할 최근 턴 수 <input id="keepTurns" type="number" min="2" max="40" value="10"></label>
     <label>응답 최대 토큰 <input id="maxTokens" type="number" min="512" max="16000" value="4096"></label>
     <p class="hint">키는 서버로 가지 않고 이 브라우저(localStorage)에만 저장됩니다. 공용 PC에서는 사용 후 '키 지우기'를 누르세요.</p>
