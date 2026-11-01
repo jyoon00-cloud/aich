@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>롤프로 시뮬레이터</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand">롤프로 <span class="sub">스크립트판</span></div>
+    <div class="top-actions">
+      <button id="btn-table" class="icon-btn" title="순위표" hidden>순위</button>
+      <button id="btn-menu" class="icon-btn" title="메뉴" hidden>메뉴</button>
+    </div>
+  </header>
+  <main id="main"><div class="loading">불러오는 중…</div></main>
+</div>
+<div id="modal-root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript>이 게임은 자바스크립트가 필요합니다.</noscript>
+<script src="js/rng.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/data.js"></script>
+<script src="js/state.js"></script>
+<script src="js/league.js"></script>
+<script src="js/match.js"></script>
+<script src="js/create.js"></script>
+<script src="js/narrate.js"></script>
+<script src="js/week.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
