@@ -70,4 +70,4 @@ potential: `id,name,pos,birth_year,potential,men,clutch,pro,vol,debut_year`
 
 ### 포텐셜·히든 (`_work/pot2/`)
 - potential: 커리어 최고 OVR과 월즈·MSI·리그 우승 기록으로 정했다. 연도별 단일 능력치 이상이며, 명예의 전당(Faker 500, Uzi·Caps 495) 외에는 490이 상한이다(초과하던 연도별 능력치 20칸은 490으로 잘랐다).
-- clutch는 결승·국제대회 성적, vol은 연도별 OVR 변동, pro는 1부 시즌 수에서 정했다. men·pro는 징계·멘탈 관련 기사를 확인한 선수만 기본값에서 조정했다.
+- clutch는 결승·국제대회 성적, vol은 연도별 개인 성적 백분위의 변동(성장·에이징 추세 제외), pro는 1부 시즌 수에서 정했다. men·pro는 징계·멘탈 관련 기사를 확인한 선수만 기본값에서 조정했다.
