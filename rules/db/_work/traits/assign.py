@@ -85,6 +85,14 @@ for _f in glob.glob(ROOT + '/20*/*.csv'):
     for _r in csv.DictReader(open(_f)): _LG[(_r['id'], int(_f.split('/')[-2]))] = os.path.basename(_f)[:-4]
 _OFF = {(int(r['year']), r['league']): int(r['offset']) for r in csv.DictReader(open(ROOT + '/_work/redo/league_offset.csv'))}
 
+def _tn(t):
+    t = re.sub(r'\(.*?\)', '', (t or '').lower())
+    for w in ('esports', 'e-sports', 'gaming', 'team ', 'club'): t = t.replace(w, '')
+    return re.sub(r'[^a-z0-9]', '', t)
+_PR = {}
+for _r in csv.DictReader(open(ROOT + '/_work/redo/power_rankings.csv')):
+    if _r['rank'] and _r['team'] and int(_r['rank']) <= 3: _PR.setdefault(int(_r['year']), set()).add(_tn(_r['team']))
+
 def is_starter_in(i, y):
     return any(s['year'] == y for s in seasons.get(i, []))
 
@@ -173,9 +181,13 @@ for (f, i), pr in pot.items():
         y = year_of(n, d)
         if not y or not intl_starter(i, y, 'Worlds'): continue
         lg = _LG.get((i, y))
-        dom = any(year_of(w, d) == y for w in d['win']) and lg is not None and _OFF.get((y, lg), -99) >= -5
-        msi = any(m.startswith('MSI') and year_of(m, d) == y and mp == '1' and intl_starter(i, y, 'MSI') for m, mp, mt in d['intl'])
-        if dom or msi: _fav.append((y, p))
+        if y in _PR:  # 그해 월즈 직전 파워랭킹이 있으면 상위 3팀만 우승 후보(사용자 지시)
+            fav = any(_tn(t) and (_tn(t) == x or _tn(t) in x or x in _tn(t)) for x in _PR[y])
+        else:         # 파워랭킹이 없는 해(2013·2014·2015·2018): 강한 리그 우승팀 또는 MSI 우승팀
+            dom = any(year_of(w, d) == y for w in d['win']) and lg is not None and _OFF.get((y, lg), -99) >= -5
+            msi = any(m.startswith('MSI') and year_of(m, d) == y and mp == '1' and intl_starter(i, y, 'MSI') for m, mp, mt in d['intl'])
+            fav = dom or msi
+        if fav: _fav.append((y, p))
     _favfin = [y for y, p in _fav if p in ('1', '2')]
     _anyfin = [n for n, p, t in d['intl'] if n.startswith('Worlds') and p in ('1', '2') and year_of(n, d) and intl_starter(i, year_of(n, d), 'Worlds')]
     if len(_fav) >= 3 and not _anyfin:

@@ -32,7 +32,7 @@
 | steady | 꾸준함의 대명사 | vol 1~2, 주전 시즌 5개 이상 | 컨디션 '최악'을 '나쁨'으로 처리 |
 | choker | 큰 무대 울렁증 | clutch −1 이하이고 결승 패배 3회 이상 | 결승 장면 −10 (부정 특성) |
 | dade_award | 다데상 | Leaguepedia 'dade Award' 공식 수상(Summoning Insight 선정): dade 2013, NaMei 2014, GodV 2015, Clearlove 2016, Doinb 2021 — [Dade Award](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Dade_Award) | 월즈 토너먼트 장면 −10, 월즈 기간 압박 상황 멘탈 −10 (부정 특성) |
-| intl_choke | 월즈의 벽 | **우승 후보로 나간** 월즈 3회 이상이고, 커리어 월즈 결승(주전) 0회. 우승 후보 = 그해 강한 리그(리그 보정 −5 이상) 플레이오프 우승팀 또는 그해 MSI 우승팀 주전 | 월즈 토너먼트(8강 이상) 장면 −10 (부정 특성) |
+| intl_choke | 월즈의 벽 | **우승 후보로 나간** 월즈 3회 이상이고, 커리어 월즈 결승(주전) 0회. 우승 후보 = 그해 월즈 직전 파워랭킹 상위 3팀(`_work/redo/power_rankings.csv`), 파워랭킹을 못 찾은 해(2013·2014·2015·2018)는 강한 리그(리그 보정 −5 이상) 우승팀 또는 MSI 우승팀 | 월즈 토너먼트(8강 이상) 장면 −10 (부정 특성) |
 
 ## 2. 유니크 특성
 한 선수 전용 특성이다. 이름 하나에 **여러 효과(능력치 보정, 주사위 범위, 컨디션·멘탈 처리 등)**를 짧게 붙인다.
@@ -66,7 +66,7 @@
 
 | uzi_u | 小狗 (Puppy) [명예의 전당] | 라인전 +20 / 소규모 교전 +15 / 큰 무대 +10 / 성장 ×1.3 | CS/M 백분위 0.93, KP 0.69; 월즈 준우승 2회 — [Uzi_(Jian_Zi-Hao)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Uzi_(Jian_Zi-Hao)) |
 | caps_u | Baby Faker [명예의 전당] | 지역 리그 승부처 +20 / 큰 무대 +15 / 소규모 교전 +10 / 에이징 하락 확률 −15%p / 다른 포지션 페널티 없음 | 리그 MVP 4회, MSI 2019 우승, 월즈 준우승 2회(2018·2019), 미드·원딜 출전 — [Caps](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Caps) |
-| chovy_u | Anchovy | 라인전 +20 / 25분 이후 한타 +15 / 지역 리그 승부처 +15 / 컨디션 최악→나쁨 / **월즈 토너먼트 승부처 −20** | 리그 MVP 5회, DMG/M 0.95·CS/M 0.90; 우승 후보로 나간 월즈 3회(2022·2024·2025) 모두 4강 탈락, 다데상 2023(커뮤니티 투표, 비공식 — https://zh.moegirl.org.cn/%E5%A4%A7%E5%B8%9D%E5%A5%96) — [Chovy](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Chovy) |
+| chovy_u | Anchovy | 라인전 +20 / 25분 이후 한타 +15 / 지역 리그 승부처 +15 / 컨디션 최악→나쁨 / **월즈 토너먼트 승부처 −20** | 리그 MVP 5회, DMG/M 0.95·CS/M 0.90; 파워랭킹 상위 3팀으로 나간 월즈 4회(2022·2023·2024·2025) 결승 0회, 다데상 2023(커뮤니티 투표, 비공식 — https://zh.moegirl.org.cn/%E5%A4%A7%E5%B8%9D%E5%A5%96) — [Chovy](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Chovy) |
 | knight_u | Knight | 지역 리그 승부처 +15 / 25분 이후 한타 +10 / 큰 무대 +10 / 대실패 99~100 | 리그 MVP 5회, KDA 0.85·DMG/M 0.82 — [Knight_(Zhuo_Ding)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Knight_(Zhuo_Ding)) |
 | rookie_u | Faker Junior | 25분 이후 한타 +15 / 라인전 +10 / 에이징 하락 확률 −15%p / 해외 적응 기간 없음 | 리그 MVP 4회, 월즈 우승 1회, DMG/M 0.84 — [Rookie](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Rookie) |
 | doinb_u | Doinb | 소규모 교전 +15 / 마지막 세트 한타 때 팀원 4명 +5 / 큰 무대 +10 / 성장 ×1.2 / **월즈 토너먼트 −10 (다데상 2021)** | 리그 MVP 4회, 월즈 우승 1회, KP 0.74; 다데상 2021(공식) — [Doinb](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Doinb) |
