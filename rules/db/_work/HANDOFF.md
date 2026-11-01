@@ -74,8 +74,16 @@
 - 다데상: Leaguepedia 공식 5명만 특성 반영. 커뮤니티 집계(Reddit 보관본 arctic-shift)는 참고만(dade_award.md).
 - 2025·2026 LCK, 2026 LCS는 컵+정규 리그 병합(ev/*_league.md). merge.py는 potential을 능력치 최댓값까지 올림(상한 490, 명예의 전당 예외).
 
+## 마무리 작업 (2026-11-01, 사용자 지시: 추가 웹 검색 없이 기존 근거로 적당히)
+- 포지션 의심 10명: gate(2016 LCS) MID→SUP만 변경(Team Impulse에 SUP 없음, CS/M 2.39). samux·overpow·loveling·fenfen은 CS/M이 해당 포지션 분포에 맞아 유지. xmithie(2014 LCS)·leon(2013 LPL)·ycc(2014 LPL)·heartbeat(2013 LCS)는 같은 팀에 그 포지션 선수가 있어 규칙상 유지(JUNGLE 의심, 미확정), duff(2013 LPL)는 통계 없어 유지. 근거는 redo/changes/{연도}_{리그}.md 끝의 '포지션 점검'.
+- 로스터 누락 주전 추가(캐시된 Player Statistics 기준, G 팀 최다의 50% 이상): edward(2014 LEC), da7·bao_2(2014 LPL), g0dfred·hylissang(2016 LEC), kryst4l·hetong·endless(2017 LPL), cold(2018 LPL), jelly·kellin(2019 LCK), killua(2019·2020 LPL), effort(2018 LCK, 비주전). 새 선수 da7·bao_2·g0dfred는 potential 430(추정), men 3 clutch 0 pro 3 vol 3. 포지션은 CS/M 분포와 팀 빈 포지션으로 정한 추정.
+- 재실행 완료: unified.py → pot2/merge.py → traits/assign.py --write.
+- salary.md 10칸, competition.md 4칸은 `(추정: ...)`으로 채움(실제 확인 값 아님).
+- men·pro 미검색 선수는 기본값 유지(작업 없음).
+
 ## 남은 일 (2026 월즈 후 패치 제외)
-- 포지션 의심 10명 확인(위 ② 목록).
-- 로스터 7명 제한으로 빠진 주전 추가(예: 2016~17 Moon, 2019 CLG Wiggily) — 행 추가 시 unified.py → merge.py → assign.py 재실행.
+- 스플릿 통계가 캐시에 없어 로스터 누락 검사를 못 한 이벤트: 2016·2017·2021~2024 LCK, 2021~2024 LCS, 2021~2022 LEC(2023 LCS 포함), 2025·2026 LCK/LCS 컵, 2026 LEC. 이 해의 빠진 주전(예: 2016~17 Moon은 어느 리그인지 불명, LPL 2016에는 moon이 이미 있음)은 Leaguepedia 조회가 다시 필요. 2019 CLG Wiggily는 LCS 2019 캐시에서 G 50% 이상 조건으로 안 잡혀 추가하지 못함(확인 필요).
+- 포지션 의심 미확정 4명(xmithie 2014 LCS, leon 2013 LPL, ycc 2014 LPL, heartbeat 2013 LCS): 조회 필요.
 - men·pro 기사 검색 미실시 약 80명(기본값). Huanfeng·Xiaohu 사생활 보도, Zeus 계약 분쟁은 반영 여부 사용자 결정 대기.
-- salary.md '근거 없음' 칸(연습생 수당, LCS 샐러리캡 등), competition.md 미확인 3칸, champions locke 일부 (미확인).
+- (추정) 표시된 salary·competition 칸과 새 선수 potential 430은 검색으로 확인되면 교체.
+- champions locke 일부 (미확인).
