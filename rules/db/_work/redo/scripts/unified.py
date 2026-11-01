@@ -5,6 +5,7 @@ ROOT = '/home/user/aich/rules/db'
 RE = ROOT + '/_work/redo'
 LEAGUES = ['LCK', 'LPL', 'LEC', 'LCS']
 YEARS = list(range(2013, 2027))
+SCR = '/tmp/claude-0/-home-user-aich/e4b6817c-fe77-5839-b8af-7cf6b261834e/scratchpad/unified'
 
 # ---------------------------------------------------------------- utils
 def norm(s):
@@ -127,6 +128,18 @@ def parse_ev(y, lg):
             cur['url_ev'] = mu[-1] if mu else ''
         elif ln.startswith('- 직전 해'):
             cur['prior'] = ln
+    # 보강 통계 (ev에서 이름 불일치로 결측이던 주전을 Leaguepedia 표 링크명으로 재매칭한 것)
+    xp = RE + '/ev_extra.csv'
+    if os.path.exists(xp):
+        for x in csv.DictReader(open(xp, encoding='utf-8')):
+            if int(x['year']) == y and x['league'] == lg and x['id'] in players:
+                pl = players[x['id']]
+                st = pl['stats']
+                if st is None or st['G'] is None:
+                    fl = lambda v: float(v) if v not in ('', '-') else None
+                    pl['stats'] = dict(G=int(x['G']), W=int(x['W']), L=int(x['L']), KDA=fl(x['KDA']),
+                                       KP=fl(x['KP']), DMG=fl(x['DMG']), CS=fl(x['CS']))
+                    pl['url_stats'] = x['source']
     return head, players
 
 # ---------------------------------------------------------------- 3. standings
@@ -416,7 +429,8 @@ def cur_ovr(r):
 
 def process(y, lg, offsets):
     rows_path = f'{ROOT}/{y}/{lg}.csv'
-    with open(rows_path, encoding='utf-8', newline='') as f:
+    orig = f'{SCR}/orig/{y}/{lg}.csv'  # 최초 원본 백업이 있으면 그것을 입력(재실행 시 멱등)
+    with open(orig if os.path.exists(orig) else rows_path, encoding='utf-8', newline='') as f:
         rd = csv.DictReader(f)
         header = rd.fieldnames
         rows = list(rd)
@@ -600,7 +614,7 @@ def main():
                         w.writerow(r)
             write_changes(y, lg, P)
     json.dump({f'{y}_{lg}': {k: v['ovr'] for k, v in P['result'].items()} for (y, lg), P in allres.items()},
-              open(sys.argv[0].rsplit('/', 1)[0] + '/../_unified_ovr.json', 'w'))
+              open(SCR + '/ovr.json', 'w'))
     return allres, offsets
 
 def write_changes(y, lg, P):
