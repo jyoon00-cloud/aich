@@ -31,6 +31,7 @@
 | flex | 멀티 포지션 | 연도별 파일에서 2개 이상 포지션으로 주전 | 다른 포지션으로 뛸 때 능력치 페널티 절반 |
 | steady | 꾸준함의 대명사 | vol 1~2, 주전 시즌 5개 이상 | 컨디션 '최악'을 '나쁨'으로 처리 |
 | choker | 큰 무대 울렁증 | clutch −1 이하이고 결승 패배 3회 이상 | 결승 장면 −10 (부정 특성) |
+| dade_award | 다데상 | Leaguepedia 'dade Award' 공식 수상(Summoning Insight 선정): dade 2013, NaMei 2014, GodV 2015, Clearlove 2016, Doinb 2021 — [Dade Award](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Dade_Award) | 월즈 토너먼트 장면 −10, 월즈 기간 압박 상황 멘탈 −10 (부정 특성) |
 | intl_choke | 월즈의 벽 | **우승 후보로 나간** 월즈 3회 이상이고, 커리어 월즈 결승(주전) 0회. 우승 후보 = 그해 강한 리그(리그 보정 −5 이상) 플레이오프 우승팀 또는 그해 MSI 우승팀 주전 | 월즈 토너먼트(8강 이상) 장면 −10 (부정 특성) |
 
 ## 2. 유니크 특성
@@ -43,7 +44,7 @@
 - **id:** `{id}_u`
 - **traits 열:** `{id}_u`와 일반 특성(최대 3개)을 함께 적는다.
 - **효과 크기:** 효과는 3~5개이고, 각 ±5~20 범위다. Faker만 예외로 더 강하다.
-- **부정 효과:** (부정 일반 특성은 3개 제한에서 우선 포함) 기록상 약점이 뚜렷하면 부정 효과도 넣는다(예: 월즈 결승 반복 패배, 월즈 4강 벽). 일반 특성이 부정 특성이어도 traits 열에 그대로 둔다.
+- **부정 효과:** (부정 일반 특성은 3개 제한에서 우선 포함) 다데상 수상, 또는 우승 후보로 나간 월즈에서 반복 탈락한 경우에만 넣는다. 결승 패배 자체는 부정 근거가 아니다. 일반 특성이 부정 특성이어도 traits 열에 그대로 둔다.
 - **효과 근거:** 그 선수의 기록(우승·결승, 강한 지표)에 맞춰 고른다.
 
 효과 표기 약어:
@@ -63,12 +64,12 @@
 |---|---|---|---|
 | faker_u | 불사대마왕 | 승부처 각 능력치를 max(현재, 480)으로 판정 / 승부처 +20 / 큰 무대 +15 / 열세 시 +15 / 승부처 대성공 1~15, 대실패 없음 / 승부처 컨디션 '나쁨·최악'을 '보통'으로 / 마지막 세트 한타 때 팀원 4명 +10 / 맞상대는 승부처에서 압박 판정 / 에이징 하락 확률 절반·하락량 절반 | 월즈 우승 6회(2013·2015·2016·2023·2024·2025), 2023~25는 OVR 450대에서 우승 — [Tournament_Results](https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Faker/Tournament_Results) |
 
-| uzi_u | 小狗 (Puppy) [명예의 전당] | 라인전 +20 / 소규모 교전 +15 / 큰 무대 +10 / 성장 ×1.3 / **월즈 결승 −10** | CS/M 백분위 0.93, KP 0.69; 월즈 결승 2회 모두 준우승 — [Uzi_(Jian_Zi-Hao)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Uzi_(Jian_Zi-Hao)) |
+| uzi_u | 小狗 (Puppy) [명예의 전당] | 라인전 +20 / 소규모 교전 +15 / 큰 무대 +10 / 성장 ×1.3 | CS/M 백분위 0.93, KP 0.69; 월즈 준우승 2회 — [Uzi_(Jian_Zi-Hao)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Uzi_(Jian_Zi-Hao)) |
 | caps_u | Baby Faker [명예의 전당] | 지역 리그 승부처 +20 / 큰 무대 +15 / 소규모 교전 +10 / 에이징 하락 확률 −15%p / 다른 포지션 페널티 없음 | 리그 MVP 4회, MSI 2019 우승, 월즈 준우승 2회(2018·2019), 미드·원딜 출전 — [Caps](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Caps) |
-| chovy_u | Anchovy | 라인전 +20 / 25분 이후 한타 +15 / 지역 리그 승부처 +15 / 컨디션 최악→나쁨 / **월즈 토너먼트 승부처 −20** | 리그 MVP 5회, DMG/M 0.95·CS/M 0.90; 월즈 주전 7회(2019~2025) 결승 0회, 4강 3회 — [Chovy](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Chovy) |
-| knight_u | Knight | 지역 리그 승부처 +15 / 25분 이후 한타 +10 / 큰 무대 +10 / 대실패 99~100 / **월즈 결승 −10** | 리그 MVP 5회, KDA 0.85·DMG/M 0.82; 월즈 결승 1회 준우승 — [Knight_(Zhuo_Ding)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Knight_(Zhuo_Ding)) |
+| chovy_u | Anchovy | 라인전 +20 / 25분 이후 한타 +15 / 지역 리그 승부처 +15 / 컨디션 최악→나쁨 / **월즈 토너먼트 승부처 −20** | 리그 MVP 5회, DMG/M 0.95·CS/M 0.90; 우승 후보로 나간 월즈 3회(2022·2024·2025) 모두 4강 탈락, 다데상 2023(커뮤니티 투표, 비공식 — https://zh.moegirl.org.cn/%E5%A4%A7%E5%B8%9D%E5%A5%96) — [Chovy](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Chovy) |
+| knight_u | Knight | 지역 리그 승부처 +15 / 25분 이후 한타 +10 / 큰 무대 +10 / 대실패 99~100 | 리그 MVP 5회, KDA 0.85·DMG/M 0.82 — [Knight_(Zhuo_Ding)](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Knight_(Zhuo_Ding)) |
 | rookie_u | Faker Junior | 25분 이후 한타 +15 / 라인전 +10 / 에이징 하락 확률 −15%p / 해외 적응 기간 없음 | 리그 MVP 4회, 월즈 우승 1회, DMG/M 0.84 — [Rookie](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Rookie) |
-| doinb_u | Doinb | 소규모 교전 +15 / 마지막 세트 한타 때 팀원 4명 +5 / 큰 무대 +10 / 성장 ×1.2 | 리그 MVP 4회, 월즈 우승 1회, KP 0.74 — [Doinb](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Doinb) |
+| doinb_u | Doinb | 소규모 교전 +15 / 마지막 세트 한타 때 팀원 4명 +5 / 큰 무대 +10 / 성장 ×1.2 / **월즈 토너먼트 −10 (다데상 2021)** | 리그 MVP 4회, 월즈 우승 1회, KP 0.74; 다데상 2021(공식) — [Doinb](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Doinb) |
 | rekkles_u | 欧洲成哥 (European WeiXiao) | 라인전 +15 / 대실패 99~100 / 지역 리그 승부처 +10 / 컨디션 최악→나쁨 | 리그 MVP 4회, CS/M 0.87·KDA 0.78 — [Rekkles](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Rekkles) |
 | bdd_u | 보똥 (Boddong) | 라인전 +10 / 지역 리그 승부처 +10 / 대실패 98~100 | 리그 MVP 3회 — [Bdd](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bdd) |
 | bang_u | Bang | 큰 무대 +15 / 한타 +10 / 대실패 99~100 / 성장 ×1.2 | 월즈 우승 2회 — [Bang](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Bang) |
@@ -84,10 +85,10 @@
 | deft_u | 알파카 (Alpaca) | 에이징 하락 확률 −20%p / 25분 이후 한타 +15 / 큰 무대 +10 / 성장 ×1.2 | 월즈 우승 1회, 장기 주전, DMG/M 0.78 — [Deft](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Deft) |
 | ruler_u | Ruler | 25분 이후 한타 +15 / 라인전 +10 / 큰 무대 +10 / 에이징 하락 확률 −10%p | 월즈 우승 1회, DMG/M 0.75·CS/M 0.73 — [Ruler](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Ruler) |
 | imp_u | Doubleimp | 라인전 +15 / 큰 무대 +10 / 데뷔 후 2년 성장 ×1.3 / 해외 적응 기간 없음 | 월즈 우승 1회, 데뷔 시즌 상위권 — [Imp](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Imp) |
-| kiin_u | Kiinsante | 대실패 99~100 / 라인전 +10 / 성장 ×1.3 / 에이징 하락 확률 −10%p / **월즈 4강 이상 −10** | potential 490, DMG/M 0.77·KDA 0.72 — [Kiin](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Kiin) |
+| kiin_u | Kiinsante | 대실패 99~100 / 라인전 +10 / 성장 ×1.3 / 에이징 하락 확률 −10%p | potential 490, DMG/M 0.77·KDA 0.72 — [Kiin](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Kiin) |
 | teddy_u | Walking Nexus | 열세 시 +15 / 소규모 교전 +10 / 라인전 +10 | potential 490, KP 0.76 — [Teddy](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Teddy) |
 | mikyx_u | Mikyx | 지역 리그 승부처 +15 / 에이징 하락 확률 −10%p / 성장 ×1.2 | potential 490, 리그 우승 다수 — [Mikyx](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Mikyx) |
-| 369_u | The Dice Man | 25분 이후 한타 +15 / 대성공 1~10 / 대실패 99~100 / **월즈 4강 −10** | potential 490, DMG/M 0.78; 월즈 4강 4회, 결승 0회 — [369](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=369) |
+| 369_u | The Dice Man | 25분 이후 한타 +15 / 대성공 1~10 / 대실패 99~100 | potential 490, DMG/M 0.78 — [369](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=369) |
 | doran_u | Doran | 25분 이후 한타 +15 / 지역 리그 승부처 +10 / 큰 무대 +10 / 에이징 하락 확률 −10%p | potential 490(2026 능력치 최댓값), 월즈 우승 1회(2025), LCK 우승 4회, DMG/M 0.80 — [Doran](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Doran_%28Choi_Hyeon-jun%29) |
 | duro_u | Duro | 한타 +10 / 큰 무대 +10 / 성장 ×1.3 | potential 490 (2026 LCK 서폿 최상위) — [Duro](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Duro) |
 

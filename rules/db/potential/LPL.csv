@@ -68,7 +68,7 @@ chieftain,Chieftain,JUNGLE,2000,425,3,0,3,3,2018,
 chimin,chimin,JUNGLE,,394,3,0,3,3,2016,
 choud1,ChouD1,JUNGLE,,422,3,0,3,3,2013,
 cl0ud,CL0UD,SUP,1994,427,3,0,3,3,2017,
-clearlove,Clearlove,JUNGLE,1993,474,3,2,3,3,2013,survivor
+clearlove,Clearlove,JUNGLE,1993,474,3,2,3,3,2013,dade_award;survivor
 clid,Clid,JUNGLE,1999,474,3,1,1,4,2017,globetrotter
 climber,climber,JUNGLE,2004,407,3,0,3,3,2025,
 clx,clx,TOP,2000,416,3,0,3,3,2020,
@@ -88,7 +88,7 @@ crisp,Crisp,SUP,1998,484,3,-1,4,3,2018,choker;late_bloomer;intl_champ
 croco,Croco,JUNGLE,2000,474,3,0,3,3,2021,late_bloomer;globetrotter;prodigy
 cryin,Cryin,MID,2000,470,3,1,3,2,2020,prodigy;survivor
 cube,Cube,TOP,2002,452,3,0,3,4,2020,
-dade,Dade,MID,1994,482,3,0,3,3,2013,prodigy;globetrotter
+dade,Dade,MID,1994,482,3,0,3,3,2013,dade_award;prodigy;globetrotter
 danchung,DanChung,MID,1996,410,3,0,3,3,2019,
 dandy,DanDy,JUNGLE,1994,476,3,2,3,3,2013,prodigy;survivor;globetrotter
 danger,Danger,JUNGLE,,410,3,0,3,3,2015,
@@ -98,7 +98,7 @@ deemo,Deemo,JUNGLE,1995,410,3,0,3,3,2016,
 deft,Deft,AD,1996,490,4,1,5,4,2013,deft_u;late_bloomer;iron;carry
 deokdam,deokdam,AD,2000,451,3,1,3,4,2021,globetrotter
 doggo,Doggo,AD,2003,450,3,0,3,3,2022,
-doinb,Doinb,MID,1996,490,3,1,3,4,2016,doinb_u;late_bloomer;intl_champ
+doinb,Doinb,MID,1996,490,3,1,3,4,2016,doinb_u;dade_award;late_bloomer;intl_champ
 domhox,DomhoX,SUP,1991,440,3,0,3,3,2014,
 dove,Dove,MID,1998,452,3,0,3,5,2019,globetrotter;flex
 dragon,Dragon,SUP,,429,3,0,3,3,2013,
@@ -144,7 +144,7 @@ gideon,GIDEON,JUNGLE,2003,451,3,0,3,3,2021,globetrotter
 gimgoon,GimGoon,TOP,1995,477,3,1,3,3,2016,late_bloomer;intl_champ
 gloria,Gloria,TOP,1998,422,3,0,3,3,2019,
 godlike,GodLike,TOP,1993,434,3,0,3,3,2013,
-godv,GodV,MID,1997,414,3,1,3,3,2015,
+godv,GodV,MID,1997,414,3,1,3,3,2015,dade_award
 gogoing,Gogoing,TOP,1991,478,3,1,3,2,2013,survivor;lane_king
 gori,Gori,MID,2000,440,3,0,3,3,2022,globetrotter
 grail,Grail,MID,1996,410,3,0,3,3,2016,
@@ -291,7 +291,7 @@ moyan,Moyan,JUNGLE,2002,420,3,0,3,3,2022,
 moyu,Moyu,TOP,1997,423,3,0,3,3,2019,
 mystic,Mystic,AD,1995,464,3,1,3,5,2014,late_bloomer;globetrotter
 naiyou,naiyou,JUNGLE,2004,420,3,0,3,3,2024,
-namei,NaMei,AD,1993,474,3,1,3,3,2013,
+namei,NaMei,AD,1993,474,3,1,3,3,2013,dade_award
 nct,Nct,TOP,,443,3,0,3,3,2014,
 neny,neny,TOP,2003,416,3,0,3,3,2022,
 new,New,TOP,1998,432,3,0,3,3,2018,

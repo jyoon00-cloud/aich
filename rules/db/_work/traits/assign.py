@@ -180,7 +180,9 @@ for (f, i), pr in pot.items():
     _anyfin = [n for n, p, t in d['intl'] if n.startswith('Worlds') and p in ('1', '2') and year_of(n, d) and intl_starter(i, year_of(n, d), 'Worlds')]
     if len(_fav) >= 3 and not _anyfin:
         cand['intl_choke'] = (len(_fav) / 3, 0, '우승 후보 월즈 %d회(%s), 결승 0회' % (len(_fav), ', '.join('%d %s위' % (y, p) for y, p in sorted(_fav))))
-    order = sorted(cand, key=lambda k: (k not in ('choker', 'intl_choke'), -cand[k][0], -cand[k][1], k))  # 부정 특성은 항상 포함(3개 제한 안에서 우선)
+    # dade_award (부정): Leaguepedia 'Dade Award' 공식 수상자(Summoning Insight 선정)
+    if i in ('dade', 'namei', 'godv', 'clearlove', 'doinb'): cand['dade_award'] = (1, 0, 'Leaguepedia Dade Award 공식 수상')
+    order = sorted(cand, key=lambda k: (k not in ('choker', 'intl_choke', 'dade_award'), -cand[k][0], -cand[k][1], k))  # 부정 특성은 항상 포함(3개 제한 안에서 우선)
     ranks[(f, i)] = order
     res[(f, i)] = order
     why[(f, i)] = {k: cand[k][2] for k in order}
@@ -252,7 +254,7 @@ if WRITE:
     fc = collections.Counter(t for v in persons.values() for t in v)
     L.append('## 특성별 부여 인원 (선수 수, 중복 id 한 번만)')
     L.append('| 특성 | 부여(상위3 채택) | 조건 충족 전체 |'); L.append('|---|---|---|')
-    for t in ['lane_king','skirmisher','teamfighter','carry','survivor','big_stage','intl_champ','domestic_king','iron','late_bloomer','prodigy','globetrotter','flex','steady','choker','intl_choke']:
+    for t in ['lane_king','skirmisher','teamfighter','carry','survivor','big_stage','intl_champ','domestic_king','iron','late_bloomer','prodigy','globetrotter','flex','steady','choker','intl_choke','dade_award']:
         L.append(f'| {t} | {tc[t]} | {fc[t]} |')
     L += ['', f'유니크 대상 {len({k[1] for k in uniq})}명. 특성이 하나라도 있는 선수 {sum(1 for v in persons.values() if v)}명 / 전체 {len(persons)}명.', '', '## 선수별 부여 이유']
     for i, v in persons.items():
