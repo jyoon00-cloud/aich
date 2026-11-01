@@ -53,3 +53,11 @@
 - curl로 본문을 연 기사 중 Cloudflare 차단으로 열지 못한 것(dotesports 2020 LCS $410k, Upcomer 계약 기간 원문, Sheep Esports 아카데미 기사, GGRecon 계약 기사, dotesports LCS 수익 기사): 수치는 채택하지 않았다.
 - Fragster LPL 기사(2023-03-27)는 월 단위 발언을 연 환산한 것으로, 기사에도 세전·세후 불명확하다고 적혀 있다.
 - 2차 정리 기사(Fragster 2024-11-28, Millenium 2021-11-02)는 원 출처가 열리지 않아 보도 수준으로만 사용.
+
+## Sonnet 추가
+- LCK 연봉 규정 상세: 2년 새 팀별 상위 5명 연봉 합계 평균 71% 상승, 5회 LCK 우승·국제대회 3회 우승 베테랑 감산, 2023 봄 로스터 제출 마감 전 계약 선수는 상한 계산 시 1/5만 반영. 팀별 상한의 원화 금액은 본문에 없음. — https://labs.invenglobal.com/articles/18472/lck-introduces-sporting-financial-regulations-for-sustainable-esports-ecosystem — 2023 (날짜 미확인, curl 본문 확인)
+- LEC SFR 2024: 상위 5명 연봉 합계 상한 €2M, 초과분의 50%를 리그에 납부, 기존 계약 선수는 상한의 1/5 또는 실제 연봉 중 낮은 값만 산정. — https://www.esports.net/news/lol/lec-implements-salary-regulations-for-2024-season/ — 2023 말 (날짜 미확인, curl 본문 확인)
+- LEC SFR 개정: 2027년부터 상한 €2M→€1.65M, 하한 €1M→€825,000, 2029년까지 €1M 목표. 보너스·초상권 포함 산정. — https://insider-gaming.com/lec-salary-cap-drops-to-e1-65m-and-could-decrease-further-in-2029/ — 2026-09-25 (curl 본문 확인)
+- LCS 평균 연봉: 2017년 $150k → 2018년 $327k (Optic GM Romain Bigeard 발언). — https://www.invenglobal.com/lol/articles/4432/optic-gm-reveals-massive-salary-increase-in-the-na-lcs-in-2018-but-is-this-actually-a-good-thing — 2018 초 (날짜 미확인, curl 본문 확인)
+- 2014 한국 선수 연봉: 비공개, 한국 구단은 경쟁력 있는 연봉을 주지 않는다는 서술. Faker는 중국에서 약 $100만 이상 제의를 받고 SKT 재계약(보도). 금액 외 구체 한국 연봉 수치는 없음. — https://archive.runeterra.net/na/esports/qG8UAgmx — 2014 말 (정확한 날짜 미확인, curl 본문 확인)
+- 못 찾음: LCK 팀 상한 원화 금액, 2013~2014 한국 실제 연봉, 연습생 월급, LCS 2023 이후 최저연봉, LPL 상한 정확 수치.
