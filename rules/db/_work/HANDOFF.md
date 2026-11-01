@@ -35,3 +35,25 @@
 - 챔피언 포지션 원본 champ/pro_roles_raw.json: 350/350 조회 완료(아직 champions.csv 미반영).
 - 워커 스크립트 사본: redo/scripts/ (스크래치 원본·캐시는 세션 종료 시 사라짐).
 - 다음 순서: ①미수집분 하이쿠 수집 ②소넷이 선수 능력치·챔피언·competition.md·salary.md 작성 ③포텐·히든 재산정.
+
+
+# 2026-11-01 이어서 작업 (세션 2)
+## ① 근거 수집 — 완료
+- redo/ev 56개 전부 수집. 직전 해 수상 '미수집' 0. 모든 선수에 `직전 해 대회(YYYY)` 줄(Tournament_Results 기반, scripts/opus_tr.py) 추가. Leaguepedia 페이지 없는 22명은 비움.
+- comp/ev 2013~2026, salary/ev(Sonnet 추가 포함), champ/ev2 d1~d3(96종) + pro_pos.csv(대회 포지션 비율).
+- 교훈: 대회 성적은 선수 wikitext가 아니라 `<선수>/Tournament_Results`(prop=text)에 있다. 나무위키는 클라우드 IP를 Cloudflare로 차단(설정으로 해결 불가).
+
+## ② 소넷 교정 — 완료
+- 연도별 능력치 56개 파일: 근거 산식(팀 순위 → 직전 해 실적 가산 → 같은 포지션 성적 ±10)으로 재산정. 변경 로그 redo/changes/{연도}_{리그}.md. 지시서 redo/brief_sonnet_stats.md.
+- 포지션 오류 정정(원본 로스터 오류): 2020 LCK chovy MID, 2018 LEC vander SUP, 2018 LCK wolf SUP, 2014 LPL jojo MID, 2017 LCS ninja MID.
+  남은 의심(CS/M과 pos 불일치, 미확인): 2013 LEC samux, 2014 LCS xmithie, 2015 LEC overpow, 2015 LPL loveling, 2016 LCS gate, 2020 LPL fenfen, 2013 LPL leon/2014 LPL ycc/2013 LCS heartbeat(AD인데 CS 낮음), 2013 LPL duff.
+- champions.csv: v3/g1~g3 반영(공식 난이도, 대회 포지션, (추정) 제거). locke만 일부 (미확인).
+- competition.md, salary.md 작성. 승강제 폐지 시점은 검색 요약 근거(기사 본문 미확인). salary는 [번호] 근거·(보간)·근거 없음 표기.
+- 알려진 한계: 로스터 7명 제한 누락(예: 2016~17 Moon, 2019 CLG Wiggily). 2025·2026 일부 리그 순위는 팀 승률로 대체.
+
+## ③ 포텐·히든 재산정 — 진행 중
+- pot2/fetch_pot.py(근거 수집) → pot2/build_dossier.py(선수별 커리어 요약 dossier/p1~p6) → pot2/brief_sonnet.md(소넷 산정) → out/p*.csv를 potential/*.csv에 병합.
+
+## 결정사항
+- 채팅 앱(사용자 API 키, OpenRouter/OrcaRouter 등 OpenAI 호환 가능) 만들 때 장기 기억은 PDF가 아니라 텍스트: 상태 카드 + 연대기 요약 + 최근 대화 몇 턴.
+- 검색이 반복 실패하면 Opus가 원인·조회 방법을 정하고 하이쿠에는 단순 반복만 시킨다(CLAUDE.md).
