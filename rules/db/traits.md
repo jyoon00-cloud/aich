@@ -88,6 +88,7 @@
 | teddy_u | Walking Nexus | 열세 시 +15 / 소규모 교전 +10 / 라인전 +10 | potential 490, KP 0.76 — [Teddy](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Teddy) |
 | mikyx_u | Mikyx | 지역 리그 승부처 +15 / 에이징 하락 확률 −10%p / 성장 ×1.2 | potential 490, 리그 우승 다수 — [Mikyx](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Mikyx) |
 | 369_u | The Dice Man | 25분 이후 한타 +15 / 대성공 1~10 / 대실패 99~100 / **월즈 4강 −10** | potential 490, DMG/M 0.78; 월즈 4강 4회, 결승 0회 — [369](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=369) |
+| doran_u | Doran | 25분 이후 한타 +15 / 지역 리그 승부처 +10 / 큰 무대 +10 / 에이징 하락 확률 −10%p | potential 490(2026 능력치 최댓값), 월즈 우승 1회(2025), LCK 우승 4회, DMG/M 0.80 — [Doran](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Doran_%28Choi_Hyeon-jun%29) |
 | duro_u | Duro | 한타 +10 / 큰 무대 +10 / 성장 ×1.3 | potential 490 (2026 LCK 서폿 최상위) — [Duro](https://lol.fandom.com/api.php?action=parse&format=json&prop=wikitext&page=Duro) |
 
 이름은 Leaguepedia 별명(없으면 닉네임). 근거 상세는 `_work/traits/unique_targets.md`, 일반 특성 판정은 `_work/traits/log.md`.
