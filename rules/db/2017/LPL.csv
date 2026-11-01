@@ -1,7 +1,7 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 scout,EDward Gaming,MID,438,448,443,442,424,캐리형
-zet,EDward Gaming,AD,420,431,420,427,407,캐리형
-meiko,EDward Gaming,SUP,445,445,462,463,470,이니시형
+zet,EDward Gaming,AD,420,433,421,428,408,캐리형
+meiko,EDward Gaming,SUP,444,446,463,465,472,이니시형
 fireloli,EDward Gaming,JUNGLE,407,426,427,428,417,한타형
 mouse,EDward Gaming,TOP,436,439,436,432,422,캐리형
 korol,EDward Gaming,TOP,406,399,397,393,390,라인전형
@@ -10,32 +10,32 @@ gimgoon,Game Talents,TOP,406,403,410,402,394,교전형
 grail,Game Talents,MID,384,387,388,383,378,교전형
 savoki,Game Talents,SUP,377,367,382,384,390,보호형
 aqiu,Game Talents,JUNGLE,395,393,400,397,390,교전형
-west,Game Talents,AD,398,394,386,391,381,라인전형
+west,Game Talents,AD,401,395,388,393,383,라인전형
 wynn,Game Talents,AD,387,382,381,382,368,라인전형
 wushuang,Game Talents,JUNGLE,375,379,386,384,376,교전형
 amazingj,I May,TOP,428,426,433,425,413,교전형
 athena,I May,MID,442,435,432,429,417,라인전형
-jinjiao,I May,AD,414,423,425,425,403,교전형
+jinjiao,I May,AD,415,425,425,426,404,한타형
 ben4,I May,JUNGLE,407,415,420,418,410,교전형
-road,I May,SUP,413,398,423,420,431,보호형
+road,I May,SUP,415,403,425,424,433,보호형
 flawless,I May,JUNGLE,400,396,400,399,390,라인전형
-starlight,I May,SUP,380,386,403,405,411,보호형
+starlight,I May,SUP,380,388,402,405,410,보호형
 duke,Invictus Gaming,TOP,462,467,456,456,444,캐리형
 kid,Invictus Gaming,JUNGLE,429,431,427,430,418,캐리형
 rio,Invictus Gaming,JUNGLE,395,396,402,400,392,교전형
 rookie,Invictus Gaming,MID,427,433,434,429,412,교전형
-marge,Invictus Gaming,AD,406,416,401,409,393,캐리형
-baolan,Invictus Gaming,SUP,417,410,424,427,432,보호형
+marge,Invictus Gaming,AD,407,418,403,412,395,캐리형
+baolan,Invictus Gaming,SUP,417,413,426,430,434,보호형
 funny,LGD Gaming,TOP,388,386,391,384,381,교전형
 eimy,LGD Gaming,JUNGLE,388,396,395,396,385,캐리형
 1ntruder,LGD Gaming,JUNGLE,377,378,386,383,376,교전형
 godv,LGD Gaming,MID,414,404,401,398,393,라인전형
 jinoo,LGD Gaming,MID,387,394,386,386,382,캐리형
-imp,LGD Gaming,AD,410,405,390,398,387,라인전형
-pyl,LGD Gaming,SUP,385,378,398,398,406,보호형
+imp,LGD Gaming,AD,413,409,395,403,390,라인전형
+pyl,LGD Gaming,SUP,383,377,396,396,403,보호형
 swift,Newbee,JUNGLE,421,417,439,429,429,이니시형
-mor,Newbee,SUP,400,393,407,410,415,보호형
-lwx,Newbee,AD,418,416,409,413,399,라인전형
+mor,Newbee,SUP,401,397,408,413,416,보호형
+lwx,Newbee,AD,422,420,413,418,402,라인전형
 v,Newbee,TOP,404,405,396,396,394,캐리형
 cool,Newbee,MID,427,426,429,423,410,교전형
 coco,Newbee,MID,393,403,403,399,387,캐리형
@@ -44,19 +44,19 @@ xiyang,Oh My God,TOP,437,434,424,424,416,라인전형
 juejue,Oh My God,JUNGLE,399,395,401,399,391,교전형
 world6,Oh My God,JUNGLE,401,417,427,423,417,교전형
 icon,Oh My God,MID,418,429,420,421,407,캐리형
-smlz,Oh My God,AD,441,438,433,436,417,라인전형
-cold,Oh My God,SUP,415,418,442,440,450,이니시형
+smlz,Oh My God,AD,443,440,435,439,418,라인전형
+cold,Oh My God,SUP,415,421,442,442,450,보호형
 kabe,Qiao Gu Reapers,TOP,447,446,446,441,425,라인전형
 doinb,Qiao Gu Reapers,MID,419,425,430,424,407,교전형
 clid,Qiao Gu Reapers,JUNGLE,422,427,437,433,426,교전형
-alone,Qiao Gu Reapers,AD,411,429,422,426,402,캐리형
-ali,Qiao Gu Reapers,SUP,407,403,418,421,426,보호형
-cl0ud,Qiao Gu Reapers,SUP,386,386,401,403,409,보호형
+alone,Qiao Gu Reapers,AD,412,430,423,427,403,캐리형
+ali,Qiao Gu Reapers,SUP,410,408,420,424,428,보호형
+cl0ud,Qiao Gu Reapers,SUP,385,386,401,404,409,보호형
 candyseven,Qiao Gu Reapers,AD,397,407,395,402,384,캐리형
 letme,Royal Never Give Up,TOP,432,431,427,424,416,라인전형
 xiaohu,Royal Never Give Up,MID,446,453,432,438,426,캐리형
-ming,Royal Never Give Up,SUP,410,418,422,430,430,한타형
-uzi,Royal Never Give Up,AD,460,463,448,456,433,캐리형
+ming,Royal Never Give Up,SUP,411,419,421,430,429,한타형
+uzi,Royal Never Give Up,AD,461,464,449,457,434,캐리형
 mlxg,Royal Never Give Up,JUNGLE,424,445,445,446,435,한타형
 y1han,Royal Never Give Up,JUNGLE,384,400,404,403,394,교전형
 windy,Royal Never Give Up,AD,398,410,391,402,384,캐리형
@@ -66,17 +66,20 @@ zzr,Snake Esports,JUNGLE,386,391,394,394,385,교전형
 tank,Snake Esports,MID,401,395,390,389,375,라인전형
 zz1tai,Snake Esports,MID,413,408,406,403,395,라인전형
 mint,Snake Esports,AD,393,399,405,403,385,교전형
-ohq,Snake Esports,AD,414,426,409,418,398,캐리형
+ohq,Snake Esports,AD,416,428,411,421,399,캐리형
+kryst4l,Snake Esports,SUP,406,389,419,414,427,이니시형
 957,Team WE,TOP,417,428,412,415,408,캐리형
 condi,Team WE,JUNGLE,444,452,457,455,447,이니시형
 xiye,Team WE,MID,425,442,433,434,416,캐리형
-mystic,Team WE,AD,448,459,446,454,428,캐리형
-ben,Team WE,SUP,428,444,455,460,463,보호형
-zero,Team WE,SUP,387,383,402,403,410,보호형
+mystic,Team WE,AD,451,461,448,455,430,캐리형
+ben,Team WE,SUP,427,443,454,459,462,보호형
+zero,Team WE,SUP,387,384,401,403,410,보호형
 jotaro,Vici Gaming,TOP,400,398,403,395,389,교전형
 loong,Vici Gaming,TOP,436,420,428,420,411,라인전형
 bengi,Vici Gaming,JUNGLE,413,416,419,418,409,교전형
 papillon,Vici Gaming,JUNGLE,387,395,406,401,396,교전형
 easyhoon,Vici Gaming,MID,415,403,396,395,391,라인전형
 peng,Vici Gaming,MID,391,388,388,384,374,라인전형
-xuanxuanpi,Vici Gaming,AD,417,406,398,403,391,라인전형
+xuanxuanpi,Vici Gaming,AD,419,410,401,406,394,라인전형
+hetong,Vici Gaming,SUP,386,386,403,404,411,보호형
+endless,Vici Gaming,AD,394,393,381,388,379,라인전형

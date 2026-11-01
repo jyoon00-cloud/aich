@@ -219,3 +219,11 @@ sejuani: note 궁극기 한타 이니시 탱커→중반 스커미시 R 이니�
 
 바뀐 칸 합계 212
 (미확인): locke 칸 curve/lan/skr/tf/role는 시기·라인전·한타 서술을 못 찾아 기존값 유지(note에 표기)
+
+## locke 보완 (Opus, 사용자 지시로 로크만 검색)
+- curve 중반→초반, lan 3→4, skr 4→5, tf 3→2, role 암살→암살/견제, note (미확인) 제거.
+- 근거: 나무위키 로크 문서(검색 결과 요약 — 본문은 클라우드 IP 차단으로 미열람): "최고 수준의 킬 캐치력과 변수 창출 능력", "연옥이 한타 영향력이 가장 높다…한타 단계의 로크가 약하다는 뜻" https://namu.wiki/w/%EB%A1%9C%ED%81%AC(%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C)
+- Mobalytics 가이드(검색 요약): 라인 주도형, 6레벨 첫 파워 스파이크, 킬을 먹어야 성장, 후반 한타에서 묶이기 쉬움 https://mobalytics.gg/lol/champions/locke/guide , https://mobalytics.gg/lol/guides/how-to-play-locke
+- 사용자 정정: lan 4→3, tf 2→3 (라인전·한타는 암살자 기준으로 무난, 교전이 강점)
+- 사용자 정정: curve 초반→중반(초중반 강세, note에 표기)
+- 사용자 정정: curve 중반→초반(스노우볼형)
