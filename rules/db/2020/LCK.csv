@@ -1,69 +1,69 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-kiin,Afreeca Freecs,TOP,465,455,452,431,430,라인전형
-jelly,Afreeca Freecs,SUP,420,420,431,417,436,로밍형
-mystic,Afreeca Freecs,AD,443,440,445,426,405,캐리형
-spirit,Afreeca Freecs,JUNGLE,432,430,444,435,413,교전형
-fly,Afreeca Freecs,MID,424,428,425,427,427,안정형
-ssun_2,Afreeca Freecs,MID,408,419,406,392,393,성장형
-dread,Afreeca Freecs,JUNGLE,410,409,423,405,424,로밍형
-ikssu,APK Prince,TOP,436,432,432,421,399,캐리형
-flawless,APK Prince,JUNGLE,419,423,430,414,398,교전형
-secret,APK Prince,SUP,414,405,403,422,435,보호형
-hybrid_2,APK Prince,AD,421,426,429,406,386,캐리형
-cover,APK Prince,MID,413,412,407,399,392,성장형
-keine,APK Prince,MID,405,414,407,385,394,성장형
-trigger,APK Prince,AD,395,409,397,388,389,성장형
-nuguri,DAMWON Gaming,TOP,456,456,465,446,430,캐리형
-canyon,DAMWON Gaming,JUNGLE,455,459,472,452,440,교전형
-showmaker,DAMWON Gaming,MID,469,460,464,435,433,라인전형
-beryl,DAMWON Gaming,SUP,425,415,430,444,450,시야형
-nuclear,DAMWON Gaming,AD,434,439,436,419,401,캐리형
-ghost,DAMWON Gaming,AD,435,425,425,414,394,캐리형
-hoit,DAMWON Gaming,SUP,399,397,392,414,423,보호형
-chovy,DragonX,TOP,410,414,413,394,390,성장형
-doran,DragonX,TOP,433,420,423,398,401,라인전형
-pyosik,DragonX,JUNGLE,439,445,445,431,419,교전형
-quad,DragonX,MID,410,409,410,395,395,성장형
-deft,DragonX,AD,459,465,463,450,424,캐리형
-keria,DragonX,SUP,426,426,436,427,437,로밍형
-clid,Gen.G,JUNGLE,439,449,456,438,424,교전형
-ruler,Gen.G,AD,467,471,474,455,438,캐리형
-rascal,Gen.G,TOP,434,442,434,455,433,한타형
-bdd,Gen.G,MID,460,459,464,436,439,라인전형
-life,Gen.G,SUP,429,423,429,443,455,보호형
-kellin,Gen.G,SUP,401,400,402,415,430,보호형
-tarzan,Griffin,JUNGLE,452,457,467,457,440,교전형
-viper,Griffin,AD,475,479,478,457,435,캐리형
-sanghyeon,Griffin,SUP,433,425,434,453,457,시야형
-ucal,Griffin,MID,445,445,438,442,437,안정형
-sw0rd,Griffin,TOP,447,437,441,411,415,라인전형
-untara,Griffin,TOP,411,413,415,395,399,성장형
-hoya,Griffin,TOP,419,417,413,399,396,성장형
-cuvee,Hanwha Life Esports,TOP,444,435,438,419,416,라인전형
-haru,Hanwha Life Esports,JUNGLE,418,429,431,421,399,교전형
-tempt,Hanwha Life Esports,MID,413,414,407,408,409,안정형
-vsta,Hanwha Life Esports,AD,416,426,423,403,410,성장형
-lava,Hanwha Life Esports,AD,417,415,420,402,396,성장형
-zenit,Hanwha Life Esports,AD,401,408,405,382,385,성장형
-lehends,Hanwha Life Esports,SUP,423,418,427,444,448,시야형
-kuro,KT Rolster,MID,440,447,454,443,419,교전형
-aiming,KT Rolster,AD,453,451,447,436,412,캐리형
-tusin,KT Rolster,SUP,416,418,420,431,436,보호형
-bon0,KT Rolster,JUNGLE,418,414,422,411,434,로밍형
-sohwan,KT Rolster,TOP,421,415,416,419,419,안정형
-ray,KT Rolster,TOP,401,406,401,387,380,성장형
-malrang,KT Rolster,JUNGLE,402,407,401,387,387,성장형
-gorilla,SANDBOX Gaming,SUP,423,411,415,439,435,보호형
-dove,SANDBOX Gaming,MID,426,425,435,410,400,캐리형
-summit,SANDBOX Gaming,TOP,435,426,435,406,414,라인전형
-onfleek,SANDBOX Gaming,JUNGLE,417,411,428,414,425,로밍형
-route,SANDBOX Gaming,AD,431,429,429,413,395,캐리형
-leo_2,SANDBOX Gaming,AD,405,402,396,386,389,성장형
-punch,SANDBOX Gaming,JUNGLE,397,392,405,399,410,로밍형
-teddy,T1,AD,465,468,460,454,429,캐리형
-effort,T1,SUP,422,424,436,425,441,로밍형
-faker,T1,MID,465,452,464,472,481,운영형
-canna,T1,TOP,464,456,459,430,439,라인전형
-cuzz,T1,JUNGLE,439,438,451,437,419,교전형
-ellim,T1,JUNGLE,405,398,413,400,412,로밍형
-roach,T1,TOP,402,403,397,380,384,성장형
+kiin,Afreeca Freecs,TOP,443,438,431,428,421,교전형
+jelly,Afreeca Freecs,SUP,404,406,427,429,446,성장형
+mystic,Afreeca Freecs,AD,427,429,421,426,408,안정형
+spirit,Afreeca Freecs,JUNGLE,424,420,433,436,430,운영형
+fly,Afreeca Freecs,MID,418,418,428,425,415,안정형
+ssun_2,Afreeca Freecs,MID,412,410,411,408,403,성장형
+dread,Afreeca Freecs,JUNGLE,408,406,413,415,413,로밍형
+ikssu,APK Prince,TOP,416,419,421,417,411,성장형
+flawless,APK Prince,JUNGLE,410,406,418,421,417,운영형
+secret,APK Prince,SUP,397,399,423,425,442,성장형
+hybrid_2,APK Prince,AD,431,431,419,421,405,라인전형
+cover,APK Prince,MID,432,422,418,413,403,성장형
+keine,APK Prince,MID,410,406,405,402,398,성장형
+trigger,APK Prince,AD,410,412,408,411,402,성장형
+nuguri,DAMWON Gaming,TOP,465,456,448,446,438,교전형
+canyon,DAMWON Gaming,JUNGLE,444,440,449,452,444,운영형
+showmaker,DAMWON Gaming,MID,456,453,455,448,438,교전형
+beryl,DAMWON Gaming,SUP,428,430,448,448,467,보호형
+nuclear,DAMWON Gaming,AD,448,453,441,444,425,안정형
+ghost,DAMWON Gaming,AD,412,416,412,413,404,캐리형
+hoit,DAMWON Gaming,SUP,402,403,413,414,422,보호형
+chovy,DragonX,TOP,478,471,464,457,444,라인전형
+doran,DragonX,TOP,464,462,451,448,437,라인전형
+pyosik,DragonX,JUNGLE,451,447,454,455,446,교전형
+quad,DragonX,MID,410,412,417,414,408,성장형
+deft,DragonX,AD,459,464,451,454,433,안정형
+keria,DragonX,SUP,438,440,457,457,479,이니시형
+clid,Gen.G,JUNGLE,468,464,473,476,465,교전형
+ruler,Gen.G,AD,464,475,461,462,439,안정형
+rascal,Gen.G,TOP,471,471,461,460,447,캐리형
+bdd,Gen.G,MID,461,464,471,465,451,교전형
+life,Gen.G,SUP,450,452,459,457,480,보호형
+kellin,Gen.G,SUP,405,406,413,413,423,보호형
+tarzan,Griffin,JUNGLE,405,401,413,412,410,운영형
+viper,Griffin,AD,422,423,412,411,398,성장형
+sanghyeon,Griffin,SUP,387,389,409,404,429,시야형
+ucal,Griffin,MID,410,404,408,400,395,성장형
+sw0rd,Griffin,TOP,415,415,410,403,399,성장형
+untara,Griffin,TOP,400,400,396,392,390,성장형
+hoya,Griffin,TOP,402,400,395,392,390,성장형
+cuvee,Hanwha Life Esports,TOP,420,417,414,409,404,성장형
+haru,Hanwha Life Esports,JUNGLE,407,403,421,424,421,이니시형
+tempt,Hanwha Life Esports,MID,424,416,418,412,405,성장형
+vsta,Hanwha Life Esports,AD,405,414,412,414,398,성장형
+lava,Hanwha Life Esports,AD,395,399,396,398,390,성장형
+zenit,Hanwha Life Esports,AD,396,398,397,399,391,성장형
+lehends,Hanwha Life Esports,SUP,406,408,437,438,459,이니시형
+kuro,KT Rolster,MID,443,442,449,444,433,교전형
+aiming,KT Rolster,AD,449,454,450,453,434,교전형
+tusin,KT Rolster,SUP,428,430,453,456,474,이니시형
+bon0,KT Rolster,JUNGLE,441,437,454,459,452,이니시형
+sohwan,KT Rolster,TOP,449,445,433,430,420,안정형
+ray,KT Rolster,TOP,416,415,411,411,406,성장형
+malrang,KT Rolster,JUNGLE,405,403,415,420,417,성장형
+gorilla,SANDBOX Gaming,SUP,389,391,413,411,432,성장형
+dove,SANDBOX Gaming,MID,417,411,411,403,397,성장형
+summit,SANDBOX Gaming,TOP,424,418,411,406,402,성장형
+onfleek,SANDBOX Gaming,JUNGLE,403,399,414,415,413,성장형
+route,SANDBOX Gaming,AD,417,417,409,410,396,교전형
+leo_2,SANDBOX Gaming,AD,402,404,397,396,389,성장형
+punch,SANDBOX Gaming,JUNGLE,395,393,402,401,400,로밍형
+teddy,T1,AD,480,484,468,469,447,안정형
+effort,T1,SUP,447,449,467,470,486,보호형
+faker,T1,MID,476,472,470,465,451,라인전형
+canna,T1,TOP,459,466,465,460,449,캐리형
+cuzz,T1,JUNGLE,463,459,465,466,456,교전형
+ellim,T1,JUNGLE,412,410,415,416,411,로밍형
+roach,T1,TOP,417,415,411,412,405,성장형

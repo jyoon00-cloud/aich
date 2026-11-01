@@ -1,60 +1,60 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-steve,Elements,TOP,420,420,420,415,405,안정형
-gilius,Elements,JUNGLE,420,415,425,420,415,안정형
-eika,Elements,MID,420,410,425,420,415,안정형
-mrrallez,Elements,AD,420,420,425,415,405,캐리형
-promisq,Elements,SUP,415,405,415,420,430,보호형
-gamsu,Fnatic,TOP,430,430,425,425,415,라인전형
-spirit,Fnatic,JUNGLE,430,425,435,430,425,교전형
-febiven,Fnatic,MID,440,435,445,435,425,캐리형
-rekkles,Fnatic,AD,445,435,450,445,425,캐리형
-noxiak,Fnatic,SUP,415,405,415,420,425,보호형
-klaj,Fnatic,SUP,415,405,415,420,430,보호형
-kikis,G2 Esports,TOP,440,430,435,435,425,안정형
-trick,G2 Esports,JUNGLE,460,450,465,455,445,교전형
-perkz,G2 Esports,MID,450,440,455,455,440,캐리형
-emperor,G2 Esports,AD,440,440,445,440,420,캐리형
-hybrid,G2 Esports,SUP,435,425,435,440,450,안정형
-atom,Giants Gaming,TOP,405,405,405,400,395,안정형
-jaeger,Giants Gaming,TOP,405,410,410,405,395,안정형
-k0u,Giants Gaming,JUNGLE,410,405,415,410,400,안정형
-betongjocke,Giants Gaming,JUNGLE,400,400,405,400,395,안정형
-wisdom,Giants Gaming,JUNGLE,410,405,415,410,405,성장형
-ptt,Giants Gaming,MID,410,405,410,410,405,안정형
-adryh,Giants Gaming,AD,410,410,415,405,395,안정형
-odoamne,H2k-Gaming,TOP,445,440,440,440,425,라인전형
-jankos,H2k-Gaming,JUNGLE,445,440,455,445,440,교전형
-ryu,H2k-Gaming,MID,445,435,445,450,440,운영형
-nulu,H2k-Gaming,MID,410,405,415,410,405,안정형
-forg1ven,H2k-Gaming,AD,450,445,455,450,430,캐리형
-vander,H2k-Gaming,SUP,435,420,430,440,450,보호형
-soaz,Origen,TOP,445,440,440,440,430,라인전형
-amazing,Origen,JUNGLE,440,435,445,440,435,교전형
-powerofevil,Origen,MID,440,430,445,445,435,한타형
-xpeke,Origen,MID,430,420,435,435,430,운영형
-zven,Origen,AD,440,435,450,440,420,캐리형
-mithy,Origen,SUP,440,425,435,445,455,보호형
-wunder,Splyce,TOP,435,430,430,435,415,성장형
-kold,Splyce,JUNGLE,420,415,425,420,420,안정형
-sencux,Splyce,MID,425,415,430,425,415,안정형
-kobbe,Splyce,AD,430,425,435,430,415,캐리형
-nisbeth,Splyce,SUP,420,410,420,425,435,보호형
-fredy122,Team ROCCAT,TOP,420,420,420,415,405,안정형
-airwaks,Team ROCCAT,JUNGLE,420,415,425,420,415,안정형
-betsy,Team ROCCAT,MID,415,410,420,415,410,안정형
-safir,Team ROCCAT,AD,410,410,415,410,400,안정형
-tabzz,Team ROCCAT,AD,420,415,425,420,405,안정형
-edward,Team ROCCAT,SUP,420,410,420,425,435,로밍형
-extinkt,Team ROCCAT,SUP,400,395,400,400,395,안정형
-cabochard,Team Vitality,TOP,440,435,435,435,420,안정형
-shook,Team Vitality,JUNGLE,435,425,440,435,435,운영형
-nukeduck,Team Vitality,MID,440,430,445,440,430,운영형
-hjarnan,Team Vitality,AD,435,430,440,435,420,안정형
-kasing,Team Vitality,SUP,430,420,430,435,445,보호형
-vizicsacsi,Unicorns of Love,TOP,430,430,430,430,415,안정형
-diamondprox,Unicorns of Love,JUNGLE,435,420,435,430,430,교전형
-djoko,Unicorns of Love,JUNGLE,415,410,415,410,405,성장형
-mirror,Unicorns of Love,JUNGLE,400,400,405,400,395,안정형
-loulex,Unicorns of Love,JUNGLE,400,400,405,400,395,안정형
-fox,Unicorns of Love,MID,440,430,440,440,430,운영형
-steeelback,Unicorns of Love,AD,425,425,435,425,410,안정형
+steve,Elements,TOP,432,423,419,418,413,라인전형
+gilius,Elements,JUNGLE,410,411,416,417,431,안정형
+eika,Elements,MID,417,415,413,417,418,안정형
+mrrallez,Elements,AD,423,427,421,417,412,안정형
+promisq,Elements,SUP,393,391,403,403,420,보호형
+gamsu,Fnatic,TOP,420,431,426,426,417,안정형
+spirit,Fnatic,JUNGLE,421,422,426,426,435,성장형
+febiven,Fnatic,MID,448,443,439,437,433,라인전형
+rekkles,Fnatic,AD,447,444,438,438,428,안정형
+noxiak,Fnatic,SUP,414,412,424,427,443,보호형
+klaj,Fnatic,SUP,410,407,420,426,442,보호형
+kikis,G2 Esports,TOP,434,459,453,457,437,안정형
+trick,G2 Esports,JUNGLE,449,453,456,457,455,교전형
+perkz,G2 Esports,MID,465,454,450,455,441,라인전형
+emperor,G2 Esports,AD,443,453,447,456,436,안정형
+hybrid,G2 Esports,SUP,448,448,458,458,463,안정형
+atom,Giants Gaming,TOP,403,408,403,400,401,안정형
+jaeger,Giants Gaming,TOP,403,405,401,401,390,안정형
+k0u,Giants Gaming,JUNGLE,395,396,400,400,409,안정형
+betongjocke,Giants Gaming,JUNGLE,396,396,402,399,417,안정형
+wisdom,Giants Gaming,JUNGLE,395,396,400,400,409,성장형
+ptt,Giants Gaming,MID,402,404,399,399,396,안정형
+adryh,Giants Gaming,AD,395,406,402,401,401,안정형
+odoamne,H2k-Gaming,TOP,442,457,451,452,433,안정형
+jankos,H2k-Gaming,JUNGLE,449,453,456,456,456,교전형
+ryu,H2k-Gaming,MID,450,461,455,451,438,캐리형
+nulu,H2k-Gaming,MID,414,416,411,411,408,안정형
+forg1ven,H2k-Gaming,AD,462,469,462,460,442,캐리형
+vander,H2k-Gaming,SUP,441,441,451,452,460,보호형
+soaz,Origen,TOP,453,448,443,450,436,안정형
+amazing,Origen,JUNGLE,439,441,445,450,455,운영형
+powerofevil,Origen,MID,431,436,432,436,430,한타형
+xpeke,Origen,MID,414,416,411,411,408,운영형
+zven,Origen,AD,467,449,443,450,436,라인전형
+mithy,Origen,SUP,436,434,446,451,463,보호형
+wunder,Splyce,TOP,441,416,412,412,409,성장형
+kold,Splyce,JUNGLE,395,396,400,400,409,안정형
+sencux,Splyce,MID,408,415,412,411,414,안정형
+kobbe,Splyce,AD,411,419,413,413,409,안정형
+nisbeth,Splyce,SUP,404,401,414,412,434,보호형
+fredy122,Team ROCCAT,TOP,423,415,410,407,405,안정형
+airwaks,Team ROCCAT,JUNGLE,402,403,408,405,422,안정형
+betsy,Team ROCCAT,MID,427,411,408,405,409,라인전형
+safir,Team ROCCAT,AD,405,410,403,403,394,안정형
+tabzz,Team ROCCAT,AD,410,415,410,406,404,안정형
+edward,Team ROCCAT,SUP,394,392,404,404,421,로밍형
+extinkt,Team ROCCAT,SUP,402,399,412,409,433,안정형
+cabochard,Team Vitality,TOP,442,456,449,445,428,캐리형
+shook,Team Vitality,JUNGLE,437,439,442,445,447,운영형
+nukeduck,Team Vitality,MID,442,445,441,444,433,운영형
+hjarnan,Team Vitality,AD,445,453,446,446,430,캐리형
+kasing,Team Vitality,SUP,435,434,445,448,458,보호형
+vizicsacsi,Unicorns of Love,TOP,427,437,432,433,421,안정형
+diamondprox,Unicorns of Love,JUNGLE,407,408,412,412,421,교전형
+djoko,Unicorns of Love,JUNGLE,407,408,412,412,421,성장형
+mirror,Unicorns of Love,JUNGLE,407,408,412,412,421,안정형
+loulex,Unicorns of Love,JUNGLE,407,408,412,412,421,안정형
+fox,Unicorns of Love,MID,419,434,430,431,426,운영형
+steeelback,Unicorns of Love,AD,443,450,442,436,424,캐리형
