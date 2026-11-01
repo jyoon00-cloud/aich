@@ -1,50 +1,50 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-shy,CJ Entus,TOP,449,452,439,437,431,안정형
-ambition,CJ Entus,JUNGLE,442,439,445,444,442,운영형
-coco,CJ Entus,MID,449,448,451,444,434,안정형
-space,CJ Entus,AD,438,450,443,448,430,안정형
-madlife,CJ Entus,SUP,436,432,445,451,459,보호형
-lilac,Incredible Miracle,TOP,413,410,404,404,400,안정형
-frozen,Incredible Miracle,MID,422,414,420,412,405,안정형
-sonstar,Incredible Miracle,AD,415,415,403,408,398,안정형
-tusin,Incredible Miracle,SUP,398,399,418,424,434,이니시형
-wisdom,Incredible Miracle,JUNGLE,405,406,419,418,415,이니시형
-ares,Incredible Miracle,JUNGLE,401,405,420,421,416,이니시형
-smeb,GET,TOP,469,474,465,462,450,캐리형
-hojin,GET,JUNGLE,464,459,470,471,465,교전형
-kuro,GET,MID,466,466,468,463,450,캐리형
-pray,GET,AD,466,477,469,472,450,캐리형
-gorilla,GET,SUP,461,456,470,477,482,보호형
-trace,Jin Air Green Wings,TOP,434,440,431,429,422,안정형
-gbm,Jin Air Green Wings,MID,439,440,442,435,424,안정형
-chaser,Jin Air Green Wings,JUNGLE,443,437,449,446,443,교전형
-chei,Jin Air Green Wings,SUP,424,422,434,440,450,보호형
-pilot,Jin Air Green Wings,AD,442,444,436,440,424,안정형
-cptjack,Jin Air Green Wings,AD,410,418,410,415,398,안정형
-sweet,Jin Air Green Wings,SUP,401,399,411,418,427,보호형
-ssumday,KT,TOP,453,443,433,430,425,라인전형
-score,KT,JUNGLE,430,429,443,443,439,교전형
-nagne,KT,MID,437,425,425,421,415,안정형
-arrow,KT,AD,419,437,434,439,421,교전형
-fixer,KT,SUP,417,415,428,433,444,보호형
-hachani,KT,SUP,417,418,432,440,450,보호형
-duke,NaJin e-mFire,TOP,437,434,426,423,418,안정형
-ohq,NaJin e-mFire,AD,417,425,420,424,407,안정형
-watch,NaJin e-mFire,JUNGLE,420,419,426,425,423,운영형
-ggoong,NaJin e-mFire,MID,425,425,427,421,414,안정형
-cain,NaJin e-mFire,SUP,403,404,404,411,424,보호형
-tank,NaJin e-mFire,MID,413,409,411,405,397,안정형
-pure,NaJin e-mFire,SUP,393,391,403,409,419,보호형
-cuvee,Samsung Galaxy,TOP,410,408,411,409,400,안정형
-eve,Samsung Galaxy,JUNGLE,400,401,410,409,407,성장형
-fury,Samsung Galaxy,AD,403,410,411,414,397,안정형
-wraith,Samsung Galaxy,SUP,394,394,407,411,424,보호형
-bliss,Samsung Galaxy,MID,408,408,405,400,400,운영형
-ace,Samsung Galaxy,MID,404,400,402,395,388,안정형
-marin,SK Telecom T1,TOP,472,461,445,444,440,라인전형
-bang,SK Telecom T1,AD,460,465,448,452,438,캐리형
-bengi,SK Telecom T1,JUNGLE,452,451,451,454,450,운영형
-faker,SK Telecom T1,MID,475,463,471,466,452,캐리형
-wolf,SK Telecom T1,SUP,453,445,457,462,469,보호형
-easyhoon,SK Telecom T1,MID,419,415,417,412,403,운영형
-piccaboo,SK Telecom T1,SUP,401,399,411,418,427,보호형
+shy,CJ Entus,TOP,444,449,436,437,429,캐리형
+ambition,CJ Entus,JUNGLE,452,455,450,453,440,캐리형
+coco,CJ Entus,MID,450,455,449,448,433,캐리형
+space,CJ Entus,AD,437,449,434,442,423,캐리형
+madlife,CJ Entus,SUP,431,439,453,456,461,보호형
+lilac,Incredible Miracle,TOP,415,411,419,410,405,교전형
+frozen,Incredible Miracle,MID,443,440,442,437,423,라인전형
+sonstar,Incredible Miracle,AD,422,416,410,414,403,라인전형
+tusin,Incredible Miracle,SUP,420,403,437,430,445,이니시형
+wisdom,Incredible Miracle,JUNGLE,415,418,435,427,425,교전형
+ares,Incredible Miracle,JUNGLE,397,398,424,412,414,이니시형
+smeb,GET,TOP,466,472,461,462,449,캐리형
+hojin,GET,JUNGLE,409,415,421,419,411,교전형
+kuro,GET,MID,458,470,458,460,444,캐리형
+pray,GET,AD,471,480,462,472,450,캐리형
+gorilla,GET,SUP,457,465,475,480,483,보호형
+trace,Jin Air Green Wings,TOP,422,430,426,423,414,캐리형
+gbm,Jin Air Green Wings,MID,439,451,441,442,427,캐리형
+chaser,Jin Air Green Wings,JUNGLE,428,448,445,448,436,캐리형
+chei,Jin Air Green Wings,SUP,415,421,438,440,446,보호형
+pilot,Jin Air Green Wings,AD,458,457,445,452,433,라인전형
+cptjack,Jin Air Green Wings,AD,430,424,404,415,402,라인전형
+sweet,Jin Air Green Wings,SUP,405,403,419,421,427,보호형
+ssumday,KT,TOP,451,441,439,435,429,라인전형
+score,KT,JUNGLE,434,440,454,448,444,이니시형
+nagne,KT,MID,440,430,427,425,418,라인전형
+arrow,KT,AD,423,432,430,432,413,캐리형
+fixer,KT,SUP,435,431,450,451,458,보호형
+hachani,KT,SUP,400,396,425,421,433,보호형
+duke,NaJin e-mFire,TOP,446,436,443,434,426,라인전형
+ohq,NaJin e-mFire,AD,433,437,430,434,416,캐리형
+watch,NaJin e-mFire,JUNGLE,432,432,440,437,429,교전형
+ggoong,NaJin e-mFire,MID,423,427,425,422,413,캐리형
+cain,NaJin e-mFire,SUP,412,398,409,414,417,보호형
+tank,NaJin e-mFire,MID,415,409,410,405,396,라인전형
+pure,NaJin e-mFire,SUP,390,388,394,401,402,보호형
+cuvee,Samsung Galaxy,TOP,425,421,434,422,413,교전형
+eve,Samsung Galaxy,JUNGLE,425,416,432,425,422,교전형
+fury,Samsung Galaxy,AD,418,422,427,426,407,교전형
+wraith,Samsung Galaxy,SUP,400,391,408,410,416,보호형
+bliss,Samsung Galaxy,MID,397,399,396,393,390,캐리형
+ace,Samsung Galaxy,MID,385,384,382,379,370,라인전형
+marin,SK Telecom T1,TOP,462,454,440,442,437,라인전형
+bang,SK Telecom T1,AD,462,463,438,452,435,캐리형
+bengi,SK Telecom T1,JUNGLE,417,435,430,433,420,캐리형
+faker,SK Telecom T1,MID,472,467,470,464,447,라인전형
+wolf,SK Telecom T1,SUP,442,449,454,462,463,보호형
+easyhoon,SK Telecom T1,MID,418,425,418,417,397,캐리형
+piccaboo,SK Telecom T1,SUP,410,408,414,421,422,보호형

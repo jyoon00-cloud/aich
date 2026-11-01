@@ -1,84 +1,84 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-ssumday,KT Rolster Arrows,TOP,449,449,440,433,423,라인전형
-kakao,KT Rolster Arrows,JUNGLE,437,432,443,440,438,교전형
-rookie,KT Rolster Arrows,MID,433,436,438,429,418,캐리형
-arrow,KT Rolster Arrows,AD,409,440,432,433,414,안정형
-hachani,KT Rolster Arrows,SUP,424,419,433,437,445,보호형
-impact,SK Telecom T1 K,TOP,468,462,453,452,446,안정형
-bengi,SK Telecom T1 K,JUNGLE,451,450,459,460,456,운영형
-faker,SK Telecom T1 K,MID,465,457,459,454,446,운영형
-piglet,SK Telecom T1 K,AD,464,466,458,462,444,캐리형
-poohmandu,SK Telecom T1 K,SUP,443,442,453,461,471,보호형
-wraith,SK Telecom T1 K,SUP,401,399,411,417,427,보호형
-khan,Prime Optimus,TOP,448,443,434,435,430,안정형
-oldb,Prime Optimus,JUNGLE,434,434,442,444,440,운영형
-ninja,Prime Optimus,MID,449,438,440,437,430,안정형
-fury,Prime Optimus,AD,438,445,437,443,428,안정형
-kkyul,Prime Optimus,SUP,426,426,437,445,455,보호형
-marin,SK Telecom T1 S,TOP,438,430,421,420,416,라인전형
-h0r0,SK Telecom T1 S,JUNGLE,420,420,428,428,426,운영형
-easyhoon,SK Telecom T1 S,MID,445,432,434,429,424,운영형
-bang,SK Telecom T1 S,AD,431,432,424,428,413,성장형
-wolf,SK Telecom T1 S,SUP,411,411,421,429,441,보호형
-shy,CJ Entus Frost,TOP,453,447,438,435,427,라인전형
-swift,CJ Entus Frost,JUNGLE,427,426,435,436,432,운영형
-coco,CJ Entus Frost,MID,441,445,447,438,426,캐리형
-space,CJ Entus Frost,AD,434,442,434,437,421,안정형
-madlife,CJ Entus Frost,SUP,431,427,440,445,453,보호형
-expect,Midas FIO,TOP,407,414,405,404,403,안정형
-ssun,Midas FIO,JUNGLE,400,404,410,411,410,운영형
-midnexus,Midas FIO,MID,414,408,410,405,403,운영형
-lactea,Midas FIO,AD,412,414,406,411,401,안정형
-olleh,Midas FIO,SUP,395,397,406,412,428,보호형
-smeb,Incredible Miracle,TOP,429,427,418,414,408,안정형
-lilac,Incredible Miracle,JUNGLE,411,413,420,421,419,운영형
-midking,Incredible Miracle,MID,420,424,426,416,408,안정형
-violet,Incredible Miracle,AD,424,425,417,421,407,안정형
-bbuing,Incredible Miracle,SUP,406,406,416,422,435,보호형
-looper,Samsung Galaxy Ozone,TOP,462,463,454,452,442,캐리형
-dandy,Samsung Galaxy Ozone,JUNGLE,463,460,470,470,465,교전형
-pawn,Samsung Galaxy Ozone,MID,457,457,459,453,441,운영형
-imp,Samsung Galaxy Ozone,AD,457,468,460,466,447,안정형
-mata,Samsung Galaxy Ozone,SUP,454,450,463,470,477,보호형
-fenix,Jin Air Green Wings Falcons,TOP,425,417,408,406,404,안정형
-chaser,Jin Air Green Wings Falcons,JUNGLE,404,407,413,414,413,운영형
-gbm,Jin Air Green Wings Falcons,MID,410,411,413,408,405,운영형
-mystic,Jin Air Green Wings Falcons,AD,417,417,409,413,403,안정형
-kish,Jin Air Green Wings Falcons,SUP,399,400,410,416,430,보호형
-limit,NaJin Black Sword,TOP,428,428,419,417,412,안정형
-helios,NaJin Black Sword,JUNGLE,426,425,434,433,431,운영형
-nagne,NaJin Black Sword,MID,454,435,437,430,424,캐리형
-pray,NaJin Black Sword,AD,431,439,431,436,423,안정형
-cain,NaJin Black Sword,SUP,420,421,431,438,450,보호형
-duke,KT Rolster Bullets,TOP,456,451,442,441,433,안정형
-insec,KT Rolster Bullets,JUNGLE,447,444,454,455,450,교전형
-ryu,KT Rolster Bullets,MID,456,451,453,448,438,안정형
-score,KT Rolster Bullets,AD,447,463,455,457,435,캐리형
-mafa,KT Rolster Bullets,SUP,444,439,453,458,464,보호형
-zero,KT Rolster Bullets,SUP,399,397,409,416,425,보호형
-acorn,Samsung Galaxy Blue,TOP,480,480,471,468,456,라인전형
-spirit,Samsung Galaxy Blue,JUNGLE,467,460,473,472,466,교전형
-dade,Samsung Galaxy Blue,MID,474,470,472,468,456,운영형
-deft,Samsung Galaxy Blue,AD,463,477,469,474,453,캐리형
-heart,Samsung Galaxy Blue,SUP,468,458,475,479,481,보호형
-flame,CJ Entus Blaze,TOP,464,463,454,453,445,안정형
-daydream,CJ Entus Blaze,JUNGLE,448,447,456,458,453,운영형
-ambition,CJ Entus Blaze,MID,460,455,457,453,444,운영형
-emperor,CJ Entus Blaze,AD,446,453,445,451,434,안정형
-lustboy,CJ Entus Blaze,SUP,441,440,451,460,469,보호형
-save,NaJin White Shield,TOP,463,460,451,452,444,안정형
-watch,NaJin White Shield,JUNGLE,467,463,474,475,469,교전형
-ggoong,NaJin White Shield,MID,461,459,461,456,445,안정형
-zefa,NaJin White Shield,AD,455,463,455,462,443,안정형
-gorilla,NaJin White Shield,SUP,445,443,455,463,471,보호형
-apple,Incredible Miracle 2,TOP,418,422,413,410,407,안정형
-reignover,Incredible Miracle 2,JUNGLE,412,411,420,418,417,성장형
-kuro,Incredible Miracle 2,MID,423,419,421,413,405,운영형
-lasha,Incredible Miracle 2,SUP,409,405,418,421,432,보호형
-paragon,Incredible Miracle 2,AD,416,424,416,419,404,안정형
-betkyo,Incredible Miracle 2,AD,406,414,406,409,394,안정형
-kkureno,Xenics Storm,TOP,413,413,404,401,401,안정형
-vin,Xenics Storm,JUNGLE,400,403,409,409,409,운영형
-alvingo,Xenics Storm,MID,408,407,409,403,401,운영형
-ohq,Xenics Storm,AD,413,417,409,410,399,안정형
-chei,Xenics Storm,SUP,398,397,408,412,426,보호형
+ssumday,KT Rolster Arrows,TOP,474,474,463,463,451,라인전형
+kakao,KT Rolster Arrows,JUNGLE,453,462,461,463,451,한타형
+rookie,KT Rolster Arrows,MID,441,455,444,445,430,캐리형
+arrow,KT Rolster Arrows,AD,428,447,431,440,419,캐리형
+hachani,KT Rolster Arrows,SUP,442,454,463,469,472,보호형
+impact,SK Telecom T1 K,TOP,465,460,459,454,447,라인전형
+bengi,SK Telecom T1 K,JUNGLE,450,454,461,459,451,교전형
+faker,SK Telecom T1 K,MID,469,461,461,457,447,라인전형
+piglet,SK Telecom T1 K,AD,487,484,471,479,459,라인전형
+poohmandu,SK Telecom T1 K,SUP,441,434,452,453,460,보호형
+wraith,SK Telecom T1 K,SUP,405,403,419,421,427,보호형
+khan,Prime Optimus,TOP,421,419,417,413,405,라인전형
+oldb,Prime Optimus,JUNGLE,399,402,415,409,405,교전형
+ninja,Prime Optimus,MID,429,419,422,417,408,라인전형
+fury,Prime Optimus,AD,419,423,413,419,401,캐리형
+kkyul,Prime Optimus,SUP,410,396,415,416,423,보호형
+marin,SK Telecom T1 S,TOP,433,421,427,419,415,라인전형
+h0r0,SK Telecom T1 S,JUNGLE,396,407,417,413,407,교전형
+easyhoon,SK Telecom T1 S,MID,447,435,438,432,423,라인전형
+bang,SK Telecom T1 S,AD,447,441,435,439,423,라인전형
+wolf,SK Telecom T1 S,SUP,394,390,413,412,421,보호형
+shy,CJ Entus Frost,TOP,472,465,459,457,447,라인전형
+swift,CJ Entus Frost,JUNGLE,423,427,436,433,426,교전형
+coco,CJ Entus Frost,MID,440,457,443,446,429,캐리형
+space,CJ Entus Frost,AD,451,458,444,451,431,캐리형
+madlife,CJ Entus Frost,SUP,449,444,455,459,463,보호형
+expect,Midas FIO,TOP,395,393,401,392,389,교전형
+ssun,Midas FIO,JUNGLE,409,415,421,419,411,교전형
+midnexus,Midas FIO,MID,419,421,417,415,403,캐리형
+lactea,Midas FIO,AD,408,406,406,407,393,라인전형
+olleh,Midas FIO,SUP,405,403,419,421,427,보호형
+smeb,Incredible Miracle,TOP,438,439,434,432,422,캐리형
+lilac,Incredible Miracle,JUNGLE,419,415,429,423,419,교전형
+midking,Incredible Miracle,MID,423,437,428,428,414,캐리형
+violet,Incredible Miracle,AD,438,432,428,431,416,라인전형
+bbuing,Incredible Miracle,SUP,404,397,419,418,427,보호형
+looper,Samsung Galaxy Ozone,TOP,444,450,443,442,431,캐리형
+dandy,Samsung Galaxy Ozone,JUNGLE,435,450,449,451,440,한타형
+pawn,Samsung Galaxy Ozone,MID,444,455,444,446,431,캐리형
+imp,Samsung Galaxy Ozone,AD,432,442,430,437,419,캐리형
+mata,Samsung Galaxy Ozone,SUP,435,435,448,451,456,보호형
+fenix,Jin Air Green Wings Falcons,TOP,421,419,417,413,405,라인전형
+chaser,Jin Air Green Wings Falcons,JUNGLE,409,415,421,419,411,교전형
+gbm,Jin Air Green Wings Falcons,MID,419,421,417,415,403,캐리형
+mystic,Jin Air Green Wings Falcons,AD,419,415,412,414,400,라인전형
+kish,Jin Air Green Wings Falcons,SUP,378,376,402,399,410,보호형
+limit,NaJin Black Sword,TOP,427,427,428,422,416,교전형
+helios,NaJin Black Sword,JUNGLE,413,422,431,428,421,교전형
+nagne,NaJin Black Sword,MID,470,460,459,456,445,라인전형
+pray,NaJin Black Sword,AD,422,427,423,426,412,캐리형
+cain,NaJin Black Sword,SUP,413,408,431,429,439,보호형
+duke,KT Rolster Bullets,TOP,421,419,417,413,405,라인전형
+insec,KT Rolster Bullets,JUNGLE,443,446,449,448,439,교전형
+ryu,KT Rolster Bullets,MID,438,437,434,431,420,라인전형
+score,KT Rolster Bullets,AD,440,454,436,446,424,캐리형
+mafa,KT Rolster Bullets,SUP,447,448,457,463,465,보호형
+zero,KT Rolster Bullets,SUP,407,403,418,421,426,보호형
+acorn,Samsung Galaxy Blue,TOP,475,475,466,465,454,라인전형
+spirit,Samsung Galaxy Blue,JUNGLE,476,482,478,481,468,캐리형
+dade,Samsung Galaxy Blue,MID,458,462,455,454,441,캐리형
+deft,Samsung Galaxy Blue,AD,441,457,442,450,430,캐리형
+heart,Samsung Galaxy Blue,SUP,463,473,480,486,488,보호형
+flame,CJ Entus Blaze,TOP,442,440,438,434,426,라인전형
+daydream,CJ Entus Blaze,JUNGLE,433,442,445,445,435,교전형
+ambition,CJ Entus Blaze,MID,421,418,420,415,406,라인전형
+emperor,CJ Entus Blaze,AD,429,430,423,427,411,캐리형
+lustboy,CJ Entus Blaze,SUP,420,418,434,436,442,보호형
+save,NaJin White Shield,TOP,434,427,429,423,417,라인전형
+watch,NaJin White Shield,JUNGLE,461,472,472,473,462,한타형
+ggoong,NaJin White Shield,MID,448,450,446,444,432,캐리형
+zefa,NaJin White Shield,AD,445,449,439,445,427,캐리형
+gorilla,NaJin White Shield,SUP,434,432,448,450,456,보호형
+apple,Incredible Miracle 2,TOP,410,410,413,406,401,교전형
+reignover,Incredible Miracle 2,JUNGLE,444,443,448,447,438,교전형
+kuro,Incredible Miracle 2,MID,435,440,433,433,419,캐리형
+lasha,Incredible Miracle 2,SUP,437,432,445,448,453,보호형
+paragon,Incredible Miracle 2,AD,467,473,454,464,442,캐리형
+betkyo,Incredible Miracle 2,AD,422,420,413,418,402,라인전형
+kkureno,Xenics Storm,TOP,421,419,417,413,405,라인전형
+vin,Xenics Storm,JUNGLE,388,392,407,401,397,교전형
+alvingo,Xenics Storm,MID,393,395,401,394,387,교전형
+ohq,Xenics Storm,AD,436,435,427,432,415,라인전형
+chei,Xenics Storm,SUP,405,403,419,421,427,보호형

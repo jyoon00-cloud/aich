@@ -1,51 +1,51 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-empyros,Fnatic,TOP,430,415,405,410,400,성장형
-razork,Fnatic,JUNGLE,400,415,425,425,430,운영형
-vladi,Fnatic,MID,425,405,420,420,410,교전형
-upset,Fnatic,AD,425,435,450,440,420,안정형
-lospa,Fnatic,SUP,405,390,420,420,435,교전형
-brokenblade,G2 Esports,TOP,435,435,430,430,420,안정형
-skewmond,G2 Esports,JUNGLE,425,430,445,445,440,교전형
-caps,G2 Esports,MID,425,445,455,450,435,캐리형
-hanssama,G2 Esports,AD,435,440,435,435,425,안정형
-labrov,G2 Esports,SUP,415,420,435,440,460,보호형
-lot,GIANTX,TOP,430,425,425,435,420,교전형
-isma,GIANTX,JUNGLE,415,420,435,435,435,이니시형
-jackies,GIANTX,MID,450,430,425,420,420,캐리형
-noah,GIANTX,AD,430,430,430,435,420,안정형
-jun,GIANTX,SUP,410,415,425,430,450,보호형
-canna,Karmine Corp,TOP,475,460,455,445,430,라인전형
-yike,Karmine Corp,JUNGLE,460,465,470,465,460,교전형
-kyeahoo,Karmine Corp,MID,465,450,450,440,435,성장형
-caliste,Karmine Corp,AD,470,450,450,445,430,성장형
-busio,Karmine Corp,SUP,445,440,455,455,470,보호형
-myrwn,Movistar KOI,TOP,455,445,430,425,420,라인전형
-elyoya,Movistar KOI,JUNGLE,435,430,450,440,440,이니시형
-jojopyun,Movistar KOI,MID,450,425,425,430,425,라인전형
-supa,Movistar KOI,AD,435,445,430,430,420,캐리형
-alvaro,Movistar KOI,SUP,425,425,440,440,455,교전형
-maynter,Natus Vincere,TOP,425,445,450,460,435,교전형
-rhilech,Natus Vincere,JUNGLE,430,445,450,450,450,이니시형
-poby,Natus Vincere,MID,450,435,450,445,435,성장형
-samd,Natus Vincere,AD,455,445,445,445,430,성장형
-parus,Natus Vincere,SUP,435,430,450,450,460,보호형
-rooster,Shifters,TOP,425,410,410,410,400,안정형
-boukada,Shifters,JUNGLE,400,400,415,410,420,운영형
-nuc,Shifters,MID,405,410,420,415,410,안정형
-paduck,Shifters,AD,400,420,415,420,410,캐리형
-trymbi,Shifters,SUP,405,410,430,440,450,교전형
-wunder,SK Gaming,TOP,420,415,405,410,400,교전형
-skeanz,SK Gaming,JUNGLE,390,405,400,400,415,운영형
-lider,SK Gaming,MID,420,400,405,400,400,성장형
-jopa,SK Gaming,AD,420,410,395,395,395,성장형
-mikyx,SK Gaming,SUP,380,395,395,405,430,보호형
-tracyn,Team Heretics,TOP,435,430,425,425,415,성장형
-sheo,Team Heretics,JUNGLE,415,435,430,430,435,교전형
-serin,Team Heretics,MID,415,435,440,435,425,교전형
-ice,Team Heretics,AD,435,425,425,430,415,안정형
-stend,Team Heretics,SUP,410,405,425,430,450,보호형
-naaknako,Team Vitality,TOP,445,460,440,440,430,캐리형
-lyncas,Team Vitality,JUNGLE,430,440,440,440,445,운영형
-humanoid,Team Vitality,MID,450,450,435,435,430,캐리형
-carzzy,Team Vitality,AD,435,460,435,440,430,캐리형
-fleshy,Team Vitality,SUP,440,445,440,440,460,보호형
+empyros,Fnatic,TOP,428,422,414,409,407,라인전형
+razork,Fnatic,JUNGLE,412,415,423,417,413,교전형
+vladi,Fnatic,MID,431,425,432,426,411,교전형
+upset,Fnatic,AD,431,433,437,443,416,한타형
+lospa,Fnatic,SUP,409,398,428,429,436,보호형
+brokenblade,G2 Esports,TOP,419,415,414,416,411,라인전형
+skewmond,G2 Esports,JUNGLE,449,451,463,459,453,이니시형
+caps,G2 Esports,MID,446,459,457,454,434,캐리형
+hanssama,G2 Esports,AD,429,434,424,433,415,캐리형
+labrov,G2 Esports,SUP,416,425,439,438,447,보호형
+lot,GIANTX,TOP,424,422,430,418,411,교전형
+isma,GIANTX,JUNGLE,415,417,432,429,422,교전형
+jackies,GIANTX,MID,445,443,429,428,420,라인전형
+noah,GIANTX,AD,433,439,432,435,416,캐리형
+jun,GIANTX,SUP,415,411,421,424,429,보호형
+canna,Karmine Corp,TOP,469,462,452,454,443,라인전형
+yike,Karmine Corp,JUNGLE,457,459,459,461,449,한타형
+kyeahoo,Karmine Corp,MID,449,445,432,437,427,라인전형
+caliste,Karmine Corp,AD,456,444,435,447,428,라인전형
+busio,Karmine Corp,SUP,425,425,444,449,452,보호형
+myrwn,Movistar KOI,TOP,451,445,432,435,427,라인전형
+elyoya,Movistar KOI,JUNGLE,434,432,450,449,440,이니시형
+jojopyun,Movistar KOI,MID,440,437,429,423,416,라인전형
+supa,Movistar KOI,AD,446,453,436,442,423,캐리형
+alvaro,Movistar KOI,SUP,424,432,445,446,453,보호형
+maynter,Natus Vincere,TOP,433,440,448,442,427,교전형
+rhilech,Natus Vincere,JUNGLE,445,454,458,455,448,교전형
+poby,Natus Vincere,MID,440,434,440,438,423,라인전형
+samd,Natus Vincere,AD,460,459,450,457,434,라인전형
+parus,Natus Vincere,SUP,437,435,459,462,467,이니시형
+rooster,Shifters,TOP,424,413,418,414,406,라인전형
+boukada,Shifters,JUNGLE,387,393,404,402,394,교전형
+nuc,Shifters,MID,406,407,413,411,398,교전형
+paduck,Shifters,AD,414,430,422,421,403,캐리형
+trymbi,Shifters,SUP,421,428,447,444,455,이니시형
+wunder,SK Gaming,TOP,433,435,431,422,414,캐리형
+skeanz,SK Gaming,JUNGLE,388,398,397,395,387,캐리형
+lider,SK Gaming,MID,412,412,407,403,396,라인전형
+jopa,SK Gaming,AD,410,412,395,401,392,캐리형
+mikyx,SK Gaming,SUP,397,382,392,394,400,보호형
+tracyn,Team Heretics,TOP,428,422,429,422,414,교전형
+sheo,Team Heretics,JUNGLE,424,439,433,431,423,캐리형
+serin,Team Heretics,MID,430,441,441,441,422,캐리형
+ice,Team Heretics,AD,429,420,419,424,408,라인전형
+stend,Team Heretics,SUP,405,391,412,412,420,보호형
+naaknako,Team Vitality,TOP,439,451,440,437,428,캐리형
+lyncas,Team Vitality,JUNGLE,418,430,427,428,417,캐리형
+humanoid,Team Vitality,MID,433,447,426,425,419,캐리형
+carzzy,Team Vitality,AD,424,445,418,425,413,캐리형
+fleshy,Team Vitality,SUP,442,442,443,452,451,한타형

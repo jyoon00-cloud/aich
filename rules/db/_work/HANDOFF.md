@@ -51,9 +51,22 @@
 - competition.md, salary.md 작성. 승강제 폐지 시점은 검색 요약 근거(기사 본문 미확인). salary는 [번호] 근거·(보간)·근거 없음 표기.
 - 알려진 한계: 로스터 7명 제한 누락(예: 2016~17 Moon, 2019 CLG Wiggily). 2025·2026 일부 리그 순위는 팀 승률로 대체.
 
-## ③ 포텐·히든 재산정 — 진행 중
-- pot2/fetch_pot.py(근거 수집) → pot2/build_dossier.py(선수별 커리어 요약 dossier/p1~p6) → pot2/brief_sonnet.md(소넷 산정) → out/p*.csv를 potential/*.csv에 병합.
+## ②-2 능력치 통일 재계산 — 완료 (사용자 지시)
+- 산식 `redo/formula.md`, 스크립트 `redo/scripts/unified.py`(원본 백업을 입력으로 재실행 가능), 내역 `redo/changes2/`.
+- 주전 OVR = 개인 성적 백분위(400~470) + 팀 순위(±10) + 직전 해 실적(월즈 20/14/9/5, MSI 6/3/1, FS·EWC·리그 우승·MVP·퍼스트 올프로 +1, 합산·상한 없음) + 리그 보정.
+- 리그 보정: 그해 국제대회(월즈 1.0, MSI 0.3, FS·EWC 0.1) 성적으로 매년 계산 `redo/league_offset.csv`, 순위표 `redo/worlds.csv`. README에 표.
+- **2026 월즈 종료 후 할 일:** worlds.csv 2026 행 갱신 → unified.py 재실행 → pot2/merge.py 재실행 → champions meta 2026 갱신.
+
+## ③ 포텐·히든 재산정 — 완료
+- pot2/fetch_pot.py → build_dossier.py(dossier/p1~p6) → 소넷 out/p1~p6 → merge.py로 potential/*.csv 반영(merge_log.md).
+- 명예의 전당(faker 500, uzi·caps 495) 외 potential 상한 490, 초과하던 연도별 능력치 20칸은 490으로 절삭.
+- vol은 개인 성적 백분위 변동(추세 제거)으로 Opus가 merge.py에서 재계산. clutch는 결승·국제대회, pro는 시즌 수 기준.
+- men·pro 기사 검색: 대상(최고 OVR 455↑ 또는 국제 우승) 중 약 80명은 미검색(changes에 '검색 미실시'), 검색한 선수도 대부분 근거 없음으로 기본값. 반영 예: letme·pawn·wolf·crown·broxah men 2, clid pro 1 등. Huanfeng·Xiaohu 사생활 보도, Zeus 계약 분쟁은 본문 미확인으로 미반영.
+- 'missing' id 선수(MISSING, LPL 서포터)는 페이지명이 결측 표시와 겹쳐 스크립트에서 예외 처리.
 
 ## 결정사항
 - 채팅 앱(사용자 API 키, OpenRouter/OrcaRouter 등 OpenAI 호환 가능) 만들 때 장기 기억은 PDF가 아니라 텍스트: 상태 카드 + 연대기 요약 + 최근 대화 몇 턴.
 - 검색이 반복 실패하면 Opus가 원인·조회 방법을 정하고 하이쿠에는 단순 반복만 시킨다(CLAUDE.md).
+
+## 특성 — 완료
+- traits.md: 일반 특성 15종(근거 조건) + 유니크 27명(선수 전용 다중 효과). potential/*.csv에 traits 열. 부여 스크립트 _work/traits/assign.py, 로그 log.md, 유니크 근거 unique_targets.md.

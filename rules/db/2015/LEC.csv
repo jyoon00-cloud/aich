@@ -1,57 +1,57 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-youngbuck,Copenhagen Wolves,TOP,416,424,419,422,414,성장형
-airwaks,Copenhagen Wolves,JUNGLE,409,409,415,421,431,안정형
-soren,Copenhagen Wolves,MID,431,422,418,421,418,안정형
-freeze,Copenhagen Wolves,AD,433,429,423,422,413,안정형
-unlimited,Copenhagen Wolves,SUP,413,411,423,422,441,보호형
-wickd,Elements,TOP,408,424,420,420,413,안정형
-kev1n,Elements,TOP,412,414,410,410,399,안정형
-shook,Elements,JUNGLE,425,428,431,420,431,캐리형
-froggen,Elements,MID,434,424,421,418,418,라인전형
-rekkles,Elements,AD,432,433,426,420,414,안정형
-nyph,Elements,SUP,411,409,421,420,439,보호형
-krepo,Elements,SUP,409,407,419,417,438,보호형
-huni,Fnatic,TOP,435,453,447,446,429,안정형
-reignover,Fnatic,JUNGLE,431,433,437,446,448,성장형
-febiven,Fnatic,MID,451,458,452,447,437,캐리형
-steeelback,Fnatic,AD,434,453,446,446,431,안정형
-yellowstar,Fnatic,SUP,447,447,457,452,462,보호형
-cabochard,Gambit Gaming,TOP,447,445,439,433,421,캐리형
-diamondprox,Gambit Gaming,JUNGLE,435,438,441,437,444,교전형
-niq,Gambit Gaming,MID,420,430,427,437,431,안정형
-betsy,Gambit Gaming,MID,449,436,432,432,426,성장형
-p1noy,Gambit Gaming,AD,426,436,431,434,423,안정형
-edward,Gambit Gaming,SUP,424,422,434,437,453,안정형
-werlyb,Giants Gaming,TOP,414,406,403,406,401,안정형
-fr3deric,Giants Gaming,JUNGLE,392,392,398,405,418,안정형
-ptt,Giants Gaming,MID,402,404,399,399,396,안정형
-adryh,Giants Gaming,AD,408,410,405,406,401,안정형
-rydle,Giants Gaming,SUP,393,390,403,406,428,보호형
-odoamne,H2k-Gaming,TOP,442,453,446,442,427,캐리형
-loulex,H2k-Gaming,JUNGLE,434,436,440,441,444,안정형
-ryu,H2k-Gaming,MID,433,437,434,440,431,운영형
-hjarnan,H2k-Gaming,AD,442,444,438,443,428,안정형
-voidle,H2k-Gaming,SUP,403,401,413,413,430,보호형
-kasing,H2k-Gaming,SUP,434,433,444,442,452,안정형
-mimer,MeetYourMakers,TOP,407,404,401,403,400,안정형
-jwaow,MeetYourMakers,TOP,419,415,409,400,397,라인전형
-h0r0,MeetYourMakers,JUNGLE,402,404,408,400,416,안정형
-blizer300,MeetYourMakers,MID,402,404,399,399,396,안정형
-nulu,MeetYourMakers,MID,402,404,399,399,396,안정형
-mrrallez,MeetYourMakers,AD,415,409,404,400,397,안정형
-nisbeth,MeetYourMakers,SUP,390,386,400,400,424,보호형
-fredy122,SK Gaming,TOP,464,454,449,456,437,라인전형
-svenskeren,SK Gaming,JUNGLE,444,446,450,456,454,운영형
-fox,SK Gaming,MID,432,450,446,453,439,운영형
-forg1ven,SK Gaming,AD,464,462,454,452,433,캐리형
-nrated,SK Gaming,SUP,446,446,456,458,464,보호형
-overpow,Team ROCCAT,TOP,411,418,415,413,408,안정형
-jankos,Team ROCCAT,JUNGLE,413,415,419,412,426,성장형
-nukeduck,Team ROCCAT,MID,416,416,413,409,411,운영형
-woolite,Team ROCCAT,AD,416,414,409,410,406,안정형
-vander,Team ROCCAT,SUP,407,405,417,413,433,보호형
-vizicsacsi,Unicorns of Love,TOP,433,433,428,428,418,안정형
-kikis,Unicorns of Love,JUNGLE,421,424,427,427,436,성장형
-powerofevil,Unicorns of Love,MID,427,426,423,426,423,안정형
-vardags,Unicorns of Love,AD,413,428,423,428,418,안정형
-hylissang,Unicorns of Love,SUP,414,411,424,428,443,보호형
+youngbuck,Copenhagen Wolves,TOP,402,400,400,395,393,라인전형
+airwaks,Copenhagen Wolves,JUNGLE,415,413,430,422,420,교전형
+soren,Copenhagen Wolves,MID,429,422,431,422,411,교전형
+freeze,Copenhagen Wolves,AD,451,448,445,447,424,라인전형
+unlimited,Copenhagen Wolves,SUP,408,416,434,435,442,보호형
+wickd,Elements,TOP,397,399,394,391,389,캐리형
+kev1n,Elements,TOP,390,382,380,376,372,라인전형
+shook,Elements,JUNGLE,405,429,428,430,418,한타형
+froggen,Elements,MID,444,441,444,439,422,라인전형
+rekkles,Elements,AD,440,444,425,436,415,캐리형
+nyph,Elements,SUP,399,390,403,407,411,보호형
+krepo,Elements,SUP,368,371,397,394,405,이니시형
+huni,Fnatic,TOP,442,448,449,443,428,교전형
+reignover,Fnatic,JUNGLE,426,421,422,423,413,라인전형
+febiven,Fnatic,MID,450,456,444,446,429,캐리형
+steeelback,Fnatic,AD,432,449,430,441,418,캐리형
+yellowstar,Fnatic,SUP,447,445,457,461,465,보호형
+cabochard,Gambit Gaming,TOP,452,450,445,443,430,라인전형
+diamondprox,Gambit Gaming,JUNGLE,395,401,407,405,397,교전형
+niq,Gambit Gaming,MID,404,406,401,399,395,캐리형
+betsy,Gambit Gaming,MID,444,441,426,430,419,라인전형
+p1noy,Gambit Gaming,AD,411,422,407,415,400,캐리형
+edward,Gambit Gaming,SUP,409,405,420,423,428,보호형
+werlyb,Giants Gaming,TOP,401,391,390,386,387,라인전형
+fr3deric,Giants Gaming,JUNGLE,387,388,396,393,386,교전형
+ptt,Giants Gaming,MID,405,407,403,401,389,캐리형
+adryh,Giants Gaming,AD,399,399,386,393,383,라인전형
+rydle,Giants Gaming,SUP,377,368,385,387,393,보호형
+odoamne,H2k-Gaming,TOP,449,455,451,448,432,캐리형
+loulex,H2k-Gaming,JUNGLE,411,430,425,429,415,캐리형
+ryu,H2k-Gaming,MID,422,429,422,422,410,캐리형
+hjarnan,H2k-Gaming,AD,445,452,444,449,425,캐리형
+voidle,H2k-Gaming,SUP,402,388,401,405,409,보호형
+kasing,H2k-Gaming,SUP,440,438,458,458,466,이니시형
+mimer,MeetYourMakers,TOP,409,398,400,394,394,라인전형
+jwaow,MeetYourMakers,TOP,424,418,413,411,404,라인전형
+h0r0,MeetYourMakers,JUNGLE,407,415,430,423,420,이니시형
+blizer300,MeetYourMakers,MID,398,400,396,394,387,캐리형
+nulu,MeetYourMakers,MID,384,386,382,380,368,캐리형
+mrrallez,MeetYourMakers,AD,426,423,420,423,403,라인전형
+nisbeth,MeetYourMakers,SUP,383,376,394,395,402,보호형
+fredy122,SK Gaming,TOP,458,450,446,443,433,라인전형
+svenskeren,SK Gaming,JUNGLE,433,444,452,449,442,이니시형
+fox,SK Gaming,MID,431,447,440,440,422,캐리형
+forg1ven,SK Gaming,AD,405,409,399,405,387,캐리형
+nrated,SK Gaming,SUP,437,447,462,464,470,이니시형
+overpow,Team ROCCAT,TOP,408,407,407,402,396,라인전형
+jankos,Team ROCCAT,JUNGLE,427,426,427,428,417,한타형
+nukeduck,Team ROCCAT,MID,419,419,419,415,403,라인전형
+woolite,Team ROCCAT,AD,413,408,409,410,395,라인전형
+vander,Team ROCCAT,SUP,402,410,422,426,430,보호형
+vizicsacsi,Unicorns of Love,TOP,438,431,435,428,418,라인전형
+kikis,Unicorns of Love,JUNGLE,423,422,431,428,421,교전형
+powerofevil,Unicorns of Love,MID,414,413,410,408,400,라인전형
+vardags,Unicorns of Love,AD,399,408,395,403,390,캐리형
+hylissang,Unicorns of Love,SUP,411,397,420,419,428,보호형

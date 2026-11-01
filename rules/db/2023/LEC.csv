@@ -1,51 +1,51 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-finn,Astralis,TOP,415,425,415,415,405,캐리형
-113,Astralis,JUNGLE,400,405,420,420,425,성장형
-dajor,Astralis,MID,415,410,410,405,410,안정형
-kobbe,Astralis,AD,415,415,420,425,410,안정형
-execute,Astralis,SUP,395,400,410,420,440,보호형
-odoamne,Excel Esports,TOP,430,420,410,405,405,안정형
-xerxe,Excel Esports,JUNGLE,395,405,405,400,415,운영형
-vetheo,Excel Esports,MID,440,420,420,420,415,라인전형
-patrik,Excel Esports,AD,395,425,415,425,410,캐리형
-targamas,Excel Esports,SUP,395,405,415,420,440,보호형
-wunder,Fnatic,TOP,435,410,405,405,405,라인전형
-razork,Fnatic,JUNGLE,390,410,425,430,430,교전형
-humanoid,Fnatic,MID,420,415,415,420,415,캐리형
-rekkles,Fnatic,AD,425,415,410,405,400,안정형
-rhuckz,Fnatic,SUP,395,385,415,420,440,교전형
-brokenblade,G2 Esports,TOP,450,465,460,455,435,교전형
-yike,G2 Esports,JUNGLE,430,445,445,440,440,교전형
-caps,G2 Esports,MID,440,445,445,440,440,운영형
-hanssama,G2 Esports,AD,430,435,440,435,425,안정형
-mikyx,G2 Esports,SUP,420,430,425,430,455,보호형
-szygenda,KOI,TOP,430,415,425,430,410,교전형
-malrang,KOI,JUNGLE,410,420,430,430,435,운영형
-larssen,KOI,MID,445,420,425,425,420,라인전형
-comp,KOI,AD,445,425,425,425,415,성장형
-trymbi,KOI,SUP,410,410,430,435,450,교전형
-chasy,MAD Lions,TOP,460,450,450,440,430,성장형
-elyoya,MAD Lions,JUNGLE,460,450,465,455,455,로밍형
-nisqy,MAD Lions,MID,470,460,470,470,450,로밍형
-carzzy,MAD Lions,AD,445,455,445,445,430,안정형
-hylissang,MAD Lions,SUP,430,430,445,450,465,보호형
-irrelevant,SK Gaming,TOP,435,445,440,440,430,안정형
-markoon,SK Gaming,JUNGLE,430,435,440,435,445,운영형
-sertuss,SK Gaming,MID,435,445,450,440,430,성장형
-3xa,SK Gaming,AD,465,445,445,440,425,성장형
-doss,SK Gaming,SUP,435,435,455,450,460,보호형
-adam,Team BDS,TOP,450,435,430,425,415,라인전형
-sheo,Team BDS,JUNGLE,425,430,435,430,435,로밍형
-nuc,Team BDS,MID,430,435,435,425,420,안정형
-crownie,Team BDS,AD,430,445,445,435,420,안정형
-labrov,Team BDS,SUP,420,425,430,430,450,보호형
-evi,Team Heretics,TOP,415,435,425,430,415,안정형
-jankos,Team Heretics,JUNGLE,420,435,440,445,445,이니시형
-ruby,Team Heretics,MID,430,425,430,430,420,캐리형
-jackspektra,Team Heretics,AD,430,430,415,415,415,성장형
-mersa,Team Heretics,SUP,415,415,430,430,445,보호형
-photon,Team Vitality,TOP,470,465,455,455,435,교전형
-bo,Team Vitality,JUNGLE,435,440,450,450,455,운영형
-perkz,Team Vitality,MID,465,455,455,455,440,캐리형
-neon,Team Vitality,AD,445,455,450,450,435,안정형
-kaiser,Team Vitality,SUP,435,440,450,455,470,보호형
+finn,Astralis,TOP,400,410,405,398,392,캐리형
+113,Astralis,JUNGLE,382,386,406,400,396,교전형
+dajor,Astralis,MID,386,383,379,378,374,라인전형
+kobbe,Astralis,AD,405,407,408,410,390,한타형
+execute,Astralis,SUP,382,380,396,398,404,보호형
+odoamne,Excel Esports,TOP,395,388,383,379,380,라인전형
+xerxe,Excel Esports,JUNGLE,380,392,390,388,380,캐리형
+vetheo,Excel Esports,MID,410,412,405,401,392,캐리형
+patrik,Excel Esports,AD,396,417,407,404,386,캐리형
+targamas,Excel Esports,SUP,390,379,393,392,401,보호형
+wunder,Fnatic,TOP,400,386,386,382,381,라인전형
+razork,Fnatic,JUNGLE,402,411,421,410,411,이니시형
+humanoid,Fnatic,MID,403,412,404,397,389,캐리형
+rekkles,Fnatic,AD,413,411,396,402,388,라인전형
+rhuckz,Fnatic,SUP,383,370,401,397,409,보호형
+brokenblade,G2 Esports,TOP,432,440,436,433,419,캐리형
+yike,G2 Esports,JUNGLE,438,443,443,443,433,캐리형
+caps,G2 Esports,MID,400,404,400,403,393,캐리형
+hanssama,G2 Esports,AD,404,406,402,411,392,한타형
+mikyx,G2 Esports,SUP,402,395,400,405,408,보호형
+szygenda,KOI,TOP,419,411,423,415,402,교전형
+malrang,KOI,JUNGLE,389,401,410,405,400,교전형
+larssen,KOI,MID,430,422,423,419,406,라인전형
+comp,KOI,AD,429,418,414,421,403,라인전형
+trymbi,KOI,SUP,401,396,422,421,430,보호형
+chasy,MAD Lions,TOP,440,431,427,429,418,라인전형
+elyoya,MAD Lions,JUNGLE,427,419,432,435,422,한타형
+nisqy,MAD Lions,MID,443,441,446,442,423,교전형
+carzzy,MAD Lions,AD,430,441,417,430,412,캐리형
+hylissang,MAD Lions,SUP,395,393,412,416,419,보호형
+irrelevant,SK Gaming,TOP,416,419,415,411,404,캐리형
+markoon,SK Gaming,JUNGLE,402,407,409,413,399,한타형
+sertuss,SK Gaming,MID,414,422,417,421,406,캐리형
+3xa,SK Gaming,AD,396,400,390,396,378,캐리형
+doss,SK Gaming,SUP,421,432,453,454,460,이니시형
+adam,Team BDS,TOP,429,417,412,412,405,라인전형
+sheo,Team BDS,JUNGLE,409,419,418,421,408,한타형
+nuc,Team BDS,MID,412,412,407,411,398,라인전형
+crownie,Team BDS,AD,437,440,430,439,414,캐리형
+labrov,Team BDS,SUP,409,416,417,423,425,보호형
+evi,Team Heretics,TOP,403,413,412,405,397,캐리형
+jankos,Team Heretics,JUNGLE,423,431,437,432,427,이니시형
+ruby,Team Heretics,MID,423,430,424,418,405,캐리형
+jackspektra,Team Heretics,AD,410,414,392,400,389,캐리형
+mersa,Team Heretics,SUP,409,400,420,423,428,보호형
+photon,Team Vitality,TOP,471,470,466,461,447,라인전형
+bo,Team Vitality,JUNGLE,415,419,424,423,414,교전형
+perkz,Team Vitality,MID,453,454,448,443,427,캐리형
+neon,Team Vitality,AD,420,426,421,427,406,한타형
+kaiser,Team Vitality,SUP,422,432,441,446,449,보호형

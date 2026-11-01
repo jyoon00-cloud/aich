@@ -1,60 +1,60 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-balis,Cloud9,TOP,435,425,425,430,425,안정형
-meteos,Cloud9,JUNGLE,425,430,460,455,440,교전형
-hai,Cloud9,MID,440,430,435,440,435,운영형
-sneaky,Cloud9,AD,455,455,440,445,435,캐리형
-lemonnation,Cloud9,SUP,415,415,450,450,440,보호형
-xmithie,Counter Logic Gaming,JUNGLE,415,420,440,440,425,이니시형
-link,Counter Logic Gaming,MID,435,430,430,435,430,캐리형
-doublelift,Counter Logic Gaming,AD,460,450,435,440,440,캐리형
-aphromoo,Counter Logic Gaming,SUP,420,420,450,450,440,이니시형
-darshan,Counter Logic Gaming,TOP,430,425,420,425,425,안정형
-benny,Counter Logic Gaming,TOP,390,390,385,385,390,성장형
-hauntzer,Gravity Gaming,TOP,430,425,420,425,425,라인전형
-saintvicious,Gravity Gaming,JUNGLE,400,405,430,425,415,이니시형
-keane,Gravity Gaming,MID,415,410,405,410,410,안정형
-cop,Gravity Gaming,AD,430,435,425,425,425,한타형
-bunnyfufuu,Gravity Gaming,SUP,405,405,440,435,425,보호형
-calitrlolz,Team 8,TOP,405,400,400,405,400,안정형
-porpoise,Team 8,JUNGLE,395,400,425,425,415,안정형
-slooshi,Team 8,MID,410,405,400,400,405,안정형
-maplestreet,Team 8,AD,415,415,400,405,405,안정형
-dodo,Team 8,SUP,385,385,405,405,410,보호형
-cris,Team Coast,TOP,395,395,385,385,390,성장형
-mash,Team Coast,AD,415,410,405,405,405,교전형
-impaler,Team Coast,JUNGLE,385,390,410,405,400,안정형
-sheep,Team Coast,SUP,380,380,405,400,395,보호형
-mancloud,Team Coast,MID,400,395,385,385,395,안정형
-jesiz,Team Coast,MID,395,390,390,395,390,성장형
-wtheaven,Team Coast,JUNGLE,380,380,380,380,380,성장형
-gamsu,Team Dignitas,TOP,410,410,405,405,410,안정형
-shiphtur,Team Dignitas,MID,415,410,405,410,410,안정형
-corejj,Team Dignitas,AD,420,415,410,410,405,안정형
-kiwikid,Team Dignitas,SUP,390,390,415,415,410,보호형
-azingy,Team Dignitas,JUNGLE,390,390,390,390,390,성장형
-cloudnguyen,Team Dignitas,JUNGLE,392,392,392,392,392,성장형
-crumbz,Team Dignitas,JUNGLE,385,385,385,385,385,안정형
-rush,Team Impulse,JUNGLE,405,410,430,425,420,교전형
-xiaoweixiao,Team Impulse,MID,450,445,425,425,430,캐리형
-apollo,Team Impulse,AD,425,430,425,420,425,안정형
-adrian,Team Impulse,SUP,400,400,430,425,415,보호형
-impact,Team Impulse,TOP,430,430,435,430,425,한타형
-rhux,Team Impulse,TOP,390,390,385,385,390,성장형
-quas,Team Liquid,TOP,420,415,415,420,420,안정형
-iwdominate,Team Liquid,JUNGLE,410,415,440,435,420,교전형
-fenix,Team Liquid,MID,425,420,410,415,420,안정형
-xpecial,Team Liquid,SUP,400,400,435,430,435,시야형
-piglet,Team Liquid,AD,435,435,425,430,425,캐리형
-keith,Team Liquid,AD,405,405,405,405,405,안정형
-dyrus,Team SoloMid,TOP,430,425,410,415,420,안정형
-santorin,Team SoloMid,JUNGLE,420,425,450,445,435,교전형
-bjergsen,Team SoloMid,MID,460,465,445,455,450,캐리형
-wildturtle,Team SoloMid,AD,440,445,430,440,435,캐리형
-lustboy,Team SoloMid,SUP,420,420,455,455,440,시야형
-flaresz,Winterfox,TOP,385,385,385,385,385,성장형
-avalon,Winterfox,TOP,400,400,400,400,400,안정형
-shorterace,Winterfox,JUNGLE,385,385,385,385,385,성장형
-helios,Winterfox,JUNGLE,395,400,430,425,410,안정형
-pobelter,Winterfox,MID,435,425,420,425,420,라인전형
-altec,Winterfox,AD,420,420,410,410,415,안정형
-gleeb,Winterfox,SUP,395,395,425,420,415,보호형
+balis,Cloud9,TOP,440,436,429,427,418,라인전형
+meteos,Cloud9,JUNGLE,444,448,455,453,445,이니시형
+hai,Cloud9,MID,416,433,429,427,410,캐리형
+sneaky,Cloud9,AD,451,458,446,453,427,캐리형
+lemonnation,Cloud9,SUP,418,411,423,427,431,보호형
+xmithie,Counter Logic Gaming,JUNGLE,420,421,417,420,407,캐리형
+link,Counter Logic Gaming,MID,417,432,428,426,407,캐리형
+doublelift,Counter Logic Gaming,AD,437,435,422,430,411,라인전형
+aphromoo,Counter Logic Gaming,SUP,411,404,422,423,430,보호형
+darshan,Counter Logic Gaming,TOP,394,392,390,386,378,라인전형
+benny,Counter Logic Gaming,TOP,418,426,424,420,407,캐리형
+hauntzer,Gravity Gaming,TOP,425,431,429,425,410,캐리형
+saintvicious,Gravity Gaming,JUNGLE,395,396,404,401,394,교전형
+keane,Gravity Gaming,MID,400,402,396,395,387,캐리형
+cop,Gravity Gaming,AD,435,437,428,434,411,캐리형
+bunnyfufuu,Gravity Gaming,SUP,405,408,420,424,428,보호형
+calitrlolz,Team 8,TOP,401,391,389,385,384,라인전형
+porpoise,Team 8,JUNGLE,399,413,418,417,408,교전형
+slooshi,Team 8,MID,411,402,406,400,391,라인전형
+maplestreet,Team 8,AD,382,388,375,383,372,캐리형
+dodo,Team 8,SUP,378,376,392,394,400,보호형
+cris,Team Coast,TOP,402,389,397,388,384,라인전형
+mash,Team Coast,AD,389,393,381,388,374,캐리형
+impaler,Team Coast,JUNGLE,382,386,409,399,399,이니시형
+sheep,Team Coast,SUP,383,376,410,403,418,이니시형
+mancloud,Team Coast,MID,388,382,380,377,373,라인전형
+jesiz,Team Coast,MID,380,385,381,379,375,캐리형
+wtheaven,Team Coast,JUNGLE,375,379,386,384,376,교전형
+gamsu,Team Dignitas,TOP,415,405,398,396,391,라인전형
+shiphtur,Team Dignitas,MID,394,402,396,395,383,캐리형
+corejj,Team Dignitas,AD,388,384,376,381,371,라인전형
+kiwikid,Team Dignitas,SUP,369,370,383,387,391,보호형
+azingy,Team Dignitas,JUNGLE,375,379,386,384,376,교전형
+cloudnguyen,Team Dignitas,JUNGLE,378,379,385,383,375,교전형
+crumbz,Team Dignitas,JUNGLE,374,380,386,384,376,교전형
+rush,Team Impulse,JUNGLE,402,406,409,409,399,교전형
+xiaoweixiao,Team Impulse,MID,427,423,407,411,402,라인전형
+apollo,Team Impulse,AD,408,425,405,416,396,캐리형
+adrian,Team Impulse,SUP,396,383,394,399,403,보호형
+impact,Team Impulse,TOP,420,426,425,421,408,캐리형
+rhux,Team Impulse,TOP,397,393,389,386,375,라인전형
+quas,Team Liquid,TOP,406,411,411,406,396,캐리형
+iwdominate,Team Liquid,JUNGLE,408,412,419,417,409,교전형
+fenix,Team Liquid,MID,415,407,404,401,393,라인전형
+xpecial,Team Liquid,SUP,386,377,394,396,402,보호형
+piglet,Team Liquid,AD,410,406,403,406,390,라인전형
+keith,Team Liquid,AD,388,399,387,394,372,캐리형
+dyrus,Team SoloMid,TOP,436,421,414,413,411,라인전형
+santorin,Team SoloMid,JUNGLE,432,443,445,445,435,교전형
+bjergsen,Team SoloMid,MID,458,461,457,455,434,캐리형
+wildturtle,Team SoloMid,AD,438,439,431,436,416,캐리형
+lustboy,Team SoloMid,SUP,427,440,452,456,460,보호형
+flaresz,Winterfox,TOP,392,382,379,375,372,라인전형
+avalon,Winterfox,TOP,388,390,388,384,380,캐리형
+shorterace,Winterfox,JUNGLE,374,380,386,384,376,교전형
+helios,Winterfox,JUNGLE,376,387,395,392,385,교전형
+pobelter,Winterfox,MID,410,409,409,405,392,라인전형
+altec,Winterfox,AD,399,409,409,410,388,한타형
+gleeb,Winterfox,SUP,407,415,431,433,439,이니시형

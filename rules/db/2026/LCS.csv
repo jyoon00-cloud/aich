@@ -1,44 +1,45 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-thanatos,Cloud9,TOP,428,428,412,412,392,라인전형
-blaber,Cloud9,JUNGLE,436,420,444,444,436,교전형
-apa,Cloud9,MID,452,452,452,444,407,캐리형
-zven,Cloud9,AD,444,460,436,436,402,캐리형
-vulcan,Cloud9,SUP,444,407,452,460,470,이니시형
-photon,Dignitas,TOP,412,420,402,402,388,라인전형
-exyu,Dignitas,JUNGLE,402,392,412,407,402,교전형
-palafox,Dignitas,MID,420,428,420,412,392,안정형
-mobility,Dignitas,AD,386,388,386,384,380,성장형
-fbi,Dignitas,AD,444,470,444,444,392,캐리형
-breezy,Dignitas,SUP,388,384,390,390,392,성장형
-ignar,Dignitas,SUP,407,392,420,428,428,이니시형
-castle,Disguised,TOP,412,428,402,402,386,성장형
-kisno,Disguised,JUNGLE,397,392,407,402,397,성장형
-kryra,Disguised,JUNGLE,407,397,428,420,407,교전형
-callme,Disguised,MID,420,428,420,412,390,캐리형
-sajed,Disguised,AD,420,436,412,407,388,캐리형
-lyonz,Disguised,SUP,407,392,420,428,428,안정형
-gakgos,FlyQuest,TOP,428,436,420,420,392,캐리형
-gryffinn,FlyQuest,JUNGLE,407,397,420,412,402,교전형
-quad,FlyQuest,MID,444,452,444,436,402,캐리형
-massu,FlyQuest,AD,436,452,428,428,397,캐리형
-cryogen,FlyQuest,SUP,407,392,428,436,428,이니시형
-dhokla,LYON,TOP,436,436,420,420,392,라인전형
-inspired,LYON,JUNGLE,465,444,470,465,460,운영형
-saint,LYON,MID,420,428,428,420,392,안정형
-berserker,LYON,AD,452,465,444,436,402,캐리형
-isles,LYON,SUP,428,402,444,452,452,이니시형
-impact,Sentinels,TOP,436,436,412,420,397,캐리형
-hambak,Sentinels,JUNGLE,407,397,420,412,407,교전형
-darkwings,Sentinels,MID,428,436,428,420,392,캐리형
-rahel,Sentinels,AD,428,444,428,420,390,캐리형
-huhi,Sentinels,SUP,420,397,436,444,452,로밍형
-fudge,Shopify Rebellion,TOP,397,402,388,390,384,안정형
-contractz,Shopify Rebellion,JUNGLE,390,388,397,392,392,안정형
-zinie,Shopify Rebellion,MID,412,412,412,402,388,성장형
-bvoy,Shopify Rebellion,AD,402,428,397,392,386,캐리형
-ceos,Shopify Rebellion,SUP,390,386,397,397,402,안정형
-morgan,Team Liquid,TOP,412,420,402,402,388,성장형
-josedeodo,Team Liquid,JUNGLE,428,407,444,444,428,이니시형
-quid,Team Liquid,MID,444,452,444,436,402,캐리형
-yeon,Team Liquid,AD,444,452,436,436,397,캐리형
-corejj,Team Liquid,SUP,428,402,436,444,460,이니시형
+thanatos,Cloud9,TOP,454,441,437,438,430,라인전형
+blaber,Cloud9,JUNGLE,450,450,451,453,441,한타형
+apa,Cloud9,MID,450,458,459,457,436,교전형
+zven,Cloud9,AD,455,462,449,456,433,캐리형
+vulcan,Cloud9,SUP,445,445,459,464,467,보호형
+photon,Dignitas,TOP,412,405,406,401,396,라인전형
+exyu,Dignitas,JUNGLE,384,398,401,396,391,교전형
+palafox,Dignitas,MID,386,387,383,381,378,캐리형
+mobility,Dignitas,AD,397,401,394,399,384,캐리형
+fbi,Dignitas,AD,405,421,416,413,395,캐리형
+breezy,Dignitas,SUP,376,367,383,384,390,보호형
+ignar,Dignitas,SUP,382,376,398,398,406,보호형
+castle,LYON,TOP,440,442,434,427,422,캐리형
+kisno,Disguised,JUNGLE,395,398,403,401,393,교전형
+kryra,Disguised,JUNGLE,399,413,424,415,414,이니시형
+callme,Disguised,MID,429,416,420,415,405,라인전형
+sajed,Disguised,AD,407,401,391,398,388,라인전형
+lyonz,Disguised,SUP,389,394,403,408,411,보호형
+srtty,Disguised,TOP,427,433,430,426,414,캐리형
+gakgos,FlyQuest,TOP,451,449,449,445,431,라인전형
+gryffinn,FlyQuest,JUNGLE,431,442,440,437,430,캐리형
+quad,FlyQuest,MID,430,444,440,436,420,캐리형
+massu,FlyQuest,AD,415,421,412,419,403,캐리형
+cryogen,FlyQuest,SUP,433,433,450,446,458,이니시형
+dhokla,LYON,TOP,434,439,437,433,422,캐리형
+inspired,LYON,JUNGLE,438,428,434,441,424,한타형
+saint,LYON,MID,449,443,440,441,427,라인전형
+berserker,LYON,AD,456,453,440,451,430,라인전형
+isles,LYON,SUP,418,409,425,434,434,한타형
+impact,Sentinels,TOP,418,424,427,421,410,교전형
+hambak,Sentinels,JUNGLE,411,417,430,427,420,교전형
+darkwings,Sentinels,MID,432,441,424,424,414,캐리형
+rahel,Sentinels,AD,438,430,432,436,414,라인전형
+huhi,Sentinels,SUP,422,407,433,432,441,이니시형
+fudge,Shopify Rebellion,TOP,404,396,394,390,391,라인전형
+contractz,Shopify Rebellion,JUNGLE,402,404,410,409,400,교전형
+zinie,Shopify Rebellion,MID,407,409,403,401,395,캐리형
+bvoy,Shopify Rebellion,AD,421,438,420,424,407,캐리형
+ceos,Shopify Rebellion,SUP,400,406,417,416,426,보호형
+morgan,Team Liquid,TOP,435,419,418,416,412,라인전형
+josedeodo,Team Liquid,JUNGLE,434,445,453,449,444,이니시형
+quid,Team Liquid,MID,444,444,442,440,425,라인전형
+yeon,Team Liquid,AD,429,434,419,430,413,캐리형
+corejj,Team Liquid,SUP,425,424,440,443,448,보호형
