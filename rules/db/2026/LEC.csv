@@ -1,29 +1,29 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 empyros,Fnatic,TOP,428,422,414,409,407,라인전형
-razork,Fnatic,JUNGLE,416,419,427,421,417,교전형
+razork,Fnatic,JUNGLE,412,415,423,417,413,교전형
 vladi,Fnatic,MID,431,425,432,426,411,교전형
-upset,Fnatic,AD,441,443,447,453,426,한타형
+upset,Fnatic,AD,431,433,437,443,416,한타형
 lospa,Fnatic,SUP,409,398,428,429,436,보호형
-brokenblade,G2 Esports,TOP,417,413,412,414,409,라인전형
-skewmond,G2 Esports,JUNGLE,447,449,461,457,451,이니시형
+brokenblade,G2 Esports,TOP,419,415,414,416,411,라인전형
+skewmond,G2 Esports,JUNGLE,449,451,463,459,453,이니시형
 caps,G2 Esports,MID,446,459,457,454,434,캐리형
-hanssama,G2 Esports,AD,427,432,422,431,413,캐리형
-labrov,G2 Esports,SUP,414,423,437,436,445,보호형
+hanssama,G2 Esports,AD,429,434,424,433,415,캐리형
+labrov,G2 Esports,SUP,416,425,439,438,447,보호형
 lot,GIANTX,TOP,424,422,430,418,411,교전형
 isma,GIANTX,JUNGLE,415,417,432,429,422,교전형
 jackies,GIANTX,MID,445,443,429,428,420,라인전형
 noah,GIANTX,AD,433,439,432,435,416,캐리형
 jun,GIANTX,SUP,415,411,421,424,429,보호형
 canna,Karmine Corp,TOP,469,462,452,454,443,라인전형
-yike,Karmine Corp,JUNGLE,462,464,464,466,454,한타형
+yike,Karmine Corp,JUNGLE,457,459,459,461,449,한타형
 kyeahoo,Karmine Corp,MID,449,445,432,437,427,라인전형
 caliste,Karmine Corp,AD,456,444,435,447,428,라인전형
-busio,Karmine Corp,SUP,424,424,443,448,451,보호형
-myrwn,Movistar KOI,TOP,455,449,436,439,431,라인전형
-elyoya,Movistar KOI,JUNGLE,436,434,452,451,442,이니시형
-jojopyun,Movistar KOI,MID,444,441,433,427,420,라인전형
+busio,Karmine Corp,SUP,425,425,444,449,452,보호형
+myrwn,Movistar KOI,TOP,451,445,432,435,427,라인전형
+elyoya,Movistar KOI,JUNGLE,434,432,450,449,440,이니시형
+jojopyun,Movistar KOI,MID,440,437,429,423,416,라인전형
 supa,Movistar KOI,AD,446,453,436,442,423,캐리형
-alvaro,Movistar KOI,SUP,428,436,449,450,457,보호형
+alvaro,Movistar KOI,SUP,424,432,445,446,453,보호형
 maynter,Natus Vincere,TOP,433,440,448,442,427,교전형
 rhilech,Natus Vincere,JUNGLE,445,454,458,455,448,교전형
 poby,Natus Vincere,MID,440,434,440,438,423,라인전형
@@ -33,7 +33,7 @@ rooster,Shifters,TOP,424,413,418,414,406,라인전형
 boukada,Shifters,JUNGLE,387,393,404,402,394,교전형
 nuc,Shifters,MID,406,407,413,411,398,교전형
 paduck,Shifters,AD,414,430,422,421,403,캐리형
-trymbi,Shifters,SUP,426,433,452,449,460,이니시형
+trymbi,Shifters,SUP,421,428,447,444,455,이니시형
 wunder,SK Gaming,TOP,433,435,431,422,414,캐리형
 skeanz,SK Gaming,JUNGLE,388,398,397,395,387,캐리형
 lider,SK Gaming,MID,412,412,407,403,396,라인전형

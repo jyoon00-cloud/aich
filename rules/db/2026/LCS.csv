@@ -1,7 +1,7 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 thanatos,Cloud9,TOP,445,428,428,432,422,라인전형
 blaber,Cloud9,JUNGLE,448,451,450,451,440,캐리형
-apa,Cloud9,MID,452,456,457,455,435,교전형
+apa,Cloud9,MID,453,457,458,456,436,교전형
 zven,Cloud9,AD,457,461,448,456,433,캐리형
 vulcan,Cloud9,SUP,434,439,455,459,463,보호형
 photon,Dignitas,TOP,405,404,404,401,396,라인전형
@@ -15,21 +15,21 @@ castle,Disguised,TOP,430,438,434,423,415,캐리형
 kisno,Disguised,JUNGLE,401,405,408,408,398,교전형
 kryra,Disguised,JUNGLE,415,421,435,430,424,이니시형
 callme,Disguised,MID,438,430,432,426,414,라인전형
-sajed,Disguised,AD,431,427,425,430,412,라인전형
+sajed,Disguised,AD,423,419,417,422,404,라인전형
 lyonz,Disguised,SUP,414,421,425,432,433,보호형
-gakgos,FlyQuest,TOP,437,433,434,428,418,라인전형
+gakgos,FlyQuest,TOP,439,434,434,429,419,라인전형
 gryffinn,FlyQuest,JUNGLE,424,435,436,429,426,교전형
-quad,FlyQuest,MID,412,417,418,415,403,교전형
-massu,FlyQuest,AD,409,406,398,404,393,라인전형
+quad,FlyQuest,MID,413,418,419,416,404,교전형
+massu,FlyQuest,AD,410,407,399,405,394,라인전형
 cryogen,FlyQuest,SUP,419,412,435,431,443,이니시형
 dhokla,LYON,TOP,440,445,440,438,427,캐리형
-inspired,LYON,JUNGLE,452,446,454,459,444,한타형
+inspired,LYON,JUNGLE,443,437,445,450,435,한타형
 saint,LYON,MID,447,436,435,438,424,라인전형
 berserker,LYON,AD,459,456,443,454,433,라인전형
 isles,LYON,SUP,416,417,428,438,436,한타형
-impact,Sentinels,TOP,434,446,447,442,426,교전형
+impact,Sentinels,TOP,434,448,448,443,427,캐리형
 hambak,Sentinels,JUNGLE,418,431,435,431,425,교전형
-darkwings,Sentinels,MID,434,448,434,433,421,캐리형
+darkwings,Sentinels,MID,432,446,432,431,419,캐리형
 rahel,Sentinels,AD,442,441,439,442,421,라인전형
 huhi,Sentinels,SUP,424,407,435,435,444,이니시형
 fudge,Shopify Rebellion,TOP,420,406,399,395,395,라인전형
@@ -40,5 +40,5 @@ ceos,Shopify Rebellion,SUP,395,389,405,403,413,보호형
 morgan,Team Liquid,TOP,429,425,422,417,412,라인전형
 josedeodo,Team Liquid,JUNGLE,428,434,447,443,438,이니시형
 quid,Team Liquid,MID,437,447,443,440,423,캐리형
-yeon,Team Liquid,AD,418,422,407,419,404,캐리형
-corejj,Team Liquid,SUP,421,426,429,432,437,보호형
+yeon,Team Liquid,AD,419,423,408,420,405,캐리형
+corejj,Team Liquid,SUP,422,427,430,433,438,보호형

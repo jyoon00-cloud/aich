@@ -1,6 +1,6 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 sniper,100 Thieves,TOP,437,438,431,426,418,캐리형
-river,100 Thieves,JUNGLE,432,446,436,440,426,캐리형
+river,100 Thieves,JUNGLE,424,438,428,432,418,캐리형
 quid,100 Thieves,MID,432,444,427,430,417,캐리형
 meech,100 Thieves,AD,422,441,421,430,411,캐리형
 eyla,100 Thieves,SUP,421,414,432,433,440,보호형
@@ -8,7 +8,7 @@ fudge,Cloud9,TOP,438,418,422,424,413,라인전형
 blaber,Cloud9,JUNGLE,440,443,452,448,442,이니시형
 jojopyun,Cloud9,MID,435,434,434,432,415,라인전형
 berserker,Cloud9,AD,422,423,411,424,405,한타형
-vulcan,Cloud9,SUP,408,406,420,423,428,보호형
+vulcan,Cloud9,SUP,403,401,415,418,423,보호형
 rich,Dignitas,TOP,419,432,428,421,410,캐리형
 exyu,Dignitas,JUNGLE,393,397,413,408,404,교전형
 dove,Dignitas,MID,408,415,413,411,398,캐리형
@@ -24,10 +24,10 @@ armao,Immortals,JUNGLE,380,386,408,403,398,이니시형
 mask,Immortals,MID,423,420,418,410,399,라인전형
 tactical,Immortals,AD,405,397,399,400,384,라인전형
 olleh,Immortals,SUP,372,365,389,387,397,보호형
-dhokla,NRG,TOP,413,410,401,396,395,라인전형
-contractz,NRG,JUNGLE,413,414,422,419,412,교전형
-palafox,NRG,MID,402,401,397,396,389,라인전형
-fbi,NRG,AD,416,432,428,432,407,캐리형
+dhokla,NRG,TOP,415,412,403,398,397,라인전형
+contractz,NRG,JUNGLE,415,416,424,421,414,교전형
+palafox,NRG,MID,404,403,399,398,391,라인전형
+fbi,NRG,AD,418,434,430,434,409,캐리형
 huhi,NRG,SUP,401,396,397,401,405,보호형
 fakegod,Shopify Rebellion,TOP,396,397,388,385,384,캐리형
 bugi,Shopify Rebellion,JUNGLE,390,404,405,401,395,교전형

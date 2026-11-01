@@ -1,15 +1,15 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 bang,100 Thieves,AD,418,418,420,420,399,교전형
-ssumday,100 Thieves,TOP,443,431,435,428,418,라인전형
+ssumday,100 Thieves,TOP,436,424,428,421,411,라인전형
 anda,100 Thieves,JUNGLE,387,389,398,394,387,교전형
 aphromoo,100 Thieves,SUP,379,365,382,384,390,보호형
 huhi,100 Thieves,MID,385,384,382,379,375,라인전형
 soligo,100 Thieves,MID,379,381,386,380,374,교전형
 fakegod,100 Thieves,TOP,403,401,399,395,392,라인전형
-licorice,Cloud9,TOP,437,442,426,429,421,캐리형
-sneaky,Cloud9,AD,421,441,422,433,413,캐리형
-zeyzal,Cloud9,SUP,440,436,447,452,455,보호형
-svenskeren,Cloud9,JUNGLE,428,437,440,440,430,교전형
+licorice,Cloud9,TOP,440,445,429,432,424,캐리형
+sneaky,Cloud9,AD,424,444,425,436,416,캐리형
+zeyzal,Cloud9,SUP,443,439,450,455,458,보호형
+svenskeren,Cloud9,JUNGLE,431,440,443,443,433,교전형
 nisqy,Cloud9,MID,423,440,434,433,415,캐리형
 blaber,Cloud9,JUNGLE,393,397,404,402,394,교전형
 goldenglue,Cloud9,MID,401,407,397,398,387,캐리형
@@ -19,7 +19,7 @@ damonte,Clutch Gaming,MID,421,417,403,406,398,라인전형
 piglet,Clutch Gaming,AD,401,400,404,403,387,교전형
 codysun,Clutch Gaming,AD,392,387,384,387,370,라인전형
 vulcan,Clutch Gaming,SUP,395,398,422,420,430,보호형
-powerofevil,Counter Logic Gaming,MID,444,432,442,433,419,라인전형
+powerofevil,Counter Logic Gaming,MID,440,428,438,429,415,라인전형
 biofrost,Counter Logic Gaming,SUP,408,401,413,417,421,보호형
 darshan,Counter Logic Gaming,TOP,400,402,406,399,393,교전형
 stixxay,Counter Logic Gaming,AD,420,414,404,410,397,라인전형
@@ -36,7 +36,7 @@ v1per,FlyQuest,TOP,440,431,425,423,416,라인전형
 pobelter,FlyQuest,MID,426,432,425,425,412,캐리형
 wildturtle,FlyQuest,AD,434,425,425,426,410,라인전형
 jayj,FlyQuest,SUP,408,411,431,431,439,보호형
-santorin,FlyQuest,JUNGLE,435,448,453,451,443,이니시형
+santorin,FlyQuest,JUNGLE,433,446,451,449,441,이니시형
 maxi,FlyQuest,JUNGLE,385,399,406,404,396,교전형
 hauntzer,Golden Guardians,TOP,446,444,443,438,424,라인전형
 contractz,Golden Guardians,JUNGLE,391,400,403,403,393,교전형
@@ -51,12 +51,12 @@ meteos,OpTic Gaming,JUNGLE,388,389,395,393,385,교전형
 dardoch,OpTic Gaming,JUNGLE,368,383,386,386,377,교전형
 neo,OpTic Gaming,AD,387,391,381,387,369,캐리형
 impact,Team Liquid,TOP,434,444,427,430,420,캐리형
-xmithie,Team Liquid,JUNGLE,456,460,463,463,453,교전형
-jensen,Team Liquid,MID,459,465,454,455,437,캐리형
+xmithie,Team Liquid,JUNGLE,451,455,458,458,448,교전형
+jensen,Team Liquid,MID,462,468,457,458,440,캐리형
 doublelift,Team Liquid,AD,466,470,457,464,438,캐리형
 corejj,Team Liquid,SUP,442,448,465,467,473,이니시형
 brokenblade,Team SoloMid,TOP,437,436,430,428,419,라인전형
 akaadian,Team SoloMid,JUNGLE,429,435,435,436,425,한타형
 bjergsen,Team SoloMid,MID,435,440,428,430,417,캐리형
-zven,Team SoloMid,AD,432,445,431,439,418,캐리형
+zven,Team SoloMid,AD,426,439,425,433,412,캐리형
 smoothie,Team SoloMid,SUP,411,419,431,435,439,보호형

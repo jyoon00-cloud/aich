@@ -1,13 +1,13 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 oscarinin,Fnatic,TOP,436,433,425,425,416,라인전형
-razork,Fnatic,JUNGLE,429,434,442,443,432,한타형
+razork,Fnatic,JUNGLE,424,429,437,438,427,한타형
 humanoid,Fnatic,MID,447,449,431,436,422,캐리형
 upset,Fnatic,AD,435,441,430,439,415,캐리형
-mikyx,Fnatic,SUP,440,442,450,455,458,보호형
-brokenblade,G2 Esports,TOP,427,427,429,429,418,교전형
+mikyx,Fnatic,SUP,435,437,445,450,453,보호형
+brokenblade,G2 Esports,TOP,417,417,419,419,408,교전형
 skewmond,G2 Esports,JUNGLE,426,426,421,426,411,라인전형
-caps,G2 Esports,MID,443,441,430,436,425,라인전형
-hanssama,G2 Esports,AD,412,421,403,414,400,캐리형
+caps,G2 Esports,MID,428,426,415,421,410,라인전형
+hanssama,G2 Esports,AD,407,416,398,409,395,캐리형
 labrov,G2 Esports,SUP,390,390,403,411,411,한타형
 lot,GIANTX,TOP,410,414,419,412,400,교전형
 closer,GIANTX,JUNGLE,380,386,391,392,381,한타형
@@ -15,13 +15,13 @@ jackies,GIANTX,MID,412,416,410,406,396,캐리형
 noah,GIANTX,AD,433,439,428,428,407,캐리형
 jun,GIANTX,SUP,412,419,433,435,441,보호형
 canna,Karmine Corp,TOP,436,436,433,432,418,라인전형
-yike,Karmine Corp,JUNGLE,423,435,442,438,432,교전형
+yike,Karmine Corp,JUNGLE,418,430,437,433,427,교전형
 vladi,Karmine Corp,MID,437,436,434,429,414,라인전형
 caliste,Karmine Corp,AD,429,428,410,423,405,라인전형
 targamas,Karmine Corp,SUP,409,399,412,415,420,보호형
 myrwn,Movistar KOI,TOP,423,431,416,416,409,캐리형
 elyoya,Movistar KOI,JUNGLE,424,434,425,427,415,캐리형
-jojopyun,Movistar KOI,MID,412,411,405,404,398,라인전형
+jojopyun,Movistar KOI,MID,404,403,397,396,390,라인전형
 supa,Movistar KOI,AD,422,436,418,427,407,캐리형
 alvaro,Movistar KOI,SUP,422,424,437,442,445,보호형
 adam,Rogue,TOP,417,404,414,402,393,라인전형
@@ -37,7 +37,7 @@ loopy,SK Gaming,SUP,380,374,390,388,398,보호형
 irrelevant,Team BDS,TOP,397,403,408,401,391,교전형
 113,Team BDS,JUNGLE,396,413,409,408,399,캐리형
 nuc,Team BDS,MID,415,428,426,422,404,캐리형
-ice,Team BDS,AD,433,425,423,428,406,라인전형
+ice,Team BDS,AD,428,420,418,423,401,라인전형
 parus,Team BDS,SUP,411,405,426,424,434,이니시형
 carlsen,Team Heretics,TOP,396,388,395,389,382,라인전형
 sheo,Team Heretics,JUNGLE,401,397,404,399,394,교전형

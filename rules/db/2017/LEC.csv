@@ -1,22 +1,22 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 soaz,Fnatic,TOP,411,419,420,415,405,교전형
 caps,Fnatic,MID,420,423,419,417,406,캐리형
-rekkles,Fnatic,AD,458,462,451,458,431,캐리형
+rekkles,Fnatic,AD,456,460,449,456,429,캐리형
 jesiz,Fnatic,SUP,406,416,421,428,429,보호형
 broxah,Fnatic,JUNGLE,420,423,422,423,412,캐리형
 amazing,Fnatic,JUNGLE,386,397,399,399,389,교전형
 expect,G2 Esports,TOP,444,450,445,443,428,캐리형
-trick,G2 Esports,JUNGLE,449,448,445,448,435,라인전형
+trick,G2 Esports,JUNGLE,439,438,435,438,425,라인전형
 perkz,G2 Esports,MID,454,452,445,445,429,라인전형
-zven,G2 Esports,AD,451,451,437,445,426,라인전형
+zven,G2 Esports,AD,446,446,432,440,421,라인전형
 mithy,G2 Esports,SUP,416,419,431,435,439,보호형
 fjoompbun,Giants Gaming,TOP,392,387,385,381,380,라인전형
 memento,Giants Gaming,JUNGLE,396,397,419,409,409,이니시형
 night,Giants Gaming,MID,403,397,394,391,385,라인전형
 heaq,Giants Gaming,AD,400,400,397,399,384,라인전형
 hustlin,Giants Gaming,SUP,390,385,406,405,414,보호형
-odoamne,H2k-Gaming,TOP,434,440,429,429,418,캐리형
-jankos,H2k-Gaming,JUNGLE,425,436,442,440,432,교전형
+odoamne,H2k-Gaming,TOP,433,439,428,428,417,캐리형
+jankos,H2k-Gaming,JUNGLE,424,435,441,439,431,교전형
 febiven,H2k-Gaming,MID,431,432,412,418,407,캐리형
 nuclear,H2k-Gaming,AD,417,427,410,420,401,캐리형
 chei,H2k-Gaming,SUP,404,417,423,430,431,보호형
@@ -32,7 +32,7 @@ wisdom,Origen,JUNGLE,404,395,407,402,397,교전형
 xpeke,Origen,SUP,395,375,402,398,410,보호형
 hiiva,Origen,SUP,369,365,388,387,396,보호형
 cinkrof,Origen,JUNGLE,376,382,396,390,386,교전형
-wunder,Splyce,TOP,449,437,442,434,423,라인전형
+wunder,Splyce,TOP,444,432,437,429,418,라인전형
 kold,Splyce,JUNGLE,388,399,397,399,387,캐리형
 sencux,Splyce,MID,416,423,423,419,404,캐리형
 kobbe,Splyce,AD,422,423,417,421,402,캐리형
@@ -44,7 +44,7 @@ hjarnan,Team ROCCAT,AD,423,417,420,420,400,라인전형
 wadid,Team ROCCAT,SUP,400,393,417,415,425,보호형
 cabochard,Team Vitality,TOP,417,408,406,402,397,라인전형
 djoko,Team Vitality,JUNGLE,379,390,402,397,392,교전형
-nukeduck,Team Vitality,MID,387,393,386,385,379,캐리형
+nukeduck,Team Vitality,MID,383,389,382,381,375,캐리형
 gbm,Team Vitality,MID,383,386,380,379,372,캐리형
 steeelback,Team Vitality,AD,409,408,396,403,389,라인전형
 hachani,Team Vitality,SUP,372,368,383,386,391,보호형

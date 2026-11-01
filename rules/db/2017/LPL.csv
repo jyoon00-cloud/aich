@@ -1,9 +1,9 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-scout,EDward Gaming,MID,436,446,441,440,422,캐리형
+scout,EDward Gaming,MID,438,448,443,442,424,캐리형
 zet,EDward Gaming,AD,420,431,420,427,407,캐리형
-meiko,EDward Gaming,SUP,443,443,460,461,468,이니시형
+meiko,EDward Gaming,SUP,445,445,462,463,470,이니시형
 fireloli,EDward Gaming,JUNGLE,407,426,427,428,417,한타형
-mouse,EDward Gaming,TOP,434,437,434,430,420,캐리형
+mouse,EDward Gaming,TOP,436,439,436,432,422,캐리형
 korol,EDward Gaming,TOP,406,399,397,393,390,라인전형
 clearlove,EDward Gaming,JUNGLE,398,399,399,400,389,한타형
 gimgoon,Game Talents,TOP,406,403,410,402,394,교전형
@@ -20,10 +20,10 @@ ben4,I May,JUNGLE,407,415,420,418,410,교전형
 road,I May,SUP,413,398,423,420,431,보호형
 flawless,I May,JUNGLE,400,396,400,399,390,라인전형
 starlight,I May,SUP,380,386,403,405,411,보호형
-duke,Invictus Gaming,TOP,452,457,446,446,434,캐리형
+duke,Invictus Gaming,TOP,462,467,456,456,444,캐리형
 kid,Invictus Gaming,JUNGLE,429,431,427,430,418,캐리형
 rio,Invictus Gaming,JUNGLE,395,396,402,400,392,교전형
-rookie,Invictus Gaming,MID,432,438,439,434,417,교전형
+rookie,Invictus Gaming,MID,427,433,434,429,412,교전형
 marge,Invictus Gaming,AD,406,416,401,409,393,캐리형
 baolan,Invictus Gaming,SUP,417,410,424,427,432,보호형
 funny,LGD Gaming,TOP,388,386,391,384,381,교전형
@@ -54,10 +54,10 @@ ali,Qiao Gu Reapers,SUP,407,403,418,421,426,보호형
 cl0ud,Qiao Gu Reapers,SUP,386,386,401,403,409,보호형
 candyseven,Qiao Gu Reapers,AD,397,407,395,402,384,캐리형
 letme,Royal Never Give Up,TOP,432,431,427,424,416,라인전형
-xiaohu,Royal Never Give Up,MID,444,451,430,436,424,캐리형
+xiaohu,Royal Never Give Up,MID,446,453,432,438,426,캐리형
 ming,Royal Never Give Up,SUP,410,418,422,430,430,한타형
-uzi,Royal Never Give Up,AD,458,461,446,454,431,캐리형
-mlxg,Royal Never Give Up,JUNGLE,422,443,443,444,433,한타형
+uzi,Royal Never Give Up,AD,460,463,448,456,433,캐리형
+mlxg,Royal Never Give Up,JUNGLE,424,445,445,446,435,한타형
 y1han,Royal Never Give Up,JUNGLE,384,400,404,403,394,교전형
 windy,Royal Never Give Up,AD,398,410,391,402,384,캐리형
 flandre,Snake Esports,TOP,419,402,402,397,395,라인전형
@@ -75,8 +75,8 @@ ben,Team WE,SUP,428,444,455,460,463,보호형
 zero,Team WE,SUP,387,383,402,403,410,보호형
 jotaro,Vici Gaming,TOP,400,398,403,395,389,교전형
 loong,Vici Gaming,TOP,436,420,428,420,411,라인전형
-bengi,Vici Gaming,JUNGLE,405,408,411,410,401,교전형
-papillon,Vici Gaming,JUNGLE,382,390,401,396,391,교전형
+bengi,Vici Gaming,JUNGLE,413,416,419,418,409,교전형
+papillon,Vici Gaming,JUNGLE,387,395,406,401,396,교전형
 easyhoon,Vici Gaming,MID,415,403,396,395,391,라인전형
 peng,Vici Gaming,MID,391,388,388,384,374,라인전형
 xuanxuanpi,Vici Gaming,AD,417,406,398,403,391,라인전형

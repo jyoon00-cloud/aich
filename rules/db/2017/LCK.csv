@@ -1,6 +1,6 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 marin,Afreeca Freecs,TOP,462,452,455,448,438,라인전형
-kuro,Afreeca Freecs,MID,442,456,450,449,433,캐리형
+kuro,Afreeca Freecs,MID,445,459,453,452,436,캐리형
 kramer,Afreeca Freecs,AD,458,463,445,455,434,캐리형
 tusin,Afreeca Freecs,SUP,433,434,453,454,461,보호형
 spirit,Afreeca Freecs,JUNGLE,436,447,459,454,449,이니시형
@@ -24,16 +24,16 @@ edge,Kongdoo Monster,MID,432,427,434,427,415,교전형
 ssol,Kongdoo Monster,AD,442,429,435,433,416,라인전형
 guger,Kongdoo Monster,SUP,411,401,432,426,440,이니시형
 secret,Kongdoo Monster,SUP,392,390,416,413,424,보호형
-smeb,KT Rolster,TOP,464,459,459,454,444,라인전형
+smeb,KT Rolster,TOP,467,462,462,457,447,라인전형
 score,KT Rolster,JUNGLE,441,455,458,458,448,교전형
-pawn,KT Rolster,MID,434,440,426,429,421,캐리형
-deft,KT Rolster,AD,433,446,424,436,421,캐리형
-mata,KT Rolster,SUP,428,436,438,447,446,한타형
+pawn,KT Rolster,MID,436,442,428,431,423,캐리형
+deft,KT Rolster,AD,435,448,426,438,423,캐리형
+mata,KT Rolster,SUP,430,438,440,449,448,한타형
 expession,Longzhu Gaming,TOP,437,431,431,426,420,라인전형
 crash,Longzhu Gaming,JUNGLE,428,432,431,433,421,한타형
 fly,Longzhu Gaming,MID,437,443,437,436,422,캐리형
-pray,Longzhu Gaming,AD,441,435,428,432,419,라인전형
-gorilla,Longzhu Gaming,SUP,410,413,431,432,439,보호형
+pray,Longzhu Gaming,AD,444,438,431,435,422,라인전형
+gorilla,Longzhu Gaming,SUP,413,416,434,435,442,보호형
 add,MVP,TOP,424,421,427,419,414,교전형
 beyond,MVP,JUNGLE,447,445,456,451,446,교전형
 ian,MVP,MID,408,410,409,406,402,캐리형
@@ -46,17 +46,17 @@ seonghwan,ROX Tigers,JUNGLE,410,421,429,426,419,교전형
 shy,ROX Tigers,TOP,450,449,438,438,430,라인전형
 lindarang,ROX Tigers,TOP,414,419,419,414,409,캐리형
 mightybear,ROX Tigers,JUNGLE,397,411,410,412,400,한타형
-cuvee,Samsung Galaxy,TOP,452,460,445,448,440,캐리형
-crown,Samsung Galaxy,MID,475,475,460,464,451,라인전형
-corejj,Samsung Galaxy,SUP,445,448,450,459,458,한타형
-ruler,Samsung Galaxy,AD,455,464,444,455,437,캐리형
+cuvee,Samsung Galaxy,TOP,457,465,450,453,445,캐리형
+crown,Samsung Galaxy,MID,480,480,465,469,456,라인전형
+corejj,Samsung Galaxy,SUP,450,453,455,464,463,한타형
+ruler,Samsung Galaxy,AD,460,469,449,460,442,캐리형
 haru,Samsung Galaxy,JUNGLE,460,461,463,463,453,교전형
 ambition,Samsung Galaxy,JUNGLE,413,416,419,418,409,교전형
 stitch,Samsung Galaxy,AD,417,426,410,419,403,캐리형
-faker,SK Telecom T1,MID,487,490,476,479,463,캐리형
-bang,SK Telecom T1,AD,470,481,455,469,450,캐리형
-wolf,SK Telecom T1,SUP,462,465,467,476,475,한타형
-peanut,SK Telecom T1,JUNGLE,460,471,463,468,453,캐리형
-huni,SK Telecom T1,TOP,493,491,486,483,467,라인전형
+faker,SK Telecom T1,MID,497,500,486,489,473,캐리형
+bang,SK Telecom T1,AD,480,491,465,479,460,캐리형
+wolf,SK Telecom T1,SUP,472,475,477,486,485,한타형
+peanut,SK Telecom T1,JUNGLE,463,474,466,471,456,캐리형
+huni,SK Telecom T1,TOP,484,482,477,474,458,라인전형
 profit,SK Telecom T1,TOP,421,421,418,414,401,라인전형
 blank,SK Telecom T1,JUNGLE,402,416,423,421,413,교전형

@@ -1,9 +1,9 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-korol,EDward Gaming,TOP,416,419,415,412,403,캐리형
-deft,EDward Gaming,AD,428,442,431,437,412,캐리형
-meiko,EDward Gaming,SUP,430,433,447,450,455,이니시형
-clearlove,EDward Gaming,JUNGLE,425,437,436,437,425,캐리형
-pawn,EDward Gaming,MID,413,415,404,406,397,캐리형
+korol,EDward Gaming,TOP,420,423,419,416,407,캐리형
+deft,EDward Gaming,AD,432,446,435,441,416,캐리형
+meiko,EDward Gaming,SUP,434,437,451,454,459,이니시형
+clearlove,EDward Gaming,JUNGLE,429,441,440,441,429,캐리형
+pawn,EDward Gaming,MID,417,419,408,410,401,캐리형
 athena,EDward Gaming,MID,386,398,394,392,375,캐리형
 fireloli,EDward Gaming,JUNGLE,384,388,395,393,385,교전형
 gimgoon,Energy Pacemaker,TOP,396,390,388,384,382,라인전형
@@ -28,7 +28,7 @@ time,Invictus Gaming,AD,390,399,383,392,381,캐리형
 godv,LGD Gaming,MID,393,395,391,389,377,캐리형
 imp,LGD Gaming,AD,420,415,401,409,395,라인전형
 pyl,LGD Gaming,SUP,400,396,417,417,425,보호형
-marin,LGD Gaming,TOP,428,411,407,404,405,라인전형
+marin,LGD Gaming,TOP,438,421,417,414,415,라인전형
 eimy,LGD Gaming,JUNGLE,378,387,388,389,378,한타형
 unicorn,LGD Gaming,JUNGLE,374,380,386,384,376,교전형
 yu,LGD Gaming,JUNGLE,374,380,386,384,376,교전형
@@ -73,6 +73,6 @@ mystic,Team WE,AD,415,423,416,420,401,캐리형
 zero,Team WE,SUP,411,422,439,441,447,보호형
 loong,Vici Gaming,TOP,430,430,427,423,410,라인전형
 dandy,Vici Gaming,JUNGLE,423,426,437,432,427,이니시형
-easyhoon,Vici Gaming,MID,425,419,416,414,406,라인전형
+easyhoon,Vici Gaming,MID,435,429,426,424,416,라인전형
 endless,Vici Gaming,AD,395,410,399,405,386,캐리형
 duan,Vici Gaming,SUP,379,377,393,395,401,보호형

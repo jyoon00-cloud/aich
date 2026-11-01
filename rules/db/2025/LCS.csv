@@ -1,30 +1,30 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-sniper,100 Thieves,TOP,407,410,405,408,400,캐리형
-river,100 Thieves,JUNGLE,426,440,438,438,428,캐리형
-quid,100 Thieves,MID,433,448,439,439,421,캐리형
+sniper,100 Thieves,TOP,405,408,403,406,398,캐리형
+river,100 Thieves,JUNGLE,421,435,433,433,423,캐리형
+quid,100 Thieves,MID,428,443,434,434,416,캐리형
 fbi,100 Thieves,AD,436,448,433,441,417,캐리형
-eyla,100 Thieves,SUP,421,415,426,434,434,한타형
-thanatos,Cloud9,TOP,443,431,432,431,418,라인전형
-blaber,Cloud9,JUNGLE,426,415,432,430,422,교전형
+eyla,100 Thieves,SUP,417,411,422,430,430,한타형
+thanatos,Cloud9,TOP,439,427,428,427,414,라인전형
+blaber,Cloud9,JUNGLE,419,408,425,423,415,교전형
 loki,Cloud9,MID,415,407,410,411,397,라인전형
 zven,Cloud9,AD,423,427,427,432,406,한타형
-vulcan,Cloud9,SUP,409,404,435,434,443,이니시형
-srtty,Dignitas,TOP,402,408,403,399,393,캐리형
-lira,Dignitas,JUNGLE,371,376,391,386,381,교전형
-sheiden,Dignitas,JUNGLE,391,397,401,401,390,교전형
+vulcan,Cloud9,SUP,403,398,429,428,437,이니시형
+srtty,Dignitas,TOP,397,403,398,394,388,캐리형
+lira,Dignitas,JUNGLE,370,375,390,385,380,교전형
+sheiden,Dignitas,JUNGLE,387,393,397,397,386,교전형
 keine,Dignitas,MID,416,413,417,412,397,교전형
 tomo,Dignitas,AD,411,416,402,406,390,캐리형
 isles,Dignitas,SUP,394,393,407,406,415,보호형
 castle,Disguised,TOP,400,410,408,395,387,캐리형
-exyu,Disguised,JUNGLE,378,384,404,395,394,이니시형
+exyu,Disguised,JUNGLE,376,382,402,393,392,이니시형
 abbedagge,Disguised,MID,382,388,379,377,374,캐리형
-scaryjerry,Disguised,AD,402,393,384,388,378,라인전형
+scaryjerry,Disguised,AD,397,389,378,383,373,라인전형
 huhi,Disguised,SUP,381,369,380,382,388,보호형
-bwipo,FlyQuest,TOP,440,438,439,432,421,라인전형
-inspired,FlyQuest,JUNGLE,435,439,447,447,437,교전형
+bwipo,FlyQuest,TOP,435,433,434,427,416,라인전형
+inspired,FlyQuest,JUNGLE,429,433,441,441,431,교전형
 quad,FlyQuest,MID,414,426,414,417,404,캐리형
-massu,FlyQuest,AD,411,418,412,419,400,한타형
-busio,FlyQuest,SUP,412,423,431,435,439,보호형
+massu,FlyQuest,AD,409,416,410,417,398,한타형
+busio,FlyQuest,SUP,407,418,426,430,434,보호형
 licorice,LYON,TOP,391,382,378,375,374,라인전형
 oddie,LYON,JUNGLE,379,385,391,389,381,교전형
 saint,LYON,MID,414,410,414,406,391,라인전형
@@ -36,8 +36,8 @@ palafox,Shopify Rebellion,MID,407,395,391,389,383,라인전형
 bvoy,Shopify Rebellion,AD,382,386,376,383,373,캐리형
 ceos,Shopify Rebellion,SUP,370,368,384,386,392,보호형
 zeyzal,Shopify Rebellion,SUP,376,367,383,384,390,보호형
-impact,Team Liquid,TOP,431,437,425,425,417,캐리형
-umti,Team Liquid,JUNGLE,409,418,415,413,405,캐리형
+impact,Team Liquid,TOP,417,423,411,411,403,캐리형
+umti,Team Liquid,JUNGLE,407,416,413,411,403,캐리형
 apa,Team Liquid,MID,412,422,413,410,398,캐리형
 yeon,Team Liquid,AD,406,420,400,407,392,캐리형
-corejj,Team Liquid,SUP,416,431,445,446,452,이니시형
+corejj,Team Liquid,SUP,410,426,439,442,448,이니시형

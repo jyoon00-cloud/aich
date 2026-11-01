@@ -1,28 +1,28 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-flandre,Anyone's Legend,TOP,469,469,471,467,454,교전형
-tarzan,Anyone's Legend,JUNGLE,478,487,485,485,475,캐리형
-shanks,Anyone's Legend,MID,445,452,442,443,433,캐리형
-hope,Anyone's Legend,AD,464,467,457,464,443,캐리형
-kael,Anyone's Legend,SUP,467,463,476,480,484,보호형
+flandre,Anyone's Legend,TOP,460,460,462,458,445,교전형
+tarzan,Anyone's Legend,JUNGLE,462,471,469,469,459,캐리형
+shanks,Anyone's Legend,MID,443,450,440,441,431,캐리형
+hope,Anyone's Legend,AD,462,465,455,462,441,캐리형
+kael,Anyone's Legend,SUP,459,455,468,472,476,보호형
 bin,Bilibili Gaming,TOP,454,440,438,437,431,라인전형
-xun,Bilibili Gaming,JUNGLE,430,447,442,444,432,캐리형
-knight,Bilibili Gaming,MID,471,482,474,473,455,캐리형
-viper,Bilibili Gaming,AD,454,457,443,455,436,캐리형
-on,Bilibili Gaming,SUP,442,445,455,460,463,보호형
+xun,Bilibili Gaming,JUNGLE,428,445,440,442,430,캐리형
+knight,Bilibili Gaming,MID,459,470,462,461,443,캐리형
+viper,Bilibili Gaming,AD,452,455,441,453,434,캐리형
+on,Bilibili Gaming,SUP,436,439,449,454,457,보호형
 zdz,EDward Gaming,TOP,441,434,445,438,427,교전형
 xiaohao,EDward Gaming,JUNGLE,455,458,468,466,458,이니시형
 angel,EDward Gaming,MID,462,466,462,459,441,캐리형
-leave,EDward Gaming,AD,453,448,438,446,430,라인전형
+leave,EDward Gaming,AD,448,443,433,441,425,라인전형
 parukia,EDward Gaming,SUP,411,418,426,431,434,보호형
 soboro,Invictus Gaming,TOP,404,408,402,398,398,캐리형
-wei,Invictus Gaming,JUNGLE,412,429,427,425,417,캐리형
-rookie,Invictus Gaming,MID,412,428,411,409,405,캐리형
+wei,Invictus Gaming,JUNGLE,410,427,425,423,415,캐리형
+rookie,Invictus Gaming,MID,408,424,407,405,401,캐리형
 photic,Invictus Gaming,AD,430,438,425,430,412,캐리형
 jwei,Invictus Gaming,SUP,408,393,417,417,425,보호형
 xiaoxu,JD Gaming,TOP,463,460,460,456,441,라인전형
-junjia,JD Gaming,JUNGLE,434,440,450,446,440,교전형
-hongq,JD Gaming,MID,432,441,430,428,419,캐리형
-gala,JD Gaming,AD,449,445,429,442,425,라인전형
+junjia,JD Gaming,JUNGLE,436,442,452,448,442,교전형
+hongq,JD Gaming,MID,434,443,432,430,421,캐리형
+gala,JD Gaming,AD,445,441,425,438,421,라인전형
 vampire,JD Gaming,SUP,421,415,430,436,438,보호형
 sasi,LGD Gaming,TOP,430,417,414,413,411,라인전형
 heng,LGD Gaming,JUNGLE,436,432,438,436,428,교전형
@@ -32,7 +32,7 @@ ycx,LGD Gaming,SUP,427,420,443,444,451,보호형
 sheer,LNG Esports,TOP,472,468,456,457,447,라인전형
 croco,LNG Esports,JUNGLE,467,473,471,473,461,캐리형
 bulldog,LNG Esports,MID,454,456,441,448,436,캐리형
-1xn,LNG Esports,AD,479,483,462,474,452,캐리형
+1xn,LNG Esports,AD,475,479,458,470,448,캐리형
 missing,LNG Esports,SUP,459,464,479,481,487,이니시형
 hoya,Ninjas in Pyjamas.CN,TOP,450,459,462,458,441,교전형
 guwon,Ninjas in Pyjamas.CN,JUNGLE,438,442,458,455,447,이니시형
@@ -54,10 +54,10 @@ keshi,ThunderTalk Gaming,TOP,433,428,426,416,412,라인전형
 junhao,ThunderTalk Gaming,JUNGLE,402,402,416,410,405,교전형
 heru,ThunderTalk Gaming,MID,404,405,409,402,395,교전형
 ryan3,ThunderTalk Gaming,AD,396,400,388,395,386,캐리형
-feather,ThunderTalk Gaming,SUP,387,380,398,399,406,보호형
-369,Top Esports,TOP,444,441,432,430,428,라인전형
+feather,ThunderTalk Gaming,SUP,385,378,396,397,404,보호형
+369,Top Esports,TOP,438,435,426,424,422,라인전형
 naiyou,Top Esports,JUNGLE,407,411,414,414,404,교전형
-creme,Top Esports,MID,440,452,439,437,427,캐리형
+creme,Top Esports,MID,441,453,440,438,428,캐리형
 jiaqi,Top Esports,AD,420,427,409,415,404,캐리형
 fengyue,Top Esports,SUP,408,420,424,426,432,보호형
 liangchen,Ultra Prime,TOP,409,405,410,406,400,교전형
@@ -68,5 +68,5 @@ xiaoxia,Ultra Prime,SUP,403,397,426,420,434,이니시형
 zika,Weibo Gaming,TOP,439,452,441,439,429,캐리형
 jiejie,Weibo Gaming,JUNGLE,437,438,449,447,439,교전형
 xiaohu,Weibo Gaming,MID,424,431,432,428,415,교전형
-elk,Weibo Gaming,AD,441,458,449,453,429,캐리형
+elk,Weibo Gaming,AD,439,456,447,451,427,캐리형
 erha,Weibo Gaming,SUP,427,437,445,448,453,보호형

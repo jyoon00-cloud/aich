@@ -14,7 +14,7 @@ smeb,GET,TOP,466,472,461,462,449,캐리형
 hojin,GET,JUNGLE,409,415,421,419,411,교전형
 kuro,GET,MID,458,470,458,460,444,캐리형
 pray,GET,AD,471,480,462,472,450,캐리형
-gorilla,GET,SUP,455,463,473,478,481,보호형
+gorilla,GET,SUP,457,465,475,480,483,보호형
 trace,Jin Air Green Wings,TOP,422,430,426,423,414,캐리형
 gbm,Jin Air Green Wings,MID,439,451,441,442,427,캐리형
 chaser,Jin Air Green Wings,JUNGLE,428,448,445,448,436,캐리형
@@ -30,10 +30,10 @@ fixer,KT,SUP,435,431,450,451,458,보호형
 hachani,KT,SUP,400,396,425,421,433,보호형
 duke,NaJin e-mFire,TOP,446,436,443,434,426,라인전형
 ohq,NaJin e-mFire,AD,433,437,430,434,416,캐리형
-watch,NaJin e-mFire,JUNGLE,430,430,438,435,427,교전형
-ggoong,NaJin e-mFire,MID,421,425,423,420,411,캐리형
+watch,NaJin e-mFire,JUNGLE,432,432,440,437,429,교전형
+ggoong,NaJin e-mFire,MID,423,427,425,422,413,캐리형
 cain,NaJin e-mFire,SUP,412,398,409,414,417,보호형
-tank,NaJin e-mFire,MID,413,407,408,403,394,라인전형
+tank,NaJin e-mFire,MID,415,409,410,405,396,라인전형
 pure,NaJin e-mFire,SUP,390,388,394,401,402,보호형
 cuvee,Samsung Galaxy,TOP,425,421,434,422,413,교전형
 eve,Samsung Galaxy,JUNGLE,425,416,432,425,422,교전형

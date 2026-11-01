@@ -4,11 +4,11 @@ croco,Anyone's Legend,JUNGLE,428,436,441,439,431,교전형
 shanks,Anyone's Legend,MID,455,456,455,448,431,캐리형
 hope,Anyone's Legend,AD,427,436,431,436,415,캐리형
 kael,Anyone's Legend,SUP,432,421,449,451,457,이니시형
-bin,Bilibili Gaming,TOP,469,466,449,454,447,라인전형
+bin,Bilibili Gaming,TOP,473,470,453,458,451,라인전형
 xun,Bilibili Gaming,JUNGLE,457,459,454,461,444,한타형
-knight,Bilibili Gaming,MID,454,466,451,456,443,캐리형
-elk,Bilibili Gaming,AD,469,477,450,464,445,캐리형
-on,Bilibili Gaming,SUP,455,464,464,475,472,한타형
+knight,Bilibili Gaming,MID,459,471,456,461,448,캐리형
+elk,Bilibili Gaming,AD,473,481,454,468,449,캐리형
+on,Bilibili Gaming,SUP,454,463,463,474,471,한타형
 vampire,EDward Gaming,SUP,398,383,414,408,422,보호형
 fisher,EDward Gaming,MID,407,413,410,403,397,캐리형
 thesnake,EDward Gaming,AD,406,409,417,416,397,교전형
@@ -29,10 +29,10 @@ yskm,Invictus Gaming,TOP,424,416,416,414,410,라인전형
 leyan,Invictus Gaming,JUNGLE,444,450,446,444,436,캐리형
 tianzhen,Invictus Gaming,JUNGLE,400,406,419,416,409,교전형
 wen,Invictus Gaming,TOP,406,404,402,398,395,라인전형
-kanavi,JD Gaming,JUNGLE,470,473,482,478,472,이니시형
-yagao,JD Gaming,MID,435,437,436,440,427,한타형
-ruler,JD Gaming,AD,489,489,469,481,462,라인전형
-missing,JD Gaming,SUP,446,457,472,475,480,보호형
+kanavi,JD Gaming,JUNGLE,475,478,487,483,477,이니시형
+yagao,JD Gaming,MID,437,439,438,442,429,한타형
+ruler,JD Gaming,AD,484,484,464,476,457,라인전형
+missing,JD Gaming,SUP,451,462,477,480,485,보호형
 flandre,JD Gaming,TOP,451,441,447,444,432,라인전형
 sheer,JD Gaming,TOP,407,408,419,416,400,교전형
 burdol,LGD Gaming,TOP,432,440,438,427,418,캐리형
@@ -41,13 +41,13 @@ haichao,LGD Gaming,MID,444,440,434,432,420,라인전형
 jinjiao,LGD Gaming,SUP,416,406,427,426,435,보호형
 shaoye,LGD Gaming,AD,418,424,421,422,405,캐리형
 kepler,LGD Gaming,AD,404,417,400,404,390,캐리형
-zika,LNG Esports,TOP,462,450,456,453,439,라인전형
-weiwei,LNG Esports,JUNGLE,431,433,441,443,432,한타형
-scout,LNG Esports,MID,466,460,458,459,447,라인전형
-gala,LNG Esports,AD,448,460,453,460,434,캐리형
-hang,LNG Esports,SUP,440,433,445,449,453,보호형
+zika,LNG Esports,TOP,464,452,458,455,441,라인전형
+weiwei,LNG Esports,JUNGLE,436,438,446,448,437,한타형
+scout,LNG Esports,MID,449,443,441,442,430,라인전형
+gala,LNG Esports,AD,450,462,455,462,436,캐리형
+hang,LNG Esports,SUP,442,435,447,451,455,보호형
 mark,LNG Esports,SUP,407,393,411,421,418,한타형
-shanji,Ninjas in Pyjamas.CN,TOP,438,446,447,443,431,교전형
+shanji,Ninjas in Pyjamas.CN,TOP,434,442,443,439,427,교전형
 aki,Ninjas in Pyjamas.CN,JUNGLE,421,431,430,433,420,한타형
 rookie,Ninjas in Pyjamas.CN,MID,456,466,461,458,439,캐리형
 photic,Ninjas in Pyjamas.CN,AD,452,461,441,450,431,캐리형
@@ -61,7 +61,7 @@ starry,Oh My God,AD,415,419,410,413,393,캐리형
 linfeng,Oh My God,MID,413,415,411,409,402,캐리형
 xiaoxu,Rare Atom,TOP,422,425,431,421,411,교전형
 naiyou,Rare Atom,JUNGLE,401,410,417,414,408,교전형
-vicla,Rare Atom,MID,419,426,423,416,406,캐리형
+vicla,Rare Atom,MID,417,424,421,414,404,캐리형
 assum,Rare Atom,AD,407,408,397,402,391,캐리형
 zorah,Rare Atom,SUP,393,383,400,401,408,보호형
 shiauc,Rare Atom,SUP,375,369,385,387,394,보호형
@@ -75,14 +75,14 @@ wayward,Team WE,TOP,449,454,454,446,432,캐리형
 heng,Team WE,JUNGLE,394,401,407,406,397,교전형
 fofo,Team WE,MID,436,444,423,424,418,캐리형
 iwandy,Team WE,SUP,402,407,413,417,421,보호형
-prince,Team WE,AD,439,435,420,430,416,라인전형
-stay,Team WE,AD,409,423,405,414,399,캐리형
+prince,Team WE,AD,435,431,416,426,412,라인전형
+stay,Team WE,AD,408,422,404,413,398,캐리형
 hoya,ThunderTalk Gaming,TOP,403,401,405,400,396,교전형
 beichuan,ThunderTalk Gaming,JUNGLE,417,429,427,425,417,캐리형
 ucal,ThunderTalk Gaming,MID,439,431,440,436,419,교전형
 1xn,ThunderTalk Gaming,AD,431,435,423,429,412,캐리형
 qiuqiu,ThunderTalk Gaming,SUP,410,409,420,423,428,보호형
-369,Top Esports,TOP,485,483,470,472,460,라인전형
+369,Top Esports,TOP,490,488,475,477,465,라인전형
 tian,Top Esports,JUNGLE,449,447,448,453,438,한타형
 creme,Top Esports,MID,457,459,439,445,435,캐리형
 jackeylove,Top Esports,AD,448,455,444,452,431,캐리형
@@ -93,8 +93,8 @@ yuekai,Ultra Prime,MID,420,428,424,417,406,캐리형
 doggo,Ultra Prime,AD,414,408,403,406,394,라인전형
 jwei,Ultra Prime,SUP,404,410,429,425,437,보호형
 zdz,Weibo Gaming,TOP,426,433,421,416,414,캐리형
-xiaohu,Weibo Gaming,MID,432,442,442,436,423,캐리형
-light,Weibo Gaming,AD,453,444,429,442,427,라인전형
-crisp,Weibo Gaming,SUP,417,418,440,442,448,보호형
+xiaohu,Weibo Gaming,MID,437,447,447,441,428,캐리형
+light,Weibo Gaming,AD,458,449,434,447,432,라인전형
+crisp,Weibo Gaming,SUP,422,423,445,447,453,보호형
 xiaohao,Weibo Gaming,JUNGLE,414,422,438,433,428,교전형
 youdang,Weibo Gaming,JUNGLE,403,410,417,413,407,교전형

@@ -1,30 +1,30 @@
 id,team,pos,lan,phy,skr,tf,vis,style
 add,Bilibili Gaming,TOP,437,452,451,446,429,캐리형
 meteor,Bilibili Gaming,JUNGLE,447,450,449,450,439,캐리형
-kuro,Bilibili Gaming,MID,442,455,447,447,429,캐리형
+kuro,Bilibili Gaming,MID,444,457,449,449,431,캐리형
 jinjiao,Bilibili Gaming,AD,447,456,446,452,429,캐리형
 mni,Bilibili Gaming,SUP,423,419,432,436,440,보호형
 iiann,Bilibili Gaming,SUP,403,401,417,419,425,보호형
 scout,EDward Gaming,MID,458,461,452,452,437,캐리형
-meiko,EDward Gaming,SUP,443,446,458,462,466,보호형
-ray,EDward Gaming,TOP,455,453,453,448,436,라인전형
-iboy,EDward Gaming,AD,441,443,437,441,423,캐리형
-clearlove,EDward Gaming,JUNGLE,411,432,424,429,414,캐리형
-haro,EDward Gaming,JUNGLE,405,409,410,411,400,한타형
+meiko,EDward Gaming,SUP,436,439,451,455,459,보호형
+ray,EDward Gaming,TOP,457,455,455,450,438,라인전형
+iboy,EDward Gaming,AD,443,445,439,443,425,캐리형
+clearlove,EDward Gaming,JUNGLE,413,434,426,431,416,캐리형
+haro,EDward Gaming,JUNGLE,407,411,412,413,402,한타형
 hope,EDward Gaming,AD,415,421,410,416,403,캐리형
 gimgoon,FunPlus Phoenix,TOP,449,459,442,445,435,캐리형
 tian,FunPlus Phoenix,JUNGLE,443,460,459,460,448,캐리형
 doinb,FunPlus Phoenix,MID,478,477,475,472,453,라인전형
 lwx,FunPlus Phoenix,AD,458,465,442,455,435,캐리형
 crisp,FunPlus Phoenix,SUP,437,442,443,452,451,한타형
-ning,Invictus Gaming,JUNGLE,466,474,469,472,459,캐리형
-rookie,Invictus Gaming,MID,468,481,467,470,459,캐리형
-baolan,Invictus Gaming,SUP,439,449,460,464,468,보호형
-jackeylove,Invictus Gaming,AD,447,458,438,449,433,캐리형
-theshy,Invictus Gaming,TOP,467,460,451,450,447,라인전형
+ning,Invictus Gaming,JUNGLE,474,482,477,480,467,캐리형
+rookie,Invictus Gaming,MID,456,469,455,458,447,캐리형
+baolan,Invictus Gaming,SUP,447,457,468,472,476,보호형
+jackeylove,Invictus Gaming,AD,455,466,446,457,441,캐리형
+theshy,Invictus Gaming,TOP,470,463,454,453,450,라인전형
 duke,Invictus Gaming,TOP,417,420,413,411,404,캐리형
 west,Invictus Gaming,AD,416,420,410,416,403,캐리형
-zoom,JD Gaming,TOP,472,462,466,459,446,라인전형
+zoom,JD Gaming,TOP,467,457,461,454,441,라인전형
 yagao,JD Gaming,MID,435,436,442,435,422,교전형
 lvmao,JD Gaming,SUP,410,406,435,431,443,보호형
 flawless,JD Gaming,JUNGLE,415,419,440,431,430,이니시형
@@ -32,7 +32,7 @@ imp,JD Gaming,AD,416,421,412,417,404,캐리형
 bvoy,JD Gaming,AD,401,407,396,403,388,캐리형
 levi,JD Gaming,JUNGLE,407,411,418,416,408,교전형
 condi,LGD Gaming,JUNGLE,404,418,421,421,411,교전형
-kramer,LGD Gaming,AD,432,440,430,436,417,캐리형
+kramer,LGD Gaming,AD,434,442,432,438,419,캐리형
 lies,LGD Gaming,TOP,418,417,413,410,407,라인전형
 yuuki,LGD Gaming,MID,431,425,422,420,412,라인전형
 pyl,LGD Gaming,SUP,408,396,406,411,414,보호형
@@ -52,10 +52,10 @@ xiaoyao,Rogue Warriors,JUNGLE,413,417,432,426,422,교전형
 maix,Rogue Warriors,MID,417,419,415,413,401,캐리형
 grim,Rogue Warriors,MID,402,404,400,398,386,캐리형
 zwuji,Rogue Warriors,AD,423,432,431,433,411,한타형
-karsa,Royal Never Give Up,JUNGLE,455,461,473,468,463,이니시형
-xiaohu,Royal Never Give Up,MID,450,455,447,447,436,캐리형
-ming,Royal Never Give Up,SUP,447,452,475,473,483,이니시형
-uzi,Royal Never Give Up,AD,475,476,458,468,448,캐리형
+karsa,Royal Never Give Up,JUNGLE,459,465,477,472,467,이니시형
+xiaohu,Royal Never Give Up,MID,452,457,449,449,438,캐리형
+ming,Royal Never Give Up,SUP,446,451,474,472,482,이니시형
+uzi,Royal Never Give Up,AD,479,480,462,472,452,캐리형
 amazingj,Royal Never Give Up,TOP,433,442,428,430,422,캐리형
 zz1tai,Royal Never Give Up,TOP,424,416,411,409,405,라인전형
 wink,Royal Never Give Up,AD,414,425,408,417,401,캐리형
@@ -72,10 +72,10 @@ maestro,Snake Esports,SUP,402,395,413,414,421,보호형
 danchung,Snake Esports,MID,401,406,400,399,394,캐리형
 fenfen,Snake Esports,MID,395,385,386,382,377,라인전형
 andy,Snake Esports,MID,387,389,389,385,375,캐리형
-swordart,Suning Gaming,SUP,458,469,484,487,492,이니시형
+swordart,Suning Gaming,SUP,444,455,470,473,478,이니시형
 smlz,Suning Gaming,AD,428,420,410,416,406,라인전형
 langx,Suning Gaming,TOP,448,436,433,429,424,라인전형
-maple,Suning Gaming,MID,454,451,455,449,436,교전형
+maple,Suning Gaming,MID,444,441,445,439,426,교전형
 h4cker,Suning Gaming,JUNGLE,442,443,451,448,441,교전형
 weiwei,Suning Gaming,JUNGLE,407,412,419,417,410,교전형
 angel,Suning Gaming,MID,414,421,414,413,403,캐리형

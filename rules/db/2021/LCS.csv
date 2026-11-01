@@ -1,15 +1,15 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-ssumday,100 Thieves,TOP,431,422,418,413,411,라인전형
-closer,100 Thieves,JUNGLE,422,434,445,439,435,이니시형
-fbi,100 Thieves,AD,425,447,437,440,416,캐리형
+ssumday,100 Thieves,TOP,423,414,410,405,403,라인전형
+closer,100 Thieves,JUNGLE,416,428,439,433,429,이니시형
+fbi,100 Thieves,AD,423,445,435,438,414,캐리형
 huhi,100 Thieves,SUP,425,416,436,434,444,이니시형
 damonte,100 Thieves,MID,406,411,423,415,400,교전형
 ryoma,100 Thieves,MID,394,404,403,400,379,캐리형
 fudge,Cloud9,TOP,434,423,419,423,416,라인전형
-blaber,Cloud9,JUNGLE,464,469,473,471,463,이니시형
-perkz,Cloud9,MID,461,460,448,452,439,라인전형
-zven,Cloud9,AD,458,456,439,450,432,라인전형
-vulcan,Cloud9,SUP,430,441,445,451,453,보호형
+blaber,Cloud9,JUNGLE,454,459,463,461,453,이니시형
+perkz,Cloud9,MID,459,458,446,450,437,라인전형
+zven,Cloud9,AD,448,446,429,440,422,라인전형
+vulcan,Cloud9,SUP,421,432,436,442,444,보호형
 finn,Counter Logic Gaming,TOP,409,408,406,402,395,라인전형
 wildturtle,Counter Logic Gaming,AD,414,400,397,401,388,라인전형
 smoothie,Counter Logic Gaming,SUP,382,381,407,405,415,보호형
@@ -22,11 +22,11 @@ dardoch,Dignitas,JUNGLE,403,407,412,411,402,교전형
 soligo,Dignitas,MID,422,436,423,424,410,캐리형
 neo,Dignitas,AD,423,427,425,432,408,한타형
 aphromoo,Dignitas,SUP,422,428,443,446,451,보호형
-impact,Evil Geniuses,TOP,421,431,434,426,413,교전형
+impact,Evil Geniuses,TOP,419,429,432,424,411,교전형
 svenskeren,Evil Geniuses,JUNGLE,403,420,423,416,413,교전형
-jiizuke,Evil Geniuses,MID,438,446,441,435,420,캐리형
+jiizuke,Evil Geniuses,MID,434,442,437,431,416,캐리형
 deftly,Evil Geniuses,AD,426,438,414,428,409,캐리형
-ignar,Evil Geniuses,SUP,413,420,420,424,428,보호형
+ignar,Evil Geniuses,SUP,407,414,414,418,422,보호형
 licorice,FlyQuest,TOP,408,408,399,396,394,라인전형
 josedeodo,FlyQuest,JUNGLE,412,418,416,413,406,캐리형
 palafox,FlyQuest,MID,401,399,393,391,386,라인전형
@@ -37,19 +37,19 @@ niles,Golden Guardians,TOP,390,388,401,389,382,교전형
 amazo,Golden Guardians,JUNGLE,396,387,393,391,383,라인전형
 ablazeolive,Golden Guardians,MID,396,400,395,390,384,캐리형
 stixxay,Golden Guardians,AD,419,424,416,414,397,캐리형
-newbie,Golden Guardians,SUP,403,397,426,420,434,이니시형
+newbie,Golden Guardians,SUP,393,387,416,410,424,이니시형
 revenge,Immortals,TOP,414,404,405,401,396,라인전형
-xerxe,Immortals,JUNGLE,410,408,421,420,411,교전형
+xerxe,Immortals,JUNGLE,408,406,419,418,409,교전형
 insanity,Immortals,MID,427,421,421,420,406,라인전형
 raes,Immortals,AD,399,405,402,405,389,캐리형
 destiny,Immortals,SUP,406,398,413,417,421,보호형
-alphari,Team Liquid,TOP,472,470,464,462,447,라인전형
-santorin,Team Liquid,JUNGLE,435,436,442,445,432,한타형
-jensen,Team Liquid,MID,437,428,438,438,419,교전형
-tactical,Team Liquid,AD,424,426,408,417,405,캐리형
-corejj,Team Liquid,SUP,421,408,432,439,440,보호형
+alphari,Team Liquid,TOP,462,460,454,452,437,라인전형
+santorin,Team Liquid,JUNGLE,429,430,436,439,426,한타형
+jensen,Team Liquid,MID,433,424,434,434,415,교전형
+tactical,Team Liquid,AD,420,422,404,413,401,캐리형
+corejj,Team Liquid,SUP,416,403,427,434,435,보호형
 huni,Team SoloMid,TOP,449,442,438,436,425,라인전형
 spica,Team SoloMid,JUNGLE,406,414,417,421,407,한타형
-powerofevil,Team SoloMid,MID,445,444,426,429,421,라인전형
+powerofevil,Team SoloMid,MID,441,440,422,425,417,라인전형
 lost,Team SoloMid,AD,429,423,419,426,408,라인전형
-swordart,Team SoloMid,SUP,421,421,442,446,450,보호형
+swordart,Team SoloMid,SUP,426,426,447,451,455,보호형

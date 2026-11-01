@@ -6,9 +6,9 @@ codysun,100 Thieves,AD,448,456,449,454,428,캐리형
 aphromoo,100 Thieves,SUP,405,408,422,425,430,보호형
 licorice,Cloud9,TOP,423,411,409,405,402,라인전형
 svenskeren,Cloud9,JUNGLE,421,417,433,426,423,교전형
-jensen,Cloud9,MID,439,439,427,429,416,라인전형
-sneaky,Cloud9,AD,427,427,406,417,403,라인전형
-smoothie,Cloud9,SUP,404,412,428,430,436,보호형
+jensen,Cloud9,MID,441,441,429,431,418,라인전형
+sneaky,Cloud9,AD,429,429,408,419,405,라인전형
+smoothie,Cloud9,SUP,406,414,430,432,438,보호형
 solo,Clutch Gaming,TOP,407,399,396,392,391,라인전형
 lira,Clutch Gaming,JUNGLE,417,418,416,418,406,캐리형
 febiven,Clutch Gaming,MID,428,436,425,426,410,캐리형
@@ -19,7 +19,7 @@ reignover,Counter Logic Gaming,JUNGLE,389,403,414,410,404,교전형
 huhi,Counter Logic Gaming,MID,412,412,420,412,399,교전형
 stixxay,Counter Logic Gaming,AD,412,410,405,409,394,라인전형
 biofrost,Counter Logic Gaming,SUP,401,401,424,422,432,보호형
-huni,Echo Fox,TOP,466,454,459,451,440,라인전형
+huni,Echo Fox,TOP,473,461,466,458,447,라인전형
 dardoch,Echo Fox,JUNGLE,427,438,438,439,428,한타형
 altec,Echo Fox,AD,420,433,421,428,408,캐리형
 fenix,Echo Fox,MID,422,428,413,416,406,캐리형
@@ -34,17 +34,17 @@ fly,FlyQuest,MID,389,392,394,389,381,교전형
 keane,FlyQuest,MID,380,377,393,381,369,교전형
 shrimp,FlyQuest,JUNGLE,389,395,401,399,391,교전형
 lourlo,Golden Guardians,TOP,415,414,408,406,397,라인전형
-contractz,Golden Guardians,JUNGLE,384,385,395,391,385,교전형
+contractz,Golden Guardians,JUNGLE,386,387,397,393,387,교전형
 hai,Golden Guardians,MID,391,391,400,391,382,교전형
 deftly,Golden Guardians,AD,390,389,383,387,376,라인전형
 mattelento,Golden Guardians,SUP,391,381,408,404,416,보호형
 akaadian,OpTic Gaming,JUNGLE,383,391,390,391,380,캐리형
-powerofevil,OpTic Gaming,MID,427,425,431,424,408,교전형
+powerofevil,OpTic Gaming,MID,429,427,433,426,410,교전형
 arrow,OpTic Gaming,AD,384,395,381,389,376,캐리형
 lemonnation,OpTic Gaming,SUP,375,366,383,385,391,보호형
 dshao,OpTic Gaming,TOP,385,382,380,376,377,라인전형
 dhokla,OpTic Gaming,TOP,386,382,380,376,376,라인전형
-impact,Team Liquid,TOP,423,431,428,425,413,캐리형
+impact,Team Liquid,TOP,425,433,430,427,415,캐리형
 xmithie,Team Liquid,JUNGLE,431,432,434,434,424,교전형
 pobelter,Team Liquid,MID,432,422,417,416,408,라인전형
 doublelift,Team Liquid,AD,447,448,436,443,421,캐리형
@@ -52,5 +52,5 @@ olleh,Team Liquid,SUP,413,406,414,420,422,보호형
 hauntzer,Team SoloMid,TOP,444,435,429,427,420,라인전형
 mikeyeung,Team SoloMid,JUNGLE,406,424,421,423,411,캐리형
 bjergsen,Team SoloMid,MID,450,456,447,448,429,캐리형
-zven,Team SoloMid,AD,435,449,426,438,417,캐리형
-mithy,Team SoloMid,SUP,428,426,426,436,434,한타형
+zven,Team SoloMid,AD,436,450,427,439,418,캐리형
+mithy,Team SoloMid,SUP,429,427,427,437,435,한타형

@@ -325,7 +325,7 @@ def assign_f(rows, ev, head):
 # ---------------------------------------------------------------- 5. 직전 해 실적
 ENT_RE = re.compile(r'^(.*?)\s+(\d+(?:\s*-\s*\d+)?|Q|NQ)위\s*\((.*)\)\s*$')
 EXCL = re.compile(r'Qualif|Promotion|Regional|Play-?In|Placements|Challenger|Academy|\bCL\b|LDL|LSPL|Rift|Showdown|Road to|Cup|Prequal|Relegation|Gauntlet', re.I)
-LEAGUE_PO = re.compile(r'^(LCK|LPL|LEC|LCS|NA LCS|EU LCS|LTA \w+) (\d{4}) .*(Playoffs|Championship|Season Finals|Grand Finals)')
+LEAGUE_PO = re.compile(r'^(LCK|LPL|LEC|LCS|NA LCS|EU LCS|LTA(?: \w+)?|Champions) (\d{4}) .*(Playoffs|Championship|Season Finals|Grand Finals)')
 OLD_CHAMP = re.compile(r'^Champions (\d{4}) (Spring|Summer|Winter)$')
 
 def first_num(pl):
@@ -333,10 +333,10 @@ def first_num(pl):
     return int(m.group(1)) if m else None
 
 def wpts(a):
-    return 12 if a == 1 else 9 if a == 2 else 6 if a <= 4 else 3 if a <= 8 else 0
+    return 20 if a == 1 else 14 if a == 2 else 9 if a <= 4 else 5 if a <= 8 else 0
 
 def mpts(a):
-    return 4 if a == 1 else 2 if a == 2 else 1 if a <= 4 else 0
+    return 6 if a == 1 else 3 if a == 2 else 1 if a <= 4 else 0
 
 def prior_perf(p, y):
     """직전 해 실적: 항목을 전부 더한다(상한 없음). -> (점수, 근거 목록)"""
@@ -374,6 +374,8 @@ def prior_perf(p, y):
         if a == 1 and not EXCL.search(name):
             mp = LEAGUE_PO.match(name)
             mo = OLD_CHAMP.match(name)
+            if mo and f'{name} Playoffs' in [x.group(1).strip() for x in map(ENT_RE.match, ents) if x]:
+                mo = None  # 같은 시즌의 Playoffs 항목이 따로 있으면 정규시즌 1위는 우승으로 세지 않음
             if (mp and int(mp.group(2)) == py) or (mo and int(mo.group(1)) == py):
                 pts += 1; items.append(f'{name} 우승 ({team}) +1')
     # 보조: 직전 해 줄의 월즈/MSI 표기 (대회 줄에 없을 때만)
@@ -398,10 +400,9 @@ def prior_perf(p, y):
             v = 0
             if re.search(r'Rookie|Finals|Worlds|MSI|Week|Team of|Role', nm) and not re.search(r'All.?Pro', nm):
                 v = 0
-            elif re.search(r'1st', nm): v = 6
-            elif re.search(r'2nd', nm): v = 4
-            elif re.search(r'3rd', nm): v = 2
-            elif re.search(r'MVP|Player of the Split|Most Valuable', nm): v = 6
+            elif re.search(r'1st', nm): v = 1
+            elif re.search(r'2nd|3rd', nm): v = 0
+            elif re.search(r'MVP|Player of the Split|Most Valuable', nm): v = 1
             if v:
                 pts += v * cnt
                 items.append(f'수상 {nm} ({yrs}) +{v}x{cnt}')

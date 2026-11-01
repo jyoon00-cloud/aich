@@ -1,9 +1,9 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-balis,Cloud9,TOP,438,434,427,425,416,라인전형
-meteos,Cloud9,JUNGLE,442,446,453,451,443,이니시형
-hai,Cloud9,MID,414,431,427,425,408,캐리형
-sneaky,Cloud9,AD,449,456,444,451,425,캐리형
-lemonnation,Cloud9,SUP,416,409,421,425,429,보호형
+balis,Cloud9,TOP,440,436,429,427,418,라인전형
+meteos,Cloud9,JUNGLE,444,448,455,453,445,이니시형
+hai,Cloud9,MID,416,433,429,427,410,캐리형
+sneaky,Cloud9,AD,451,458,446,453,427,캐리형
+lemonnation,Cloud9,SUP,418,411,423,427,431,보호형
 xmithie,Counter Logic Gaming,JUNGLE,420,421,417,420,407,캐리형
 link,Counter Logic Gaming,MID,417,432,428,426,407,캐리형
 doublelift,Counter Logic Gaming,AD,437,435,422,430,411,라인전형
@@ -46,11 +46,11 @@ fenix,Team Liquid,MID,415,407,404,401,393,라인전형
 xpecial,Team Liquid,SUP,386,377,394,396,402,보호형
 piglet,Team Liquid,AD,410,406,403,406,390,라인전형
 keith,Team Liquid,AD,388,399,387,394,372,캐리형
-dyrus,Team SoloMid,TOP,434,419,412,411,409,라인전형
+dyrus,Team SoloMid,TOP,436,421,414,413,411,라인전형
 santorin,Team SoloMid,JUNGLE,432,443,445,445,435,교전형
-bjergsen,Team SoloMid,MID,456,459,455,453,432,캐리형
-wildturtle,Team SoloMid,AD,436,437,429,434,414,캐리형
-lustboy,Team SoloMid,SUP,425,438,450,454,458,보호형
+bjergsen,Team SoloMid,MID,458,461,457,455,434,캐리형
+wildturtle,Team SoloMid,AD,438,439,431,436,416,캐리형
+lustboy,Team SoloMid,SUP,427,440,452,456,460,보호형
 flaresz,Winterfox,TOP,392,382,379,375,372,라인전형
 avalon,Winterfox,TOP,388,390,388,384,380,캐리형
 shorterace,Winterfox,JUNGLE,374,380,386,384,376,교전형
