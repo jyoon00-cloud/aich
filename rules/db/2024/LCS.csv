@@ -1,40 +1,40 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-sniper,100 Thieves,TOP,412,420,402,402,382,캐리형
+sniper,100 Thieves,TOP,412,420,402,402,388,캐리형
 river,100 Thieves,JUNGLE,428,412,444,436,428,이니시형
 quid,100 Thieves,MID,428,444,428,420,392,캐리형
-meech,100 Thieves,AD,428,452,428,428,387,캐리형
+meech,100 Thieves,AD,428,452,428,428,390,캐리형
 eyla,100 Thieves,SUP,428,402,444,452,452,이니시형
 fudge,Cloud9,TOP,444,428,420,428,397,안정형
 blaber,Cloud9,JUNGLE,452,428,460,452,444,교전형
 jojopyun,Cloud9,MID,452,452,452,444,407,캐리형
 berserker,Cloud9,AD,460,470,452,452,402,캐리형
 vulcan,Cloud9,SUP,428,407,444,452,465,이니시형
-rich,Dignitas,TOP,420,428,407,407,382,캐리형
+rich,Dignitas,TOP,420,428,407,407,388,캐리형
 exyu,Dignitas,JUNGLE,407,397,420,412,407,교전형
 dove,Dignitas,MID,420,428,420,412,392,캐리형
-tomo,Dignitas,AD,420,444,420,412,387,캐리형
+tomo,Dignitas,AD,420,444,420,412,390,캐리형
 isles,Dignitas,SUP,412,397,428,436,444,이니시형
 bwipo,FlyQuest,TOP,420,420,412,412,392,캐리형
 inspired,FlyQuest,JUNGLE,444,420,452,444,444,운영형
 jensen,FlyQuest,MID,436,428,444,436,407,캐리형
 massu,FlyQuest,AD,428,444,420,420,392,캐리형
 busio,FlyQuest,SUP,428,402,444,452,452,이니시형
-castle,Immortals,TOP,402,402,392,392,377,성장형
+castle,Immortals,TOP,402,402,392,392,386,성장형
 armao,Immortals,JUNGLE,407,397,420,412,412,운영형
-mask,Immortals,MID,420,428,412,407,387,캐리형
-tactical,Immortals,AD,412,420,412,412,387,안정형
-olleh,Immortals,SUP,397,382,407,412,420,안정형
-dhokla,NRG,TOP,428,428,407,412,387,라인전형
+mask,Immortals,MID,420,428,412,407,390,캐리형
+tactical,Immortals,AD,412,420,412,412,390,안정형
+olleh,Immortals,SUP,397,388,407,412,420,안정형
+dhokla,NRG,TOP,428,428,407,412,390,라인전형
 contractz,NRG,JUNGLE,428,407,436,428,420,교전형
 palafox,NRG,MID,428,428,428,420,397,캐리형
 fbi,NRG,AD,444,460,444,444,392,캐리형
 huhi,NRG,SUP,436,402,444,452,460,로밍형
-fakegod,Shopify Rebellion,TOP,407,407,392,392,377,안정형
+fakegod,Shopify Rebellion,TOP,407,407,392,392,386,안정형
 bugi,Shopify Rebellion,JUNGLE,407,402,420,412,407,교전형
-insanity,Shopify Rebellion,MID,407,412,407,402,382,성장형
-wildturtle,Shopify Rebellion,AD,382,387,382,377,367,안정형
+insanity,Shopify Rebellion,MID,407,412,407,402,388,성장형
+wildturtle,Shopify Rebellion,AD,388,390,388,386,382,안정형
 bvoy,Shopify Rebellion,AD,428,452,428,428,392,캐리형
-zeyzal,Shopify Rebellion,SUP,402,387,412,412,428,보호형
+zeyzal,Shopify Rebellion,SUP,402,390,412,412,428,보호형
 impact,Team Liquid,TOP,436,428,412,420,397,한타형
 umti,Team Liquid,JUNGLE,402,397,412,407,407,운영형
 apa,Team Liquid,MID,420,444,420,412,392,캐리형

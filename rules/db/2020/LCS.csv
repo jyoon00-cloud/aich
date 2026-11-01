@@ -1,59 +1,59 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-ssumday,100 Thieves,TOP,417,412,407,402,387,라인전형
-meteos,100 Thieves,JUNGLE,402,397,417,422,428,운영형
-ryoma,100 Thieves,MID,412,402,417,417,397,안정형
-codysun,100 Thieves,AD,417,417,412,412,392,안정형
-stunt,100 Thieves,SUP,397,387,402,402,417,안정형
+ssumday,100 Thieves,TOP,417,412,407,402,391,라인전형
+meteos,100 Thieves,JUNGLE,402,398,417,422,428,운영형
+ryoma,100 Thieves,MID,412,402,417,417,398,안정형
+codysun,100 Thieves,AD,417,417,412,412,395,안정형
+stunt,100 Thieves,SUP,398,391,402,402,417,안정형
 licorice,Cloud9,TOP,441,435,422,428,407,안정형
 blaber,Cloud9,JUNGLE,428,441,454,447,422,교전형
 nisqy,Cloud9,MID,441,435,447,441,417,로밍형
 zven,Cloud9,AD,447,454,441,454,422,캐리형
 vulcan,Cloud9,SUP,422,407,428,435,454,이니시형
-ruin,Counter Logic Gaming,TOP,412,407,407,402,387,안정형
-griffin,Counter Logic Gaming,JUNGLE,387,382,392,387,392,성장형
-smoothie,Counter Logic Gaming,SUP,402,387,407,407,422,보호형
-stixxay,Counter Logic Gaming,AD,412,407,407,407,387,안정형
-pobelter,Counter Logic Gaming,MID,412,397,412,412,407,안정형
-crown,Counter Logic Gaming,MID,392,387,397,392,387,안정형
-wind,Counter Logic Gaming,AD,387,387,387,382,377,성장형
-huni,Dignitas,TOP,417,412,412,402,387,교전형
+ruin,Counter Logic Gaming,TOP,412,407,407,402,391,안정형
+griffin,Counter Logic Gaming,JUNGLE,391,387,395,391,395,성장형
+smoothie,Counter Logic Gaming,SUP,402,391,407,407,422,보호형
+stixxay,Counter Logic Gaming,AD,412,407,407,407,391,안정형
+pobelter,Counter Logic Gaming,MID,412,398,412,412,407,안정형
+crown,Counter Logic Gaming,MID,395,391,398,395,391,안정형
+wind,Counter Logic Gaming,AD,391,391,391,387,384,성장형
+huni,Dignitas,TOP,417,412,412,402,391,교전형
 froggen,Dignitas,MID,417,402,422,435,412,한타형
-johnsun,Dignitas,AD,412,412,412,412,392,안정형
-aphromoo,Dignitas,SUP,407,392,412,417,441,이니시형
-armao,Dignitas,JUNGLE,392,387,397,392,392,안정형
-akaadian,Dignitas,JUNGLE,402,397,412,407,402,안정형
-kumo,Evil Geniuses,TOP,412,410,404,402,392,안정형
+johnsun,Dignitas,AD,412,412,412,412,395,안정형
+aphromoo,Dignitas,SUP,407,395,412,417,441,이니시형
+armao,Dignitas,JUNGLE,395,391,398,395,395,안정형
+akaadian,Dignitas,JUNGLE,402,398,412,407,402,안정형
+kumo,Evil Geniuses,TOP,412,410,404,402,395,안정형
 svenskeren,Evil Geniuses,JUNGLE,428,422,441,435,435,운영형
 jiizuke,Evil Geniuses,MID,422,412,428,422,407,운영형
 bang,Evil Geniuses,AD,428,435,422,435,402,캐리형
-zeyzal,Evil Geniuses,SUP,412,397,422,422,441,보호형
+zeyzal,Evil Geniuses,SUP,412,398,422,422,441,보호형
 santorin,FlyQuest,JUNGLE,417,412,435,428,428,교전형
 powerofevil,FlyQuest,MID,428,417,428,422,407,안정형
-wildturtle,FlyQuest,AD,412,407,407,412,397,안정형
-ignar,FlyQuest,SUP,407,397,417,417,435,이니시형
-v1per,FlyQuest,TOP,407,407,397,397,382,성장형
-solo,FlyQuest,TOP,392,387,392,387,377,성장형
-hauntzer,Golden Guardians,TOP,412,412,407,407,392,안정형
-closer,Golden Guardians,JUNGLE,402,397,412,412,412,성장형
-goldenglue,Golden Guardians,MID,407,397,412,407,397,안정형
-fbi,Golden Guardians,AD,417,412,412,407,392,캐리형
-keith,Golden Guardians,SUP,392,377,392,387,397,안정형
-huhi,Golden Guardians,SUP,387,377,387,387,402,로밍형
-soaz,Immortals,TOP,402,402,397,392,382,안정형
+wildturtle,FlyQuest,AD,412,407,407,412,398,안정형
+ignar,FlyQuest,SUP,407,398,417,417,435,이니시형
+v1per,FlyQuest,TOP,407,407,398,398,387,성장형
+solo,FlyQuest,TOP,395,391,395,391,384,성장형
+hauntzer,Golden Guardians,TOP,412,412,407,407,395,안정형
+closer,Golden Guardians,JUNGLE,402,398,412,412,412,성장형
+goldenglue,Golden Guardians,MID,407,398,412,407,398,안정형
+fbi,Golden Guardians,AD,417,412,412,407,395,캐리형
+keith,Golden Guardians,SUP,395,384,395,391,398,안정형
+huhi,Golden Guardians,SUP,391,384,391,391,402,로밍형
+soaz,Immortals,TOP,402,402,398,395,387,안정형
 xmithie,Immortals,JUNGLE,417,402,428,428,435,운영형
-eika,Immortals,MID,407,397,407,402,392,안정형
-hakuho,Immortals,SUP,397,387,407,407,417,안정형
-altec,Immortals,AD,412,412,407,402,387,안정형
-apollo,Immortals,AD,397,392,397,397,387,성장형
+eika,Immortals,MID,407,398,407,402,395,안정형
+hakuho,Immortals,SUP,398,391,407,407,417,안정형
+altec,Immortals,AD,412,412,407,402,391,안정형
+apollo,Immortals,AD,398,395,398,398,391,성장형
 corejj,Team Liquid,SUP,435,417,441,447,460,이니시형
 impact,Team Liquid,TOP,428,422,422,428,402,한타형
 jensen,Team Liquid,MID,447,435,447,447,428,캐리형
 doublelift,Team Liquid,AD,447,435,435,441,407,캐리형
 broxah,Team Liquid,JUNGLE,422,407,435,428,428,운영형
-shernfire,Team Liquid,JUNGLE,392,387,397,392,397,안정형
-tactical,Team Liquid,AD,387,392,392,387,382,성장형
-brokenblade,Team SoloMid,TOP,417,417,417,412,392,교전형
-dardoch,Team SoloMid,JUNGLE,407,417,422,407,397,교전형
+shernfire,Team Liquid,JUNGLE,395,391,398,395,398,안정형
+tactical,Team Liquid,AD,391,395,395,391,387,성장형
+brokenblade,Team SoloMid,TOP,417,417,417,412,395,교전형
+dardoch,Team SoloMid,JUNGLE,407,417,422,407,398,교전형
 bjergsen,Team SoloMid,MID,441,422,447,447,435,운영형
 kobbe,Team SoloMid,AD,428,428,422,422,402,캐리형
-biofrost,Team SoloMid,SUP,412,397,422,422,435,로밍형
+biofrost,Team SoloMid,SUP,412,398,422,422,435,로밍형
