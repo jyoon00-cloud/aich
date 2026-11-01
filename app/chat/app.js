@@ -1,7 +1,7 @@
 // 롤프로 시뮬레이터 — 정적 웹앱 (서버 없음). API 키는 브라우저 localStorage에만 저장한다.
 'use strict';
 
-const DATA = '../rules/';            // 저장소 루트에서 GitHub Pages로 서빙할 때의 경로
+const DATA = '../../rules/';            // 저장소 루트에서 GitHub Pages로 서빙할 때의 경로
 const YEARS = Array.from({ length: 14 }, (_, i) => 2013 + i);
 const LEAGUES = ['LCK', 'LPL', 'LEC', 'LCS'];
 const PRESETS = {
