@@ -69,4 +69,13 @@
 - 검색이 반복 실패하면 Opus가 원인·조회 방법을 정하고 하이쿠에는 단순 반복만 시킨다(CLAUDE.md).
 
 ## 특성 — 완료
-- traits.md: 일반 특성 15종(근거 조건) + 유니크 27명(선수 전용 다중 효과). potential/*.csv에 traits 열. 부여 스크립트 _work/traits/assign.py, 로그 log.md, 유니크 근거 unique_targets.md.
+- traits.md: 일반 특성 17종(부정: choker, intl_choke 월즈의 벽, dade_award 다데상) + 유니크 28명(선수 전용 다중 효과, 부정 효과 포함 가능). potential/*.csv traits 열. 스크립트 _work/traits/assign.py, 로그 log.md, 유니크 근거 unique_targets.md.
+- 월즈·MSI 주전 판정: _work/traits/intl_games.csv(대회 출전 경기 수). 우승 후보: _work/redo/power_rankings.csv(월즈 직전 파워랭킹 상위 3, 2013·14·15·18은 미확보라 리그·MSI 우승팀 기준).
+- 다데상: Leaguepedia 공식 5명만 특성 반영. 커뮤니티 집계(Reddit 보관본 arctic-shift)는 참고만(dade_award.md).
+- 2025·2026 LCK, 2026 LCS는 컵+정규 리그 병합(ev/*_league.md). merge.py는 potential을 능력치 최댓값까지 올림(상한 490, 명예의 전당 예외).
+
+## 남은 일 (2026 월즈 후 패치 제외)
+- 포지션 의심 10명 확인(위 ② 목록).
+- 로스터 7명 제한으로 빠진 주전 추가(예: 2016~17 Moon, 2019 CLG Wiggily) — 행 추가 시 unified.py → merge.py → assign.py 재실행.
+- men·pro 기사 검색 미실시 약 80명(기본값). Huanfeng·Xiaohu 사생활 보도, Zeus 계약 분쟁은 반영 여부 사용자 결정 대기.
+- salary.md '근거 없음' 칸(연습생 수당, LCS 샐러리캡 등), competition.md 미확인 3칸, champions locke 일부 (미확인).
