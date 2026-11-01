@@ -11,13 +11,14 @@ pot = {}
 for f in sorted(glob.glob(DB + '/potential/*.csv')):
     for r in csv.DictReader(open(f)): pot.setdefault(r['id'], r)
 # 연도별 OVR (교정된 값). 리그 보정 되돌림: LEC +10, LCS +20
-ADJ = {'LCK': 0, 'LPL': 0, 'LEC': 10, 'LCS': 20}
-ovr = {}
+ADJ = {'LCK': 0, 'LPL': 0, 'LEC': 0, 'LCS': 0}  # 통일 산식은 리그 보정(그해 월즈 기준)이 이미 들어간 세계 기준 값
+ovr = {}; mx = {}
 for f in sorted(glob.glob(DB + '/20*/*.csv')):
     y = int(f.split('/')[-2]); lg = os.path.basename(f)[:-4]
     for r in csv.DictReader(open(f)):
         v = [int(r[k]) for k in ('lan', 'phy', 'skr', 'tf', 'vis')]
         ovr.setdefault(r['id'], []).append((y, lg, r['team'], round(sum(v) / 5), round(sum(v) / 5) + ADJ[lg]))
+        mx.setdefault(r['id'], 0); mx[r['id']] = max(mx[r['id']], max(v))
 TOP = re.compile(r'^(LCK|LPL|LEC|EU LCS|NA LCS|LCS|Champions|LTA|OGN|LoL Champions)', re.I)
 INTL = re.compile(r'^(Worlds|MSI|Mid-Season|First Stand|Rift Rivals|IEM|All-Star)', re.I)
 def tx(s): return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', s))).replace('⁠', '').strip()
@@ -59,9 +60,9 @@ for gi, g in enumerate(groups, 1):
         lines.append('- 시즌: ' + m['seasons'])
         o = sorted(ovr.get(i, []))
         if o:
-            lines.append('- 연도별 OVR(교정값, 괄호=리그보정 되돌린 값): ' + ', '.join('%d %s %d(%d)' % (y, lg, v, a) for y, lg, t, v, a in o))
+            lines.append('- 연도별 OVR(통일 산식, 세계 기준): ' + ', '.join('%d %s %d' % (y, lg, v) for y, lg, t, v, a in o))
             vals = [a for *_, a in o]
-            lines.append('- 최고 %d, 평균 %d, 연도 간 변동(표준편차) %s' % (max(vals), round(statistics.mean(vals)), round(statistics.pstdev(vals), 1) if len(vals) > 1 else '-'))
+            lines.append('- 최고 %d, 평균 %d, 연도 간 변동(표준편차) %s, 단일 능력치 최댓값(potential 하한) %d' % (max(vals), round(statistics.mean(vals)), round(statistics.pstdev(vals), 1) if len(vals) > 1 else '-', mx[i]))
         else:
             lines.append('- 연도별 OVR: 1부 연도별 파일에 없음 (CL 등)')
         if p == '' or (p == 'MISSING' and i != 'missing'):
