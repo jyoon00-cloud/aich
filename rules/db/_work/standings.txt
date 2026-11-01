@@ -1,0 +1,56 @@
+2013_LCK: skt 2,cjb,mvp o,njsw,kta,mvp blue / cjf,ktb,skt 1,njsh,ahq kr,im (그룹별)
+2013_LCS: tsm,crs,d,clg,vulcun,ggu,mrn,col
+2013_LEC: fnc,gmb,sk,eg.eu,cw,aaa,Giants Gaming,db
+2013_LPL: (없음: 기억/검색으로 판단)
+2014_LCK: kt arrows,skt k,skt s,prime.o
+2014_LCS: c9,tsm,clg,d,crs,c,eg.na,xdg
+2014_LEC: sk,fnc,a,roc,gmb,cw,shc,m
+2014_LPL: omg,edg,we,ig,lgd,royal,ep.hk,pe
+2015_LCK: get,skt,cj,jag,kt,nje,im,ssg
+2015_LCS: Team SoloMid,Cloud9,Counter Logic Gaming,Team Impulse,Gravity,Team Liquid,Team 8,Winterfox,Team Dignitas,Team Coast
+2015_LEC: sk,fnc,h2k,gmb,uol,cw,el,roc,Giants Gaming,mym
+2015_LPL: edg,snake,omg,vg,ig,lgd,king,we,m3,shrc,gamtee,ep
+2016_LCK: ROX Tigers,KT Rolster,SK Telecom T1,Jin Air Green Wings,Afreeca Freecs,Samsung Galaxy,Longzhu Gaming,CJ Entus,SBENU Sonicboom,Kongdoo Monster
+2016_LCS: Immortals,Counter Logic Gaming,Cloud9,Team Liquid,NRG eSports,Team SoloMid,Echo Fox,Renegades,Team Impulse,Team Dignitas
+2016_LEC: G2,H2k,Team Vitality,Origen,Unicorns of Love,Fnatic,Elements,Splyce,ROCCAT,Giants Gaming
+2016_LPL: Qiao Gu Reapers,Team WE,Snake eSports,LGD Gaming,Energy Pacemaker.ALl,Masters 3 / Royal Never Give Up,EDG,Vici Gaming,Invictus Gaming,OMG,Hyper Youth Gaming (그룹별)
+2017_LCK: SK Telecom T1,Samsung Galaxy,KT Rolster,Afreeca Freecs,MVP,ROX Tigers,Longzhu Gaming,bbq Olivers,Jin Air Green Wings,Kongdoo Monster
+2017_LCS: Team SoloMid,Cloud9,Phoenix1,Counter Logic Gaming,FlyQuest,Team Dignitas,Immortals,Echo Fox,Team Liquid,Team EnVyUs
+2017_LEC: G2,MSF,FNC,ROC,Giants Gaming
+2017_LPL: RNG,OMG,iG,I May,Snake,LGD / WE,EDG,QGR,Newbee,VG,Game Talents (그룹별)
+2018_LCK: kz, afs, kt, skt, ksv, rox tigers, jin air, bbq, mvp, kdm
+2018_LCS: 100t,efx,tsm,tl,c9,clutch,clg,flyquest,optic,golden guardians
+2018_LEC: Fnatic,G2 Esports,Splyce,Team Vitality,H2k-Gaming,Team ROCCAT,Misfits Gaming,FC Schalke 04,Giants Gaming,Unicorns of Love
+2018_LPL: (없음: 기억/검색으로 판단)
+2019_LCK: 1:GRF, 2:SKT, 3:KZ, 4:SBG, 5:DWG, 6:HLE, 7:GEN, 8:AF, 9:KT, 10:JAG
+2019_LCS: TL,C9,TSM,FLY,GGS,FOX,CLG,OPT,CG,100
+2019_LEC: G2,Origen,FNC,SPY,VIT,SK,S04,MSF,xL,RGE
+2019_LPL: FPX,IG,TOP,RNG,WE,SDG,EDG,JDG,BLG,SNG,LGD,Snake,V5,OMG,ROG,VG
+2020_LCK: GEN,T1,DragonX,KT,DWG,AF,APK,HLE,SB,GRF
+2020_LCS: C9,EG,100,FLY,TSM,GGS,DIG,IMT,TL,CLG
+2020_LEC: G2,FNC,Origen,MAD Lions,MSF,RGE,XL,S04,SK,VIT
+2020_LPL: IG,JDG,FPX,TES,eStar,EDG,RNG,WE,VG,BLG,SNG,OMG,ROG,DMO,LGD,LNG,V5
+2021_LCK: (없음: 기억/검색으로 판단)
+2021_LCS: C9,TSM,TL,100,DIG,EG,IMT,FLY,CLG,GGS
+2021_LEC: G2,RGE,MADL LEC,S04,FNC,SK,MSF,XL,AST,VIT
+2021_LPL: (없음: 기억/검색으로 판단)
+2022_LCK: T1,GEN,DK,DRX,KDF,BRO,KT,NS,LSB,HLE
+2022_LCS: TL,C9,100,EG,FLY,GGS,DIG,CLG,TSM,IMT
+2022_LEC: RGE,FNC,MSF,G2,XL,VIT,MADL LEC,SK,BDS,AST
+2022_LPL: V5,RNG,JDG,JDG,LNG,TES,WBG,EDG,BLG,Rare Atom,FPX,OMG,ULP,Anyone's Legend,IG,WE,LGD,ThunderTalk Gaming
+2023_LCK: (없음: 기억/검색으로 판단)
+2023_LCS: C9,FLY,100T,CLG,EG,Golden Guardians,TSM,TL,Immortals,Dignitas
+2023_LEC: VIT,MAD,SK,G2,BDS,Team Heretics,KOI ES,AST,FNC,Excel
+2023_LPL: JDG,EDG,LNG,WBG,BLG,OMG,TES,TT CN,RNG,WE,IG,RA CN,NIP.CN,LGD,FPX,AL CN,UP CN
+2024_LCK: (없음: 기억/검색으로 판단)
+2024_LCS: FLY,100,C9,TL,DIG,NRG,Shopify Rebellion,IMT
+2024_LEC: G2,BDS,SK,MAD KOI,FNC,VIT,HRTS,GIANTX,RGE,KCORP
+2024_LPL: (없음: 기억/검색으로 판단)
+2025_LCK: 1:HLE, 2:GEN, 3:Dplus, 4:NS, 5-6:KT, 5-6:T1, 7:DRX, 8-9:DN Freecs, 8-9:OK BRO, 10:BNK FEARX
+2025_LCS: 1:100T, 2:C9, 3:FLY, 4:TL, 5-6:SPR, 5-6:DIG, 7-8:LYON 24, 7-8:Disguised
+2025_LEC: FNC,Karmine Corp,G2,MKOI,VIT,GIANTX,BDS,HTICS,SK,RGE
+2025_LPL: JDG,WBG,OMG,UP CN
+2026_LCK: 1:GEN, 2:BNK FEARX, 3:DPLUS, 4:T1, 5:DN SOOPers, 6:DRX, 7:Nongshim RedForce, 8-9:BRION, 8-9:KT, 10:Hanwha Life Esports
+2026_LCS: C9,Sentinels,FLY,Disguised,LYON24,TL,DIG,Shopify
+2026_LEC: KCORP,NAVI,VIT,HRTS,GIANTX,MKOI,G2,FNC,LOS RATONES,SHFT,SK,KC.B
+2026_LPL: AL CN, BLG, WBG, JDG, TES, IG / NIP CN,WE,EDG,TT CN (그룹별)

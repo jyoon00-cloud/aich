@@ -1,0 +1,56 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+ssumday,100 Thieves,TOP,441,429,429,435,399,라인전형
+meteos,100 Thieves,JUNGLE,411,429,441,441,423,교전형
+ryu,100 Thieves,MID,435,411,435,429,405,운영형
+codysun,100 Thieves,AD,417,423,429,423,393,안정형
+aphromoo,100 Thieves,SUP,411,405,435,435,453,이니시형
+licorice,Cloud9,TOP,429,435,429,435,399,한타형
+svenskeren,Cloud9,JUNGLE,429,441,453,453,429,교전형
+jensen,Cloud9,MID,453,441,459,453,429,캐리형
+sneaky,Cloud9,AD,441,453,447,441,405,캐리형
+smoothie,Cloud9,SUP,417,405,429,435,447,보호형
+solo,Clutch Gaming,TOP,405,399,405,405,393,안정형
+lira,Clutch Gaming,JUNGLE,411,417,429,429,411,안정형
+febiven,Clutch Gaming,MID,435,411,435,435,411,운영형
+apollo,Clutch Gaming,AD,411,423,423,417,393,안정형
+hakuho,Clutch Gaming,SUP,399,393,417,417,435,보호형
+darshan,Counter Logic Gaming,TOP,411,405,405,405,399,안정형
+reignover,Counter Logic Gaming,JUNGLE,429,435,453,453,429,교전형
+huhi,Counter Logic Gaming,MID,435,423,435,429,405,라인전형
+stixxay,Counter Logic Gaming,AD,423,429,435,429,399,안정형
+biofrost,Counter Logic Gaming,SUP,423,411,435,441,453,로밍형
+huni,Echo Fox,TOP,435,429,429,435,393,한타형
+dardoch,Echo Fox,JUNGLE,411,429,447,447,399,교전형
+altec,Echo Fox,AD,417,423,429,423,393,안정형
+fenix,Echo Fox,MID,423,405,429,423,399,안정형
+adrian,Echo Fox,SUP,399,393,417,417,435,보호형
+damonte,Echo Fox,MID,399,393,405,399,387,안정형
+cat2,Echo Fox,SUP,381,381,393,393,399,성장형
+flame,FlyQuest,TOP,429,417,423,429,393,라인전형
+wildturtle,FlyQuest,AD,429,435,441,435,393,캐리형
+anda,FlyQuest,JUNGLE,405,411,429,429,411,안정형
+stunt,FlyQuest,SUP,393,387,411,411,423,보호형
+fly,FlyQuest,MID,411,399,417,411,399,안정형
+keane,FlyQuest,MID,399,393,405,399,387,안정형
+shrimp,FlyQuest,JUNGLE,381,381,387,387,387,성장형
+lourlo,Golden Guardians,TOP,417,411,417,417,405,안정형
+contractz,Golden Guardians,JUNGLE,411,423,435,435,417,안정형
+hai,Golden Guardians,MID,423,405,423,429,435,운영형
+deftly,Golden Guardians,AD,405,417,417,411,387,안정형
+mattelento,Golden Guardians,SUP,405,393,417,417,435,보호형
+akaadian,OpTic Gaming,JUNGLE,405,411,423,423,405,안정형
+powerofevil,OpTic Gaming,MID,423,411,429,423,399,안정형
+arrow,OpTic Gaming,AD,423,429,429,423,393,안정형
+lemonnation,OpTic Gaming,SUP,393,387,411,411,429,보호형
+dshao,OpTic Gaming,TOP,393,393,399,399,393,안정형
+dhokla,OpTic Gaming,TOP,387,387,393,393,387,성장형
+impact,Team Liquid,TOP,441,429,429,441,405,한타형
+xmithie,Team Liquid,JUNGLE,417,423,435,435,429,이니시형
+pobelter,Team Liquid,MID,441,423,441,435,411,라인전형
+doublelift,Team Liquid,AD,447,453,453,447,411,캐리형
+olleh,Team Liquid,SUP,405,399,423,423,447,시야형
+hauntzer,Team SoloMid,TOP,435,423,429,429,399,라인전형
+mikeyeung,Team SoloMid,JUNGLE,399,405,417,417,399,안정형
+bjergsen,Team SoloMid,MID,465,441,465,459,429,캐리형
+zven,Team SoloMid,AD,423,435,435,429,399,캐리형
+mithy,Team SoloMid,SUP,411,399,429,429,447,로밍형

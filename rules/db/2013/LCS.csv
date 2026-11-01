@@ -1,0 +1,50 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+nickwu,compLexity,TOP,405,399,393,393,399,성장형
+lautemortis,compLexity,JUNGLE,399,393,411,411,399,교전형
+brunch,compLexity,AD,399,411,399,399,387,안정형
+meyea,compLexity,SUP,387,381,399,405,417,보호형
+chuuper,compLexity,MID,405,393,405,399,387,안정형
+pr0lly,compLexity,MID,387,381,387,381,375,성장형
+hotshotgg,Counter Logic Gaming,TOP,453,435,429,435,411,라인전형
+chauster,Counter Logic Gaming,JUNGLE,417,405,423,417,405,교전형
+link,Counter Logic Gaming,MID,441,423,435,429,405,캐리형
+bigfatlp,Counter Logic Gaming,MID,387,381,387,381,387,성장형
+doublelift,Counter Logic Gaming,AD,453,453,447,441,405,캐리형
+aphromoo,Counter Logic Gaming,SUP,417,411,435,435,453,이니시형
+voyboy,Curse,TOP,459,441,453,441,405,라인전형
+saintvicious,Curse,JUNGLE,429,435,453,453,429,이니시형
+nyjacky,Curse,MID,435,417,441,435,411,안정형
+cop,Curse,AD,429,441,441,435,399,한타형
+elementz,Curse,SUP,411,411,429,429,453,보호형
+darshan,Good Game University,TOP,399,399,393,399,399,안정형
+fat,Good Game University,TOP,387,387,387,381,381,성장형
+nintendudex,Good Game University,JUNGLE,417,411,423,417,411,안정형
+shiphtur,Good Game University,MID,387,387,387,387,381,성장형
+jintae,Good Game University,MID,405,405,411,405,399,안정형
+mash,Good Game University,AD,405,417,411,405,387,교전형
+anjo,Good Game University,SUP,381,375,387,387,399,보호형
+kiwikid,dignitas,TOP,423,411,423,435,417,한타형
+scarra,dignitas,MID,453,429,447,441,417,운영형
+imaqtpie,dignitas,AD,441,453,453,441,405,캐리형
+patoy,dignitas,SUP,411,411,423,423,441,보호형
+crumbz,dignitas,JUNGLE,411,417,417,417,411,안정형
+djlambo,dignitas,JUNGLE,387,387,387,387,387,성장형
+megazero,Team MRN,TOP,411,405,411,411,399,안정형
+clakeyd,Team MRN,JUNGLE,399,399,417,411,399,교전형
+ecco,Team MRN,MID,411,399,411,405,399,안정형
+nien,Team MRN,MID,411,405,411,405,393,라인전형
+heartbeat,Team MRN,AD,393,399,399,399,381,안정형
+nysyli,Team MRN,AD,381,381,381,381,375,성장형
+atomicn,Team MRN,SUP,387,381,399,399,411,보호형
+dyrus,Team SoloMid,TOP,453,441,441,441,405,라인전형
+theoddone,Team SoloMid,JUNGLE,423,429,447,447,429,운영형
+reginaid,Team SoloMid,MID,459,435,453,453,429,운영형
+xpecial,Team SoloMid,SUP,417,411,429,429,453,시야형
+chaox,Team SoloMid,AD,417,429,429,417,393,안정형
+wildturtle,Team SoloMid,AD,429,435,441,429,393,캐리형
+benny,Vulcun,TOP,417,417,417,411,399,안정형
+xmithie,Vulcun,JUNGLE,411,417,435,435,429,이니시형
+mancloud,Vulcun,MID,435,423,435,429,399,캐리형
+zuna,Vulcun,AD,405,411,417,411,387,안정형
+muffinqt,Vulcun,SUP,393,387,405,405,417,보호형
+bloodwater,Vulcun,SUP,387,387,399,399,405,보호형

@@ -1,0 +1,55 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+clear,BNK FEARX,TOP,425,437,446,432,406,교전형
+raptor,BNK FEARX,JUNGLE,422,433,430,407,413,성장형
+vicla,BNK FEARX,MID,451,441,443,424,418,라인전형
+diable,BNK FEARX,AD,421,429,424,409,406,성장형
+kellin,BNK FEARX,SUP,430,425,421,441,452,보호형
+dudu,DN Freecs,TOP,432,431,433,425,426,안정형
+pyosik,DN Freecs,JUNGLE,436,444,447,431,413,교전형
+berserker,DN Freecs,AD,443,436,440,427,402,캐리형
+life,DN Freecs,SUP,421,422,423,438,444,보호형
+bulldog,DN Freecs,MID,421,416,420,417,419,안정형
+pungyeon,DN Freecs,MID,403,406,397,381,388,성장형
+siwoo,Dplus KIA,TOP,426,433,428,415,408,성장형
+lucid,Dplus KIA,JUNGLE,441,448,441,435,429,성장형
+showmaker,Dplus KIA,MID,470,455,460,440,438,라인전형
+aiming,Dplus KIA,AD,456,455,454,436,418,캐리형
+beryl,Dplus KIA,SUP,443,433,445,453,461,시야형
+rich,DRX,TOP,433,438,433,422,403,캐리형
+sponge,DRX,JUNGLE,421,420,430,425,397,교전형
+ucal,DRX,MID,434,434,426,431,432,안정형
+andil,DRX,SUP,415,414,413,434,431,보호형
+lazyfeel,DRX,AD,402,413,403,386,385,성장형
+teddy,DRX,AD,420,430,427,406,387,캐리형
+kiin,Gen.G,TOP,469,458,461,434,438,라인전형
+canyon,Gen.G,JUNGLE,463,471,478,467,446,교전형
+chovy,Gen.G,MID,490,477,483,456,458,라인전형
+ruler,Gen.G,AD,480,480,485,460,448,캐리형
+duro,Gen.G,SUP,426,427,421,448,446,보호형
+zeus,Hanwha Life Esports,TOP,467,465,472,454,431,캐리형
+peanut,Hanwha Life Esports,JUNGLE,453,459,464,455,425,교전형
+zeka,Hanwha Life Esports,MID,452,452,470,450,435,교전형
+viper,Hanwha Life Esports,AD,471,475,480,464,439,캐리형
+delight,Hanwha Life Esports,SUP,441,433,435,457,460,보호형
+perfect,KT Rolster,TOP,430,435,425,433,431,안정형
+cuzz,KT Rolster,JUNGLE,431,433,435,425,447,로밍형
+bdd,KT Rolster,MID,456,445,459,429,430,라인전형
+deokdam,KT Rolster,AD,449,451,455,437,418,캐리형
+way,KT Rolster,SUP,410,424,411,404,401,성장형
+kingen,Nongshim RedForce,TOP,443,446,457,448,420,교전형
+gideon,Nongshim RedForce,JUNGLE,428,436,441,433,405,교전형
+fisher,Nongshim RedForce,MID,421,425,427,405,410,성장형
+jiwoo,Nongshim RedForce,AD,432,430,439,419,397,캐리형
+lehends,Nongshim RedForce,SUP,434,428,432,453,457,시야형
+morgan,OKSavingsBank BRION,TOP,434,440,439,425,402,캐리형
+hambak,OKSavingsBank BRION,JUNGLE,407,419,412,397,390,성장형
+clozer,OKSavingsBank BRION,MID,455,436,440,420,423,라인전형
+pollu,OKSavingsBank BRION,SUP,416,407,409,426,438,보호형
+hype,OKSavingsBank BRION,AD,413,416,415,395,403,성장형
+bull,OKSavingsBank BRION,AD,408,405,410,391,391,성장형
+doran,T1,TOP,450,446,453,429,425,라인전형
+oner,T1,JUNGLE,459,466,472,455,443,교전형
+faker,T1,MID,470,451,461,479,482,운영형
+keria,T1,SUP,466,463,476,467,485,로밍형
+smash,T1,AD,425,424,422,400,408,성장형
+gumayusi,T1,AD,479,477,475,461,445,캐리형

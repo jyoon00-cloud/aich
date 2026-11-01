@@ -1,0 +1,55 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+ssumday,100 Thieves,TOP,425,420,425,415,400,라인전형
+closer,100 Thieves,JUNGLE,425,420,430,425,420,성장형
+fbi,100 Thieves,AD,430,430,430,430,405,교전형
+huhi,100 Thieves,SUP,415,400,420,420,430,로밍형
+damonte,100 Thieves,MID,415,410,415,415,410,안정형
+ryoma,100 Thieves,MID,405,400,410,405,395,안정형
+fudge,Cloud9,TOP,430,425,430,425,405,라인전형
+blaber,Cloud9,JUNGLE,445,450,460,445,425,교전형
+perkz,Cloud9,MID,455,440,460,455,445,운영형
+zven,Cloud9,AD,440,445,440,445,430,안정형
+vulcan,Cloud9,SUP,440,425,445,440,455,이니시형
+finn,Counter Logic Gaming,TOP,405,400,410,405,390,성장형
+wildturtle,Counter Logic Gaming,AD,425,420,420,425,410,안정형
+smoothie,Counter Logic Gaming,SUP,415,400,420,420,430,보호형
+broxah,Counter Logic Gaming,JUNGLE,420,410,430,425,425,운영형
+rjs,Counter Logic Gaming,MID,395,390,400,395,385,성장형
+pobelter,Counter Logic Gaming,MID,420,405,420,420,415,안정형
+griffin,Counter Logic Gaming,JUNGLE,400,400,410,405,405,성장형
+fakegod,Dignitas,TOP,410,405,410,405,395,성장형
+dardoch,Dignitas,JUNGLE,420,425,435,420,405,교전형
+soligo,Dignitas,MID,415,410,420,415,405,안정형
+neo,Dignitas,AD,405,405,405,405,395,성장형
+aphromoo,Dignitas,SUP,420,405,425,430,450,이니시형
+impact,Evil Geniuses,TOP,430,420,430,435,410,한타형
+svenskeren,Evil Geniuses,JUNGLE,425,420,435,430,430,운영형
+jiizuke,Evil Geniuses,MID,420,410,425,420,410,안정형
+deftly,Evil Geniuses,AD,425,425,425,425,405,안정형
+ignar,Evil Geniuses,SUP,420,410,425,425,430,이니시형
+licorice,FlyQuest,TOP,430,430,430,430,410,안정형
+josedeodo,FlyQuest,JUNGLE,410,405,420,415,415,성장형
+palafox,FlyQuest,MID,420,410,430,425,415,한타형
+johnsun,FlyQuest,AD,415,415,415,415,400,안정형
+diamond,FlyQuest,SUP,400,395,405,405,415,성장형
+dreams,FlyQuest,SUP,390,385,395,395,395,성장형
+niles,Golden Guardians,TOP,400,395,400,400,390,성장형
+amazo,Golden Guardians,JUNGLE,405,405,415,410,410,안정형
+ablazeolive,Golden Guardians,MID,405,400,410,410,400,안정형
+stixxay,Golden Guardians,AD,415,410,415,415,400,안정형
+newbie,Golden Guardians,SUP,400,390,405,405,410,안정형
+revenge,Immortals,TOP,410,405,410,410,395,안정형
+xerxe,Immortals,JUNGLE,410,410,420,410,415,운영형
+insanity,Immortals,MID,405,405,410,405,395,안정형
+raes,Immortals,AD,405,405,405,405,390,안정형
+destiny,Immortals,SUP,405,395,410,410,420,보호형
+alphari,Team Liquid,TOP,435,430,435,430,410,라인전형
+santorin,Team Liquid,JUNGLE,435,430,445,435,435,운영형
+jensen,Team Liquid,MID,440,430,440,440,425,캐리형
+tactical,Team Liquid,AD,430,435,430,430,410,캐리형
+corejj,Team Liquid,SUP,440,425,440,445,450,이니시형
+huni,Team SoloMid,TOP,435,430,440,430,410,교전형
+spica,Team SoloMid,JUNGLE,430,430,440,430,425,교전형
+powerofevil,Team SoloMid,MID,435,425,440,435,420,안정형
+lost,Team SoloMid,AD,425,425,425,425,405,안정형
+swordart,Team SoloMid,SUP,425,420,435,425,430,교전형

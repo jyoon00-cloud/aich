@@ -1,0 +1,51 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+odoamne,Rogue,TOP,460,454,460,460,456,안정형
+malrang,Rogue,JUNGLE,446,463,456,460,455,이니시형
+larssen,Rogue,MID,468,460,470,456,446,캐리형
+comp,Rogue,AD,464,462,460,464,440,캐리형
+trymbi,Rogue,SUP,448,450,456,462,464,보호형
+brokenblade,G2 Esports,TOP,470,468,468,450,434,캐리형
+jankos,G2 Esports,JUNGLE,444,449,458,469,450,운영형
+caps,G2 Esports,MID,474,467,477,467,425,캐리형
+flakked,G2 Esports,AD,452,460,443,450,435,캐리형
+targamas,G2 Esports,SUP,444,444,452,454,456,보호형
+armut,MAD Lions,TOP,458,443,446,435,438,교전형
+elyoya,MAD Lions,JUNGLE,448,452,458,458,444,이니시형
+reeker,MAD Lions,MID,450,444,448,449,429,운영형
+unf0rgiven,MAD Lions,AD,449,445,439,448,439,캐리형
+kaiser,MAD Lions,SUP,436,438,450,456,450,이니시형
+wunder,Fnatic,TOP,451,456,443,448,432,안정형
+razork,Fnatic,JUNGLE,438,444,446,458,434,이니시형
+humanoid,Fnatic,MID,456,450,454,446,434,캐리형
+upset,Fnatic,AD,448,452,444,458,428,캐리형
+hylissang,Fnatic,SUP,428,434,440,456,452,이니시형
+alphari,Team Vitality,TOP,454,446,446,434,420,캐리형
+selfmade,Team Vitality,JUNGLE,426,442,448,448,426,교전형
+perkz,Team Vitality,MID,450,444,448,448,420,운영형
+carzzy,Team Vitality,AD,440,440,446,444,420,캐리형
+labrov,Team Vitality,SUP,428,430,438,438,446,보호형
+finn,Excel Esports,TOP,444,432,432,430,422,교전형
+markoon,Excel Esports,JUNGLE,420,436,436,440,428,이니시형
+nukeduck,Excel Esports,MID,428,420,432,428,422,운영형
+patrik,Excel Esports,AD,425,440,434,433,428,캐리형
+advienne,Excel Esports,SUP,421,428,428,437,446,보호형
+hirit,Misfits Gaming,TOP,442,431,424,419,424,교전형
+shlatan,Misfits Gaming,JUNGLE,423,434,429,433,421,이니시형
+vetheo,Misfits Gaming,MID,434,428,436,422,410,캐리형
+neon,Misfits Gaming,AD,426,435,423,432,424,캐리형
+mersa,Misfits Gaming,SUP,425,413,435,428,439,보호형
+whiteknight,Astralis,TOP,433,420,430,418,419,교전형
+zanzarah,Astralis,JUNGLE,419,426,427,427,421,이니시형
+dajor,Astralis,MID,421,422,429,432,416,운영형
+kobbe,Astralis,AD,420,429,424,436,411,캐리형
+promisq,Astralis,SUP,411,418,419,428,444,보호형
+adam,Team BDS,TOP,428,417,417,416,412,교전형
+cinkrof,Team BDS,JUNGLE,415,417,413,426,419,이니시형
+nuclearint,Team BDS,MID,421,416,426,417,410,운영형
+xmatty,Team BDS,AD,423,428,409,421,409,캐리형
+limit,Team BDS,SUP,415,401,415,424,435,보호형
+jenax,SK Gaming,TOP,421,417,414,401,407,교전형
+gilius,SK Gaming,JUNGLE,398,415,412,421,414,이니시형
+sertuss,SK Gaming,MID,409,403,426,416,406,운영형
+jezu,SK Gaming,AD,411,415,405,416,413,캐리형
+treatz,SK Gaming,SUP,409,398,409,416,428,보호형

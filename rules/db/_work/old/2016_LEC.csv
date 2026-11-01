@@ -1,0 +1,16 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+expect,G2 Esports,TOP,462,446,448,428,416,라인전형
+trick,G2 Esports,JUNGLE,453,445,459,451,417,교전형
+perkz,G2 Esports,MID,453,457,457,445,413,캐리형
+zven,G2 Esports,AD,453,457,457,445,413,캐리형
+mithy,G2 Esports,SUP,430,426,436,450,458,보호형
+odoamne,H2k-Gaming,TOP,445,437,437,457,449,안정형
+jankos,H2k-Gaming,JUNGLE,453,445,459,451,417,교전형
+ryu,H2k-Gaming,MID,450,438,446,456,460,운영형
+forg1ven,H2k-Gaming,AD,458,462,462,450,418,캐리형
+vander,H2k-Gaming,SUP,420,416,426,440,448,보호형
+gamsu,Fnatic,TOP,435,427,427,447,439,안정형
+spirit,Fnatic,JUNGLE,429,435,435,459,417,이니시형
+febiven,Fnatic,MID,445,433,441,451,455,운영형
+rekkles,Fnatic,AD,458,462,462,450,418,캐리형
+yellowstar,Fnatic,SUP,435,431,441,455,463,보호형

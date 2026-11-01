@@ -1,0 +1,18 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+duke,SKT T1,TOP,453,449,451,440,409,교전형
+blank,SKT T1,JUNGLE,424,431,435,459,446,운영형
+faker,SKT T1,MID,481,470,486,486,473,운영형
+easyhoon,SKT T1,MID,442,424,443,434,418,안정형
+bang,SKT T1,AD,476,480,469,459,423,캐리형
+wolf,SKT T1,SUP,439,440,442,466,488,보호형
+bengi,SKT T1,JUNGLE,430,427,434,453,447,운영형
+smeb,ROX Tigers,TOP,490,487,482,456,440,캐리형
+peanut,ROX Tigers,JUNGLE,451,467,476,469,440,교전형
+kuro,ROX Tigers,MID,460,452,471,454,420,교전형
+pray,ROX Tigers,AD,453,457,444,433,401,캐리형
+gorilla,ROX Tigers,SUP,427,427,433,454,476,보호형
+cuvee,Samsung Galaxy,TOP,473,450,459,449,448,안정형
+ambition,Samsung Galaxy,JUNGLE,437,437,444,466,455,운영형
+crown,Samsung Galaxy,MID,445,428,449,455,437,운영형
+ruler,Samsung Galaxy,AD,448,461,445,435,403,캐리형
+corejj,Samsung Galaxy,SUP,412,430,430,464,459,이니시형

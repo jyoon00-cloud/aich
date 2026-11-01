@@ -1,0 +1,62 @@
+id,team,pos,lan,phy,skr,tf,vis,style
+balis,Cloud9,TOP,435,423,429,423,411,안정형
+rush,Cloud9,JUNGLE,417,429,441,441,423,교전형
+jensen,Cloud9,MID,453,435,459,453,423,캐리형
+sneaky,Cloud9,AD,447,459,453,441,411,캐리형
+hai,Cloud9,SUP,435,411,435,441,447,운영형
+bunnyfufuu,Cloud9,SUP,399,393,417,417,429,보호형
+darshan,Counter Logic Gaming,TOP,423,417,417,417,405,안정형
+xmithie,Counter Logic Gaming,JUNGLE,423,429,447,447,429,이니시형
+huhi,Counter Logic Gaming,MID,441,423,447,441,405,라인전형
+stixxay,Counter Logic Gaming,AD,429,441,441,435,399,캐리형
+aphromoo,Counter Logic Gaming,SUP,429,423,447,447,465,이니시형
+keith,Echo Fox,AD,417,423,429,423,399,안정형
+big,Echo Fox,SUP,399,393,417,417,435,보호형
+hard,Echo Fox,JUNGLE,399,405,417,417,411,안정형
+kfo,Echo Fox,TOP,399,393,405,399,387,안정형
+froggen,Echo Fox,MID,447,417,441,441,423,운영형
+solo,Echo Fox,TOP,387,387,393,387,387,성장형
+goldenglue,Echo Fox,MID,399,387,399,393,387,안정형
+huni,Immortals,TOP,453,441,447,453,399,한타형
+reignover,Immortals,JUNGLE,429,435,453,453,429,교전형
+pobelter,Immortals,MID,453,435,453,441,417,라인전형
+wildturtle,Immortals,AD,441,447,447,435,393,캐리형
+adrian,Immortals,SUP,417,405,429,429,447,로밍형
+gbm,NRG eSports,MID,417,411,423,417,399,안정형
+kwon,NRG eSports,SUP,393,387,411,411,429,보호형
+impact,NRG eSports,TOP,441,429,435,441,405,한타형
+galen,NRG eSports,JUNGLE,411,417,429,429,405,교전형
+altec,NRG eSports,AD,429,429,435,429,399,안정형
+b3nji,NRG eSports,AD,387,387,393,393,387,성장형
+cris,NRG eSports,TOP,387,387,393,387,387,성장형
+crumbz,Renegades,JUNGLE,405,405,417,417,405,안정형
+freeze,Renegades,AD,411,417,417,411,393,안정형
+alexich,Renegades,MID,411,399,417,411,393,안정형
+hakuho,Renegades,SUP,399,393,417,417,435,보호형
+rflegendary,Renegades,TOP,399,393,399,399,393,안정형
+seraph,Renegades,TOP,393,387,399,399,393,성장형
+remilia,Renegades,SUP,387,381,399,399,405,보호형
+kirei,Team Dignitas,JUNGLE,405,411,423,423,411,안정형
+shiphtur,Team Dignitas,MID,411,399,417,411,393,안정형
+apollo,Team Dignitas,AD,411,423,423,417,393,안정형
+kiwikid,Team Dignitas,SUP,399,393,411,417,417,보호형
+billyboss,Team Dignitas,TOP,411,399,405,405,393,안정형
+jaeger,Team Dignitas,TOP,387,387,393,387,387,성장형
+feng,Team Impulse,TOP,399,393,399,399,393,성장형
+beibei,Team Impulse,JUNGLE,387,387,393,393,393,성장형
+procxin,Team Impulse,JUNGLE,399,399,411,411,399,안정형
+gate,Team Impulse,MID,387,381,393,387,387,성장형
+pirean,Team Impulse,MID,405,399,411,405,387,안정형
+mash,Team Impulse,AD,393,405,405,399,381,안정형
+lourlo,Team Liquid,TOP,411,405,411,411,399,안정형
+fenix,Team Liquid,MID,417,405,423,417,399,안정형
+piglet,Team Liquid,AD,429,441,435,429,387,캐리형
+dardoch,Team Liquid,JUNGLE,417,429,447,447,405,교전형
+mattelento,Team Liquid,SUP,399,393,417,417,429,보호형
+iwdominate,Team Liquid,JUNGLE,393,399,411,411,399,안정형
+smoothie,Team Liquid,SUP,387,381,399,399,411,보호형
+hauntzer,Team SoloMid,TOP,447,429,435,435,405,라인전형
+svenskeren,Team SoloMid,JUNGLE,423,435,453,453,423,교전형
+bjergsen,Team SoloMid,MID,465,441,465,459,423,캐리형
+doublelift,Team SoloMid,AD,453,459,459,453,411,캐리형
+yellowstar,Team SoloMid,SUP,423,411,441,441,465,이니시형

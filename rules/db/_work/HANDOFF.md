@@ -1,0 +1,37 @@
+# 선수 DB 작업 상태 (2026-10-31 완료)
+- 연도별 56개 파일, potential 5개 파일 완성. 규칙은 ../README.md.
+- 재생성 자료: skel/(Leaguepedia 로스터 뼈대), players_master.csv(선수별 출생연도·시즌), standings.txt, pot_in/·pot_out/(포텐 작업 입출력), brief_stats.md·brief_potential.md(워커 지시).
+- old/ 와 players_{리그}_*.csv 는 이전 스레드의 기억 기반 값(폐기, 참고용).
+- 알려진 한계: 팀당 7명 제한 때문에 교체가 잦았던 팀의 일부 선수 누락(예: 2021 T1 Zeus). LCK 2013~2019, LCS 2013~2019는 분포가 좁아 선형 보정함. 무명 선수 포텐·히든은 공식 추정치.
+
+# 챔피언 DB (2026-11-01 완료)
+- champions/champions.csv(173종), champions/meta/2013~2026.csv, champions/README.md.
+- _work/champ/: Leaguepedia infobox·대회 통계 원본, fetch/stats/build.py, brief.md, in/·out/(Sonnet 워커 입출력).
+- 2026 월즈는 11-01 기준 51경기까지만 반영 → 월즈 종료 후 stats.py 재실행(2026_WORLDS 키 삭제 후) + build.py로 meta/2026.csv 갱신.
+
+# 2026-11-01 재작업 일시정지 상태 (사용자 요청으로 중지)
+원칙: Opus는 틀만, **하이쿠가 검색 → 소넷이 교정**. 기억으로 채우지 않는다. WebFetch는 시간당 100회 공용 제한 → Leaguepedia는 Bash curl(api.php)로 조회.
+
+## 챔피언 (db/champions/)
+- 완료(사실 데이터): champions.csv의 release/class/attack/resource, meta/2013~2026.csv.
+- champ/v2/cXX.csv + cXX_changes.md: 소넷이 리워크 연도를 위키로 대조한 2차 값 (아직 champions.csv에 미반영).
+- champ/ev2/cXX.md: 하이쿠가 공략 페이지(metabot.gg) 본문을 연 근거. 약 77/173종. 미수집 목록은 각 파일 안에 있음.
+- champ/pro_roles_raw.json + roles.py: Leaguepedia 이벤트·포지션별 챔피언 출전 수. pos 열은 이걸로 계산(포지션별 비율 순, 15%↑). 미반영.
+- 남은 일: ev2 미수집 챔피언 근거 수집(하이쿠) → 소넷이 v2+ev2+pro_roles로 교정 → champions.csv 갱신(note의 '(추정)' 제거).
+
+## 선수 DB 재작업 (redo/)
+- 능력치·포텐·히든은 기억 기반이었음 → 근거 기반으로 다시 매기는 중.
+- redo/brief_haiku.md, redo/events.txt(연도·리그별 이벤트 페이지), redo/ev/{연도}_{리그}.md(하이쿠 근거: 스플릿 성적·순위·직전 해 수상). 일부만 수집됨, 파일 안 '미수집' 표시 참고.
+- 남은 일: 나머지 연도·리그 근거 수집 → 소넷 brief 작성(근거로 lan/phy/skr/tf/vis·style 재산정, README 기준표 유지) → 포텐·히든 재산정(수상·커리어 근거).
+
+## 대회 방식 / 연봉 (신규 문서)
+- comp/frame.md(형식), comp/brief_haiku.md, comp/ev/{연도}.md(일부). 완성본은 db/competition.md로 소넷이 작성.
+- salary/brief_haiku.md, salary/ev.md(근거 4/10 항목). 완성본은 db/salary.md로 소넷이 작성(리그·위치별 가이드라인).
+- 결정사항: 코치 DB 없음(AI 즉흥). 팀·계약은 연도별 선수단으로 대체(선수단은 경향일 뿐 강제 아님).
+
+## 중지 시점 수집 현황 (2026-11-01 02:40)
+- 선수 근거 redo/ev: 2017 LEC·LPL, 2018 전체(4개)만 미수집. 나머지는 스플릿 성적 대부분 수집(이름 불일치 소수는 파일에 표시). 순위는 LCK 외엔 정규시즌 순위인 곳이 많음. 직전 해 수상은 주전의 약 절반만 조회('미수집' 표시), 2013~14는 이 필드 신뢰 불가.
+- 대회 방식 comp/ev: 2013(부분), 2020~2022 완료, 2023(부분), 2014~2019·2024~2026 미수집.
+- 챔피언 포지션 원본 champ/pro_roles_raw.json: 350/350 조회 완료(아직 champions.csv 미반영).
+- 워커 스크립트 사본: redo/scripts/ (스크래치 원본·캐시는 세션 종료 시 사라짐).
+- 다음 순서: ①미수집분 하이쿠 수집 ②소넷이 선수 능력치·챔피언·competition.md·salary.md 작성 ③포텐·히든 재산정.
