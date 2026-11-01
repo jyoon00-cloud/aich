@@ -2,7 +2,7 @@ id,name,pos,birth_year,potential,men,clutch,pro,vol,debut_year,traits
 1jiang,1Jiang,TOP,2003,410,3,0,3,3,2025,
 1ntruder,1ntruder,JUNGLE,1994,408,3,0,3,3,2017,
 1xn,1xn,AD,2004,484,3,0,3,3,2024,lane_king;late_bloomer
-369,369,TOP,2001,490,2,1,4,3,2019,369_u;prodigy;carry;survivor
+369,369,TOP,2001,490,2,1,4,3,2019,369_u;intl_choke;prodigy;carry
 694,694,SUP,1995,465,3,0,3,3,2018,
 705,705,TOP,2002,446,3,0,3,3,2020,
 957,957,TOP,1993,466,3,1,3,3,2016,late_bloomer
@@ -39,7 +39,7 @@ beishang,beishang,JUNGLE,2000,458,3,0,3,3,2019,survivor
 ben,Ben,SUP,1995,463,3,1,3,3,2017,
 ben4,Ben4,JUNGLE,1998,424,3,0,3,3,2017,
 bengi,Bengi,JUNGLE,1993,485,3,2,3,3,2013,bengi_u;intl_champ;big_stage;globetrotter
-betty,Betty,AD,2000,460,3,0,3,4,2020,
+betty,Betty,AD,2000,460,3,0,3,4,2020,intl_choke
 bin,Bin,TOP,2003,480,3,1,2,3,2020,big_stage;domestic_king;lane_king
 bing,Bing,MID,1994,419,3,0,3,3,2018,
 biubiu,Biubiu,TOP,1999,441,3,0,3,3,2020,skirmisher
@@ -68,7 +68,7 @@ chieftain,Chieftain,JUNGLE,2000,425,3,0,3,3,2018,
 chimin,chimin,JUNGLE,,394,3,0,3,3,2016,
 choud1,ChouD1,JUNGLE,,422,3,0,3,3,2013,
 cl0ud,CL0UD,SUP,1994,427,3,0,3,3,2017,
-clearlove,Clearlove,JUNGLE,1993,474,3,2,3,3,2013,survivor
+clearlove,Clearlove,JUNGLE,1993,474,3,2,3,3,2013,survivor;intl_choke
 clid,Clid,JUNGLE,1999,474,3,1,1,4,2017,globetrotter
 climber,climber,JUNGLE,2004,407,3,0,3,3,2025,
 clx,clx,TOP,2000,416,3,0,3,3,2020,
@@ -136,7 +136,7 @@ forge,Forge,MID,2000,443,3,0,3,3,2020,
 funny,Funny,TOP,1998,410,3,0,3,3,2017,
 fury,Fury,AD,1995,437,3,0,3,3,2014,globetrotter
 fzzf,fzzf,SUP,1991,479,3,1,3,3,2013,prodigy
-gala,GALA,AD,2001,471,3,2,4,4,2019,prodigy
+gala,GALA,AD,2001,471,3,2,4,4,2019,intl_choke;prodigy
 game,GAME,JUNGLE,,421,3,0,3,3,2014,
 garvey,Garvey,AD,2002,412,3,0,3,3,2021,
 ggoong,Ggoong,MID,1993,460,3,1,3,3,2014,globetrotter
@@ -211,7 +211,7 @@ kane,kane,AD,1994,441,3,0,3,3,2014,
 kane_2,Kane,AD,1998,421,3,0,3,3,2021,
 karin,Karin,JUNGLE,1995,442,3,0,3,3,2018,
 karis,Karis,MID,2003,437,3,1,3,3,2021,globetrotter
-karsa,Karsa,JUNGLE,1997,477,3,1,3,3,2018,survivor
+karsa,Karsa,JUNGLE,1997,477,3,1,3,3,2018,intl_choke;survivor
 kedaya,Kedaya,SUP,2001,431,3,0,3,3,2022,
 kelin,kelin,AD,,410,3,0,3,3,2021,
 kepler,Kepler,AD,2002,417,3,0,3,3,2024,
@@ -236,7 +236,7 @@ lele,Lele,SUP,2000,418,3,0,3,3,2023,
 leo,Leo,MID,,410,3,0,3,3,2015,
 leon,Leon,AD,,410,3,0,3,3,2013,
 letme,Letme,TOP,1996,470,2,1,3,2,2015,late_bloomer
-levi,Levi,JUNGLE,1997,422,3,0,3,3,2019,
+levi,Levi,JUNGLE,1997,422,3,0,3,3,2019,intl_choke
 ley,Ley,SUP,1997,438,3,0,3,4,2014,flex
 leyan,Leyan,JUNGLE,2002,460,3,0,3,2,2020,lane_king;carry;steady
 liangchen,Liangchen,TOP,,416,3,0,3,3,2026,
@@ -261,7 +261,7 @@ maestro,Maestro,SUP,1998,424,3,0,3,3,2019,
 magic,Magic,JUNGLE,1996,450,3,0,3,3,2018,
 maix,MaiX,MID,1999,423,3,0,3,3,2019,
 maizijian,Maizijian,TOP,1991,410,3,0,3,3,2015,
-maple,Maple,MID,1997,449,3,0,3,2,2019,globetrotter
+maple,Maple,MID,1997,449,3,0,3,2,2019,intl_choke;globetrotter
 marge,Marge,AD,1997,416,3,0,3,3,2017,
 marin,MaRin,TOP,1991,475,3,2,3,4,2014,lane_king;globetrotter;intl_champ
 mark,Mark,SUP,1999,468,3,-1,3,5,2019,survivor;prodigy
@@ -272,7 +272,7 @@ memory,Memory,TOP,1997,410,3,0,3,3,2016,
 meteor,Meteor,JUNGLE,1999,457,3,0,3,2,2019,lane_king;steady
 michi,Michi,AD,,396,3,0,3,3,2021,
 milkyway,milkyway,JUNGLE,2004,470,3,0,2,3,2024,prodigy
-ming,Ming,SUP,1998,482,3,2,4,3,2017,late_bloomer;big_stage
+ming,Ming,SUP,1998,482,3,2,4,3,2017,intl_choke;late_bloomer;big_stage
 mint,Mint,AD,1998,410,3,0,3,3,2017,
 misaya,Misaya,MID,1992,470,3,2,3,3,2013,prodigy
 missing,MISSING,SUP,2001,487,3,2,4,4,2019,
@@ -383,7 +383,7 @@ taeyoon,Taeyoon,AD,2002,452,3,0,3,2,2023,globetrotter
 tale,tale,AD,,396,3,0,3,3,2015,
 tangyuan,Tangyuan,MID,2004,451,3,0,3,2,2023,
 tank,Tank,MID,1995,435,3,0,3,3,2015,
-tarzan,Tarzan,JUNGLE,1999,474,3,-1,3,5,2019,choker;prodigy;globetrotter
+tarzan,Tarzan,JUNGLE,1999,474,3,-1,3,5,2019,intl_choke;choker;prodigy
 tbq,tbq,JUNGLE,1996,455,3,1,3,3,2014,
 teacherma,Teacherma,MID,1999,437,3,0,3,3,2020,
 teeen,Teeen,SUP,2001,459,3,0,3,3,2021,
@@ -481,7 +481,7 @@ zhaoyun,Zhaoyun,TOP,2001,428,3,0,3,3,2019,
 zhuo,Zhuo,SUP,2001,478,3,1,3,5,2021,
 zika,Zika,TOP,2003,471,3,1,3,4,2022,
 ziv,Ziv,JUNGLE,,416,3,1,3,3,2013,
-ziv_2,Ziv,TOP,1994,411,3,1,3,3,2021,
+ziv_2,Ziv,TOP,1994,411,3,1,3,3,2021,intl_choke
 zoom,Zoom,TOP,1997,473,3,-1,3,1,2018,lane_king
 zorah,Zorah,SUP,2003,421,3,0,3,3,2022,
 zs,zs,TOP,2002,418,3,0,3,3,2021,

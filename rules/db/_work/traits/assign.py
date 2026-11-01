@@ -159,6 +159,10 @@ for (f, i), pr in pot.items():
     if pr['vol'] in ('1', '2') and len(yrs) >= 5: cand['steady'] = (len(yrs) / 5, 0, f"vol {pr['vol']}, 주전 {len(yrs)}시즌")
     loss = len(loses_intl) + sum(1 for n in d['runner'] if year_of(n, d) and is_starter_in(i, year_of(n, d)))
     if int(pr['clutch']) <= -1 and loss >= 3: cand['choker'] = (loss / 3, 0, f"clutch {pr['clutch']}, 결승 패배 {loss}회")
+    # intl_choke (부정): 월즈 주전 출전 4회 이상, 월즈 결승(1·2위) 0회. 주전 판정은 intl_games.csv.
+    _wapp = sorted({year_of(n, d) for n, p, t in d['intl'] if n.startswith('Worlds') and year_of(n, d) and intl_starter(i, year_of(n, d), 'Worlds')})
+    _wfin = [n for n, p, t in d['intl'] if n.startswith('Worlds') and p in ('1', '2') and year_of(n, d) and intl_starter(i, year_of(n, d), 'Worlds')]
+    if len(_wapp) >= 4 and not _wfin: cand['intl_choke'] = (len(_wapp) / 4, 0, f"월즈 주전 출전 {len(_wapp)}회({', '.join(map(str, _wapp))}), 결승 0회")
     order = sorted(cand, key=lambda k: (-cand[k][0], -cand[k][1], k))
     ranks[(f, i)] = order
     res[(f, i)] = order
@@ -231,7 +235,7 @@ if WRITE:
     fc = collections.Counter(t for v in persons.values() for t in v)
     L.append('## 특성별 부여 인원 (선수 수, 중복 id 한 번만)')
     L.append('| 특성 | 부여(상위3 채택) | 조건 충족 전체 |'); L.append('|---|---|---|')
-    for t in ['lane_king','skirmisher','teamfighter','carry','survivor','big_stage','intl_champ','domestic_king','iron','late_bloomer','prodigy','globetrotter','flex','steady','choker']:
+    for t in ['lane_king','skirmisher','teamfighter','carry','survivor','big_stage','intl_champ','domestic_king','iron','late_bloomer','prodigy','globetrotter','flex','steady','choker','intl_choke']:
         L.append(f'| {t} | {tc[t]} | {fc[t]} |')
     L += ['', f'유니크 대상 {len({k[1] for k in uniq})}명. 특성이 하나라도 있는 선수 {sum(1 for v in persons.values() if v)}명 / 전체 {len(persons)}명.', '', '## 선수별 부여 이유']
     for i, v in persons.items():
