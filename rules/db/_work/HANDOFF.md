@@ -45,7 +45,7 @@
 
 ## ② 소넷 교정 — 완료
 - 연도별 능력치 56개 파일: 근거 산식(팀 순위 → 직전 해 실적 가산 → 같은 포지션 성적 ±10)으로 재산정. 변경 로그 redo/changes/{연도}_{리그}.md. 지시서 redo/brief_sonnet_stats.md.
-- 포지션 오류 정정(원본 로스터 오류): 2020 LCK chovy MID, 2018 LEC vander SUP, 2018 LCK wolf SUP, 2014 LPL jojo MID, 2017 LCS ninja MID.
+- 포지션 오류 정정(원본 로스터 오류): 2020 LCK chovy MID, 2018 LEC vander SUP, 2018 LCK wolf SUP(정글 출전도 있었음, 오류 아님·주 포지션 기준), 2014 LPL jojo MID, 2017 LCS ninja MID.
   남은 의심(CS/M과 pos 불일치, 미확인): 2013 LEC samux, 2014 LCS xmithie, 2015 LEC overpow, 2015 LPL loveling, 2016 LCS gate, 2020 LPL fenfen, 2013 LPL leon/2014 LPL ycc/2013 LCS heartbeat(AD인데 CS 낮음), 2013 LPL duff.
 - champions.csv: v3/g1~g3 반영(공식 난이도, 대회 포지션, (추정) 제거). locke만 일부 (미확인).
 - competition.md, salary.md 작성. 승강제 폐지 시점은 검색 요약 근거(기사 본문 미확인). salary는 [번호] 근거·(보간)·근거 없음 표기.
