@@ -1,0 +1,450 @@
+year,event,team,league,place,source
+2013,Worlds,SK Telecom T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Royal Club,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,NaJin Black Sword,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Fnatic,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Gamania Bears,기타,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Gambit Gaming,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Oh My God,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Cloud9,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Lemondogs,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Samsung Ozone,LCK,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,TSM,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Team Vulcun,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,GamingGear.eu,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2013,Worlds,Mineski,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Season_3_World_Championship
+2014,Worlds,Samsung White,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Star Horn Royal Club,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Samsung Blue,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Oh My God,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,TSM,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Cloud9,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,EDward Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,NaJin White Shield,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Ahq eSports Club,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,SK Gaming,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Alliance,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Fnatic,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,LMQ,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Dark Passage,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,Taipei Assassins,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2014,Worlds,KaBuM! Esports,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2014_Season_World_Championship
+2015,Worlds,SK Telecom T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,KOO Tigers,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,Origen,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,Fnatic,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,Flash Wolves,기타,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,Ahq eSports Club,기타,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,EDward Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,KT Rolster,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,H2k-Gaming,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,LGD Gaming,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,Cloud9,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,Counter Logic Gaming,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,PaiN Gaming,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,Bangkok Titans,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,TSM,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,Worlds,Invictus Gaming,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Season_World_Championship
+2015,MSI,EDward Gaming,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Mid-Season_Invitational
+2015,MSI,SK Telecom T1,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Mid-Season_Invitational
+2015,MSI,Fnatic,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Mid-Season_Invitational
+2015,MSI,Ahq eSports Club,기타,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Mid-Season_Invitational
+2015,MSI,TSM,LCS,5,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Mid-Season_Invitational
+2015,MSI,Beşiktaş Esports,기타,6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2015_Mid-Season_Invitational
+2016,Worlds,SK Telecom T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,Samsung Galaxy,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,ROX Tigers,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,H2k-Gaming,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,Cloud9,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,Royal Never Give Up,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,EDward Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,Albus NoX Luna,기타,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,Counter Logic Gaming,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,Ahq eSports Club,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,TSM,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,I May,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,G2 Esports,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,INTZ,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,Splyce,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,Worlds,Flash Wolves,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Season_World_Championship
+2016,MSI,SK Telecom T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Mid-Season_Invitational
+2016,MSI,Counter Logic Gaming,LCS,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Mid-Season_Invitational
+2016,MSI,Royal Never Give Up,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Mid-Season_Invitational
+2016,MSI,Flash Wolves,기타,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Mid-Season_Invitational
+2016,MSI,G2 Esports,LEC,5,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Mid-Season_Invitational
+2016,MSI,SuperMassive Esports,기타,6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2016_Mid-Season_Invitational
+2017,Worlds,Samsung Galaxy,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,SK Telecom T1,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Royal Never Give Up,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Team WE,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Longzhu Gaming,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Misfits Gaming,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Fnatic,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Cloud9,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,GIGABYTE Marines,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,G2 Esports,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,TSM,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Ahq eSports Club,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,EDward Gaming,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Immortals,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Fenerbahçe Esports,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Flash Wolves,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Lyon Gaming (2013 Latin American Team),기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Hong Kong Attitude,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Team oNe eSports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Young Generation,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Gambit Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Dire Wolves,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Rampage,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,Worlds,Kaos Latin Gamers,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Season_World_Championship
+2017,MSI,SK Telecom T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,G2 Esports,LEC,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,Flash Wolves,기타,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,Team WE,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,TSM,LCS,5,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,GIGABYTE Marines,기타,6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,SuperMassive Esports,기타,7,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,RED Canids,기타,8-9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,Lyon Gaming (2013 Latin American Team),기타,8-9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,Dire Wolves,기타,10-11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,Virtus.pro,기타,10-11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,Rampage,기타,12-13,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2017,MSI,Isurus,기타,12-13,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2017_Mid-Season_Invitational
+2018,Worlds,Invictus Gaming,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Fnatic,LEC,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,G2 Esports,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Cloud9,LCS,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,KT Rolster,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Royal Never Give Up,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Afreeca Freecs,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,EDward Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Team Vitality,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Flash Wolves,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Team Liquid,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,100 Thieves,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Gen.G,LCK,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Phong Vũ Buffalo,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,MAD Team,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,G-Rex,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Gambit Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,DetonatioN FocusMe,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,INFINITY,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,SuperMassive Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Kaos Latin Gamers,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,KaBuM! Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Ascension Gaming,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,Worlds,Dire Wolves,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Season_World_Championship
+2018,MSI,Royal Never Give Up,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Kingzone DragonX,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Fnatic,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Flash Wolves,기타,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Team Liquid,LCS,5,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,EVOS Esports,기타,6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,SuperMassive Esports,기타,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Gambit Esports,기타,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Rainbow7,기타,9-10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,KaBuM! Esports,기타,9-10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Dire Wolves,기타,11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Kaos Latin Gamers,기타,12-13,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,Ascension Gaming,기타,12-13,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2018,MSI,PENTAGRAM,기타,14,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2018_Mid-Season_Invitational
+2019,Worlds,FunPlus Phoenix,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,G2 Esports,LEC,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Invictus Gaming,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,SK Telecom T1,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Griffin (Korean Team),LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Fnatic,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Splyce,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,DAMWON Gaming,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,J Team,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Cloud9,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Royal Never Give Up,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Team Liquid,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,GAM Esports,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Hong Kong Attitude,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Clutch Gaming,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Ahq eSports Club,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Lowkey Esports.Vietnam,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Royal Youth,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Isurus,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Unicorns of Love.CIS,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,DetonatioN FocusMe,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,MAMMOTH,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,MEGA,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,Worlds,Flamengo Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Season_World_Championship
+2019,MSI,G2 Esports,LEC,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,Team Liquid,LCS,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,Invictus Gaming,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,SK Telecom T1,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,Flash Wolves,기타,5,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,Phong Vũ Buffalo,기타,6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,Vega Squadron,기타,7,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,Fenerbahçe Esports,기타,8-9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,DetonatioN FocusMe,기타,8-9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,Bombers,기타,10-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,Isurus,기타,10-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,MEGA,기타,10-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2019,MSI,INTZ,기타,13,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2019_Mid-Season_Invitational
+2020,Worlds,DAMWON Gaming,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Suning,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,G2 Esports,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Top Esports,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,DRX,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,JD Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Fnatic,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Gen.G,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Team Liquid,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,PSG Talon,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,LGD Gaming,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,FlyQuest,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Machi Esports,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Rogue (European Team),LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,TSM,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Unicorns of Love.CIS,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Legacy Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Papara SuperMassive,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,Rainbow7,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,MAD Lions,LEC,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,V3 Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2020,Worlds,INTZ,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2020_Season_World_Championship
+2021,Worlds,EDward Gaming,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,DWG KIA,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,T1,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Gen.G,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Hanwha Life Esports,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Royal Never Give Up,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,MAD Lions,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Cloud9,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Rogue (European Team),LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,100 Thieves,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,PSG Talon,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Team Liquid,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,LNG Esports,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,FunPlus Phoenix,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,DetonatioN FocusMe,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Fnatic,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Beyond Gaming,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,PEACE (Oceanic Team),기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Galatasaray Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,RED Canids,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,INFINITY,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,Worlds,Unicorns of Love.CIS,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Season_World_Championship
+2021,MSI,Royal Never Give Up,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,DWG KIA,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,PSG Talon,기타,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,MAD Lions,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,Cloud9,LCS,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,Pentanet.GG,기타,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,Unicorns of Love.CIS,기타,7-9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,PaiN Gaming,기타,7-9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,DetonatioN FocusMe,기타,7-9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,Istanbul Wildcats,기타,10-11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2021,MSI,INFINITY,기타,10-11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2021_Mid-Season_Invitational
+2022,Worlds,DRX,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,T1,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,JD Gaming,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Gen.G,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Rogue (European Team),LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Royal Never Give Up,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,DWG KIA,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,EDward Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Fnatic,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Top Esports,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Evil Geniuses.NA,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,G2 Esports,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,100 Thieves,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,CTBC Flying Oyster,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Cloud9,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,GAM Esports,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,MAD Lions,LEC,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,DetonatioN FocusMe,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Saigon Buffalo,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,LOUD,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Beyond Gaming,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Isurus,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Chiefs Esports Club,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,Worlds,Istanbul Wildcats,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Season_World_Championship
+2022,MSI,Royal Never Give Up,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,T1,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,Evil Geniuses.NA,LCS,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,G2 Esports,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,PSG Talon,기타,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,Saigon Buffalo,기타,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,RED Canids,기타,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,ORDER,기타,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,DetonatioN FocusMe,기타,9-10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,Team Aze,기타,9-10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2022,MSI,Istanbul Wildcats,기타,11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2022_Mid-Season_Invitational
+2023,Worlds,T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Weibo Gaming,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Bilibili Gaming,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,JD Gaming,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,NRG,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Gen.G,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,KT Rolster,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,LNG Esports,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Dplus Kia,LCK,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Fnatic,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,G2 Esports,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Cloud9,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,MAD Lions,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,GAM Esports,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Team Liquid,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Team BDS,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Team Whales,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,PSG Talon,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,LOUD,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,CTBC Flying Oyster,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,Movistar R7,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,Worlds,DetonatioN FocusMe,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Season_World_Championship
+2023,MSI,JD Gaming,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,Bilibili Gaming,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,T1,LCK,3,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,Gen.G,LCK,4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,G2 Esports,LEC,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,Cloud9,LCS,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,MAD Lions,LEC,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,Golden Guardians,LCS,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,PSG Talon,기타,9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,Movistar R7,기타,10-11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,LOUD,기타,10-11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,GAM Esports,기타,12-13,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2023,MSI,DetonatioN FocusMe,기타,12-13,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2023_Mid-Season_Invitational
+2024,Worlds,T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Bilibili Gaming,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Weibo Gaming,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Gen.G,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,LNG Esports,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Hanwha Life Esports,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Top Esports,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,FlyQuest,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Dplus Kia,LCK,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,G2 Esports,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Team Liquid,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,PSG Talon,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Fnatic,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,GAM Esports,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,MAD Lions KOI,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,PaiN Gaming,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Movistar R7,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,100 Thieves,LCS,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Vikings Esports (2023 Vietnamese Team),기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,Worlds,Fukuoka SoftBank HAWKS gaming,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Season_World_Championship
+2024,MSI,Gen.G,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,Bilibili Gaming,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,T1,LCK,3,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,G2 Esports,LEC,4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,Top Esports,LPL,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,Team Liquid,LCS,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,Fnatic,LEC,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,PSG Talon,기타,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,FlyQuest,LCS,9-10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,GAM Esports,기타,9-10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,Estral Esports,기타,11-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,MSI,LOUD,기타,11-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2024_Mid-Season_Invitational
+2024,EWC,T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2024
+2024,EWC,Top Esports,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2024
+2024,EWC,Team Liquid,LCS,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2024
+2024,EWC,G2 Esports,LEC,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2024
+2024,EWC,Bilibili Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2024
+2024,EWC,Fnatic,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2024
+2024,EWC,Gen.G,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2024
+2024,EWC,FlyQuest,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2024
+2025,Worlds,T1,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,KT Rolster,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Gen.G,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Top Esports,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Hanwha Life Esports,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,CTBC Flying Oyster,기타,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,G2 Esports,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Anyone's Legend,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,FlyQuest,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Bilibili Gaming,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Movistar KOI,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Team Secret Whales,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Vivo Keyd Stars,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,100 Thieves,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Fnatic,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,PSG Talon,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,Worlds,Invictus Gaming,LPL,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Season_World_Championship
+2025,MSI,Gen.G,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,T1,LCK,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,Anyone's Legend,LPL,3,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,Bilibili Gaming,LPL,4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,CTBC Flying Oyster,기타,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,FlyQuest,LCS,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,Movistar KOI,LEC,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,G2 Esports,LEC,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,GAM Esports,기타,9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,MSI,FURIA,기타,10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_Mid-Season_Invitational
+2025,FirstStand,Hanwha Life Esports,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_First_Stand
+2025,FirstStand,Karmine Corp,LEC,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_First_Stand
+2025,FirstStand,CTBC Flying Oyster,기타,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_First_Stand
+2025,FirstStand,Top Esports,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_First_Stand
+2025,FirstStand,Team Liquid,LCS,5,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2025_First_Stand
+2025,EWC,Gen.G,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,AG.AL,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,T1,LCK,3,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,G2 Esports,LEC,4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,Hanwha Life Esports,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,Bilibili Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,Movistar KOI,LEC,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,FlyQuest,LCS,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,CTBC Flying Oyster,기타,9-10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,FURIA,기타,9-10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,GAM Esports,기타,11-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2025,EWC,Cloud9,LCS,11-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2025
+2026,Worlds,tbd,tbd,1,worlds_2026
+2026,Worlds,tbd,tbd,2,worlds_2026
+2026,Worlds,tbd,tbd,3-4,worlds_2026
+2026,Worlds,tbd,tbd,3-4,worlds_2026
+2026,Worlds,tbd,tbd,5-8,worlds_2026
+2026,Worlds,tbd,tbd,5-8,worlds_2026
+2026,Worlds,tbd,tbd,5-8,worlds_2026
+2026,Worlds,tbd,tbd,5-8,worlds_2026
+2026,Worlds,Movistar KOI,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,LØS,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,Hanwha Life Esports,LCK,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,CTBC Flying Oyster,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,Team Liquid,LCS,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,G2 Esports,LEC,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,Team Secret Whales,기타,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,Anyone's Legend,LPL,9-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,MVK Esports,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,FURIA,기타,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,Worlds,Cloud9,LCS,playin,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Season_World_Championship
+2026,MSI,Hanwha Life Esports,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,Bilibili Gaming,LPL,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,LYON (2024 American Team),LCS,3,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,G2 Esports,LEC,4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,Team Secret Whales,기타,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,T1,LCK,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,Top Esports,LPL,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,FURIA,기타,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,Team Liquid,LCS,9,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,Karmine Corp,LEC,10,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,MSI,Deep Cross Gaming,기타,11,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_Mid-Season_Invitational
+2026,FirstStand,Bilibili Gaming,LPL,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_First_Stand
+2026,FirstStand,G2 Esports,LEC,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_First_Stand
+2026,FirstStand,Gen.G,LCK,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_First_Stand
+2026,FirstStand,JD Gaming,LPL,3-4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_First_Stand
+2026,FirstStand,BNK FEARX,LCK,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_First_Stand
+2026,FirstStand,LYON (2024 American Team),LCS,5-6,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_First_Stand
+2026,FirstStand,Team Secret Whales,기타,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_First_Stand
+2026,FirstStand,LOUD,기타,7-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=2026_First_Stand
+2026,EWC,Dplus Kia,LCK,1,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,Karmine Corp,LEC,2,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,Gen.G,LCK,3,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,T1,LCK,4,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,Hanwha Life Esports,LCK,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,JD Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,AG.AL,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,Bilibili Gaming,LPL,5-8,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,Sentinels,LCS,9-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,GAM Esports,기타,9-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,G2 Esports,LEC,9-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,MIBR.LOS,기타,9-12,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,FURIA,기타,13-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,Team Secret (Vietnamese Team),기타,13-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,Movistar KOI,LEC,13-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026
+2026,EWC,LYON (2024 American Team),LCS,13-16,https://lol.fandom.com/api.php?action=parse&format=json&prop=text&page=Esports_World_Cup_2026

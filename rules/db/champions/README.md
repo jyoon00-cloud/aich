@@ -20,7 +20,8 @@ champions.csv: `id,name_ko,name_en,release,class,attack,resource,pos,diff,curve,
 - lan / skr / tf: 라인전 / 소규모 교전 / 한타에서의 챔피언 자체 강도 1~5 (3=같은 포지션 평균).
 - role: 조합 역할 태그(이니시, 돌진, 받아치기, 포크, 스플릿, 보호, 견제, 탱킹, 캐리, 암살, 유틸, 운영).
 - rework: 프로 활용이 바뀐 대규모 리워크 연도. 그 전 연도에는 note의 이전 모습을 기준으로 한다.
-- 출시일 외의 특성 값은 AI가 일반적 평가를 바탕으로 정한 값이다.
+- pos는 2013~2026 프로 대회 포지션별 출전 비율(15% 이상, 많은 순). 20경기 미만은 솔로랭크 기준(note에 표시).
+- diff는 공식 사이트 난이도(낮음 1~2, 보통 3, 높음 4~5). curve·lan·skr·tf·role·note는 공략 사이트 본문 근거로 정했다. 근거는 `_work/champ/ev2/`, 변경 내역은 `_work/champ/v3/*_changes.md`.
 
 meta/{연도}.csv: `id,spring_pb,spring_wr,spring_tier,worlds_pb,worlds_wr,worlds_tier`
 - spring_*: 그해 4대 리그 첫 스플릿 합산 (선수 DB와 같은 대회: 2025~26 LCK컵, LPL 스플릿1, LEC 윈터/버서스, 2025 LTA North 스플릿1, 2026 LCS 락인).

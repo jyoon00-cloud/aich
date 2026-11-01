@@ -1,45 +1,45 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-wickd,Alliance,TOP,430,430,430,430,420,안정형
-shook,Alliance,JUNGLE,435,425,440,435,435,운영형
-froggen,Alliance,MID,450,440,450,465,445,한타형
-tabzz,Alliance,AD,425,425,430,430,415,안정형
-nyph,Alliance,SUP,435,420,435,440,450,보호형
-youngbuck,Copenhagen Wolves,TOP,425,420,420,415,405,성장형
-amazing,Copenhagen Wolves,JUNGLE,430,430,440,430,425,교전형
-cowtard,Copenhagen Wolves,MID,420,410,425,420,420,안정형
-forg1ven,Copenhagen Wolves,AD,435,430,440,435,420,캐리형
-unlimited,Copenhagen Wolves,SUP,410,400,410,420,430,보호형
-soaz,Fnatic,TOP,445,445,445,445,430,라인전형
-cyanide,Fnatic,JUNGLE,440,435,440,445,445,운영형
-xpeke,Fnatic,MID,455,440,455,455,450,캐리형
-rekkles,Fnatic,AD,435,420,445,435,410,성장형
-yellowstar,Fnatic,SUP,440,425,440,450,455,이니시형
-darien,Gambit Gaming,TOP,425,420,425,425,415,안정형
-zorozero,Gambit Gaming,TOP,400,400,400,400,395,안정형
-diamondprox,Gambit Gaming,JUNGLE,445,430,445,440,440,교전형
-hulberto,Gambit Gaming,JUNGLE,400,400,405,400,395,안정형
-alexich,Gambit Gaming,MID,440,430,440,440,435,캐리형
-nukeduck,Gambit Gaming,MID,410,405,415,410,405,성장형
-genja,Gambit Gaming,AD,430,430,430,430,420,캐리형
-kev1n,Millenium,TOP,415,420,415,410,405,라인전형
-araneae,Millenium,JUNGLE,410,410,415,410,405,안정형
-kottenx,Millenium,JUNGLE,400,395,400,400,395,안정형
-kerp,Millenium,MID,410,405,415,410,405,안정형
-creaton,Millenium,AD,410,410,415,405,395,캐리형
-jree,Millenium,SUP,400,395,405,410,420,보호형
-fredy122,SK Gaming,TOP,435,435,435,430,420,안정형
-svenskeren,SK Gaming,JUNGLE,455,445,460,450,445,교전형
-jesiz,SK Gaming,MID,445,430,445,445,435,운영형
-candypanda,SK Gaming,AD,440,435,445,440,425,캐리형
-nrated,SK Gaming,SUP,440,430,440,445,455,로밍형
-mimer,SUPA HOT CREW,TOP,410,410,405,405,395,안정형
-impaler,SUPA HOT CREW,JUNGLE,410,410,410,405,400,안정형
-moopz,SUPA HOT CREW,MID,410,400,415,410,405,안정형
-nulu,SUPA HOT CREW,MID,405,400,405,400,395,안정형
-mrrallez,SUPA HOT CREW,AD,410,410,415,410,395,캐리형
-migxa,SUPA HOT CREW,SUP,400,395,400,405,415,보호형
-xaxus,Team ROCCAT,TOP,420,420,420,420,410,안정형
-jankos,Team ROCCAT,JUNGLE,430,430,445,435,430,교전형
-overpow,Team ROCCAT,MID,435,425,435,435,430,안정형
-celaver,Team ROCCAT,AD,425,425,430,425,410,안정형
-vander,Team ROCCAT,SUP,430,420,425,435,445,보호형
+wickd,Alliance,TOP,455,440,433,436,426,라인전형
+shook,Alliance,JUNGLE,426,429,434,438,443,운영형
+froggen,Alliance,MID,448,454,454,449,435,캐리형
+tabzz,Alliance,AD,436,448,442,442,427,안정형
+nyph,Alliance,SUP,426,422,433,436,453,보호형
+youngbuck,Copenhagen Wolves,TOP,408,416,410,414,407,성장형
+amazing,Copenhagen Wolves,JUNGLE,416,425,434,427,428,교전형
+cowtard,Copenhagen Wolves,MID,407,413,411,416,413,안정형
+forg1ven,Copenhagen Wolves,AD,437,415,410,416,407,라인전형
+unlimited,Copenhagen Wolves,SUP,402,405,423,428,437,이니시형
+soaz,Fnatic,TOP,449,468,466,461,441,캐리형
+cyanide,Fnatic,JUNGLE,447,448,450,449,456,운영형
+xpeke,Fnatic,MID,458,454,452,455,446,안정형
+rekkles,Fnatic,AD,451,457,449,440,428,캐리형
+yellowstar,Fnatic,SUP,448,448,459,454,466,보호형
+darien,Gambit Gaming,TOP,424,431,430,435,420,교전형
+zorozero,Gambit Gaming,TOP,415,417,413,413,402,안정형
+diamondprox,Gambit Gaming,JUNGLE,428,429,431,426,436,성장형
+hulberto,Gambit Gaming,JUNGLE,407,408,412,412,421,성장형
+alexich,Gambit Gaming,MID,442,430,423,423,422,라인전형
+nukeduck,Gambit Gaming,MID,414,416,411,411,408,성장형
+genja,Gambit Gaming,AD,430,440,429,420,416,안정형
+kev1n,Millenium,TOP,401,420,416,408,400,안정형
+araneae,Millenium,JUNGLE,394,389,390,391,411,안정형
+kottenx,Millenium,JUNGLE,395,396,400,400,409,안정형
+kerp,Millenium,MID,396,404,396,394,400,안정형
+creaton,Millenium,AD,410,406,398,396,395,안정형
+jree,Millenium,SUP,397,390,398,394,421,보호형
+fredy122,SK Gaming,TOP,467,449,440,442,432,라인전형
+svenskeren,SK Gaming,JUNGLE,439,441,446,451,453,운영형
+jesiz,SK Gaming,MID,444,453,445,441,437,운영형
+candypanda,SK Gaming,AD,445,454,452,460,439,교전형
+nrated,SK Gaming,SUP,443,442,455,458,467,안정형
+mimer,SUPA HOT CREW,TOP,415,406,399,400,400,안정형
+impaler,SUPA HOT CREW,JUNGLE,397,398,404,407,419,안정형
+moopz,SUPA HOT CREW,MID,412,407,403,406,407,안정형
+nulu,SUPA HOT CREW,MID,402,404,399,399,396,안정형
+mrrallez,SUPA HOT CREW,AD,394,415,414,417,405,교전형
+migxa,SUPA HOT CREW,SUP,391,389,404,411,430,보호형
+xaxus,Team ROCCAT,TOP,423,437,432,430,418,안정형
+jankos,Team ROCCAT,JUNGLE,426,428,431,429,436,성장형
+overpow,Team ROCCAT,MID,434,435,432,431,423,안정형
+celaver,Team ROCCAT,AD,428,429,421,425,417,안정형
+vander,Team ROCCAT,SUP,428,425,433,425,444,보호형

@@ -1,42 +1,42 @@
 id,team,pos,lan,phy,skr,tf,vis,style
-sniper,100 Thieves,TOP,420,420,425,420,400,성장형
-river,100 Thieves,JUNGLE,430,425,435,425,420,교전형
-quid,100 Thieves,MID,425,420,430,425,410,성장형
-meech,100 Thieves,AD,410,410,415,410,395,성장형
-eyla,100 Thieves,SUP,420,410,425,425,435,로밍형
-fudge,Cloud9,TOP,435,430,440,435,410,라인전형
-blaber,Cloud9,JUNGLE,440,440,450,440,425,교전형
-jojopyun,Cloud9,MID,430,430,440,430,410,캐리형
-berserker,Cloud9,AD,440,445,445,440,405,캐리형
-vulcan,Cloud9,SUP,430,420,440,435,445,이니시형
-rich,Dignitas,TOP,405,405,410,405,395,성장형
-exyu,Dignitas,JUNGLE,420,415,430,420,415,안정형
-dove,Dignitas,MID,410,405,415,410,400,성장형
-tomo,Dignitas,AD,410,410,415,410,395,안정형
-isles,Dignitas,SUP,405,400,410,410,415,성장형
-bwipo,FlyQuest,TOP,440,435,445,440,410,교전형
-inspired,FlyQuest,JUNGLE,445,435,450,450,435,운영형
-jensen,FlyQuest,MID,445,430,445,445,430,운영형
-massu,FlyQuest,AD,415,415,420,410,395,성장형
-busio,FlyQuest,SUP,425,420,430,430,435,이니시형
-castle,Immortals,TOP,410,410,415,410,395,안정형
-armao,Immortals,JUNGLE,400,395,410,400,405,안정형
-mask,Immortals,MID,400,400,405,400,395,안정형
-tactical,Immortals,AD,420,420,420,420,400,안정형
-olleh,Immortals,SUP,410,400,415,415,425,보호형
-dhokla,NRG,TOP,420,420,425,420,400,성장형
-contractz,NRG,JUNGLE,425,420,430,425,420,안정형
-palafox,NRG,MID,425,415,430,425,415,안정형
-fbi,NRG,AD,425,425,425,425,400,교전형
-huhi,NRG,SUP,420,405,425,425,435,로밍형
-fakegod,Shopify Rebellion,TOP,405,405,410,405,395,성장형
-bugi,Shopify Rebellion,JUNGLE,420,415,425,420,415,성장형
-insanity,Shopify Rebellion,MID,405,400,410,405,395,안정형
-wildturtle,Shopify Rebellion,AD,410,405,410,410,395,안정형
-bvoy,Shopify Rebellion,AD,405,405,405,405,390,성장형
-zeyzal,Shopify Rebellion,SUP,410,400,415,415,420,보호형
-impact,Team Liquid,TOP,435,425,435,440,415,한타형
-umti,Team Liquid,JUNGLE,425,425,435,425,415,교전형
-apa,Team Liquid,MID,420,420,430,425,405,성장형
-yeon,Team Liquid,AD,430,435,435,430,405,캐리형
-corejj,Team Liquid,SUP,435,420,435,440,450,이니시형
+sniper,100 Thieves,TOP,412,420,402,402,388,캐리형
+river,100 Thieves,JUNGLE,428,412,444,436,428,이니시형
+quid,100 Thieves,MID,428,444,428,420,392,캐리형
+meech,100 Thieves,AD,428,452,428,428,390,캐리형
+eyla,100 Thieves,SUP,428,402,444,452,452,이니시형
+fudge,Cloud9,TOP,444,428,420,428,397,안정형
+blaber,Cloud9,JUNGLE,452,428,460,452,444,교전형
+jojopyun,Cloud9,MID,452,452,452,444,407,캐리형
+berserker,Cloud9,AD,460,470,452,452,402,캐리형
+vulcan,Cloud9,SUP,428,407,444,452,465,이니시형
+rich,Dignitas,TOP,420,428,407,407,388,캐리형
+exyu,Dignitas,JUNGLE,407,397,420,412,407,교전형
+dove,Dignitas,MID,420,428,420,412,392,캐리형
+tomo,Dignitas,AD,420,444,420,412,390,캐리형
+isles,Dignitas,SUP,412,397,428,436,444,이니시형
+bwipo,FlyQuest,TOP,420,420,412,412,392,캐리형
+inspired,FlyQuest,JUNGLE,444,420,452,444,444,운영형
+jensen,FlyQuest,MID,436,428,444,436,407,캐리형
+massu,FlyQuest,AD,428,444,420,420,392,캐리형
+busio,FlyQuest,SUP,428,402,444,452,452,이니시형
+castle,Immortals,TOP,402,402,392,392,386,성장형
+armao,Immortals,JUNGLE,407,397,420,412,412,운영형
+mask,Immortals,MID,420,428,412,407,390,캐리형
+tactical,Immortals,AD,412,420,412,412,390,안정형
+olleh,Immortals,SUP,397,388,407,412,420,안정형
+dhokla,NRG,TOP,428,428,407,412,390,라인전형
+contractz,NRG,JUNGLE,428,407,436,428,420,교전형
+palafox,NRG,MID,428,428,428,420,397,캐리형
+fbi,NRG,AD,444,460,444,444,392,캐리형
+huhi,NRG,SUP,436,402,444,452,460,로밍형
+fakegod,Shopify Rebellion,TOP,407,407,392,392,386,안정형
+bugi,Shopify Rebellion,JUNGLE,407,402,420,412,407,교전형
+insanity,Shopify Rebellion,MID,407,412,407,402,388,성장형
+wildturtle,Shopify Rebellion,AD,388,390,388,386,382,안정형
+bvoy,Shopify Rebellion,AD,428,452,428,428,392,캐리형
+zeyzal,Shopify Rebellion,SUP,402,390,412,412,428,보호형
+impact,Team Liquid,TOP,436,428,412,420,397,한타형
+umti,Team Liquid,JUNGLE,402,397,412,407,407,운영형
+apa,Team Liquid,MID,420,444,420,412,392,캐리형
+yeon,Team Liquid,AD,428,436,428,428,392,캐리형
+corejj,Team Liquid,SUP,428,407,436,444,460,이니시형
