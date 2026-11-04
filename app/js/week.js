@@ -352,7 +352,18 @@
   }
   function resolveTrait(state, pend, optId) {
     var p = state.p, g = LP.data.db.traits.general;
-    if (pend.id === 'trait_notice') { var id = pend.data.id; if (p.traits.indexOf(id) < 0) p.traits.push(id); traitFeed(state, id, pend.options[0].sub); return '"' + R.traitName(id) + '" 특성이 붙었다.'; }
+    if (pend.id === 'trait_notice') {
+      var id = pend.data.id, out = null;
+      if (p.traits.indexOf(id) >= 0) return '';
+      // 부정 특성은 3개 제한 안에서 우선한다: 칸이 차 있으면 가장 늦게 얻은 긍정 특성을 밀어낸다
+      if (p.traits.length >= 3) {
+        for (var j = p.traits.length - 1; j >= 0; j--) if (!(g[p.traits[j]] && g[p.traits[j]].neg)) { out = p.traits[j]; break; }
+        if (!out) return '';
+        p.traits.splice(p.traits.indexOf(out), 1);
+      }
+      p.traits.push(id); traitFeed(state, id, pend.options[0].sub, out);
+      return '"' + R.traitName(id) + '" 특성이 붙었다.' + (out ? ' "' + R.traitName(out) + '" 특성은 사라졌다.' : '');
+    }
     if (pend.id === 'trait_pick') {
       if (optId === 'hold') return '이번에는 특성을 고르지 않았다.';
       var cid = optId.slice(2), cand = pend.data.cands.filter(function (x) { return x.id === cid; })[0];

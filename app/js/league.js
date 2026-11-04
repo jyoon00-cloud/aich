@@ -573,7 +573,17 @@
       } else {
         var br = state.world.st[stKey(seg, tier)];
         if (br && br.done) return;
-        out.push({ date: seg.start > state.date ? seg.start : state.date, end: seg.end, name: seg.name, kind: 'period', league: lg, note: team ? '진출 시' : '' });
+        var note = team ? '진출 시' : '', opp = null;
+        if (br && team) {
+          if (br.seeds.indexOf(team) < 0) note = '미진출';
+          else if (br.elim.some(function (r) { return r.indexOf(team) >= 0; })) note = '탈락';
+          else {
+            var cm = br.rounds[br.cur].matches.filter(function (m) { return m.w === null && (m.a === team || m.b === team); })[0];
+            if (cm) { opp = L.teamName(state, cm.a === team ? cm.b : cm.a); note = (br.cur === br.nRounds - 1 ? '결승' : (br.cur + 1) + '라운드') + ' Bo' + br.rounds[br.cur].bo; }
+            else note = '다음 라운드 대기';
+          }
+        }
+        out.push({ date: seg.start > state.date ? seg.start : state.date, end: seg.end, name: seg.name, kind: opp ? 'match' : 'period', opp: opp || undefined, bo: opp ? br.rounds[br.cur].bo : undefined, league: lg, note: note, fearless: seg.draft });
       }
     });
     [cal.msi, cal.worlds].forEach(function (cs) {

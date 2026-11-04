@@ -56,7 +56,7 @@
       if (/_u$/.test(id)) {
         db.traits.unique[id] = { id: id, name: cells[2], text: cells[3], fx: LP.rules.parseUniqueFx(cells[3]) };
       } else if (cells.length >= 6) {
-        db.traits.general[id] = { id: id, name: cells[2], cond: cells[3], text: cells[4] };
+        db.traits.general[id] = { id: id, name: cells[2], cond: cells[3], text: cells[4], neg: /부정 특성/.test(cells[4] || '') };
       }
     });
   }

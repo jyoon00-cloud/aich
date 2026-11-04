@@ -88,7 +88,7 @@
     var html = '<div class="panel next-card"><div class="hd"><h3>다음 일정</h3><span class="small muted">' + esc(L.phaseLabel(st)) + '</span></div>';
     if (nm) {
       var wk = Math.max(0, Math.round(S.diffDays(st.date, nm.date) / 7));
-      html += '<div class="when">' + md(nm.date) + ' 주 · ' + (wk === 0 ? '이번 주' : wk + '주 후') + ' · ' + esc(nm.name) + ' · Bo' + nm.bo + '</div><div class="what">vs ' + esc(nm.opp) + '</div>';
+      html += '<div class="when">' + md(nm.date) + ' 주 · ' + (wk === 0 ? '이번 주' : wk + '주 후') + ' · ' + esc(nm.name) + (nm.note ? ' ' + esc(nm.note) : '') + ' · Bo' + nm.bo + '</div><div class="what">vs ' + esc(nm.opp) + '</div>';
       var up2 = up.filter(function (x) { return x.kind === 'match' && x !== nm; }).slice(0, 2);
       if (up2.length) html += '<div class="small muted">이후 ' + up2.map(function (x) { return md(x.date) + ' ' + esc(x.opp); }).join(' · ') + '</div>';
     } else if (cur) {
@@ -128,7 +128,7 @@
     var up = L.upcoming(st), firstMatch = true, rows = [];
     past.forEach(function (x) { rows.push({ date: x.date, name: x.name, opp: x.opp, res: (x.draw ? '무 ' : x.win ? '승 ' : '패 ') + x.score, cls: x.win ? 'good' : x.draw ? '' : 'bad', past: true, bo: x.bo }); });
     up.forEach(function (x) {
-      if (x.kind === 'match') { rows.push({ date: x.date, name: x.name, opp: x.opp, res: 'Bo' + x.bo, next: firstMatch }); firstMatch = false; }
+      if (x.kind === 'match') { rows.push({ date: x.date, name: x.name + (x.note ? ' · ' + x.note : ''), opp: x.opp, res: 'Bo' + x.bo, next: firstMatch }); firstMatch = false; }
       else rows.push({ date: x.date, name: x.name, opp: md(x.date) + ' ~ ' + md(x.end), res: x.note || '', period: true });
     });
     rows.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
