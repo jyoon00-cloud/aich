@@ -12,7 +12,7 @@
   R.LEAGUES = ['LCK', 'LPL', 'LEC', 'LCS'];
   R.MIN_AGE = 17;            // 리그 출전 연령(LCK 만 17세, SPEC 3장: 상수 하나)
   R.POTENTIAL = 500;
-  R.STAGE_KO = { amateur: '무소속 아마추어', academy: '아카데미 연습생', cl: '2군', pro: '1군' };
+  R.STAGE_KO = { amateur: '무소속 아마추어', academy: '아카데미 연습생', cl: '2군', pro: '1군', retired: '은퇴' };
 
   R.clamp = function (v, a, b) { return Math.max(a, Math.min(b, v)); };
   R.ovr = function (s) { return Math.floor((s.lan + s.phy + s.skr + s.tf + s.vis) / 5); };

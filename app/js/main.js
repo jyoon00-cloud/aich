@@ -16,7 +16,18 @@
     });
   }
 
+  // 명예의 전당: 은퇴한 커리어를 이 기기에 남긴다(세이브와 별개, 최대 30명)
+  function hallList() { try { return JSON.parse(localStorage.getItem('lp2_hall') || '[]'); } catch (e) { return []; } }
+  function recordHall() {
+    var e = state && state.ended; if (!e || e.hallSaved) return;
+    var list = hallList();
+    list.push({ nick: state.p.nick, name: state.p.name, pos: state.p.pos, start: e.start, end: e.date, age: e.age, score: e.legacy.score, grade: e.legacy.grade, titles: e.titles.length, w: e.official.w, l: e.official.l, peak: e.peak });
+    list.sort(function (a, b) { return b.score - a.score; });
+    try { localStorage.setItem('lp2_hall', JSON.stringify(list.slice(0, 30))); } catch (x) { }
+    e.hallSaved = true;
+  }
   function afterStep(r, fromAuto) {
+    if (state.ended) recordHall();
     persist();
     if (state.pending) { handlePending(); return; }
     render();
@@ -79,7 +90,7 @@
     var sp = spanSel === 'match' || spanSel === 'season' ? spanSel : +spanSel;
     var plan = { action: mp.man.action, focus: mp.man.focus.slice(), auto: !!mp.man.auto };
     var out = W.autoRun(state, { span: sp, plan: plan, stops: state.prefs.stops });
-    var why = { event: '선택이 필요한 이벤트', match: '공식 경기 주', matchDone: '경기를 치렀습니다', grade: '능력치 등급이 올랐습니다', tier: '솔로랭크 티어가 바뀌었습니다', season: '시즌이 끝났습니다', weekly: '주간 요약', done: '완료' }[out.reason] || '';
+    var why = { event: '선택이 필요한 이벤트', match: '공식 경기 주', matchDone: '경기를 치렀습니다', grade: '능력치 등급이 올랐습니다', tier: '솔로랭크 티어가 바뀌었습니다', season: '시즌이 끝났습니다', weekly: '주간 요약', ended: '은퇴했습니다', done: '완료' }[out.reason] || '';
     UI.toast(out.weeks >= 1 ? out.weeks + '주 진행 · ' + why : why);
     persist();
     if (out.weeks >= 2 && N.hasAI()) {
@@ -91,7 +102,7 @@
   }
 
   // ---------- 화면 전환 ----------
-  function showTitle() { state = null; UI.renderTitle(S.hasSave()); }
+  function showTitle() { state = null; UI.renderTitle(S.hasSave(), hallList()); }
   function startNew() {
     UI.renderCreate({
       back: showTitle,
@@ -139,6 +150,7 @@
       ['세이브 내보내기 (JSON)', doExport], ['세이브 불러오기 (JSON)', doImport],
       ['설정 (AI 묘사·관전·밴픽·자동 진행)', function () { UI.settings(state, function () { persist(); render(); }); }],
       ['라이트/다크 전환', theme],
+      ['은퇴하기 (커리어 결산)', function () { if (state.ended) return; if (state.pending) { UI.toast('선택 대기 중에는 은퇴할 수 없습니다'); return; } if (confirm('정말 은퇴할까요? 커리어가 끝나고 결산 화면으로 넘어갑니다.')) { W.retire(state, '스스로'); afterStep(null); UI.setView({ tab: 'home' }); render(); } }],
       ['새 게임 (현재 세이브 삭제)', function () { if (confirm('현재 세이브를 지우고 새로 시작할까요?')) { S.clear(); startNew(); } }],
       ['처음 화면으로', showTitle]
     ];
@@ -179,12 +191,13 @@
     var lf = t.closest('[data-logf]');
     if (lf) { UI.setView({ logF: lf.dataset.logf, logN: 60 }); return render(); }
     if (t.closest('#log-more')) { UI.setView({ logN: UI.view.logN + 60 }); return render(); }
-    if (t.closest('#go-week')) return stepManual();
+    if (t.closest('#go-week')) return state.ended ? null : stepManual();
+    if (t.closest('#end-new')) { if (confirm('이 세이브를 지우고 새로 시작할까요? 명예의 전당 기록은 남습니다.')) { S.clear(); startNew(); } return; }
   });
   document.addEventListener('change', function (ev) {
     var t = ev.target;
     if (!state) return;
-    if (t.id === 'auto-go' && t.value) { var v = t.value; t.value = ''; runAuto(v); }
+    if (t.id === 'auto-go' && t.value && !state.ended) { var v = t.value; t.value = ''; runAuto(v); }
   });
 
   // ---------- 시작 ----------

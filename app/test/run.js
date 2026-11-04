@@ -138,5 +138,21 @@ async function runGame(year, pos, stats, weeks, opts) {
     if (full) assert(seen.indexOf('trait_replace') >= 0 && t.p.traits.length === 3, 'trait replace flow');
     assert(t.record.seas.lan[1] === 0, 'season stats reset');
   }
+  // 10) 은퇴: 메뉴 은퇴 → 결산, 이후 진행 불가, 세이브 왕복
+  { const t = S.deserialize(j1); const e = LP.week.retire(t, 'test');
+    assert(e && e.legacy && typeof e.legacy.score === 'number' && e.legacy.grade, 'retire summary');
+    assert(!t.career.team && t.ended, 'retired state');
+    assert.throws(() => LP.week.step(t, { action: 'train', focus: ['lan', 'phy'] }), 'step after retire');
+    assert.strictEqual(LP.week.autoRun(t, { span: 4, plan: { action: 'train', focus: [], auto: true }, stops: {} }).reason, 'ended');
+    const rt = S.serialize(t); assert.strictEqual(S.serialize(S.deserialize(rt)), rt, 'retire roundtrip');
+    console.log('retire', e.legacy.grade, e.legacy.score, JSON.stringify(e.legacy.parts)); }
+  // 11) 연말 은퇴 고민 이벤트(만 30세) → 은퇴 선택
+  { const t = S.deserialize(j1); t.p.birth = '1996-06-01'; let seen = false, guard = 0;
+    while (!t.ended && guard++ < 60) {
+      if (t.pending) { const pd = t.pending; if (pd.id === 'retire_think') { seen = true; LP.week.resolve(t, { option: 'retire', autoMatch: true }); continue; }
+        if (pd.kind === 'event') LP.week.resolve(t, { option: pd.options[0].id, autoMatch: true }); else LP.week.resolve(t, { pick: 'auto', autoMatch: true }); continue; }
+      LP.week.step(t, { action: 'train', focus: ['lan', 'phy'], autoMatch: true });
+    }
+    assert(seen && t.ended && !t.pending, 'retire_think flow'); }
   console.log('OK');
 })().catch(e => { console.error('FAIL', e && e.stack || e); process.exit(1); });

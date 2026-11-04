@@ -52,7 +52,7 @@
     bgDef.merits.concat(bgDef.costs).forEach(function (e) { if (e.t === 'fame') st.fame = R.clamp(st.fame + e.val, 0, 100); });
     // 챔피언 숙련도: 시그니처 3개(숙련 70) + 자동 5개(40~60)
     LP.mastery.genPlayer(st, rng, inp.sig.slice());
-    st.record.seas.year = year;
+    st.record.seas.year = year; st.startDate = year + '-01-01';
     // 솔로랭크: OVR에 맞는 MMR에서 시작
     st.soloq = { tier: '', lp: 0, mmr: Math.round(R.clamp(R.ovrToMmr(R.ovr(stats)) + rng.range(-100, 100), 0, R.RP_MAX)), w: 0, l: 0, totW: 0, totL: 0, season: year };
     LP.week.syncTier(st);

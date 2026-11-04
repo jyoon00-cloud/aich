@@ -422,6 +422,11 @@
       if (lost.length) S.addFeed(state, 'aging', { age: age, lost: lost }, p.nick + ' 선수도 어느덧 만 ' + age + '세. 새해를 맞아 ' + lost.join(', ') + '.', { tpl: 'aging' });
     }
     p.trainWeeks = 0; p.longInjury = false;
+    // 은퇴 고민: 만 27세 이상에서 OVR이 떨어졌거나 팀이 없거나 만 30세를 넘기면 매년 묻는다
+    var ovrNow = R.ovr(p.stats), peak = Math.max(r.peakOvr || 0, ovrNow); r.peakOvr = peak;
+    var why = age >= 30 ? '만 ' + age + '세가 됐다' : (age >= 27 && !c.team) ? '새 팀을 구하지 못했다' : (age >= 27 && ovrNow <= peak - 25) ? '전성기 OVR ' + peak + '에서 ' + ovrNow + '까지 내려왔다' : null;
+    if (why) queue.push({ kind: 'event', id: 'retire_think', title: '은퇴 고민', text: why + '. 선수 생활을 이어 갈지 정해야 한다.', data: {},
+      options: [{ id: 'go', label: '한 시즌 더 뛴다', sub: '커리어를 이어 간다' }, { id: 'retire', label: '은퇴한다', sub: '커리어를 마치고 결산을 본다' }] });
     // FA로 새해를 맞으면 무소속
     if (c.fa || (!c.team && c.stage !== 'amateur')) { c.stage = 'amateur'; c.fa = false; c.team = null; c.league = null; c.contract = null; S.addFeed(state, 'career', {}, '새 팀을 구하지 못해 무소속 아마추어로 새해를 맞았다.', { tpl: 'career' }); }
     L.newYear(state, newYear);
@@ -430,8 +435,40 @@
     if (queue.length) { state.pq = (state.pq || []).concat(queue); }
   }
 
+  // ---------- 은퇴·커리어 결산 ----------
+  // 레거시 점수: 월즈 우승 40 · MSI 15 · 리그 우승 10 · 월즈 준우승 10 · 올-프로 1st 8/2nd 4/3rd 2 · MVP 12 · 1군 주전 시즌 2
+  W.legacy = function (state) {
+    var r = state.record, parts = [], score = 0;
+    function add(label, n, pt) { if (n > 0) { parts.push({ label: label, n: n, pt: n * pt }); score += n * pt; } }
+    var worlds = r.titles.filter(function (t) { return /월드|Worlds/.test(t); }).length, msi = r.titles.filter(function (t) { return /MSI/.test(t); }).length;
+    var intlOther = r.intlTitles - worlds - msi, league = r.titles.length - worlds - msi - Math.max(0, intlOther);
+    var worldsRunner = r.awards.filter(function (t) { return /(월드|Worlds).*준우승/.test(t); }).length;
+    var ap = r.allPro || [0, 0, 0];
+    add('월즈 우승', worlds, 40); add('MSI 우승', msi, 15); add('기타 국제대회 우승', Math.max(0, intlOther), 8); add('리그 우승', league, 10);
+    add('월즈 준우승', worldsRunner, 10); add('올-프로 1st', ap[0], 8); add('올-프로 2nd', ap[1], 4); add('올-프로 3rd', ap[2], 2);
+    add('정규 시즌 MVP', r.mvps || 0, 12); add('1군 주전 시즌', r.proYears || 0, 2);
+    var grade = score >= 200 ? '역대 최고의 선수' : score >= 120 ? '레전드' : score >= 70 ? '명예의 전당' : score >= 35 ? '스타 플레이어' : score >= 12 ? '주전급 프로' : (r.official.w + r.official.l) > 0 ? '프로 경험자' : '이루지 못한 꿈';
+    return { score: score, grade: grade, parts: parts };
+  };
+  W.retire = function (state, why) {
+    if (state.ended) return state.ended;
+    var p = state.p, c = state.career, r = state.record;
+    if (c.stage === 'pro' && c.contract && c.contract.role === 'starter' && (r.seas.w + r.seas.l) > 0) r.proYears = (r.proYears || 0) + 1;  // 은퇴 시즌도 1군 주전 시즌으로 센다
+    var lg = W.legacy(state);
+    if (c.team) L.leaveTeam(state);
+    c.stage = 'retired';
+    var cur = r.seas || {};
+    var seasons = r.seasons.concat([{ year: +state.date.slice(0, 4), team: '(은퇴 시즌)', w: cur.w || 0, l: cur.l || 0, titles: [] }]).filter(function (x) { return x.w + x.l > 0 || x.titles && x.titles.length; });
+    state.ended = { date: state.date, age: S.age(state), why: why || '', ovr: R.ovr(p.stats), peak: Math.max(r.peakOvr || 0, R.ovr(p.stats)), legacy: lg,
+      official: { w: r.official.w, l: r.official.l }, kda: r.kda, titles: r.titles.slice(), awards: r.awards.slice(), seasons: seasons, start: state.startDate || null };
+    state.pending = null; state.pq = []; state.wk = null;
+    S.addFeed(state, 'career', { retire: true, grade: lg.grade, score: lg.score }, p.nick + ' 선수가 만 ' + state.ended.age + '세에 은퇴를 발표했다. 통산 ' + r.official.w + '승 ' + r.official.l + '패, 타이틀 ' + r.titles.length + '개. 평가: ' + lg.grade + '.', { tpl: 'career' });
+    return state.ended;
+  };
+
   // ---------- 공개 API ----------
   W.step = function (state, input) {
+    if (state.ended) throw new Error('은퇴한 커리어입니다');
     if (state.pending) throw new Error('선택 대기 중입니다');
     if (state.wk) throw new Error('진행 중인 주가 있습니다');
     S.rng(state);
@@ -452,6 +489,7 @@
       var msg;
       if (pend.id === 'stove') msg = resolveStove(state, pend, payload.option);
       else if (pend.id === 'trait_pick' || pend.id === 'trait_notice' || pend.id === 'trait_replace') msg = resolveTrait(state, pend, payload.option);
+      else if (pend.id === 'retire_think') { if (payload.option === 'retire') { state.pending = null; state.pq = []; W.retire(state, '은퇴 고민 끝에'); S.sync(state); return { pending: null, done: true, ended: true }; } msg = '한 시즌 더 도전하기로 했다.'; }
       else {
         var d = defOf(pend.id), opts = d.options(state, pend.data), o = opts.filter(function (x) { return x.id === payload.option; })[0] || opts[opts.length - 1];
         msg = o.apply(W.makeApi(state), pend.data);
@@ -475,6 +513,7 @@
     var weeks = 0, reason = 'done', startFeed = state.feed.length, startYear = +state.date.slice(0, 4), startIdx = state.feed.length;
     var guard = 0;
     while (guard++ < 400) {
+      if (state.ended) { reason = 'ended'; break; }
       if (state.pending) { reason = state.pending.kind === 'match' ? 'match' : 'event'; break; }
       var action = plan.action, focus = plan.auto ? lowestTwo(state) : plan.focus;
       if (state.p.status.injury > 0) action = 'rest';

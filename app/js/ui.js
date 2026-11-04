@@ -106,7 +106,22 @@
       '<button class="chip' + (man.auto ? ' on' : '') + '" data-k="auto" title="가장 낮은 능력치를 자동으로 집중">낮은 순 자동</button></div>' +
       '<div class="note" style="margin-top:4px">집중 ' + n + '개' + (man.auto ? ' · 가장 낮은 능력치를 자동으로 고릅니다' : '') + '</div>';
   }
+  function endedPanel(st) {
+    var e = st.ended, lg = e.legacy, p = st.p;
+    var html = '<div class="panel"><div class="hd"><h3>커리어 결산</h3><span class="small muted">' + esc(e.start ? e.start.slice(0, 4) : '') + ' ~ ' + esc(e.date.slice(0, 7)) + ' · 만 ' + e.age + '세 은퇴</span></div>' +
+      '<div class="what" style="font-size:22px;font-weight:700;margin:4px 0">' + esc(lg.grade) + '</div>' +
+      '<div class="small muted" style="margin-bottom:12px">' + esc(p.nick) + ' (' + esc(p.name) + ') · ' + R.POS_KO[p.pos] + ' · 레거시 점수 <span class="strong">' + lg.score + '</span> · 최고 OVR ' + e.peak + '</div>' +
+      '<div class="kv"><span>통산 공식전</span><span>' + e.official.w + '승 ' + e.official.l + '패' + (e.official.w + e.official.l ? ' (' + pct(e.official.w, e.official.w + e.official.l) + ')' : '') + '</span></div>' +
+      '<div class="kv"><span>통산 KDA</span><span>' + e.kda.k + '/' + e.kda.d + '/' + e.kda.a + '</span></div>' +
+      (e.titles.length ? '<div class="kv"><span>타이틀 ' + e.titles.length + '</span><span>' + esc(e.titles.join(', ')) + '</span></div>' : '') +
+      (e.awards.length ? '<div class="kv"><span>수상</span><span>' + esc(e.awards.join(', ')) + '</span></div>' : '');
+    if (lg.parts.length) html += '<table class="t" style="margin-top:12px"><thead><tr><th>레거시 항목</th><th class="n">횟수</th><th class="n">점수</th></tr></thead><tbody>' +
+      lg.parts.map(function (x) { return '<tr><td>' + esc(x.label) + '</td><td class="n">' + x.n + '</td><td class="n">' + x.pt + '</td></tr>'; }).join('') + '</tbody></table>';
+    html += '<div class="row" style="margin-top:16px"><button class="btn" id="end-new">새 커리어 시작</button><button class="btn sec" data-tab="player">기록 자세히</button></div></div>';
+    return html;
+  }
   function homeTab(st) {
+    if (st.ended) return endedPanel(st);
     var sp = st.prefs.speed, man = sp.manual || (sp.manual = { action: 'train', focus: ['lan', 'phy'], auto: false });
     var act = ACTS.filter(function (a) { return a.id === man.action; })[0];
     var html = nextCard(st);
@@ -277,11 +292,16 @@
     var fn = { home: homeTab, sched: schedTab, rank: rankTab, player: playerTab, log: logTab }[view.tab] || homeTab;
     $('#main').innerHTML = fn(st);
   };
-  UI.renderTitle = function (hasSave) {
+  function hallHtml(list) {
+    if (!list || !list.length) return '';
+    return '<div class="panel"><div class="hd"><h3>명예의 전당</h3><span class="small muted">이 기기에서 은퇴한 커리어</span></div><table class="t fixed"><colgroup><col style="width:28px"><col><col style="width:30%"><col style="width:52px"></colgroup><thead><tr><th>#</th><th>선수</th><th>평가</th><th class="n">점수</th></tr></thead><tbody>' +
+      list.slice(0, 10).map(function (h, i) { return '<tr><td>' + (i + 1) + '</td><td class="ell">' + esc(h.nick) + ' <span class="small muted">' + R.POS_KO[h.pos] + ' · ' + esc((h.start || '').slice(0, 4)) + '~' + esc((h.end || '').slice(0, 4)) + ' · 타이틀 ' + h.titles + '</span></td><td class="ell">' + esc(h.grade) + '</td><td class="n strong">' + h.score + '</td></tr>'; }).join('') + '</tbody></table></div>';
+  }
+  UI.renderTitle = function (hasSave, hall) {
     document.body.dataset.mode = 'plain';
     $('#main').innerHTML = '<div class="panel stack"><h2>롤프로 시뮬레이터</h2><p class="muted">15세 무소속 아마추어에서 출발해 아카데미, 2군, 1군 프로, 월즈까지. 모든 결과는 규칙이 정하고 AI는 묘사만 합니다. AI 키가 없어도 끝까지 플레이됩니다.</p>' +
       '<button class="btn block" id="t-new">새 게임</button>' + (hasSave ? '<button class="btn sec block" id="t-cont">이어하기</button>' : '') +
-      '<button class="btn sec block" id="t-import">세이브 불러오기 (JSON)</button><button class="btn ghost block" id="t-set">AI 묘사 설정 (선택)</button></div>';
+      '<button class="btn sec block" id="t-import">세이브 불러오기 (JSON)</button><button class="btn ghost block" id="t-set">AI 묘사 설정 (선택)</button></div>' + hallHtml(hall);
   };
 
   // ---------- 생성 ----------
