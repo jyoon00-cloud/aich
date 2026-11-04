@@ -159,7 +159,20 @@
     var hist = L.yearHistory(st);
     if (hist.length) html += '<div class="panel"><h3>' + st.date.slice(0, 4) + '년 플레이오프·국제대회 결과</h3><table class="t"><thead><tr><th>대회</th><th>우승</th><th>준우승</th></tr></thead><tbody>' +
       hist.map(function (h) { return '<tr><td>' + esc(h.name) + (h.tier === 'cl' ? ' (2군)' : '') + '</td><td>' + esc(h.champion) + '</td><td>' + esc(h.runnerUp) + '</td></tr>'; }).join('') + '</tbody></table></div>';
+    html += awardsPanel(st, lg);
     return html;
+  }
+
+  // 시즌 시상: 이번 해가 있으면 이번 해, 없으면 가장 최근 해
+  function awardsPanel(st, lg) {
+    var aw = st.world.awards || {}, years = Object.keys(aw).sort(), y = years[years.length - 1];
+    if (!y || !aw[y][lg]) return '';
+    var a = aw[y][lg], rows = R.POS.map(function (pos) {
+      return '<tr><td class="nw">' + R.POS_KO[pos] + '</td>' + a.teams.map(function (t) { var e = t.filter(function (x) { return x.pos === pos; })[0]; return '<td class="ell' + (e && e.me ? ' strong' : '') + '">' + (e ? esc(e.name) + '<br><span class="small muted">' + esc(e.team) + '</span>' : '-') + '</td>'; }).join('') + '</tr>';
+    }).join('');
+    return '<div class="panel"><div class="hd"><h3>' + y + ' ' + lg + ' 시즌 시상</h3>' + (a.mvp ? '<span class="small">MVP <span class="strong">' + esc(a.mvp.name) + '</span> · ' + esc(a.mvp.team) + '</span>' : '') + '</div>' +
+      '<table class="t fixed"><colgroup><col style="width:52px"><col><col><col></colgroup><thead><tr><th></th><th>1st</th><th>2nd</th><th>3rd</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+      '<div class="note" style="margin-top:8px">올-프로 팀은 스토브리그 직전에 그해 정규 대회 승률, 플레이오프·국제대회 성적, 개인 기량으로 뽑습니다.</div></div>';
   }
 
   // ---------- 선수 ----------
@@ -204,7 +217,8 @@
       '<tr class="me"><td>' + yr + '</td><td class="ell">' + esc(c.team ? L.teamName(st, c.team) : '무소속') + '</td><td class="n">' + cur.w + '-' + cur.l + '</td><td>' + tinfo.text + ' (진행 중)</td></tr>' +
       seasons.map(function (s) { return '<tr><td>' + s.year + '</td><td class="ell">' + esc(s.team) + '</td><td class="n">' + s.w + '-' + s.l + '</td><td>' + esc(s.tier) + '</td></tr>' + (s.titles && s.titles.length ? '<tr><td></td><td colspan="3" class="small muted">' + esc(s.titles.join(', ')) + '</td></tr>' : ''); }).join('') + '</tbody></table>' +
       '<div class="kv" style="margin-top:8px"><span>통산 공식전</span><span>' + rec.official.w + '승 ' + rec.official.l + '패 · 스크림 ' + rec.scrim.w + '-' + rec.scrim.l + '</span></div>' +
-      (rec.titles.length ? '<div class="kv"><span>타이틀</span><span>' + esc(rec.titles.join(', ')) + '</span></div>' : '') + '</div>';
+      (rec.titles.length ? '<div class="kv"><span>타이틀</span><span>' + esc(rec.titles.join(', ')) + '</span></div>' : '') +
+      (rec.awards.length ? '<div class="kv"><span>수상</span><span>' + esc(rec.awards.slice().reverse().join(', ')) + '</span></div>' : '') + '</div>';
     return html;
   }
 
@@ -234,7 +248,7 @@
     var fl = view.logF, list = st.feed.filter(function (e) {
       if (e.kind === 'adapt') return false;
       if (fl === 'match') return e.kind === 'match';
-      if (fl === 'event') return ['event', 'contract', 'trait', 'role', 'career', 'aging', 'stove', 'retire', 'league', 'season', 'start'].indexOf(e.kind) >= 0;
+      if (fl === 'event') return ['event', 'contract', 'trait', 'role', 'career', 'aging', 'stove', 'retire', 'league', 'season', 'start', 'award'].indexOf(e.kind) >= 0;
       if (fl === 'week') return e.kind === 'week';
       return true;
     }).reverse();

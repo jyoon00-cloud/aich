@@ -205,6 +205,8 @@
     // 이벤트 후보: 스토브 -> 일반
     var cal = L.calendar(+state.date.slice(0, 4));
     if (!state.world.stoveDone[+state.date.slice(0, 4)] && state.date >= cal.stoveStart) {
+      var aw = L.seasonAwards(state, +state.date.slice(0, 4));
+      if (aw && aw.mine.length) wk.notes = (wk.notes || []).concat(aw.mine.map(function (x) { return x + ' 선정'; }));
       L.stove(state);
       var sp = stovePending(state);
       if (sp) wk.evq.push({ stove: sp });

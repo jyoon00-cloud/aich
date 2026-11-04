@@ -83,6 +83,10 @@ async function runGame(year, pos, stats, weeks, opts) {
   const j1 = S.serialize(a.st);
   console.log('2024 MID: date', a.st.date, 'stage', a.st.career.stage, 'ovr', R.ovr(a.st.p.stats), 'official', JSON.stringify(a.st.record.official), 'titles', a.st.record.titles.length, 'events', a.log.events, 'matches', a.log.matches, JSON.stringify(a.log.stages));
   assert(S.diffDays('2024-01-01', a.st.date) === 156 * 7, 'total days');
+  // 1b) 시즌 시상: 지난 두 해 모든 리그에 올-프로 1st~3rd(포지션 5개)와 MVP
+  for (const y of [2024, 2025]) { const aw = a.st.world.awards[y]; assert(aw, 'awards ' + y);
+    R.LEAGUES.forEach(lg => { assert(aw[lg].teams.length === 3 && aw[lg].teams.every(t => t.length === 5), 'all-pro ' + lg + y); assert(aw[lg].mvp && aw[lg].mvp.name, 'mvp ' + lg); }); }
+  console.log('awards', JSON.stringify(a.st.record.awards));
   // 2) 세이브 왕복
   const re = S.deserialize(j1);
   assert.strictEqual(S.serialize(re), j1, 'save roundtrip');

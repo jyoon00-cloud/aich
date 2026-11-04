@@ -480,7 +480,7 @@
       { id: 'wait', label: '묵묵히 기다린다', apply: function () { return '기회를 기다리기로 했다.'; } }]; } });
 
   ev({ id: 'transfer', title: '이적 제안', cd: 24, scout: true,
-    prob: function (s, api) { return (inPro(s) && s.fame >= 20 && api.month() >= 6 && api.month() <= 10) ? 3 : 0; },
+    prob: function (s, api) { return (inPro(s) && s.fame >= 20 && api.month() === 6) ? 7 : 0; },  // 여름 이적 시장(MSI 뒤 6월)만. 스토브리그 이적은 계약 만료 이벤트가 맡는다
     data: function (s, api) { var of = api.offers(s.career.stage, 2, false, true); return of.length ? { offers: of } : null; },
     text: function (s, d) { return '다른 팀에서 이적 제안이 왔다. 지금 팀과의 계약을 깨야 할 수 있다.'; },
     options: function (s, d) { return d.offers.map(function (o, i) { return { id: 'o' + i, label: o.teamName + ' (' + o.league + ') · 연봉 ' + R.fmtMoney(o.salary) + ' · ' + (o.role === 'starter' ? '주전' : '후보'),

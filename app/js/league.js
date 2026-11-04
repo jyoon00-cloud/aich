@@ -489,6 +489,7 @@
       }
     });
   };
+  function tourLabel(m) { return m.intl ? m.name : m.year + ' ' + (m.name.indexOf(m.league) === 0 ? '' : m.league + ' ') + m.name; }
   function recordBracketDone(state, st, silent) {
     st.recorded = true;
     var w = state.world, m = st.meta, champ = st.champion, runner = st.place[1];
@@ -498,14 +499,14 @@
     if (mine && played > 0 && m.tier === (state.career.stage === 'cl' ? 'cl' : 'pro')) {
       var tn = w.teams[mine] ? w.teams[mine].name : '';
       if (champ === mine) {
-        var title = m.intl ? m.name + ' 우승' : m.year + ' ' + (m.name.indexOf(m.league) === 0 ? '' : m.league + ' ') + m.name + ' 우승';
+        var title = tourLabel(m) + ' 우승';
         state.record.titles.push(title);
         if (m.intl) state.record.intlTitles++; else state.record.leagueTitles++;
         state.fame = R.clamp(state.fame + (m.intl ? 15 : 6), 0, 100);
         state.record.titleSeen = true;
       } else if (runner === mine) {
         state.record.finalsLost++;
-        state.record.awards.push(m.year + ' ' + m.name + ' 준우승');
+        state.record.awards.push(tourLabel(m) + ' 준우승');
         state.fame = R.clamp(state.fame + 2, 0, 100);
       }
     }
@@ -593,6 +594,81 @@
     if (cal.stoveStart >= state.date) out.push({ date: cal.stoveStart, end: year + '-12-31', name: '스토브리그', kind: 'period', league: null });
     out.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : (a.kind === 'match' ? -1 : 1); });
     return out;
+  };
+
+  // ---------- 시즌 시상 (스토브 직전, 로스터가 바뀌기 전) ----------
+  // 팀 점수 = 그해 정규 대회 세트 승률(0~100) + 플레이오프·국제대회 성적. 선수 점수 = OVR + 팀 점수×0.6 + 경기력 흔들림(±6)
+  // 내 선수는 흔들림 대신 이번 시즌 KDA·POM 비율을 쓴다. 포지션별 상위 3명이 올-프로 1st·2nd·3rd, 전체 1위가 MVP.
+  function teamYearScore(state, lg, year) {
+    var cal = L.calendar(year), w = state.world, sc = {};
+    w.leagues[lg].forEach(function (id) { sc[id] = { gw: 0, gl: 0, bonus: 0 }; });
+    (cal.leagues[lg] || []).forEach(function (seg) {
+      if (seg.kind !== 'reg') return;
+      var st = w.st[stKey(seg, 'pro')]; if (!st) return;
+      Object.keys(st.stand).forEach(function (id) { if (sc[id]) { sc[id].gw += st.stand[id].gw; sc[id].gl += st.stand[id].gl; } });
+    });
+    w.history.forEach(function (h) {
+      if (String(h.year) !== String(year) || h.tier !== 'pro') return;
+      var big = h.intl === 'worlds' ? [14, 7] : h.intl ? [7, 3] : h.league === lg ? [8, 4] : null;
+      if (!big) return;
+      if (sc[h.champion]) sc[h.champion].bonus += big[0];
+      if (h.runnerUp && sc[h.runnerUp]) sc[h.runnerUp].bonus += big[1];
+    });
+    var out = {};
+    Object.keys(sc).forEach(function (id) { var x = sc[id], g = x.gw + x.gl; out[id] = (g ? x.gw / g * 100 : 50) + x.bonus; });
+    return out;
+  }
+  L.seasonAwards = function (state, year) {
+    var w = state.world, rng = S.rng(state), c = state.career, p = state.p, seas = state.record.seas;
+    w.awards = w.awards || {};
+    if (w.awards[year]) return null;
+    var res = {}, mine = null;
+    R.LEAGUES.forEach(function (lg) {
+      var ts = teamYearScore(state, lg, year), cand = {};
+      POS.forEach(function (pos) { cand[pos] = []; });
+      w.leagues[lg].forEach(function (tid) {
+        var s = L.starters(state, tid);
+        POS.forEach(function (pos) {
+          var x = s[pos]; if (!x) return;
+          var perf;
+          if (x.isPlayer) {
+            var sets = seas.w + seas.l; if (sets < 10) return;
+            var kda = (seas.k + seas.a) / Math.max(1, seas.d), pomR = (seas.pom || 0) / sets;
+            perf = R.clamp((kda - 3.5) * 2.5, -8, 10) + R.clamp(pomR * 25, 0, 10) - 4;
+          } else perf = rng.range(-6, 6);
+          cand[pos].push({ id: x.isPlayer ? 'PLAYER' : x.id, name: x.name, team: tid, teamName: L.teamName(state, tid), score: Math.round(R.ovr(x.stats) + ts[tid] * 0.6 + perf), isPlayer: !!x.isPlayer });
+        });
+      });
+      var teams = [[], [], []], mvp = null, mvpPos = null;
+      POS.forEach(function (pos) {
+        cand[pos].sort(function (a, b) { return b.score - a.score; });
+        for (var i = 0; i < 3; i++) {
+          var e = cand[pos][i]; if (!e) continue;
+          teams[i].push({ pos: pos, name: e.name, team: e.teamName, me: e.isPlayer });
+          if (e.isPlayer) mine = { lg: lg, rank: i + 1, pos: pos };
+          if (i === 0 && (!mvp || e.score > mvp.score)) { mvp = e; mvpPos = pos; }
+        }
+      });
+      res[lg] = { teams: teams, mvp: mvp ? { name: mvp.name, team: mvp.teamName, pos: mvpPos, me: mvp.isPlayer } : null };
+      if (mvp && mvp.isPlayer) mine.mvp = true;
+    });
+    w.awards[year] = res;
+    var got = [];
+    if (mine && mine.rank) {
+      var lbl = year + ' ' + mine.lg + ' 올-프로 ' + ['1st', '2nd', '3rd'][mine.rank - 1] + ' 팀';
+      state.record.awards.push(lbl); got.push(lbl);
+      state.record.allPro = state.record.allPro || [0, 0, 0]; state.record.allPro[mine.rank - 1]++;
+      state.fame = R.clamp(state.fame + [6, 3, 1][mine.rank - 1], 0, 100);
+    }
+    if (mine && mine.mvp) {
+      var ml = year + ' ' + mine.lg + ' 정규 시즌 MVP';
+      state.record.awards.push(ml); got.push(ml); state.record.mvps = (state.record.mvps || 0) + 1;
+      state.fame = R.clamp(state.fame + 10, 0, 100); state.community = R.clamp(state.community + 5, -100, 100);
+    }
+    var lg0 = c.league || 'LCK', r0 = res[lg0];
+    var mvpTxt = r0 && r0.mvp ? r0.mvp.name + '(' + r0.mvp.team + ')' : '없음';
+    S.addFeed(state, 'award', { year: year, league: lg0, mvp: mvpTxt, mine: got }, year + ' ' + lg0 + ' 시상: MVP ' + mvpTxt + '.' + (got.length ? ' ' + p.nick + ' 선수는 ' + got.map(function (g) { return g.replace(year + ' ', ''); }).join(', ') + '에 선정됐다.' : ''));
+    return { league: lg0, res: res, mine: got };
   };
 
   // ---------- 선수 변화 도우미 (NPC 에이징·성장) ----------

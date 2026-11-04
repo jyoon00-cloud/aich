@@ -456,7 +456,7 @@
     res.sets.push(set);
     if (set.win) res.sa++; else res.sb++;
     res.kda.k += set.kda.k; res.kda.d += set.kda.d; res.kda.a += set.kda.a; res.perf += set.perf;
-    if (set.pom) res.pomCount++;
+    if (set.pom) { res.pomCount++; state.record.seas.pom = (state.record.seas.pom || 0) + 1; }
     // 기록
     var rec = state.record, seas = rec.seas;
     if (set.win) { rec.official.w++; seas.w++; } else { rec.official.l++; seas.l++; }
