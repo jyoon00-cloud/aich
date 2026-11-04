@@ -798,6 +798,17 @@
   function cnt(w, team, pos) { return team.players.filter(function (id) { return id !== 'PLAYER' && w.npcs[id].pos === pos; }).length; }
 
   // ---------- 입단 제안·계약 ----------
+  // 시장 가치 배율: 올해와 지난해 수상·우승이 연봉 제안을 끌어올린다(올해 실적 100%, 지난해 50%)
+  L.marketMul = function (state) {
+    var y = +state.date.slice(0, 4), r = state.record, mul = 1;
+    function w(s) { var m = /^(\d{4})/.exec(s) || /(\d{4})$/.exec(s); var yy = m ? +m[1] : y; return yy === y ? 1 : yy === y - 1 ? 0.5 : 0; }
+    r.awards.forEach(function (a) {
+      var k = w(a); if (!k) return;
+      if (/정규 시즌 MVP/.test(a)) mul += 0.3 * k; else if (/올-프로 1st/.test(a)) mul += 0.25 * k; else if (/올-프로 2nd/.test(a)) mul += 0.12 * k; else if (/올-프로 3rd/.test(a)) mul += 0.05 * k;
+    });
+    r.titles.forEach(function (t) { var k = w(t); if (!k) return; mul += (/월드|Worlds/.test(t) ? 0.3 : /MSI/.test(t) ? 0.15 : 0.1) * k; });
+    return Math.round(Math.min(mul, 1.6) * 100) / 100;
+  };
   L.offers = function (state, kind, n, checkOnly, transfer) {
     var w = state.world, rng = S.rng(state), p = state.p, ovr = R.ovr(p.stats), year = +state.date.slice(0, 4), out = [], cand = [];
     var stage = kind === 'academy' ? 'academy' : kind;
@@ -818,6 +829,7 @@
       if (stage === 'pro' && role === 'sub' && !transfer && rng.chance(50)) continue;
       var lgn = pt.league, years = stage === 'academy' ? 1 : rng.range(1, 3);
       var sal = R.rollSalary(rng, lgn, year, ovr, stage === 'pro' ? 'pro' : stage, role, state.fame);
+      if (stage !== 'academy') sal = Math.round(sal * L.marketMul(state) / 100) * 100;
       out.push({ team: team.id, teamName: team.name, league: lgn, stage: stage, role: role, salary: sal, years: years });
     }
     return out;

@@ -151,16 +151,26 @@
     team.players.forEach(function (id) { if (id === 'PLAYER') return; var x = state.world.npcs[id]; if (x && x.pos === p.pos && (!cur || R.ovr(x.stats) > R.ovr(cur.stats))) cur = x; });
     var role = c.stage === 'academy' ? 'sub' : (!cur || ovr >= R.ovr(cur.stats) - 5 ? 'starter' : 'sub');
     var years = rng.range(1, 3);
-    var own = { team: c.team, teamName: team.name, league: c.league, stage: c.stage, role: role, years: c.stage === 'academy' ? 1 : years, salary: R.rollSalary(rng, c.league, year, ovr, c.stage, role, state.fame) };
+    var mm = c.stage === 'academy' ? 1 : L.marketMul(state);
+    var own = { team: c.team, teamName: team.name, league: c.league, stage: c.stage, role: role, years: c.stage === 'academy' ? 1 : years, salary: Math.round(R.rollSalary(rng, c.league, year, ovr, c.stage, role, state.fame) * mm / 100) * 100 };
+    // 연봉 인상 요구: 성공률 = 40 + 말솜씨 + 코치 신뢰 + 인지도 + 실적
+    var askRate = R.clamp(Math.round(40 + 10 * (p.speech - 3) + (L.rel(state).coach - 50) * 0.6 + state.fame / 5 + (mm - 1) * 40), 10, 90);
+    var ask = Math.round(own.salary * 1.25 / 100) * 100;
     var offers = c.stage === 'academy' ? L.offers(state, 'cl', 2) : L.offers(state, c.stage, 2, false, true);
-    return { kind: 'event', id: 'stove', title: '계약 만료 · 스토브리그', text: team.name + '과의 계약이 만료된다. 재계약, 다른 팀 제안, FA 중에서 정해야 한다.', data: { own: own, offers: offers },
-      options: [{ id: 'own', label: '재계약 · ' + team.name + ' · 연봉 ' + R.fmtMoney(own.salary) + ' · ' + (own.role === 'starter' ? '주전' : '후보') + ' · ' + own.years + '년' }]
+    return { kind: 'event', id: 'stove', title: '계약 만료 · 스토브리그', text: team.name + '과의 계약이 만료된다. 재계약, 다른 팀 제안, FA 중에서 정해야 한다.', data: { own: own, offers: offers, ask: ask, askRate: askRate },
+      options: [{ id: 'own', label: '재계약 · ' + team.name + ' · 연봉 ' + R.fmtMoney(own.salary) + ' · ' + (own.role === 'starter' ? '주전' : '후보') + ' · ' + own.years + '년', sub: mm > 1 ? '올해 실적 반영 ×' + mm : '' }]
+        .concat(c.stage === 'academy' ? [] : [{ id: 'ask', label: '연봉 인상을 요구한다 · ' + R.fmtMoney(ask) + ' (+25%)', sub: '성공률 약 ' + askRate + '% · 실패하면 원래 조건으로 재계약하고 코치 신뢰가 떨어진다' }])
         .concat(offers.map(function (o, i) { return { id: 'o' + i, label: o.teamName + ' (' + o.league + ') · 연봉 ' + R.fmtMoney(o.salary) + ' · ' + (o.role === 'starter' ? '주전' : '후보') + ' · ' + o.years + '년' }; }))
         .concat([{ id: 'fa', label: 'FA로 나가 더 좋은 조건을 기다린다' }]) };
   }
   function resolveStove(state, pend, optId) {
     var api = W.makeApi(state), d = pend.data, msg;
     if (optId === 'own') msg = api.join(d.own);
+    else if (optId === 'ask') {
+      var o2 = JSON.parse(JSON.stringify(d.own));
+      if (S.rng(state).int(100) <= d.askRate) { o2.salary = d.ask; msg = '협상 끝에 인상안을 받아 냈다. ' + api.join(o2); L.relAdd(state, 0, -2); }
+      else { msg = '구단이 인상 요구를 거절했다. ' + api.join(o2); L.relAdd(state, 0, -8); }
+    }
     else if (optId === 'fa') {
       L.leaveTeam(state); state.career.fa = true;
       msg = 'FA 시장으로 나왔다. 구단들의 연락을 기다린다.';
@@ -431,6 +441,7 @@
       if (lost.length) S.addFeed(state, 'aging', { age: age, lost: lost }, p.nick + ' 선수도 어느덧 만 ' + age + '세. 새해를 맞아 ' + lost.join(', ') + '.', { tpl: 'aging' });
     }
     p.trainWeeks = 0; p.longInjury = false;
+    state.fame = Math.round(state.fame * 0.85);   // 인지도는 해마다 15% 식는다. 계속 보여 줘야 유지된다
     // 은퇴 고민: 만 27세 이상에서 OVR이 떨어졌거나 팀이 없거나 만 30세를 넘기면 매년 묻는다
     var ovrNow = R.ovr(p.stats), peak = Math.max(r.peakOvr || 0, ovrNow); r.peakOvr = peak;
     var why = age >= 30 ? '만 ' + age + '세가 됐다' : (age >= 27 && !c.team) ? '새 팀을 구하지 못했다' : (age >= 27 && ovrNow <= peak - 25) ? '전성기 OVR ' + peak + '에서 ' + ovrNow + '까지 내려왔다' : null;
