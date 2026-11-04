@@ -213,6 +213,7 @@
       '<div class="kv"><span>소속</span><span>' + esc(teamLine(st)) + '</span></div>' +
       '<div class="kv"><span>계약</span><span>' + (c.contract ? R.fmtMoney(c.contract.salary) + ' · ~' + c.contract.end.slice(0, 7) : '없음') + '</span></div>' +
       '<div class="kv"><span>자산</span><span>' + R.fmtMoney(c.money) + '</span></div>' +
+      (c.team ? (function () { var rl = L.rel(st); return '<div class="kv"><span>팀 케미 / 코치 신뢰</span><span>' + L.relWord(rl.chem) + ' ' + Math.round(rl.chem) + ' / ' + L.relWord(rl.coach) + ' ' + Math.round(rl.coach) + '</span></div>'; })() : '') +
       '<div class="kv"><span>인지도 / 여론</span><span>' + st.fame + ' / ' + sg(st.community) + '</span></div>' +
       '<div class="kv"><span>배경</span><span>' + esc(p.bg.name) + '</span></div>' +
       '<div class="kv"><span>성격</span><span>' + esc(p.personality.join(' · ')) + '</span></div>' +
@@ -428,7 +429,7 @@
       '<div class="sb-note small">' + (poms.length ? '<span class="strong">POM</span> ' + poms.map(function (n) { return n + '세트'; }).join(', ') : '<span class="muted">POM 없음</span>') + (res.mvp ? ' · <span class="strong">시리즈 MVP</span>' : '') +
       ' · 시리즈 KDA ' + res.kda.k + '/' + res.kda.d + '/' + res.kda.a + '</div>' +
       '<button class="link" id="r-toggle" aria-expanded="false">판정 상세 보기</button><div class="detail" id="r-detail" hidden>' +
-      '<div class="small muted" style="margin-bottom:8px">컨디션 ' + esc(res.cond.label) + ' (2d6=' + res.cond.roll + ')' + (res.adapt ? ' · 적응 ' + esc(res.adapt.label) + ' ' + res.adapt.pen : '') + (res.intlPen ? ' · 첫 큰 무대 −10' : '') + '</div>' +
+      '<div class="small muted" style="margin-bottom:8px">컨디션 ' + esc(res.cond.label) + ' (2d6=' + res.cond.roll + ')' + (res.adapt ? ' · 적응 ' + esc(res.adapt.label) + ' ' + res.adapt.pen : '') + (res.intlPen ? ' · 첫 큰 무대 −10' : '') + (res.sets[0] && res.sets[0].chem !== undefined ? ' · 팀 케미 ' + Math.round(res.sets[0].chem) + ' (한타 ' + sg(Math.round((res.sets[0].chem - 50) / 10)) + ')' : '') + '</div>' +
       res.sets.map(function (s, i) {
         return '<div class="strong" style="margin-top:8px">' + (i + 1) + '세트 · 밴 ' + esc(s.bans.mine.map(LP.match.champKo).join(', ')) + ' / ' + esc(s.bans.theirs.map(LP.match.champKo).join(', ')) + (s.sigPick ? ' · 시그니처 +10' : '') + '</div>' +
           '<table class="t fixed"><colgroup><col style="width:25%"><col style="width:25%"><col style="width:16%"><col style="width:14%"><col style="width:20%"></colgroup><thead><tr><th>장면</th><th>능력치 비교</th><th class="n">성공률</th><th class="n">주사위</th><th class="n">결과</th></tr></thead><tbody>' +

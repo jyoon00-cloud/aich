@@ -89,7 +89,9 @@
     for (var i = 0; i < nLane; i++) plan.push('lan');
     for (i = 0; i < nSkr; i++) plan.push('skr');
     for (i = 0; i < nTf; i++) plan.push('tf');
-    var base = (o.myPower - o.oppPower) * 0.03;
+    var chem = state.career.team ? L.rel(state).chem : 50, chemTf = Math.round((chem - 50) / 10);   // 케미: 시작 점수 ±0.4, 한타 ±5
+    set.chem = chem;
+    var base = (o.myPower - o.oppPower) * 0.03 + (chem - 50) * 0.008;
     var score = base, prevFail = false, failStreak = 0, tfSeen = 0;
     var kda = { k: 0, d: 0, a: 0 }, perf = 0;
     var ad = o.adapt, adaptPen = ad ? ad.pen + (ad.bonusLeft > 0 ? 10 : 0) : 0;
@@ -138,7 +140,8 @@
           else { var bonus = (a ? 0 : 0); sumMe += (a ? mix('tf', a.stats) : 380) + champBonus(cA, 'tf', phase, meta, true) + (fxP.teamBoost && (!fxP.teamBoostLast || o.decider) ? fxP.teamBoost : 0); }
           sumOp += (b ? mix('tf', b.stats) : 380) + champBonus(cB, 'tf', phase, meta, true) + (b ? R.traitScene(sideFx(b), ctx) : 0);
         });
-        meEff = sumMe / 5; opEff = sumOp / 5 + oh / 5;
+        meEff = sumMe / 5 + chemTf; opEff = sumOp / 5 + oh / 5;
+        mePart.chem = chemTf;
         opPart = { stat: Math.round(opEff - oh / 5), hidden: Math.round(oh / 5) };
         mePart.avg = true;
       } else {
@@ -344,6 +347,13 @@
     var ids = Object.keys(score).filter(function (id) { return !banned[id] && !blocked[id] && LP.data.db.champs[id] && LP.data.db.champs[id].release <= state.date; });
     var noisy = {}; ids.forEach(function (id) { noisy[id] = score[id] + rng.gauss(0, 9); });
     ids.sort(function (a, b) { return noisy[b] - noisy[a]; });
+    if (ids.length < n) { // 피어리스 후반처럼 후보가 모자라면 메타 티어 순으로 채운다
+      var TR = { S: 4, A: 3, B: 2, C: 1 };
+      var more = Object.keys(meta).filter(function (id) { return ids.indexOf(id) < 0 && !banned[id] && !blocked[id] && LP.data.db.champs[id] && LP.data.db.champs[id].release <= state.date; });
+      more.sort(function (a, b) { return (TR[meta[b].tier] || 0) - (TR[meta[a].tier] || 0) || (a < b ? -1 : 1); });
+      if (ids.length + more.length < n) more = more.concat(Q.released(state.date).map(function (c) { return c.id; }).filter(function (id) { return ids.indexOf(id) < 0 && more.indexOf(id) < 0 && !banned[id] && !blocked[id]; }));
+      ids = ids.concat(more.slice(0, n - ids.length));
+    }
     return ids.slice(0, n);
   }
   function npcPick(state, rng, ref, pos, meta, taken, oppIds, allyIds) {

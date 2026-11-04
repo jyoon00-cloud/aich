@@ -87,6 +87,8 @@ async function runGame(year, pos, stats, weeks, opts) {
   for (const y of [2024, 2025]) { const aw = a.st.world.awards[y]; assert(aw, 'awards ' + y);
     R.LEAGUES.forEach(lg => { assert(aw[lg].teams.length === 3 && aw[lg].teams.every(t => t.length === 5), 'all-pro ' + lg + y); assert(aw[lg].mvp && aw[lg].mvp.name, 'mvp ' + lg); }); }
   console.log('awards', JSON.stringify(a.st.record.awards));
+  // 1c) 팀 케미·코치 신뢰 0~100
+  { const rl = LP.league.rel(a.st); assert(rl.chem >= 0 && rl.chem <= 100 && rl.coach >= 0 && rl.coach <= 100, 'rel range'); console.log('rel', JSON.stringify(rl)); }
   // 2) 세이브 왕복
   const re = S.deserialize(j1);
   assert.strictEqual(S.serialize(re), j1, 'save roundtrip');

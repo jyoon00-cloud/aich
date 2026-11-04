@@ -835,6 +835,18 @@
     if (offer.stage === 'cl' && !p.adapt.cl) p.adapt.cl = null;
     return offer.teamName + (offer.stage === 'academy' ? ' 연습생' : offer.stage === 'cl' ? ' 2군' : ' 1군') + ' 입단 (' + (offer.role === 'starter' ? '주전' : '후보') + ', 연봉 ' + R.fmtMoney(offer.salary) + ', ' + offer.years + '년)';
   };
+  // 팀 케미(동료와의 호흡)·코치 신뢰: 0~100, 50이 보통. 팀이 바뀌면 케미 40·신뢰 50에서 다시 시작한다
+  L.rel = function (state) {
+    var c = state.career, r = state.rel;
+    if (!r || r.team !== c.team) r = state.rel = { team: c.team || null, chem: c.team ? 40 : 50, coach: 50 };
+    return r;
+  };
+  L.relAdd = function (state, chem, coach) {
+    var r = L.rel(state); if (!state.career.team) return r;
+    r.chem = R.clamp(Math.round((r.chem + (chem || 0)) * 10) / 10, 0, 100); r.coach = R.clamp(Math.round((r.coach + (coach || 0)) * 10) / 10, 0, 100);
+    return r;
+  };
+  L.relWord = function (v) { return v >= 80 ? '최고' : v >= 62 ? '좋음' : v >= 40 ? '보통' : v >= 22 ? '나쁨' : '최악'; };
   L.leaveTeam = function (state) {
     var c = state.career, w = state.world;
     if (c.team && w.teams[c.team]) {
@@ -850,9 +862,9 @@
     if (!c.contract || !c.team || (c.stage !== 'pro' && c.stage !== 'cl')) return null;
     var cur = null, ovr = R.ovr(state.p.stats);
     w.teams[c.team].players.forEach(function (id) { if (id === 'PLAYER') return; var x = w.npcs[id]; if (x.pos === state.p.pos && (!cur || ovrOf(x.stats) > ovrOf(cur.stats))) cur = x; });
-    var co = cur ? ovrOf(cur.stats) : 0;
-    if (c.contract.role === 'sub' && ovr >= co + 3) { c.contract.role = 'starter'; return 'up'; }
-    if (c.contract.role === 'starter' && ovr < co - 15) { c.contract.role = 'sub'; return 'down'; }
+    var co = cur ? ovrOf(cur.stats) : 0, trust = (L.rel(state).coach - 50) / 5;   // 코치 신뢰 ±10
+    if (c.contract.role === 'sub' && ovr >= co + 3 - trust) { c.contract.role = 'starter'; return 'up'; }
+    if (c.contract.role === 'starter' && ovr < co - 15 - trust) { c.contract.role = 'sub'; return 'down'; }
     return null;
   };
 

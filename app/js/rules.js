@@ -446,9 +446,46 @@
     prob: function (s) { return inPro(s) ? 2 + (s.p.hidden.pro <= 2 ? 2 : 0) : 0; },
     text: function () { return '전술 문제로 감독과 의견이 부딪혔다. 분위기가 어색하다.'; },
     options: function () { return [
-      { id: 'talk', label: '면담으로 풀어 본다', apply: function (api) { if (api.check(55)) { api.stat('tf', 2); return '면담에서 서로의 입장을 정리했다. 팀 호흡이 좋아졌다.'; } api.slump(2); return '대화가 겉돌아 서먹함이 남았다.'; } },
-      { id: 'fight', label: '내 주장을 밀어붙인다', apply: function (api) { api.comm(-3); api.slump(3); return '정면충돌로 분위기가 얼어붙었다.'; } },
-      { id: 'bear', label: '참고 따른다', apply: function (api) { api.men(-1); return '감정을 누르고 지시를 따랐다.'; } }]; } });
+      { id: 'talk', label: '면담으로 풀어 본다', apply: function (api) { if (api.check(55)) { api.stat('tf', 2); api.coach(8); return '면담에서 서로의 입장을 정리했다. 팀 호흡이 좋아졌다.'; } api.slump(2); api.coach(-4); return '대화가 겉돌아 서먹함이 남았다.'; } },
+      { id: 'fight', label: '내 주장을 밀어붙인다', apply: function (api) { api.comm(-3); api.slump(3); api.coach(-15); return '정면충돌로 분위기가 얼어붙었다.'; } },
+      { id: 'bear', label: '참고 따른다', apply: function (api) { api.men(-1); api.coach(3); return '감정을 누르고 지시를 따랐다.'; } }]; } });
+
+  // ---------- 팀 케미·코치 신뢰 ----------
+  ev({ id: 'team_dinner', title: '팀 회식', cd: 16,
+    prob: function (s) { return inPro(s) ? 3 : 0; },
+    text: function () { return '연패를 끊자며 주장이 팀 회식을 잡았다. 마침 개인 연습 계획도 있다.'; },
+    options: function () { return [
+      { id: 'go', label: '회식에 끝까지 남는다', apply: function (api) { api.chem(8); return '늦게까지 이야기를 나누며 팀원들과 가까워졌다.'; } },
+      { id: 'early', label: '얼굴만 비추고 연습하러 간다', apply: function (api) { api.chem(2); api.stat('lan', 1); return '잠깐 어울리고 연습실로 돌아왔다.'; } },
+      { id: 'skip', label: '연습 때문에 빠진다', apply: function (api) { api.chem(-6); api.stat('lan', 2); return '연습은 했지만 몇몇 팀원은 서운해했다.'; } }]; } });
+
+  ev({ id: 'teammate_clash', title: '팀원과의 언쟁', cd: 18,
+    prob: function (s, api) { return inPro(s) ? 2 + (api.rel().chem < 40 ? 3 : 0) : 0; },
+    text: function () { return '스크림 도중 콜 문제로 같은 팀 선수와 언성이 높아졌다.'; },
+    options: function () { return [
+      { id: 'sorry', label: '먼저 사과하고 콜 방식을 정리한다', apply: function (api) { if (api.check(60)) { api.chem(10); return '서로 사과하고 콜 순서를 정리했다. 오히려 합이 좋아졌다.'; } api.chem(2); return '사과는 했지만 어색함이 조금 남았다.'; } },
+      { id: 'coach', label: '코치에게 중재를 부탁한다', apply: function (api) { api.chem(4); api.coach(3); return '코치가 나서서 역할을 다시 나눠 줬다.'; } },
+      { id: 'hold', label: '내가 맞다고 버틴다', apply: function (api) { api.chem(-12); api.men(1); return '물러서지 않았다. 팀 분위기는 가라앉았다.'; } }]; } });
+
+  ev({ id: 'coach_feedback', title: '코치의 VOD 피드백', cd: 14,
+    prob: function (s) { return inPro(s) ? 3 : 0; },
+    text: function () { return '코치가 지난 경기 VOD를 보며 내 플레이의 문제를 짚었다. 받아들이기 어려운 지적도 있다.'; },
+    options: function () { return [
+      { id: 'accept', label: '전부 받아들이고 고친다', apply: function (api) { api.coach(6); api.stat('vis', 2); return '지적받은 부분을 하나씩 고쳤다. 코치가 만족스러워했다.'; } },
+      { id: 'argue', label: '납득이 안 되는 부분은 반박한다', apply: function (api) { if (api.check(45)) { api.coach(4); api.stat('skr', 2); return '근거를 대며 설명했고, 코치도 일리가 있다며 받아들였다.'; } api.coach(-6); return '반박이 변명처럼 들렸다.'; } }]; } });
+
+  ev({ id: 'mentor', title: '선배의 조언', cd: 26,
+    prob: function (s, api) { return (inPro(s) && api.age() <= 19) ? 3 : 0; },
+    text: function () { return '팀의 고참 선배가 따로 불러 프로 생활에 대해 이야기해 줬다.'; },
+    options: function () { return [
+      { id: 'listen', label: '진지하게 듣고 따라 한다', apply: function (api) { api.chem(5); api.men(1); return '루틴과 멘탈 관리법을 배웠다.'; } },
+      { id: 'duo', label: '같이 솔랭 듀오를 부탁한다', apply: function (api) { api.chem(4); api.soloMmr(30); return '선배와 듀오로 밤새 랭크를 돌렸다.'; } }]; } });
+
+  ev({ id: 'synergy', title: '손발이 맞기 시작했다', cd: 30,
+    prob: function (s, api) { return (inPro(s) && api.rel().chem >= 70) ? 4 : 0; },
+    text: function () { return '팀원들과 말하지 않아도 움직임이 맞는다. 다들 이 조합으로 오래 가고 싶어 한다.'; },
+    options: function () { return [
+      { id: 'ok', label: '이 분위기를 이어 간다', apply: function (api) { api.chem(3); api.stat('tf', 3); return '한타 호흡이 한층 좋아졌다.'; } }]; } });
 
   ev({ id: 'attitude', title: '태도 논란', cd: 24,
     prob: function (s) { return (inPro(s) && s.p.hidden.pro <= 2) ? 3 : 0; },

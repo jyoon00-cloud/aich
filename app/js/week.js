@@ -75,6 +75,9 @@
       slump: function (w) { p.status.slump = Math.max(0, p.status.slump + w); },
       injury: function (w) { p.status.injury = Math.max(0, p.status.injury + w); if (w >= 5) p.longInjury = true; },
       men: function (d) { p.status.slump = Math.max(0, p.status.slump - d); },
+      chem: function (d) { L.relAdd(state, d, 0); },
+      coach: function (d) { L.relAdd(state, 0, d); },
+      rel: function () { return L.rel(state); },
       soloMmr: function (d) { state.soloq.mmr = R.clamp(state.soloq.mmr + d, 0, R.RP_MAX); syncTier(state); },
       slumpDrift: function () { },
       promoteStarter: function () { if (state.career.contract) state.career.contract.role = 'starter'; },
@@ -192,6 +195,11 @@
     }
     if (action === 'rest') { p.status.slump = Math.max(0, p.status.slump - 1); p.status.injury = Math.max(0, p.status.injury - 1); }
     if (action === 'train' || action === 'solo') p.trainWeeks = (p.trainWeeks || 0) + 1;
+    // 관계: 팀 훈련은 케미·신뢰를 조금 올리고, 시즌 중 방송은 코치 신뢰를 깎는다. 50 쪽으로 천천히 돌아간다
+    if (c.team) {
+      var rl = L.rel(state), inSeason = L.phaseLabel(state) !== '오프 시즌';
+      L.relAdd(state, (action === 'train' ? 0.3 : 0) + (50 - rl.chem) * 0.02, (action === 'train' ? 0.2 : action === 'stream' && inSeason ? -1.5 : 0) + (50 - rl.coach) * 0.02);
+    }
     // 급여
     if (c.contract) c.money += Math.round(c.contract.salary / 52);
     // 숙련도: 주마다 주력 챔피언 성장, 안 쓴 챔피언 감소. 훈련·솔랭 8주마다 새 챔피언 연습
@@ -277,6 +285,7 @@
       cond: res.cond.label, adapt: res.adapt, player: state.p.nick, pos: state.p.pos, pom: res.pomCount };
     var entry = S.addFeed(state, 'match', facts, LP.narrate.template(state, 'match', facts), { ai: true });
     wk.results.push({ win: win, draw: res.winner === null, score: facts.score, opp: facts.opp });
+    L.relAdd(state, res.winner === null ? 0 : win ? 1.5 : -1.5, res.mvp ? 2 : (res.perf <= -4 ? -2 : 0));
     var lg = state.record.log; lg.push({ date: state.date, name: s.name, kind: s.kind, bo: s.bo, opp: facts.opp, win: win, draw: res.winner === null, score: facts.score, final: !!s.final });
     if (lg.length > 300) lg.splice(0, lg.length - 300);
     res.feedId = entry.id;
