@@ -526,6 +526,65 @@
     return { name: lg + ' ' + bestKey.name, rows: rank(best).map(function (id) { var x = best.stand[id]; return { id: id, name: L.teamName(state, id), w: x.w, l: x.l, d: x.d, gd: x.gw - x.gl }; }) };
   };
 
+  // ---------- 화면용 조회 (상태를 바꾸지 않는다) ----------
+  // 순위표: 리그·티어의 그해 정규 대회마다 {key, name, status, rows}
+  L.tables = function (state, lg, tier) {
+    var year = +state.date.slice(0, 4), cal = L.calendar(year), out = [];
+    (cal.leagues[lg] || []).forEach(function (seg) {
+      if (seg.kind !== 'reg') return;
+      var st = state.world.st[stKey(seg, tier)];
+      out.push({ key: seg.key, name: seg.splitName || seg.name, started: seg.start <= state.date, start: seg.start, end: seg.end, status: st ? (st.done ? '종료' : '진행 중') : (seg.start <= state.date ? '진행 전' : '예정'),
+        rows: st ? rank(st).map(function (id) { var x = st.stand[id]; return { id: id, name: L.teamName(state, id), w: x.w, l: x.l, d: x.d, gd: x.gw - x.gl }; }) : null });
+    });
+    return out;
+  };
+  // 그해 플레이오프·국제대회 결과
+  L.yearHistory = function (state) {
+    var yr = String(+state.date.slice(0, 4));
+    return state.world.history.filter(function (h) { return String(h.year) === yr; }).map(function (h) {
+      return { name: (h.intl ? '' : h.league + ' ') + h.name, tier: h.tier, champion: L.teamName(state, h.champion), runnerUp: h.runnerUp ? L.teamName(state, h.runnerUp) : '-' };
+    });
+  };
+  // 앞으로의 일정: 내 팀의 남은 정규 시리즈(상대 포함)와 플레이오프·국제대회·스토브 기간
+  L.upcoming = function (state) {
+    var c = state.career, year = +state.date.slice(0, 4), cal = L.calendar(year), lg = c.league || 'LCK', out = [];
+    var tier = c.stage === 'cl' ? 'cl' : 'pro', team = (c.stage === 'cl' || c.stage === 'pro') ? c.team : null;
+    (cal.leagues[lg] || []).forEach(function (seg) {
+      if (seg.end < state.date) return;
+      if (seg.kind === 'reg') {
+        if (!team) { out.push({ date: seg.start > state.date ? seg.start : state.date, end: seg.end, name: seg.splitName || seg.name, kind: 'period', league: lg }); return; }
+        var st = state.world.st[stKey(seg, tier)], rounds, played, total;
+        if (st) { rounds = st.rounds; played = st.played; total = st.total; if (st.done) return; }
+        else { rounds = roundRobin(teamIdsOf(state, lg, tier)); played = 0; total = rounds.length * (seg.rr || 2); }
+        var ws = state.date;
+        for (var k = 0; k < 40 && ws <= seg.end && played < total; k++, ws = S.addDays(ws, 7)) {
+          if (!overlaps(seg, ws, S.addDays(ws, 6))) continue;
+          var weeksLeft = Math.floor(S.diffDays(ws, seg.end) / 7) + 1, rem = total - played, per = Math.min(rem, Math.ceil(rem / Math.max(1, weeksLeft)));
+          for (var i = 0; i < per; i++) {
+            var rd = rounds[(played + i) % rounds.length];
+            rd.forEach(function (m) {
+              if (m[0] !== team && m[1] !== team) return;
+              var oppId = m[0] === team ? m[1] : m[0];
+              out.push({ date: ws, name: seg.splitName || seg.name, kind: 'match', opp: L.teamName(state, oppId), bo: seg.bo, league: lg, fearless: seg.draft });
+            });
+          }
+          played += per;
+        }
+      } else {
+        var br = state.world.st[stKey(seg, tier)];
+        if (br && br.done) return;
+        out.push({ date: seg.start > state.date ? seg.start : state.date, end: seg.end, name: seg.name, kind: 'period', league: lg, note: team ? '진출 시' : '' });
+      }
+    });
+    [cal.msi, cal.worlds].forEach(function (cs) {
+      if (!cs || cs.end < state.date) return;
+      out.push({ date: cs.start > state.date ? cs.start : state.date, end: cs.end, name: cs.name, kind: 'period', league: null, note: team ? '진출 시' : '' });
+    });
+    if (cal.stoveStart >= state.date) out.push({ date: cal.stoveStart, end: year + '-12-31', name: '스토브리그', kind: 'period', league: null });
+    out.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : (a.kind === 'match' ? -1 : 1); });
+    return out;
+  };
+
   // ---------- 선수 변화 도우미 (NPC 에이징·성장) ----------
   function npcAge(state, n) { return state.world.year - n.birth; }
   function ageNpc(state, rng, n, age) {
@@ -594,6 +653,7 @@
     var w = state.world, rng = S.rng(state);
     w.year = newYear;
     w.st = {};
+    w.mast = {};
     var retired = [];
     Object.keys(w.npcs).forEach(function (id) {
       var n = w.npcs[id], age = npcAge(state, n);

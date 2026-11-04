@@ -82,6 +82,7 @@
   };
 
   N.digestTemplate = function (state, facts) {
+    if (!facts.lines.length) return '';
     return '지난 ' + facts.lines.length + '주 동안의 기록입니다. ' + (facts.others.length ? facts.others.slice(0, 3).join(' ') : '큰 사건 없이 훈련과 솔로랭크가 이어졌습니다.');
   };
 

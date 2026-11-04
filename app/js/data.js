@@ -7,7 +7,8 @@
 
   function defaultLoader(path) {
     // app/index.html 에서 저장소 루트는 한 단계 위
-    return fetch('../' + path).then(function (r) {
+    var v = (typeof window !== 'undefined' && window.LP_VERSION) ? '?v=' + window.LP_VERSION : '';
+    return fetch('../' + path + v).then(function (r) {
       if (!r.ok) throw new Error(path + ' ' + r.status);
       return r.text();
     });

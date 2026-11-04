@@ -114,6 +114,8 @@
     }
     return 5000;
   };
+  R.SOLO_BASE_MMR = 1200;   // 새 시즌 배치 때 당겨지는 평균 MMR (설계 추정)
+  R.SIG_MAX = 5; R.SIG_MASTERY = 70; R.SIG_PICK = 15; R.SIG_EFF = 10; R.SIG_GROWTH = 1.5;
   R.SOLO_GAMES = { train: 15, solo: 35, stream: 10, rest: 3 };      // 주당 판수 (SPEC 3장)
   R.SOLO_WINRATE_SLOPE = 0.3;
   // 스카우트 문턱 (SPEC 3장)
@@ -498,13 +500,30 @@
       { id: 'reply', label: '재치 있게 받아친다', apply: function (api) { if (api.check(50)) { api.fame(3); return '재치 있는 대응에 팬들이 열광했다.'; } api.comm(-4); return '대응이 어색해 분위기가 가라앉았다.'; } },
       { id: 'ignore', label: '무시하고 경기로 보여 준다', apply: function (api) { api.men(1); return '대꾸하지 않고 투지를 불태웠다.'; } }]; } });
 
-  ev({ id: 'patch', title: '패치로 흔들린 챔피언 풀', cd: 20,
-    prob: function () { return 3; },
-    text: function (s, d) { return '패치로 주력 챔피언 ' + d.name + '의 입지가 약해졌다.'; },
+  ev({ id: 'patch', title: '패치로 약해진 시그니처', cd: 20,
+    prob: function (s) { return (s.p.sig && s.p.sig.length) ? 3 : 0; },
+    text: function (s, d) { return '패치로 시그니처 ' + d.name + '의 입지가 약해졌다. 당분간 메타 점수가 떨어진다.'; },
     data: function (s, api) { return api.patchVictim(); },
     options: function (s, d) { return [
-      { id: 'swap', label: '새 챔피언으로 갈아탄다', apply: function (api) { return api.swapChampion(d.id); } },
-      { id: 'keep', label: '그대로 숙련도로 밀어붙인다', apply: function (api) { api.stat('skr', 1); return '숙련도를 믿고 그대로 가기로 했다.'; } }]; } });
+      { id: 'swap', label: '시그니처를 새 챔피언으로 교체한다', apply: function (api) { api.markPatched(d.id); return api.swapSig(d.id); } },
+      { id: 'keep', label: '시그니처를 유지하고 숙련으로 버틴다', apply: function (api) { api.markPatched(d.id); api.mastery(d.id, 3); return d.name + '을(를) 그대로 시그니처로 두기로 했다.'; } }]; } });
+
+  ev({ id: 'newchamp', title: '새 챔피언 연습', cd: 16,
+    prob: function (s, api) { return api.canNewChamp() ? 4 : 0; },
+    text: function () { return '신챔피언 출시와 메타 변화로 새로 눈에 띄는 챔피언이 생겼다. 시그니처 자리를 줄 챔피언을 고를 수 있다.'; },
+    data: function (s, api) { var c = api.newChampCands(); return c.length ? { cands: c } : null; },
+    options: function (s, d) {
+      var full = s.p.sig.length >= R.SIG_MAX;
+      return d.cands.map(function (c) { return { id: 'c_' + c.id, label: c.ko + (full ? ' 추가 (숙련이 가장 낮은 시그니처와 교체)' : ' 을(를) 시그니처에 추가'), apply: function (api) { return api.addSig(c.id); } }; })
+        .concat([{ id: 'no', label: '지금 구성으로 충분하다', apply: function () { return '시그니처 구성을 바꾸지 않았다.'; } }]); } });
+
+  ev({ id: 'streak', title: '한 챔피언으로 연승', cd: 12,
+    prob: function (s, api) { return api.streakChamp() ? 100 : 0; },
+    text: function (s, d) { return d.name + '(으)로 공식전 ' + d.n + '연승을 달렸다. 이 챔피언을 시그니처로 올릴 수 있다.'; },
+    data: function (s, api) { return api.streakChamp(true); },
+    options: function (s, d) { return [
+      { id: 'up', label: d.name + ' 을(를) 시그니처로 올린다' + (s.p.sig.length >= R.SIG_MAX ? ' (숙련이 가장 낮은 시그니처와 교체)' : ''), apply: function (api) { return api.addSig(d.id); } },
+      { id: 'no', label: '지금은 그대로 둔다', apply: function () { return '시그니처를 바꾸지 않았다.'; } }]; } });
 
   ev({ id: 'family', title: '학업과 게임 사이', cd: 20,
     prob: function (s, api) { return (s.career.stage === 'amateur' && api.age() <= 17) ? 3 * api.evMult('family') : 0; },

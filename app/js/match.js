@@ -17,13 +17,14 @@
   function champKo(id) { var c = LP.data.db.champs[id]; return c ? c.ko : id; }
   M.champKo = champKo;
   function available(date) { return LP.data.db.champList.filter(function (c) { return c.release <= date; }); }
-  function champBonus(c, scene, phase, meta, inPool) {
+  function champBonus(c, scene, phase, meta, inPool, pen) {
     if (!c) return 0;
     var v = (c[scene] - 3) * 10;
     if (c.curve === '초반' && phase === 'early') v += 10;
     if (c.curve === '후반' && phase === 'late') v += 10;
     var m = meta[c.id];
     if (m) v += m.tier === 'S' ? 10 : m.tier === 'A' ? 5 : 0;
+    if (pen) v -= pen;
     if (!inPool) v += c.diff >= 4 ? -30 : -15;
     return R.clamp(v, -30, 30);
   }
@@ -60,41 +61,27 @@
     return a[stage];
   }
 
-  // ---------- 준비(밴픽 선택지) ----------
+  // ---------- 준비 ----------
   M.prepare = function (state, series) {
-    var rng = S.rng(state), p = state.p, w = state.world, date = state.date;
-    var meta = LP.data.metaFor(date), mine = series.a === state.career.team, myId = mine ? series.a : series.b, oppId = mine ? series.b : series.a;
-    var opp = L.starters(state, oppId), pool = p.pool.filter(function (id) { var c = LP.data.db.champs[id]; return c && c.release <= date; });
-    var banned = [];
-    if (pool.length >= 3 && rng.chance(30)) {
-      var top = pool.slice().sort(function (a, b) { return poolScore(LP.data.db.champs[b], meta, pool) - poolScore(LP.data.db.champs[a], meta, pool); })[0];
-      banned.push(top);
-    }
-    var opts = pool.map(function (id) {
-      var c = LP.data.db.champs[id], m = meta[id];
-      return { id: id, ko: c.ko, diff: c.diff, curve: c.curve, tier: m ? m.tier : '-', score: poolScore(c, meta, pool), banned: banned.indexOf(id) >= 0 };
-    });
+    var date = state.date;
+    var mine = series.a === state.career.team, myId = mine ? series.a : series.b, oppId = mine ? series.b : series.a;
+    var opp = L.starters(state, oppId);
     var lineup = POS.map(function (pos) { var o = opp[pos]; return { pos: pos, name: o ? o.name : '-', ovr: o ? R.ovr(o.stats) : 0 }; });
     var imp = series.kind === 'po' || series.kind === 'msi' || series.kind === 'worlds';
     return { me: myId, opp: oppId, myName: L.teamName(state, myId), oppName: L.teamName(state, oppId), bo: series.bo, kind: series.kind, name: series.name, final: !!series.final,
-      round: series.round === undefined ? null : series.round, fearless: !!series.fearless, important: imp, options: opts, banned: banned, lineup: lineup,
-      myPower: Math.round(L.power(state, myId)), oppPower: Math.round(L.power(state, oppId)), serKey: series.key };
+      round: series.round === undefined ? null : series.round, fearless: !!series.fearless, important: imp, lineup: lineup,
+      myPower: Math.round(L.power(state, myId)), oppPower: Math.round(L.power(state, oppId)), serKey: series.key, date: date };
   };
 
   // ---------- 세트 ----------
   function sideFx(ref) { return R.fxOf(ref.traits); }
 
   function playSet(state, rng, o) {
-    var p = state.p, meta = o.meta, set = { no: o.no, scenes: [], champs: { mine: {}, theirs: {} } };
+    var p = state.p, meta = o.meta, set = { no: o.no, scenes: [] };
     var fxP = R.fxOf(p.traits), myPos = p.pos, myL = o.myLine, opL = o.oppLine;
-    // 챔피언 배정
-    var usedMine = o.usedMine.slice(), usedOpp = o.usedOpp.slice();
+    // 챔피언 배정은 draft가 끝낸 상태로 들어온다
+    set.champs = o.champs; set.bans = o.bans;
     var myChamp = o.myChamp;
-    POS.forEach(function (pos) {
-      if (pos === myPos) { set.champs.mine[pos] = myChamp; return; }
-      var c = metaPick(rng, state.date, pos, usedMine, meta); set.champs.mine[pos] = c ? c.id : null; if (c) usedMine.push(c.id);
-    });
-    POS.forEach(function (pos) { var c = metaPick(rng, state.date, pos, usedOpp, meta); set.champs.theirs[pos] = c ? c.id : null; if (c) usedOpp.push(c.id); });
     set.myChamp = myChamp; set.oppChamp = set.champs.theirs[myPos];
     var db = LP.data.db.champs;
     var nLane = rng.range(1, 2), nSkr = rng.range(1, 2), nTf = rng.range(1, 2);
@@ -120,8 +107,10 @@
       var cond = o.cond.adj;
       if (ctx.clutch && fxP.clutchCond && o.cond.key < 2) cond = 0;
       var cMine = db[myChamp], cOpp = db[set.oppChamp];
-      var inPool = p.pool.indexOf(myChamp) >= 0;
-      var champMe = champBonus(cMine, scene, phase, meta, inPool);
+      var inPool = (p.mastery[myChamp] || 0) >= 50;
+      var champMe = champBonus(cMine, scene, phase, meta, inPool, LP.mastery.patchedAmt(state, myChamp) ? 5 : 0);
+      var sigMe = p.sig.indexOf(myChamp) >= 0 ? R.SIG_EFF : 0;
+      var sigOp = (scene !== 'tf' && o.oppSig.indexOf(set.oppChamp) >= 0) ? R.SIG_EFF : 0;
       var champOp = champBonus(cOpp, scene, phase, meta, true);
       var hid = 0;
       if (ctx.clutch) hid += p.hidden.clutch * 10;
@@ -130,8 +119,8 @@
       if (ctx.clutch && fxP.clutchSucc === 0 && false) tr += 0;
       var bg = R.bgScene(p.bg, ctx);
       var pen = adaptPen + (intlPen && ctx.big ? intlPen : 0) + (o.intlPen && !ctx.big ? intlPen : 0);
-      var mePart = { stat: Math.round(mix(scene, st)), cond: cond, adapt: pen, bg: bg, hidden: hid, trait: tr, champ: champMe };
-      var meEff = mePart.stat + cond + pen + bg + hid + tr + champMe;
+      var mePart = { stat: Math.round(mix(scene, st)), cond: cond, adapt: pen, bg: bg, hidden: hid, trait: tr, champ: champMe, sig: sigMe };
+      var meEff = mePart.stat + cond + pen + bg + hid + tr + champMe + sigMe;
       var opEff, opPart;
       var fxO = oppRef ? sideFx(oppRef) : R.blankFx();
       var oh = 0;
@@ -153,8 +142,8 @@
         opPart = { stat: Math.round(opEff - oh / 5), hidden: Math.round(oh / 5) };
         mePart.avg = true;
       } else {
-        opEff = (oppRef ? mix(scene, oppRef.stats) : 380) + champOp + oh + (oppRef ? R.traitScene(fxO, ctx) : 0);
-        opPart = { stat: Math.round(oppRef ? mix(scene, oppRef.stats) : 380), champ: champOp, hidden: oh, trait: oppRef ? R.traitScene(fxO, ctx) : 0 };
+        opEff = (oppRef ? mix(scene, oppRef.stats) : 380) + champOp + oh + sigOp + (oppRef ? R.traitScene(fxO, ctx) : 0);
+        opPart = { stat: Math.round(oppRef ? mix(scene, oppRef.stats) : 380), champ: champOp, sig: sigOp, hidden: oh, trait: oppRef ? R.traitScene(fxO, ctx) : 0 };
       }
       var rate = R.clamp(Math.round(50 + (meEff - opEff) * 0.3), 5, 95);
       var roll = rng.int(100);
@@ -184,7 +173,6 @@
     var pomP = !win ? 0 : perf >= 3 ? 70 : perf === 2 ? 35 : perf === 1 ? 12 : 3;
     set.pom = rng.chance(pomP);
     set.dur = 24 + plan.length * 2 + rng.range(0, 5);
-    set.usedMine = usedMine; set.usedOpp = usedOpp;
     set.frames = buildFrames(state, rng, set, o);
     return set;
   }
@@ -229,6 +217,7 @@
 
     pos = laneBase(-1); pos = pos.map(function (p, i) { return i < 5 ? W.A : W.B; });
     push(0, '게임 시작. ' + o.myName + ' 대 ' + o.oppName + ' — {me}의 {ch} 대 {oc}.'.replace('{me}', me).replace('{ch}', myK).replace('{oc}', opK), 'sys');
+    if (set.bans && (set.bans.mine.length || set.bans.theirs.length)) push(0, '밴  ' + o.myName + ': ' + set.bans.mine.map(champKo).join(', ') + '  /  ' + o.oppName + ': ' + set.bans.theirs.map(champKo).join(', '), 'sys');
     pos = laneBase(0);
     push(1.5, '양 팀이 라인에 도착한다.', 'sys');
 
@@ -341,75 +330,157 @@
     return frames;
   }
 
-  // ---------- 시리즈 ----------
-  // choice: {pick: champId|'auto'}
-  M.play = function (state, series, prep, choice) {
-    var rng = S.rng(state), p = state.p, meta = LP.data.metaFor(state.date);
+  // ---------- 밴픽 ----------
+  function topMastery(m, n) { return Object.keys(m).sort(function (a, b) { return m[b] - m[a]; }).slice(0, n); }
+  // 밴: 상대 핵심 선수(OVR 상위 2명, 플레이어가 있으면 플레이어 우선)의 숙련 상위 + 메타 S
+  function chooseBans(state, rng, meta, targetLine, banned, blocked, n) {
+    var Q = LP.mastery, score = {}, refs = POS.map(function (pos) { return targetLine[pos]; }).filter(Boolean);
+    refs.sort(function (a, b) { return R.ovr(b.stats) - R.ovr(a.stats); });
+    refs.slice(0, 2).forEach(function (ref, i) {
+      var q = Q.of(state, ref), w = i === 0 ? 1 : 0.8;
+      topMastery(q.m, 2).forEach(function (id) { score[id] = Math.max(score[id] || 0, q.m[id] * w + (q.sig.indexOf(id) >= 0 ? 4 : 0)); });
+    });
+    Object.keys(meta).forEach(function (id) { if (meta[id].tier === 'S') score[id] = (score[id] || 0) + 20; });
+    var ids = Object.keys(score).filter(function (id) { return !banned[id] && !blocked[id] && LP.data.db.champs[id] && LP.data.db.champs[id].release <= state.date; });
+    var noisy = {}; ids.forEach(function (id) { noisy[id] = score[id] + rng.gauss(0, 9); });
+    ids.sort(function (a, b) { return noisy[b] - noisy[a]; });
+    return ids.slice(0, n);
+  }
+  function npcPick(state, rng, ref, pos, meta, taken, oppIds, allyIds) {
+    var Q = LP.mastery, q = Q.of(state, ref), best = null, bs = -1e9;
+    var list = Q.forPos(pos, state.date).filter(function (c) { return !taken[c.id]; });
+    if (!list.length) list = Q.released(state.date).filter(function (c) { return !taken[c.id]; });
+    list.forEach(function (c) {
+      var sc = Q.pickScore(state, c, q.m, q.sig, meta, oppIds, allyIds, 0) + rng.gauss(0, 3) + (q.m[c.id] === undefined ? 10 : 0);
+      if (sc > bs) { bs = sc; best = c; }
+    });
+    return best ? best.id : null;
+  }
+
+  // 시리즈 시작. 반환 ctx는 세트마다 draft → playSet 으로 진행한다.
+  M.begin = function (state, series, prep) {
+    var rng = S.rng(state), p = state.p;
+    LP.mastery.ensure(state);
     var mine = series.a === state.career.team, myId = mine ? series.a : series.b, oppId = mine ? series.b : series.a;
-    var need = series.bo === 2 ? 99 : Math.floor(series.bo / 2) + 1;
     var intl = series.kind === 'msi' || series.kind === 'worlds';
     var stage = state.career.stage;
     var adapt = ensureAdapt(state, rng, stage);
     var cond = seriesCondition(state, rng);
-    var pool = p.pool.filter(function (id) { var c = LP.data.db.champs[id]; return c && c.release <= state.date; });
-    var res = { sets: [], cond: cond, sa: 0, sb: 0, kda: { k: 0, d: 0, a: 0 }, pomCount: 0 };
-    var usedMine = [], usedOpp = [], last = null;
-    var fx = R.fxOf(p.traits);
+    var ctx = { state: state, series: series, prep: prep, meta: LP.data.metaFor(state.date), mine: mine, myId: myId, oppId: oppId, intl: intl, adapt: adapt, cond: cond,
+      need: series.bo === 2 ? 99 : Math.floor(series.bo / 2) + 1, maxSets: series.bo === 2 ? 2 : series.bo, no: 0, cur: null, usedAll: {}, intlPen: false, sigUsed: [],
+      res: { sets: [], cond: cond, sa: 0, sb: 0, kda: { k: 0, d: 0, a: 0 }, pomCount: 0, perf: 0 } };
     // 첫 국제대회·첫 결승 −10
-    var intlPen = false;
     if (intl || series.final) {
       var ex = adapt && adapt.monster || p.hidden.clutch >= 2 || p.traits.indexOf('intl_champ') >= 0;
-      if (intl && (!p.adapt.intlKey || p.adapt.intlKey === series.key)) { p.adapt.intlKey = series.key; intlPen = !ex; }
-      else if (series.final && !p.adapt.finalSeen) { intlPen = !ex; }
+      if (intl && (!p.adapt.intlKey || p.adapt.intlKey === series.key)) { p.adapt.intlKey = series.key; ctx.intlPen = !ex; }
+      else if (series.final && !p.adapt.finalSeen) { ctx.intlPen = !ex; }
       if (series.final) p.adapt.finalSeen = true;
     }
-    var maxSets = series.bo === 2 ? 2 : series.bo;
-    var myLine = L.starters(state, myId, true), oppLine = L.starters(state, oppId);
-    var myPower = L.power(state, myId), oppPower = L.power(state, oppId);
-    for (var no = 1; no <= maxSets; no++) {
-      if (series.bo !== 2 && (res.sa >= need || res.sb >= need)) break;
-      var banned = prep.banned || [];
-      var opts = pool.filter(function (id) { return banned.indexOf(id) < 0 && (!series.fearless || usedMine.indexOf(id) < 0); });
-      var champ = null;
-      if (no === 1 && choice && choice.pick && choice.pick !== 'auto' && opts.indexOf(choice.pick) >= 0) champ = choice.pick;
-      else if (no > 1 && last && !series.fearless && opts.indexOf(last) >= 0) champ = last;
-      if (!champ) {
-        var cand = opts.length ? opts : pool;
-        if (cand.length) champ = cand.slice().sort(function (a, b) { return poolScore(LP.data.db.champs[b], meta, pool) - poolScore(LP.data.db.champs[a], meta, pool); })[0];
-        if (!champ || (series.fearless && usedMine.indexOf(champ) >= 0)) {
-          var c2 = metaPick(rng, state.date, p.pos, usedMine, meta); champ = c2 ? c2.id : (cand[0] || pool[0]);
-        }
-      }
-      last = champ;
-      var decider = series.bo !== 2 && series.bo > 1 && res.sa === need - 1 && res.sb === need - 1;
-      if (series.bo === 1) decider = true;
-      var set = playSet(state, rng, {
-        no: no, meta: meta, myLine: myLine, oppLine: oppLine, myPower: myPower, oppPower: oppPower, cond: cond, adapt: adapt, intlPen: intlPen,
-        kind: series.kind, tourney: series.kind === 'po' || intl, intl: intl, final: !!series.final, decider: decider, round: series.round === undefined ? null : series.round,
-        myChamp: champ, usedMine: series.fearless ? usedMine : [], usedOpp: series.fearless ? usedOpp : [], myName: prep.myName, oppName: prep.oppName
-      });
-      usedMine.push(champ);
-      if (series.fearless) { usedOpp = set.usedOpp; usedMine = set.usedMine.concat(usedMine.filter(function (x) { return set.usedMine.indexOf(x) < 0; })); }
-      res.sets.push(set);
-      if (set.win) res.sa++; else res.sb++;
-      res.kda.k += set.kda.k; res.kda.d += set.kda.d; res.kda.a += set.kda.a;
-      if (set.pom) res.pomCount++;
-      // 기록
-      var rec = state.record;
-      if (set.win) rec.official.w++; else rec.official.l++;
-      rec.kda.k += set.kda.k; rec.kda.d += set.kda.d; rec.kda.a += set.kda.a;
-      set.scenes.forEach(function (sc) { var a = rec.scenes[sc.scene]; a[1]++; if (sc.pts > 0) a[0]++; });
-      rec.played = rec.played || {}; rec.played[prep.serKey] = (rec.played[prep.serKey] || 0) + 1;
-      // 적응 갱신
-      if (adapt) {
-        adapt.sets++;
-        if (adapt.bonusLeft > 0) adapt.bonusLeft--;
-        if (adapt.sets % 5 === 0) adapt.pen = Math.min(0, adapt.pen + R.ADAPT_RECOVER[p.hidden.pro]);
-      }
-      if (set.pom) { state.fame = R.clamp(state.fame + 1, 0, 100); }
-      if (set.perf <= -3) state.community = R.clamp(state.community - 3, -100, 100);
-      else if (set.perf >= 3) state.community = R.clamp(state.community + 2, -100, 100);
+    ctx.myLine = L.starters(state, myId, true); ctx.oppLine = L.starters(state, oppId);
+    ctx.myPower = L.power(state, myId); ctx.oppPower = L.power(state, oppId);
+    return ctx;
+  };
+  M.isDone = function (ctx) {
+    var r = ctx.res;
+    if (ctx.no >= ctx.maxSets) return true;
+    return ctx.series.bo !== 2 && (r.sa >= ctx.need || r.sb >= ctx.need);
+  };
+  M.setNo = function (ctx) { return ctx.no + 1; };
+
+  // 이번 세트의 밴·상대/아군 픽을 정하고 내가 고를 목록을 돌려준다
+  M.draft = function (ctx) {
+    if (ctx.cur) return ctx.cur.view;
+    var state = ctx.state, rng = S.rng(state), p = state.p, meta = ctx.meta, series = ctx.series, Q = LP.mastery, dbc = LP.data.db.champs;
+    var taken = {}, bansMine = [], bansOpp = [], picks = { mine: {}, theirs: {} };
+    if (series.fearless) Object.keys(ctx.usedAll).forEach(function (id) { taken[id] = 'used'; });
+    var blocked = {};
+    // 밴: 상대가 내 팀을, 내 팀(NPC 감독)이 상대를 겨냥한다. 3개씩.
+    bansOpp = chooseBans(state, rng, meta, ctx.myLine, taken, blocked, 3);
+    bansOpp.forEach(function (id) { taken[id] = 'ban'; });
+    bansMine = chooseBans(state, rng, meta, ctx.oppLine, taken, blocked, 3);
+    bansMine.forEach(function (id) { taken[id] = 'ban'; });
+    // 픽: 상대 5명 → 아군 4명 → 나
+    var oppIds = [], allyIds = [];
+    POS.forEach(function (pos) {
+      var id = npcPick(state, rng, ctx.oppLine[pos], pos, meta, taken, [], oppIds);
+      picks.theirs[pos] = id; if (id) { taken[id] = 'opp'; oppIds.push(id); }
+    });
+    POS.forEach(function (pos) {
+      if (pos === p.pos) return;
+      var id = npcPick(state, rng, ctx.myLine[pos], pos, meta, taken, oppIds, allyIds);
+      picks.mine[pos] = id; if (id) { taken[id] = 'ally'; allyIds.push(id); }
+    });
+    // 내 후보
+    var mast = p.mastery, sig = p.sig;
+    var all = Q.forPos(p.pos, state.date);
+    if (!all.length) all = Q.released(state.date);
+    var list = all.map(function (c) {
+      var why = taken[c.id] === 'ban' ? '밴됨' : taken[c.id] === 'used' ? '이번 시리즈에서 사용' : taken[c.id] === 'opp' ? '상대가 선택' : taken[c.id] === 'ally' ? '아군이 선택' : '';
+      var tier = meta[c.id] ? meta[c.id].tier : '-';
+      return { id: c.id, ko: c.ko, mastery: mast[c.id] || 0, sig: sig.indexOf(c.id) >= 0, tier: tier, diff: c.diff, curve: c.curve, ok: !why, why: why, outPool: (mast[c.id] || 0) < 50,
+        patched: !!Q.patchedAmt(state, c.id), score: Q.pickScore(state, c, mast, sig, meta, oppIds, allyIds, Q.patchedAmt(state, c.id)) };
+    });
+    list.sort(function (a, b) { return (b.sig - a.sig) || (b.mastery - a.mastery) || (b.score - a.score) || (a.ko < b.ko ? -1 : 1); });
+    var rec = null;
+    list.forEach(function (x) { if (x.ok && (!rec || x.score > rec.score)) rec = x; });
+    if (!rec) { // 극단적으로 후보가 없으면 제한을 하나씩 푼다
+      var any = Q.released(state.date).filter(function (c) { return !taken[c.id]; });
+      var c0 = any.length ? any[0] : all[0];
+      rec = { id: c0.id, ko: c0.ko, mastery: mast[c0.id] || 0, sig: false, tier: '-', diff: c0.diff, curve: c0.curve, ok: true, why: '', outPool: true, score: 0 };
+      list.unshift(rec);
     }
+    var view = { no: ctx.no + 1, bans: { mine: bansMine, theirs: bansOpp }, picks: picks, list: list, rec: rec.id, sa: ctx.res.sa, sb: ctx.res.sb, used: Object.keys(ctx.usedAll) };
+    ctx.cur = { view: view, taken: taken, picks: picks, bans: { mine: bansMine, theirs: bansOpp } };
+    return view;
+  };
+
+  // 세트 한 판 진행. pick: 챔피언 id 또는 'auto'
+  M.playSet = function (ctx, pick) {
+    var state = ctx.state, rng = S.rng(state), p = state.p, series = ctx.series, res = ctx.res, view = M.draft(ctx), cur = ctx.cur;
+    var cand = view.list.filter(function (x) { return x.id === pick && x.ok; })[0];
+    var champ = cand ? cand.id : view.rec;
+    cur.picks.mine[p.pos] = champ;
+    var oppSig = LP.mastery.of(state, ctx.oppLine[p.pos]).sig;
+    var decider = series.bo !== 2 && series.bo > 1 && res.sa === ctx.need - 1 && res.sb === ctx.need - 1;
+    if (series.bo === 1) decider = true;
+    var set = playSet(state, rng, {
+      no: ctx.no + 1, meta: ctx.meta, myLine: ctx.myLine, oppLine: ctx.oppLine, myPower: ctx.myPower, oppPower: ctx.oppPower, cond: ctx.cond, adapt: ctx.adapt, intlPen: ctx.intlPen,
+      kind: series.kind, tourney: series.kind === 'po' || ctx.intl, intl: ctx.intl, final: !!series.final, decider: decider, round: series.round === undefined ? null : series.round,
+      myChamp: champ, champs: cur.picks, bans: cur.bans, oppSig: oppSig, myName: ctx.prep.myName, oppName: ctx.prep.oppName
+    });
+    set.auto = !cand || pick === 'auto';
+    set.sigPick = p.sig.indexOf(champ) >= 0;
+    // 사용 챔피언 기록 (피어리스: 양 팀 모두)
+    if (series.fearless) POS.forEach(function (pos) { [cur.picks.mine[pos], cur.picks.theirs[pos]].forEach(function (id) { if (id) ctx.usedAll[id] = 1; }); });
+    ctx.no++; ctx.cur = null;
+    res.sets.push(set);
+    if (set.win) res.sa++; else res.sb++;
+    res.kda.k += set.kda.k; res.kda.d += set.kda.d; res.kda.a += set.kda.a; res.perf += set.perf;
+    if (set.pom) res.pomCount++;
+    // 기록
+    var rec = state.record, seas = rec.seas;
+    if (set.win) { rec.official.w++; seas.w++; } else { rec.official.l++; seas.l++; }
+    rec.kda.k += set.kda.k; rec.kda.d += set.kda.d; rec.kda.a += set.kda.a;
+    seas.k += set.kda.k; seas.d += set.kda.d; seas.a += set.kda.a;
+    set.scenes.forEach(function (sc) { var a = rec.scenes[sc.scene]; a[1]++; if (sc.pts > 0) a[0]++; var b = seas[sc.scene]; b[1]++; if (sc.pts > 0) b[0]++; });
+    rec.played = rec.played || {}; rec.played[ctx.prep.serKey] = (rec.played[ctx.prep.serKey] || 0) + 1;
+    LP.mastery.use(state, champ, set.win);
+    p.streak = p.streak || { id: null, n: 0 };
+    if (set.win) { if (p.streak.id === champ) p.streak.n++; else p.streak = { id: champ, n: 1 }; } else p.streak = { id: null, n: 0 };
+    var adapt = ctx.adapt;
+    if (adapt) {
+      adapt.sets++;
+      if (adapt.bonusLeft > 0) adapt.bonusLeft--;
+      if (adapt.sets % 5 === 0) adapt.pen = Math.min(0, adapt.pen + R.ADAPT_RECOVER[p.hidden.pro]);
+    }
+    if (set.pom) { state.fame = R.clamp(state.fame + 1, 0, 100); }
+    if (set.perf <= -3) state.community = R.clamp(state.community - 3, -100, 100);
+    else if (set.perf >= 3) state.community = R.clamp(state.community + 2, -100, 100);
+    return set;
+  };
+
+  M.finish = function (ctx) {
+    var state = ctx.state, res = ctx.res, series = ctx.series, prep = ctx.prep, adapt = ctx.adapt, myId = ctx.myId, oppId = ctx.oppId, mine = ctx.mine;
     var winnerA = res.sa > res.sb ? 1 : res.sa < res.sb ? 0 : -1;
     res.mine = mine;
     res.winner = winnerA === 1 ? myId : winnerA === 0 ? oppId : null;
@@ -417,12 +488,24 @@
     // 시리즈 결과를 league 쪽(a,b) 기준으로
     res.sa = mine ? res.sMine : res.sOpp; res.sb = mine ? res.sOpp : res.sMine;
     if (winnerA === 1) state.record.series.w++; else if (winnerA === 0) state.record.series.l++;
-    if (winnerA === 1 && (series.final || intl)) { state.community = R.clamp(state.community + 4, -100, 100); state.fame = R.clamp(state.fame + 2, 0, 100); }
-    if (adapt && state.career.stage) { /* 적응 메모는 상태 카드에서 읽는다 */ }
+    if (winnerA === 1 && (series.final || ctx.intl)) { state.community = R.clamp(state.community + 4, -100, 100); state.fame = R.clamp(state.fame + 2, 0, 100); }
     res.adapt = adapt ? { label: adapt.label, pen: adapt.pen, sets: adapt.sets } : null;
-    res.intlPen = intlPen;
+    res.intlPen = ctx.intlPen;
     res.meName = prep.myName; res.oppName = prep.oppName;
+    res.bo = series.bo; res.name = series.name; res.kind = series.kind; res.fearless = !!series.fearless; res.final = !!series.final;
+    // 시리즈 MVP: 3세트 이상 시리즈를 이기고 내 활약이 컸을 때
+    res.mvp = winnerA === 1 && series.bo >= 3 && (res.pomCount >= 2 || (res.pomCount >= 1 && res.perf >= 2) || res.perf >= 5);
     return res;
+  };
+
+  // 한 번에 끝까지 (자동 진행·테스트용). choice.pick 은 첫 세트에만 쓰인다.
+  M.play = function (state, series, prep, choice) {
+    var ctx = M.begin(state, series, prep), first = true;
+    while (!M.isDone(ctx)) {
+      M.draft(ctx);
+      M.playSet(ctx, first && choice && choice.pick ? choice.pick : 'auto'); first = false;
+    }
+    return M.finish(ctx);
   };
 
   // 관전 없이 쓰는 한 줄 요약용
@@ -430,7 +513,6 @@
     return res.sets.map(function (s) { return (s.win ? '승' : '패') + ' ' + champKo(s.myChamp) + ' ' + s.kda.k + '/' + s.kda.d + '/' + s.kda.a; }).join(', ');
   };
 
-  M.poolScore = function (id, date, pool) { var meta = LP.data.metaFor(date); return poolScore(LP.data.db.champs[id], meta, pool); };
   M.metaPick = function (state, pos) { return metaPick(S.rng(state), state.date, pos, [], LP.data.metaFor(state.date)); };
   LP.match = M;
 })(typeof window !== 'undefined' ? (window.LP = window.LP || {}) : (globalThis.LP = globalThis.LP || {}));

@@ -50,7 +50,7 @@
       if (rng.int(100) <= pr) { w++; q.mmr += d; } else { l++; q.mmr -= d; }
       q.mmr = R.clamp(q.mmr, 0, R.RP_MAX);
     }
-    q.w += w; q.l += l;
+    q.w += w; q.l += l; q.totW = (q.totW || 0) + w; q.totL = (q.totL || 0) + l;
     syncTier(state);
     return { w: w, l: l, delta: q.mmr - start };
   }
@@ -85,15 +85,22 @@
         return msg + '.';
       },
       patchVictim: function () {
-        if (!p.pool.length) return null;
-        var id = p.pool[rng.range(0, p.pool.length - 1)], c = LP.data.db.champs[id];
+        if (!p.sig.length) return null;
+        var id = p.sig[rng.range(0, p.sig.length - 1)], c = LP.data.db.champs[id];
         return { id: id, name: c ? c.ko : id };
       },
-      swapChampion: function (id) {
-        var i = p.pool.indexOf(id); if (i >= 0) p.pool.splice(i, 1);
-        var c = M.metaPick(state, p.pos);
-        if (c && p.pool.indexOf(c.id) < 0) { p.pool.push(c.id); return c.ko + ' 숙련도를 쌓기 시작했다.'; }
-        return '새 챔피언을 찾지 못해 풀이 줄었다.';
+      markPatched: function (id) { state.patched = state.patched || {}; state.patched[id] = S.addDays(state.date, 84); },
+      mastery: function (id, d) { p.mastery[id] = R.clamp((p.mastery[id] || 0) + d, 0, 100); LP.mastery.syncPool(p); },
+      swapSig: function (id) { return LP.mastery.swapSig(state, rng, id); },
+      addSig: function (id) { return LP.mastery.addSig(state, id); },
+      canNewChamp: function () { return LP.mastery.newChampPool(state).length > 0; },
+      newChampCands: function () { return LP.mastery.newChampCands(state, rng).map(function (c) { return { id: c.id, ko: c.ko }; }); },
+      streakChamp: function (consume) {
+        var st = p.streak;
+        if (!st || !st.id || st.n < 4 || p.sig.indexOf(st.id) >= 0) return null;
+        var c = LP.data.db.champs[st.id], out = { id: st.id, name: c ? c.ko : st.id, n: st.n };
+        if (consume) p.streak = { id: null, n: 0 };
+        return out;
       }
     };
     return api;
@@ -128,7 +135,7 @@
   }
   function makeEventPending(state, ev) {
     var d = defOf(ev.id), opts = d.options(state, ev.data);
-    return { kind: 'event', id: ev.id, title: d.title, text: d.text(state, ev.data), data: ev.data, options: opts.map(function (o) { return { id: o.id, label: o.label }; }) };
+    return { kind: 'event', id: ev.id, title: d.title, text: d.text(state, ev.data), data: ev.data, options: opts.map(function (o) { return { id: o.id, label: o.label, sub: o.sub }; }) };
   }
 
   // ---------- 스토브: 플레이어 계약 ----------
@@ -161,6 +168,7 @@
   // ---------- 주간 흐름 ----------
   function newWeek(state, input) {
     var rng = S.rng(state), p = state.p, c = state.career;
+    LP.mastery.ensure(state);
     var action = input.action || 'train';
     if (p.status.injury > 0 && action !== 'rest') action = action; // 부상 중에는 집중 1개로 줄인다(아래)
     var focus = (input.focus || []).filter(function (k) { return R.STATS.indexOf(k) >= 0; });
@@ -186,10 +194,11 @@
     if (action === 'train' || action === 'solo') p.trainWeeks = (p.trainWeeks || 0) + 1;
     // 급여
     if (c.contract) c.money += Math.round(c.contract.salary / 52);
-    // 풀 확장: 훈련·솔랭 8주마다
-    if ((action === 'train' || action === 'solo') && state.week % 8 === 7 && p.pool.length < 5) {
-      var cc = M.metaPick(state, p.pos);
-      if (cc && p.pool.indexOf(cc.id) < 0) { p.pool.push(cc.id); wk.notes.push('새 주력 챔피언 ' + cc.ko); }
+    // 숙련도: 주마다 주력 챔피언 성장, 안 쓴 챔피언 감소. 훈련·솔랭 8주마다 새 챔피언 연습
+    LP.mastery.weekly(state, rng, action);
+    if ((action === 'train' || action === 'solo') && state.week % 8 === 7 && Object.keys(p.mastery).length < 12) {
+      var cc = LP.mastery.explore(state, rng);
+      if (cc) wk.notes.push('새 연습 챔피언 ' + cc.ko);
     }
     // 스크림
     if (c.stage !== 'amateur' && rng.chance(25)) wk.scrim = true;
@@ -256,16 +265,18 @@
 
   function resolveMatch(state, choice) {
     var pend = state.pending, wk = state.wk, s = pend.series;
-    var res = M.play(state, s, pend.prep, choice || {});
+    var res = (choice && choice.res) ? choice.res : M.play(state, s, pend.prep, choice || {});
     L.applyResult(state, s, { winner: res.winner, sa: res.sa, sb: res.sb });
     W.lastMatch = res;
     var win = res.winner === pend.prep.me;
     var facts = { opp: pend.prep.oppName, my: pend.prep.myName, kind: s.kind, name: s.name, bo: s.bo, final: !!s.final, win: win, draw: res.winner === null, score: res.sMine + '-' + res.sOpp,
-      sets: res.sets.map(function (x) { return { win: x.win, champ: M.champKo(x.myChamp), vs: M.champKo(x.oppChamp), kda: x.kda.k + '/' + x.kda.d + '/' + x.kda.a, pom: x.pom, dur: x.dur,
+      mvp: !!res.mvp, sets: res.sets.map(function (x) { return { win: x.win, champ: M.champKo(x.myChamp), vs: M.champKo(x.oppChamp), kda: x.kda.k + '/' + x.kda.d + '/' + x.kda.a, pom: x.pom, dur: x.dur, sig: !!x.sigPick,
         scenes: x.scenes.map(function (sc) { return { l: sc.label, r: sc.res, rate: sc.rate, roll: sc.roll, me: sc.me, opp: sc.opp }; }) }; }),
       cond: res.cond.label, adapt: res.adapt, player: state.p.nick, pos: state.p.pos, pom: res.pomCount };
     var entry = S.addFeed(state, 'match', facts, LP.narrate.template(state, 'match', facts), { ai: true });
     wk.results.push({ win: win, draw: res.winner === null, score: facts.score, opp: facts.opp });
+    var lg = state.record.log; lg.push({ date: state.date, name: s.name, kind: s.kind, bo: s.bo, opp: facts.opp, win: win, draw: res.winner === null, score: facts.score, final: !!s.final });
+    if (lg.length > 300) lg.splice(0, lg.length - 300);
     res.feedId = entry.id;
     state.pending = null;
     wk.cur = 'done';
@@ -299,12 +310,13 @@
     var newYear = +next.slice(0, 4);
     var summary = weekSummary(state, wk);
     wk.summary = summary;
+    var tierNow = R.tierIdx(state.soloq.mmr);
     state.date = next; state.week++;
     if (newYear !== oldYear) yearEnd(state, rng, newYear);
     var line = LP.narrate.weekLine(state, summary);
     var e = S.addFeed(state, 'week', summary, line, { oneLine: true });
     e.date = S.addDays(state.date, -7 * 1);
-    W.lastWeek = { entry: e, summary: summary, gradeUp: gradeUps(state, wk), tierChanged: R.tierIdx(state.soloq.mmr) !== wk.tierBefore, yearEnd: newYear !== oldYear, match: wk.hadMatch };
+    W.lastWeek = { entry: e, summary: summary, gradeUp: gradeUps(state, wk), tierChanged: tierNow !== wk.tierBefore, yearEnd: newYear !== oldYear, match: wk.hadMatch };
     state.wk = null;
   }
   function gradeUps(state, wk) {
@@ -318,22 +330,74 @@
       phase: L.phaseLabel(state), ovr: R.ovr(state.p.stats), injured: state.p.status.injury > 0, slump: state.p.status.slump > 0 };
   }
 
+  // ---------- 특성 후보 (시즌 종료) ----------
+  function traitCandidates(state) {
+    var p = state.p, r = state.record, sc = r.seas, c = state.career, g = LP.data.db.traits.general, out = { pos: [], neg: [] };
+    function have(id) { return p.traits.indexOf(id) >= 0; }
+    function add(list, id, evidence) { if (have(id) || !g[id]) return; list.push({ id: id, name: g[id].name, effect: g[id].text, evidence: evidence }); }
+    function rate(a) { return Math.round(a[0] / a[1] * 100); }
+    if (sc.lan[1] >= 30 && sc.lan[0] / sc.lan[1] >= 0.62) add(out.pos, 'lane_king', '라인전 성공률 ' + rate(sc.lan) + '% · ' + sc.lan[1] + '장면 (이번 시즌)');
+    if (sc.skr[1] >= 30 && sc.skr[0] / sc.skr[1] >= 0.62) add(out.pos, 'skirmisher', '소규모 교전 성공률 ' + rate(sc.skr) + '% · ' + sc.skr[1] + '장면 (이번 시즌)');
+    if (sc.tf[1] >= 30 && sc.tf[0] / sc.tf[1] >= 0.62) add(out.pos, 'teamfighter', '한타 성공률 ' + rate(sc.tf) + '% · ' + sc.tf[1] + '장면 (이번 시즌)');
+    if (sc.w + sc.l >= 20 && sc.d > 0 && (sc.k + sc.a) / sc.d >= 5) add(out.pos, 'survivor', 'KDA ' + ((sc.k + sc.a) / sc.d).toFixed(1) + ' · ' + (sc.w + sc.l) + '세트 (이번 시즌)');
+    if (r.intlTitles >= 1) add(out.pos, 'intl_champ', '국제대회 우승 ' + r.intlTitles + '회 (커리어)');
+    if (r.leagueTitles >= 3 && r.intlTitles === 0) add(out.pos, 'domestic_king', '리그 우승 ' + r.leagueTitles + '회 · 국제대회 우승 없음 (커리어)');
+    if (c.stage === 'pro' && c.contract && c.contract.role === 'starter' && (r.proYears || 0) >= 10) add(out.pos, 'iron', '1군 주전 ' + r.proYears + '시즌째 (커리어)');
+    if (r.finalsLost >= 3 && p.hidden.clutch <= -1) add(out.neg, 'choker', '결승 패배 ' + r.finalsLost + '회, 큰 무대에서 번번이 흔들렸다 (커리어)');
+    return out;
+  }
+  function traitFeed(state, id, evidence, replaced) {
+    var nm = R.traitName(id);
+    S.addFeed(state, 'trait', { id: id, name: nm, evidence: evidence || '' }, state.p.nick + ' 선수가 특성 "' + nm + '"을(를) 얻었다.' + (replaced ? ' (' + R.traitName(replaced) + ' 대신)' : ''), { tpl: 'trait' });
+  }
+  function resolveTrait(state, pend, optId) {
+    var p = state.p, g = LP.data.db.traits.general;
+    if (pend.id === 'trait_notice') { var id = pend.data.id; if (p.traits.indexOf(id) < 0) p.traits.push(id); traitFeed(state, id, pend.options[0].sub); return '"' + R.traitName(id) + '" 특성이 붙었다.'; }
+    if (pend.id === 'trait_pick') {
+      if (optId === 'hold') return '이번에는 특성을 고르지 않았다.';
+      var cid = optId.slice(2), cand = pend.data.cands.filter(function (x) { return x.id === cid; })[0];
+      if (!cand) return '';
+      if (p.traits.length < 3) { p.traits.push(cid); traitFeed(state, cid, cand.evidence); return '"' + cand.name + '" 특성을 얻었다.'; }
+      state.pq = state.pq || [];
+      state.pq.unshift({ kind: 'event', id: 'trait_replace', title: '특성 교체', text: '특성 칸이 가득 찼다. "' + cand.name + '"을(를) 얻으려면 기존 특성 하나를 내려놓아야 한다.', data: { id: cid, name: cand.name, evidence: cand.evidence },
+        options: p.traits.map(function (t) { return { id: 'r_' + t, label: R.traitName(t) + ' 대신 얻는다', sub: g[t] ? g[t].text : '' }; }).concat([{ id: 'hold', label: '교체하지 않는다', sub: '기존 특성을 그대로 둔다' }]) });
+      return '"' + cand.name + '" 특성을 얻을지 정한다.';
+    }
+    if (pend.id === 'trait_replace') {
+      if (optId === 'hold') return '기존 특성을 그대로 두었다.';
+      var old = optId.slice(2), i = p.traits.indexOf(old);
+      if (i < 0) return '';
+      p.traits.splice(i, 1, pend.data.id); traitFeed(state, pend.data.id, pend.data.evidence, old);
+      return '"' + pend.data.name + '" 특성을 얻고 "' + R.traitName(old) + '"을(를) 내려놓았다.';
+    }
+    return '';
+  }
+
   // ---------- 연말 ----------
   function yearEnd(state, rng, newYear) {
     var p = state.p, c = state.career, r = state.record;
-    // 선수 특성 부여(시즌 종료 조건)
-    var got = [];
-    function grant(id, why) { if (p.traits.length < 3 && p.traits.indexOf(id) < 0) { p.traits.push(id); got.push(R.traitName(id)); } }
-    var sc = r.scenes;
-    if (sc.lan[1] >= 30 && sc.lan[0] / sc.lan[1] >= 0.62) grant('lane_king');
-    if (sc.skr[1] >= 30 && sc.skr[0] / sc.skr[1] >= 0.62) grant('skirmisher');
-    if (sc.tf[1] >= 30 && sc.tf[0] / sc.tf[1] >= 0.62) grant('teamfighter');
-    if (r.official.w + r.official.l >= 20 && r.kda.d > 0 && (r.kda.k + r.kda.a) / r.kda.d >= 5) grant('survivor');
-    if (r.intlTitles >= 1) grant('intl_champ');
-    if (r.leagueTitles >= 3 && r.intlTitles === 0) grant('domestic_king');
-    if (r.finalsLost >= 3 && p.hidden.clutch <= -1) grant('choker');
-    if (c.stage === 'pro' && c.contract && c.contract.role === 'starter') { r.proYears = (r.proYears || 0) + 1; if (r.proYears >= 10) grant('iron'); }
-    if (got.length) S.addFeed(state, 'trait', { names: got }, '시즌을 마치며 새 특성을 얻었다: ' + got.join(', ') + '.', { tpl: 'trait' });
+    // 시즌 기록(커리어 표)과 특성 후보 — 장면 통계는 이 시즌 것만 쓴다
+    if (c.stage === 'pro' && c.contract && c.contract.role === 'starter') r.proYears = (r.proYears || 0) + 1;
+    var q = state.soloq, seasonYear = newYear - 1, snap = r.snap || { w: 0, l: 0, t: 0 };
+    var cands = traitCandidates(state);
+    r.seasons.push({ year: seasonYear, team: c.team ? L.teamName(state, c.team) : '무소속', stage: c.stage, league: c.league || '', w: r.official.w - snap.w, l: r.official.l - snap.l,
+      titles: r.titles.slice(snap.t || 0), tier: R.tierInfo(q.mmr).text, soloW: q.w, soloL: q.l, ovr: R.ovr(p.stats) });
+    var seasonRec = { w: r.official.w - snap.w, l: r.official.l - snap.l };
+    r.snap = { w: r.official.w, l: r.official.l, t: r.titles.length };
+    r.seas = { year: newYear, lan: [0, 0], skr: [0, 0], tf: [0, 0], w: 0, l: 0, k: 0, d: 0, a: 0 };
+    var finalTier = R.tierInfo(q.mmr).text;
+    // 솔로랭크 시즌 초기화: 전적·LP·티어를 새로 시작하되 MMR은 평균 쪽으로 당겨 시작한다
+    q.mmr = Math.round(q.mmr * 0.8 + R.SOLO_BASE_MMR * 0.2); q.w = 0; q.l = 0; q.season = newYear; syncTier(state);
+    p.usage = { year: newYear, c: {} };
+    var queue = [];
+    if (cands.pos.length) {
+      queue.push({ kind: 'event', id: 'trait_pick', title: '특성 획득', text: seasonYear + ' 시즌을 마쳤다. 조건을 채운 특성 중 하나를 얻을 수 있다. (보유 ' + p.traits.length + '/3)',
+        data: { cands: cands.pos }, options: cands.pos.map(function (t) { return { id: 't_' + t.id, label: t.name, sub: t.effect + ' · ' + t.evidence }; }).concat([{ id: 'hold', label: '보류', sub: '다음 시즌에 조건을 다시 확인한다' }]) });
+    }
+    cands.neg.forEach(function (t) {
+      queue.push({ kind: 'event', id: 'trait_notice', title: '특성 부여', text: p.nick + ' 선수에게 "' + t.name + '" 특성이 붙었다.', data: { id: t.id },
+        options: [{ id: 'ok', label: '확인', sub: t.effect + ' · ' + t.evidence }] });
+    });
     // 에이징 (만 25세부터, 1월 1일 기준 나이)
     var age = S.ageAt(p.birth, newYear + '-01-01'), fx = R.fxOf(p.traits), row = R.agingRow(age), lost = [];
     if (row) {
@@ -348,8 +412,9 @@
     // FA로 새해를 맞으면 무소속
     if (c.fa || (!c.team && c.stage !== 'amateur')) { c.stage = 'amateur'; c.fa = false; c.team = null; c.league = null; c.contract = null; S.addFeed(state, 'career', {}, '새 팀을 구하지 못해 무소속 아마추어로 새해를 맞았다.', { tpl: 'career' }); }
     L.newYear(state, newYear);
-    S.addFeed(state, 'season', { year: newYear - 1, record: JSON.parse(JSON.stringify(r.official)), titles: r.titles.slice(-3), ovr: R.ovr(p.stats), tier: R.tierInfo(state.soloq.mmr).text }, '', { ai: true, tpl: 'season' });
+    S.addFeed(state, 'season', { year: newYear - 1, record: seasonRec, titles: r.titles.slice(snap.t || 0).slice(-3), ovr: R.ovr(p.stats), tier: finalTier }, '', { ai: true, tpl: 'season' });
     state.feed[state.feed.length - 1].text = LP.narrate.template(state, 'season', state.feed[state.feed.length - 1].facts);
+    if (queue.length) { state.pq = (state.pq || []).concat(queue); }
   }
 
   // ---------- 공개 API ----------
@@ -357,9 +422,11 @@
     if (state.pending) throw new Error('선택 대기 중입니다');
     if (state.wk) throw new Error('진행 중인 주가 있습니다');
     S.rng(state);
+    LP.mastery.ensure(state);
     newWeek(state, input || {});
     W.lastWeek = null;
     advance(state, !!(input && input.autoMatch));
+    if (!state.pending && state.pq && state.pq.length) state.pending = state.pq.shift();
     S.sync(state);
     return { pending: state.pending, done: !state.wk };
   };
@@ -371,18 +438,20 @@
     if (pend.kind === 'event') {
       var msg;
       if (pend.id === 'stove') msg = resolveStove(state, pend, payload.option);
+      else if (pend.id === 'trait_pick' || pend.id === 'trait_notice' || pend.id === 'trait_replace') msg = resolveTrait(state, pend, payload.option);
       else {
         var d = defOf(pend.id), opts = d.options(state, pend.data), o = opts.filter(function (x) { return x.id === payload.option; })[0] || opts[opts.length - 1];
         msg = o.apply(W.makeApi(state), pend.data);
       }
       var chosen = pend.options.filter(function (x) { return x.id === payload.option; })[0];
       var facts = { id: pend.id, title: pend.title, text: pend.text, choice: chosen ? chosen.label : '', result: msg };
-      S.addFeed(state, 'event', facts, LP.narrate.template(state, 'event', facts), { ai: true });
-      state.pending = null;
+      if (pend.id.indexOf('trait_') !== 0) S.addFeed(state, 'event', facts, LP.narrate.template(state, 'event', facts), { ai: true });
+      state.pending = (state.pq && state.pq.length) ? state.pq.shift() : null;
     } else if (pend.kind === 'match') {
       match = resolveMatch(state, payload);
     }
     advance(state, !!payload.autoMatch);
+    if (!state.pending && state.pq && state.pq.length) state.pending = state.pq.shift();
     S.sync(state);
     return { pending: state.pending, done: !state.wk, match: match };
   };
