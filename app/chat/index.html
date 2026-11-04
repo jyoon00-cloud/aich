@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>롤프로 시뮬레이터</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>롤프로 시뮬레이터</h1>
+  <nav>
+    <button id="btnNew">새 게임</button>
+    <button id="btnSave">세이브 요청</button>
+    <button id="btnExport">내보내기</button>
+    <label class="file">불러오기<input type="file" id="fileImport" accept=".json"></label>
+    <button id="btnSettings">설정</button>
+  </nav>
+</header>
+
+<main>
+  <div id="log" aria-live="polite"></div>
+  <form id="composer">
+    <textarea id="input" rows="3" placeholder="메시지를 입력하세요 (Enter 전송, Shift+Enter 줄바꿈)"></textarea>
+    <button type="submit" id="btnSend">전송</button>
+  </form>
+  <div id="status"></div>
+</main>
+
+<dialog id="dlgSettings">
+  <form method="dialog" id="formSettings">
+    <h2>API 설정</h2>
+    <label>제공자
+      <select id="provider">
+        <option value="orcarouter">OrcaRouter</option>
+        <option value="openrouter">OpenRouter</option>
+        <option value="anthropic">Anthropic (Claude API 직접)</option>
+        <option value="custom">기타 OpenAI 호환</option>
+      </select>
+    </label>
+    <label>API 주소 <input id="baseUrl" placeholder="https://api.orcarouter.ai/v1"></label>
+    <label>API 키 <input id="apiKey" type="password" autocomplete="off" placeholder="키는 이 브라우저에만 저장됩니다"></label>
+    <label>모델 이름 <input id="model" placeholder="제공자가 안내하는 모델 이름"></label>
+    <label>참조 자료 크기 (무료 등급은 '가벼움'이나 '최소')
+      <select id="promptSize">
+        <option value="full">전체 (약 8.5만 자, 권장)</option>
+        <option value="lite">가벼움 (약 3만 자: 지침 + 그해 선수·대회·메타)</option>
+        <option value="minimal">최소 (약 1.1만 자: 지침만, DB 없음)</option>
+      </select>
+    </label>
+    <label>원문으로 기억할 최근 턴 수 <input id="keepTurns" type="number" min="2" max="40" value="10"></label>
+    <label>응답 최대 토큰 <input id="maxTokens" type="number" min="512" max="16000" value="4096"></label>
+    <p class="hint">키는 서버로 가지 않고 이 브라우저(localStorage)에만 저장됩니다. 공용 PC에서는 사용 후 '키 지우기'를 누르세요.</p>
+    <menu>
+      <button type="button" id="btnClearKey">키 지우기</button>
+      <button value="cancel">닫기</button>
+      <button id="btnSaveSettings" value="default">저장</button>
+    </menu>
+  </form>
+</dialog>
+
+<dialog id="dlgNew">
+  <form method="dialog">
+    <h2>새 게임</h2>
+    <label>시작 연도
+      <select id="startYear"></select>
+    </label>
+    <p class="hint">그해 1부 선수 DB, 챔피언 메타, 대회 일정이 AI에게 함께 전달됩니다. 진행 중인 게임은 사라지니 먼저 내보내기를 하세요.</p>
+    <menu>
+      <button value="cancel">취소</button>
+      <button id="btnStart" value="default">시작</button>
+    </menu>
+  </form>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
