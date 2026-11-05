@@ -14,9 +14,9 @@
   S.store = store;
 
   S.DEFAULT_PREFS = {
-    speed: { mode: 'manual', span: 4, plan: { action: 'train', focus: ['lan', 'phy'], auto: true } },
+    speed: { mode: 'manual', span: 4, plan: { action: 'train', focus: ['lan', 'phy'], auto: true }, manual: { action: 'train', focus: ['lan', 'phy'], auto: false } },
     stops: { event: true, match: true, grade: true, tier: true, season: true, weekly: false },
-    watch: 'all', watchSpeed: 'normal', matchView: 'watch'
+    watch: 'all', watchSpeed: 'normal', matchView: 'watch', draft: 'auto'
   };
 
   S.blank = function (seed) {
@@ -25,11 +25,11 @@
       date: '', week: 0, startYear: 0,
       p: null,
       career: { stage: 'amateur', team: null, league: null, contract: null, money: 0 },
-      soloq: { tier: '', lp: 0, mmr: 0, w: 0, l: 0 },
+      soloq: { tier: '', lp: 0, mmr: 0, w: 0, l: 0, totW: 0, totL: 0, season: 0 },
       fame: 0, community: 0,
-      record: { official: { w: 0, l: 0 }, series: { w: 0, l: 0 }, scrim: { w: 0, l: 0 }, kda: { k: 0, d: 0, a: 0 }, titles: [], awards: [], scenes: { lan: [0, 0], skr: [0, 0], tf: [0, 0] }, finalsLost: 0, intlTitles: 0, leagueTitles: 0 },
+      record: { official: { w: 0, l: 0 }, series: { w: 0, l: 0 }, scrim: { w: 0, l: 0 }, kda: { k: 0, d: 0, a: 0 }, titles: [], awards: [], scenes: { lan: [0, 0], skr: [0, 0], tf: [0, 0] }, finalsLost: 0, intlTitles: 0, leagueTitles: 0, seas: { year: 0, lan: [0, 0], skr: [0, 0], tf: [0, 0], w: 0, l: 0, k: 0, d: 0, a: 0 }, seasons: [], snap: { w: 0, l: 0, t: 0 }, log: [] },
       world: null,
-      feed: [], pending: null, wk: null, cooldown: {}, growthLog: [],
+      feed: [], pending: null, pq: [], patched: {}, wk: null, cooldown: {}, growthLog: [],
       prefs: JSON.parse(JSON.stringify(S.DEFAULT_PREFS)),
       notes: ''
     };
@@ -57,6 +57,7 @@
   S.deserialize = function (txt) {
     var st = JSON.parse(txt);
     if (!st || st.version !== 1 || !st.p || !st.world) throw new Error('세이브 형식이 맞지 않습니다');
+    if (LP.mastery) LP.mastery.ensure(st);     // 예전 세이브: 숙련도·시그니처·시즌 기록 자동 생성
     return st;
   };
   S.save = function (st, key) { store.set(key || SAVE_KEY, S.serialize(st)); };

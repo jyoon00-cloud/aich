@@ -12,7 +12,7 @@
   R.LEAGUES = ['LCK', 'LPL', 'LEC', 'LCS'];
   R.MIN_AGE = 17;            // 리그 출전 연령(LCK 만 17세, SPEC 3장: 상수 하나)
   R.POTENTIAL = 500;
-  R.STAGE_KO = { amateur: '무소속 아마추어', academy: '아카데미 연습생', cl: '2군', pro: '1군' };
+  R.STAGE_KO = { amateur: '무소속 아마추어', academy: '아카데미 연습생', cl: '2군', pro: '1군', retired: '은퇴' };
 
   R.clamp = function (v, a, b) { return Math.max(a, Math.min(b, v)); };
   R.ovr = function (s) { return Math.floor((s.lan + s.phy + s.skr + s.tf + s.vis) / 5); };
@@ -114,6 +114,8 @@
     }
     return 5000;
   };
+  R.SOLO_BASE_MMR = 1200;   // 새 시즌 배치 때 당겨지는 평균 MMR (설계 추정)
+  R.SIG_MAX = 5; R.SIG_MASTERY = 70; R.SIG_PICK = 15; R.SIG_EFF = 10; R.SIG_GROWTH = 1.5;
   R.SOLO_GAMES = { train: 15, solo: 35, stream: 10, rest: 3 };      // 주당 판수 (SPEC 3장)
   R.SOLO_WINRATE_SLOPE = 0.3;
   // 스카우트 문턱 (SPEC 3장)
@@ -444,9 +446,46 @@
     prob: function (s) { return inPro(s) ? 2 + (s.p.hidden.pro <= 2 ? 2 : 0) : 0; },
     text: function () { return '전술 문제로 감독과 의견이 부딪혔다. 분위기가 어색하다.'; },
     options: function () { return [
-      { id: 'talk', label: '면담으로 풀어 본다', apply: function (api) { if (api.check(55)) { api.stat('tf', 2); return '면담에서 서로의 입장을 정리했다. 팀 호흡이 좋아졌다.'; } api.slump(2); return '대화가 겉돌아 서먹함이 남았다.'; } },
-      { id: 'fight', label: '내 주장을 밀어붙인다', apply: function (api) { api.comm(-3); api.slump(3); return '정면충돌로 분위기가 얼어붙었다.'; } },
-      { id: 'bear', label: '참고 따른다', apply: function (api) { api.men(-1); return '감정을 누르고 지시를 따랐다.'; } }]; } });
+      { id: 'talk', label: '면담으로 풀어 본다', apply: function (api) { if (api.check(55)) { api.stat('tf', 2); api.coach(8); return '면담에서 서로의 입장을 정리했다. 팀 호흡이 좋아졌다.'; } api.slump(2); api.coach(-4); return '대화가 겉돌아 서먹함이 남았다.'; } },
+      { id: 'fight', label: '내 주장을 밀어붙인다', apply: function (api) { api.comm(-3); api.slump(3); api.coach(-15); return '정면충돌로 분위기가 얼어붙었다.'; } },
+      { id: 'bear', label: '참고 따른다', apply: function (api) { api.men(-1); api.coach(3); return '감정을 누르고 지시를 따랐다.'; } }]; } });
+
+  // ---------- 팀 케미·코치 신뢰 ----------
+  ev({ id: 'team_dinner', title: '팀 회식', cd: 16,
+    prob: function (s) { return inPro(s) ? 3 : 0; },
+    text: function () { return '연패를 끊자며 주장이 팀 회식을 잡았다. 마침 개인 연습 계획도 있다.'; },
+    options: function () { return [
+      { id: 'go', label: '회식에 끝까지 남는다', apply: function (api) { api.chem(8); return '늦게까지 이야기를 나누며 팀원들과 가까워졌다.'; } },
+      { id: 'early', label: '얼굴만 비추고 연습하러 간다', apply: function (api) { api.chem(2); api.stat('lan', 1); return '잠깐 어울리고 연습실로 돌아왔다.'; } },
+      { id: 'skip', label: '연습 때문에 빠진다', apply: function (api) { api.chem(-6); api.stat('lan', 2); return '연습은 했지만 몇몇 팀원은 서운해했다.'; } }]; } });
+
+  ev({ id: 'teammate_clash', title: '팀원과의 언쟁', cd: 18,
+    prob: function (s, api) { return inPro(s) ? 2 + (api.rel().chem < 40 ? 3 : 0) : 0; },
+    text: function () { return '스크림 도중 콜 문제로 같은 팀 선수와 언성이 높아졌다.'; },
+    options: function () { return [
+      { id: 'sorry', label: '먼저 사과하고 콜 방식을 정리한다', apply: function (api) { if (api.check(60)) { api.chem(10); return '서로 사과하고 콜 순서를 정리했다. 오히려 합이 좋아졌다.'; } api.chem(2); return '사과는 했지만 어색함이 조금 남았다.'; } },
+      { id: 'coach', label: '코치에게 중재를 부탁한다', apply: function (api) { api.chem(4); api.coach(3); return '코치가 나서서 역할을 다시 나눠 줬다.'; } },
+      { id: 'hold', label: '내가 맞다고 버틴다', apply: function (api) { api.chem(-12); api.men(1); return '물러서지 않았다. 팀 분위기는 가라앉았다.'; } }]; } });
+
+  ev({ id: 'coach_feedback', title: '코치의 VOD 피드백', cd: 14,
+    prob: function (s) { return inPro(s) ? 3 : 0; },
+    text: function () { return '코치가 지난 경기 VOD를 보며 내 플레이의 문제를 짚었다. 받아들이기 어려운 지적도 있다.'; },
+    options: function () { return [
+      { id: 'accept', label: '전부 받아들이고 고친다', apply: function (api) { api.coach(6); api.stat('vis', 2); return '지적받은 부분을 하나씩 고쳤다. 코치가 만족스러워했다.'; } },
+      { id: 'argue', label: '납득이 안 되는 부분은 반박한다', apply: function (api) { if (api.check(45)) { api.coach(4); api.stat('skr', 2); return '근거를 대며 설명했고, 코치도 일리가 있다며 받아들였다.'; } api.coach(-6); return '반박이 변명처럼 들렸다.'; } }]; } });
+
+  ev({ id: 'mentor', title: '선배의 조언', cd: 26,
+    prob: function (s, api) { return (inPro(s) && api.age() <= 19) ? 3 : 0; },
+    text: function () { return '팀의 고참 선배가 따로 불러 프로 생활에 대해 이야기해 줬다.'; },
+    options: function () { return [
+      { id: 'listen', label: '진지하게 듣고 따라 한다', apply: function (api) { api.chem(5); api.men(1); return '루틴과 멘탈 관리법을 배웠다.'; } },
+      { id: 'duo', label: '같이 솔랭 듀오를 부탁한다', apply: function (api) { api.chem(4); api.soloMmr(30); return '선배와 듀오로 밤새 랭크를 돌렸다.'; } }]; } });
+
+  ev({ id: 'synergy', title: '손발이 맞기 시작했다', cd: 30,
+    prob: function (s, api) { return (inPro(s) && api.rel().chem >= 70) ? 4 : 0; },
+    text: function () { return '팀원들과 말하지 않아도 움직임이 맞는다. 다들 이 조합으로 오래 가고 싶어 한다.'; },
+    options: function () { return [
+      { id: 'ok', label: '이 분위기를 이어 간다', apply: function (api) { api.chem(3); api.stat('tf', 3); return '한타 호흡이 한층 좋아졌다.'; } }]; } });
 
   ev({ id: 'attitude', title: '태도 논란', cd: 24,
     prob: function (s) { return (inPro(s) && s.p.hidden.pro <= 2) ? 3 : 0; },
@@ -478,7 +517,7 @@
       { id: 'wait', label: '묵묵히 기다린다', apply: function () { return '기회를 기다리기로 했다.'; } }]; } });
 
   ev({ id: 'transfer', title: '이적 제안', cd: 24, scout: true,
-    prob: function (s, api) { return (inPro(s) && s.fame >= 20 && api.month() >= 6 && api.month() <= 10) ? 3 : 0; },
+    prob: function (s, api) { return (inPro(s) && s.fame >= 20 && api.month() === 6) ? 7 : 0; },  // 여름 이적 시장(MSI 뒤 6월)만. 스토브리그 이적은 계약 만료 이벤트가 맡는다
     data: function (s, api) { var of = api.offers(s.career.stage, 2, false, true); return of.length ? { offers: of } : null; },
     text: function (s, d) { return '다른 팀에서 이적 제안이 왔다. 지금 팀과의 계약을 깨야 할 수 있다.'; },
     options: function (s, d) { return d.offers.map(function (o, i) { return { id: 'o' + i, label: o.teamName + ' (' + o.league + ') · 연봉 ' + R.fmtMoney(o.salary) + ' · ' + (o.role === 'starter' ? '주전' : '후보'),
@@ -498,13 +537,30 @@
       { id: 'reply', label: '재치 있게 받아친다', apply: function (api) { if (api.check(50)) { api.fame(3); return '재치 있는 대응에 팬들이 열광했다.'; } api.comm(-4); return '대응이 어색해 분위기가 가라앉았다.'; } },
       { id: 'ignore', label: '무시하고 경기로 보여 준다', apply: function (api) { api.men(1); return '대꾸하지 않고 투지를 불태웠다.'; } }]; } });
 
-  ev({ id: 'patch', title: '패치로 흔들린 챔피언 풀', cd: 20,
-    prob: function () { return 3; },
-    text: function (s, d) { return '패치로 주력 챔피언 ' + d.name + '의 입지가 약해졌다.'; },
+  ev({ id: 'patch', title: '패치로 약해진 시그니처', cd: 20,
+    prob: function (s) { return (s.p.sig && s.p.sig.length) ? 3 : 0; },
+    text: function (s, d) { return '패치로 시그니처 ' + d.name + '의 입지가 약해졌다. 당분간 메타 점수가 떨어진다.'; },
     data: function (s, api) { return api.patchVictim(); },
     options: function (s, d) { return [
-      { id: 'swap', label: '새 챔피언으로 갈아탄다', apply: function (api) { return api.swapChampion(d.id); } },
-      { id: 'keep', label: '그대로 숙련도로 밀어붙인다', apply: function (api) { api.stat('skr', 1); return '숙련도를 믿고 그대로 가기로 했다.'; } }]; } });
+      { id: 'swap', label: '시그니처를 새 챔피언으로 교체한다', apply: function (api) { api.markPatched(d.id); return api.swapSig(d.id); } },
+      { id: 'keep', label: '시그니처를 유지하고 숙련으로 버틴다', apply: function (api) { api.markPatched(d.id); api.mastery(d.id, 3); return d.name + '을(를) 그대로 시그니처로 두기로 했다.'; } }]; } });
+
+  ev({ id: 'newchamp', title: '새 챔피언 연습', cd: 16,
+    prob: function (s, api) { return api.canNewChamp() ? 4 : 0; },
+    text: function () { return '신챔피언 출시와 메타 변화로 새로 눈에 띄는 챔피언이 생겼다. 시그니처 자리를 줄 챔피언을 고를 수 있다.'; },
+    data: function (s, api) { var c = api.newChampCands(); return c.length ? { cands: c } : null; },
+    options: function (s, d) {
+      var full = s.p.sig.length >= R.SIG_MAX;
+      return d.cands.map(function (c) { return { id: 'c_' + c.id, label: c.ko + (full ? ' 추가 (숙련이 가장 낮은 시그니처와 교체)' : ' 을(를) 시그니처에 추가'), apply: function (api) { return api.addSig(c.id); } }; })
+        .concat([{ id: 'no', label: '지금 구성으로 충분하다', apply: function () { return '시그니처 구성을 바꾸지 않았다.'; } }]); } });
+
+  ev({ id: 'streak', title: '한 챔피언으로 연승', cd: 12,
+    prob: function (s, api) { return api.streakChamp() ? 100 : 0; },
+    text: function (s, d) { return d.name + '(으)로 공식전 ' + d.n + '연승을 달렸다. 이 챔피언을 시그니처로 올릴 수 있다.'; },
+    data: function (s, api) { return api.streakChamp(true); },
+    options: function (s, d) { return [
+      { id: 'up', label: d.name + ' 을(를) 시그니처로 올린다' + (s.p.sig.length >= R.SIG_MAX ? ' (숙련이 가장 낮은 시그니처와 교체)' : ''), apply: function (api) { return api.addSig(d.id); } },
+      { id: 'no', label: '지금은 그대로 둔다', apply: function () { return '시그니처를 바꾸지 않았다.'; } }]; } });
 
   ev({ id: 'family', title: '학업과 게임 사이', cd: 20,
     prob: function (s, api) { return (s.career.stage === 'amateur' && api.age() <= 17) ? 3 * api.evMult('family') : 0; },

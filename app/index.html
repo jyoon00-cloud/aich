@@ -5,32 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>롤프로 시뮬레이터</title>
-<link rel="stylesheet" href="style.css">
+<script>
+/* 버전 상수 하나. CSS·JS·데이터 요청에 ?v=버전을 붙여 브라우저 캐시 때문에 옛 파일이 남는 일을 막는다. 파일을 고치면 이 값만 올린다. */
+window.LP_VERSION = '2.4.0';
+(function () {
+  var q = '?v=' + window.LP_VERSION;
+  document.write('<link rel="stylesheet" href="style.css' + q + '">');
+  window.LP_FILES = ['rng', 'rules', 'data', 'state', 'mastery', 'league', 'match', 'create', 'narrate', 'week', 'ui', 'main'];
+  window.LP_FILES.forEach(function (f) { document.write('<script src="js/' + f + '.js' + q + '"><\/script>'); });
+})();
+</script>
 </head>
-<body>
+<body data-mode="plain">
 <div id="app">
-  <header class="top">
-    <div class="brand">롤프로 <span class="sub">스크립트판</span></div>
-    <div class="top-actions">
-      <button id="btn-table" class="icon-btn" title="순위표" hidden>순위</button>
-      <button id="btn-menu" class="icon-btn" title="메뉴" hidden>메뉴</button>
-    </div>
-  </header>
-  <main id="main"><div class="loading">불러오는 중…</div></main>
+  <aside id="side" class="side" aria-label="선수 요약"></aside>
+  <div class="col">
+    <header id="mhead" class="mhead"></header>
+    <nav id="tabs" class="tabs" aria-label="화면 이동"></nav>
+    <main id="main"><div class="loading">불러오는 중</div></main>
+  </div>
 </div>
 <div id="modal-root"></div>
 <div id="toast" role="status" aria-live="polite"></div>
 <noscript>이 게임은 자바스크립트가 필요합니다.</noscript>
-<script src="js/rng.js"></script>
-<script src="js/rules.js"></script>
-<script src="js/data.js"></script>
-<script src="js/state.js"></script>
-<script src="js/league.js"></script>
-<script src="js/match.js"></script>
-<script src="js/create.js"></script>
-<script src="js/narrate.js"></script>
-<script src="js/week.js"></script>
-<script src="js/ui.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>

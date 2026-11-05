@@ -12,6 +12,12 @@
     if (!(inp.startYear >= 2013 && inp.startYear <= 2026)) err.push('시작 연도는 2013~2026');
     if (!inp.personality || inp.personality.length < 2 || inp.personality.length > 3) err.push('성격 키워드는 2~3개');
     R.STATS.forEach(function (k) { var v = inp.stats && inp.stats[k]; if (!(v >= 0 && v <= 500)) err.push(R.STAT_SHORT[k] + ' 능력치는 0~500'); });
+    var sig = inp.sig || [];
+    if (sig.length !== 3 || sig.some(function (id, i) { return sig.indexOf(id) !== i; })) err.push('시그니처 챔피언 3개를 고르세요');
+    else if (R.POS.indexOf(inp.pos) >= 0 && inp.startYear >= 2013) {
+      var ok = LP.mastery.sigChoices(inp.pos, inp.startYear + '-01-01').map(function (c) { return c.id; });
+      if (sig.some(function (id) { return ok.indexOf(id) < 0; })) err.push('시그니처는 내 포지션에 맞고 시작 시점에 출시된 챔피언이어야 합니다');
+    }
     return err;
   };
 
@@ -41,17 +47,14 @@
       name: inp.name.trim(), nick: inp.nick.trim(), pos: inp.pos, birth: by + '-' + String(bm).padStart(2, '0') + '-' + String(bd).padStart(2, '0'),
       stats: stats, potential: R.POTENTIAL, hidden: R.rollHidden(rng), personality: inp.personality.slice(), speech: offer.speech,
       bg: { id: bgDef.id, name: bgDef.name, type: bgDef.type, story: bgDef.story, merits: JSON.parse(JSON.stringify(bgDef.merits)), costs: JSON.parse(JSON.stringify(bgDef.costs)), expires: exp },
-      traits: [], pool: [], adapt: { cl: null, pro: null, intlKey: null, finalSeen: false }, status: { slump: 0, injury: 0 }, subWeeks: 0, trainWeeks: 0
+      traits: [], pool: [], mastery: null, sig: [], adapt: { cl: null, pro: null, intlKey: null, finalSeen: false }, status: { slump: 0, injury: 0 }, subWeeks: 0, trainWeeks: 0
     };
     bgDef.merits.concat(bgDef.costs).forEach(function (e) { if (e.t === 'fame') st.fame = R.clamp(st.fame + e.val, 0, 100); });
-    // 주력 챔피언 3개: 포지션에 맞고 그 시점에 출시된 것, 난이도 낮은 쪽 우선
-    var cands = db.champList.filter(function (c) { return c.release <= st.date && c.pos.indexOf(inp.pos) >= 0; });
-    for (var i = 0; i < 3 && cands.length; i++) {
-      var c = rng.weighted(cands, function (x) { return (x.pos[0] === inp.pos ? 3 : 1) * (6 - x.diff); });
-      st.p.pool.push(c.id); cands.splice(cands.indexOf(c), 1);
-    }
+    // 챔피언 숙련도: 시그니처 3개(숙련 70) + 자동 5개(40~60)
+    LP.mastery.genPlayer(st, rng, inp.sig.slice());
+    st.record.seas.year = year; st.startDate = year + '-01-01';
     // 솔로랭크: OVR에 맞는 MMR에서 시작
-    st.soloq = { tier: '', lp: 0, mmr: Math.round(R.clamp(R.ovrToMmr(R.ovr(stats)) + rng.range(-100, 100), 0, R.RP_MAX)), w: 0, l: 0 };
+    st.soloq = { tier: '', lp: 0, mmr: Math.round(R.clamp(R.ovrToMmr(R.ovr(stats)) + rng.range(-100, 100), 0, R.RP_MAX)), w: 0, l: 0, totW: 0, totL: 0, season: year };
     LP.week.syncTier(st);
     L.buildWorld(st, db, year, rng);
     var txt = st.p.nick + '(' + st.p.name + '), 만 15세. ' + R.POS_KO[inp.pos] + ' 포지션의 무소속 아마추어로 ' + year + '년 1월을 맞았다. 배경은 "' + bgDef.name + '".';

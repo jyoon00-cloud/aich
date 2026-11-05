@@ -489,6 +489,7 @@
       }
     });
   };
+  function tourLabel(m) { return m.intl ? m.name : m.year + ' ' + (m.name.indexOf(m.league) === 0 ? '' : m.league + ' ') + m.name; }
   function recordBracketDone(state, st, silent) {
     st.recorded = true;
     var w = state.world, m = st.meta, champ = st.champion, runner = st.place[1];
@@ -498,14 +499,14 @@
     if (mine && played > 0 && m.tier === (state.career.stage === 'cl' ? 'cl' : 'pro')) {
       var tn = w.teams[mine] ? w.teams[mine].name : '';
       if (champ === mine) {
-        var title = m.intl ? m.name + ' 우승' : m.year + ' ' + (m.name.indexOf(m.league) === 0 ? '' : m.league + ' ') + m.name + ' 우승';
+        var title = tourLabel(m) + ' 우승';
         state.record.titles.push(title);
         if (m.intl) state.record.intlTitles++; else state.record.leagueTitles++;
         state.fame = R.clamp(state.fame + (m.intl ? 15 : 6), 0, 100);
         state.record.titleSeen = true;
       } else if (runner === mine) {
         state.record.finalsLost++;
-        state.record.awards.push(m.year + ' ' + m.name + ' 준우승');
+        state.record.awards.push(tourLabel(m) + ' 준우승');
         state.fame = R.clamp(state.fame + 2, 0, 100);
       }
     }
@@ -524,6 +525,150 @@
     }
     if (!best) return null;
     return { name: lg + ' ' + bestKey.name, rows: rank(best).map(function (id) { var x = best.stand[id]; return { id: id, name: L.teamName(state, id), w: x.w, l: x.l, d: x.d, gd: x.gw - x.gl }; }) };
+  };
+
+  // ---------- 화면용 조회 (상태를 바꾸지 않는다) ----------
+  // 순위표: 리그·티어의 그해 정규 대회마다 {key, name, status, rows}
+  L.tables = function (state, lg, tier) {
+    var year = +state.date.slice(0, 4), cal = L.calendar(year), out = [];
+    (cal.leagues[lg] || []).forEach(function (seg) {
+      if (seg.kind !== 'reg') return;
+      var st = state.world.st[stKey(seg, tier)];
+      out.push({ key: seg.key, name: seg.splitName || seg.name, started: seg.start <= state.date, start: seg.start, end: seg.end, status: st ? (st.done ? '종료' : '진행 중') : (seg.start <= state.date ? '진행 전' : '예정'),
+        rows: st ? rank(st).map(function (id) { var x = st.stand[id]; return { id: id, name: L.teamName(state, id), w: x.w, l: x.l, d: x.d, gd: x.gw - x.gl }; }) : null });
+    });
+    return out;
+  };
+  // 그해 플레이오프·국제대회 결과
+  L.yearHistory = function (state) {
+    var yr = String(+state.date.slice(0, 4));
+    return state.world.history.filter(function (h) { return String(h.year) === yr; }).map(function (h) {
+      return { name: (h.intl ? '' : h.league + ' ') + h.name, tier: h.tier, champion: L.teamName(state, h.champion), runnerUp: h.runnerUp ? L.teamName(state, h.runnerUp) : '-' };
+    });
+  };
+  // 앞으로의 일정: 내 팀의 남은 정규 시리즈(상대 포함)와 플레이오프·국제대회·스토브 기간
+  L.upcoming = function (state) {
+    var c = state.career, year = +state.date.slice(0, 4), cal = L.calendar(year), lg = c.league || 'LCK', out = [];
+    var tier = c.stage === 'cl' ? 'cl' : 'pro', team = (c.stage === 'cl' || c.stage === 'pro') ? c.team : null;
+    (cal.leagues[lg] || []).forEach(function (seg) {
+      if (seg.end < state.date) return;
+      if (seg.kind === 'reg') {
+        if (!team) { out.push({ date: seg.start > state.date ? seg.start : state.date, end: seg.end, name: seg.splitName || seg.name, kind: 'period', league: lg }); return; }
+        var st = state.world.st[stKey(seg, tier)], rounds, played, total;
+        if (st) { rounds = st.rounds; played = st.played; total = st.total; if (st.done) return; }
+        else { rounds = roundRobin(teamIdsOf(state, lg, tier)); played = 0; total = rounds.length * (seg.rr || 2); }
+        var ws = state.date;
+        for (var k = 0; k < 40 && ws <= seg.end && played < total; k++, ws = S.addDays(ws, 7)) {
+          if (!overlaps(seg, ws, S.addDays(ws, 6))) continue;
+          var weeksLeft = Math.floor(S.diffDays(ws, seg.end) / 7) + 1, rem = total - played, per = Math.min(rem, Math.ceil(rem / Math.max(1, weeksLeft)));
+          for (var i = 0; i < per; i++) {
+            var rd = rounds[(played + i) % rounds.length];
+            rd.forEach(function (m) {
+              if (m[0] !== team && m[1] !== team) return;
+              var oppId = m[0] === team ? m[1] : m[0];
+              out.push({ date: ws, name: seg.splitName || seg.name, kind: 'match', opp: L.teamName(state, oppId), bo: seg.bo, league: lg, fearless: seg.draft });
+            });
+          }
+          played += per;
+        }
+      } else {
+        var br = state.world.st[stKey(seg, tier)];
+        if (br && br.done) return;
+        var note = team ? '진출 시' : '', opp = null;
+        if (br && team) {
+          if (br.seeds.indexOf(team) < 0) note = '미진출';
+          else if (br.elim.some(function (r) { return r.indexOf(team) >= 0; })) note = '탈락';
+          else {
+            var cm = br.rounds[br.cur].matches.filter(function (m) { return m.w === null && (m.a === team || m.b === team); })[0];
+            if (cm) { opp = L.teamName(state, cm.a === team ? cm.b : cm.a); note = (br.cur === br.nRounds - 1 ? '결승' : (br.cur + 1) + '라운드') + ' Bo' + br.rounds[br.cur].bo; }
+            else note = '다음 라운드 대기';
+          }
+        }
+        out.push({ date: seg.start > state.date ? seg.start : state.date, end: seg.end, name: seg.name, kind: opp ? 'match' : 'period', opp: opp || undefined, bo: opp ? br.rounds[br.cur].bo : undefined, league: lg, note: note, fearless: seg.draft });
+      }
+    });
+    [cal.msi, cal.worlds].forEach(function (cs) {
+      if (!cs || cs.end < state.date) return;
+      out.push({ date: cs.start > state.date ? cs.start : state.date, end: cs.end, name: cs.name, kind: 'period', league: null, note: team ? '진출 시' : '' });
+    });
+    if (cal.stoveStart >= state.date) out.push({ date: cal.stoveStart, end: year + '-12-31', name: '스토브리그', kind: 'period', league: null });
+    out.sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : (a.kind === 'match' ? -1 : 1); });
+    return out;
+  };
+
+  // ---------- 시즌 시상 (스토브 직전, 로스터가 바뀌기 전) ----------
+  // 팀 점수 = 그해 정규 대회 세트 승률(0~100) + 플레이오프·국제대회 성적. 선수 점수 = OVR + 팀 점수×0.6 + 경기력 흔들림(±6)
+  // 내 선수는 흔들림 대신 이번 시즌 KDA·POM 비율을 쓴다. 포지션별 상위 3명이 올-프로 1st·2nd·3rd, 전체 1위가 MVP.
+  function teamYearScore(state, lg, year) {
+    var cal = L.calendar(year), w = state.world, sc = {};
+    w.leagues[lg].forEach(function (id) { sc[id] = { gw: 0, gl: 0, bonus: 0 }; });
+    (cal.leagues[lg] || []).forEach(function (seg) {
+      if (seg.kind !== 'reg') return;
+      var st = w.st[stKey(seg, 'pro')]; if (!st) return;
+      Object.keys(st.stand).forEach(function (id) { if (sc[id]) { sc[id].gw += st.stand[id].gw; sc[id].gl += st.stand[id].gl; } });
+    });
+    w.history.forEach(function (h) {
+      if (String(h.year) !== String(year) || h.tier !== 'pro') return;
+      var big = h.intl === 'worlds' ? [14, 7] : h.intl ? [7, 3] : h.league === lg ? [8, 4] : null;
+      if (!big) return;
+      if (sc[h.champion]) sc[h.champion].bonus += big[0];
+      if (h.runnerUp && sc[h.runnerUp]) sc[h.runnerUp].bonus += big[1];
+    });
+    var out = {};
+    Object.keys(sc).forEach(function (id) { var x = sc[id], g = x.gw + x.gl; out[id] = (g ? x.gw / g * 100 : 50) + x.bonus; });
+    return out;
+  }
+  L.seasonAwards = function (state, year) {
+    var w = state.world, rng = S.rng(state), c = state.career, p = state.p, seas = state.record.seas;
+    w.awards = w.awards || {};
+    if (w.awards[year]) return null;
+    var res = {}, mine = null;
+    R.LEAGUES.forEach(function (lg) {
+      var ts = teamYearScore(state, lg, year), cand = {};
+      POS.forEach(function (pos) { cand[pos] = []; });
+      w.leagues[lg].forEach(function (tid) {
+        var s = L.starters(state, tid);
+        POS.forEach(function (pos) {
+          var x = s[pos]; if (!x) return;
+          var perf;
+          if (x.isPlayer) {
+            var sets = seas.w + seas.l; if (sets < 10) return;
+            var kda = (seas.k + seas.a) / Math.max(1, seas.d), pomR = (seas.pom || 0) / sets;
+            perf = R.clamp((kda - 3.5) * 2.5, -8, 10) + R.clamp(pomR * 25, 0, 10) - 4;
+          } else perf = rng.range(-6, 6);
+          cand[pos].push({ id: x.isPlayer ? 'PLAYER' : x.id, name: x.name, team: tid, teamName: L.teamName(state, tid), score: Math.round(R.ovr(x.stats) + ts[tid] * 0.6 + perf), isPlayer: !!x.isPlayer });
+        });
+      });
+      var teams = [[], [], []], mvp = null, mvpPos = null;
+      POS.forEach(function (pos) {
+        cand[pos].sort(function (a, b) { return b.score - a.score; });
+        for (var i = 0; i < 3; i++) {
+          var e = cand[pos][i]; if (!e) continue;
+          teams[i].push({ pos: pos, name: e.name, team: e.teamName, me: e.isPlayer });
+          if (e.isPlayer) mine = { lg: lg, rank: i + 1, pos: pos };
+          if (i === 0 && (!mvp || e.score > mvp.score)) { mvp = e; mvpPos = pos; }
+        }
+      });
+      res[lg] = { teams: teams, mvp: mvp ? { name: mvp.name, team: mvp.teamName, pos: mvpPos, me: mvp.isPlayer } : null };
+      if (mvp && mvp.isPlayer) mine.mvp = true;
+    });
+    w.awards[year] = res;
+    var got = [];
+    if (mine && mine.rank) {
+      var lbl = year + ' ' + mine.lg + ' 올-프로 ' + ['1st', '2nd', '3rd'][mine.rank - 1] + ' 팀';
+      state.record.awards.push(lbl); got.push(lbl);
+      state.record.allPro = state.record.allPro || [0, 0, 0]; state.record.allPro[mine.rank - 1]++;
+      state.fame = R.clamp(state.fame + [6, 3, 1][mine.rank - 1], 0, 100);
+    }
+    if (mine && mine.mvp) {
+      var ml = year + ' ' + mine.lg + ' 정규 시즌 MVP';
+      state.record.awards.push(ml); got.push(ml); state.record.mvps = (state.record.mvps || 0) + 1;
+      state.fame = R.clamp(state.fame + 10, 0, 100); state.community = R.clamp(state.community + 5, -100, 100);
+    }
+    var lg0 = c.league || 'LCK', r0 = res[lg0];
+    var mvpTxt = r0 && r0.mvp ? r0.mvp.name + '(' + r0.mvp.team + ')' : '없음';
+    S.addFeed(state, 'award', { year: year, league: lg0, mvp: mvpTxt, mine: got }, year + ' ' + lg0 + ' 시상: MVP ' + mvpTxt + '.' + (got.length ? ' ' + p.nick + ' 선수는 ' + got.map(function (g) { return g.replace(year + ' ', ''); }).join(', ') + '에 선정됐다.' : ''));
+    return { league: lg0, res: res, mine: got };
   };
 
   // ---------- 선수 변화 도우미 (NPC 에이징·성장) ----------
@@ -594,6 +739,7 @@
     var w = state.world, rng = S.rng(state);
     w.year = newYear;
     w.st = {};
+    w.mast = {};
     var retired = [];
     Object.keys(w.npcs).forEach(function (id) {
       var n = w.npcs[id], age = npcAge(state, n);
@@ -652,6 +798,17 @@
   function cnt(w, team, pos) { return team.players.filter(function (id) { return id !== 'PLAYER' && w.npcs[id].pos === pos; }).length; }
 
   // ---------- 입단 제안·계약 ----------
+  // 시장 가치 배율: 올해와 지난해 수상·우승이 연봉 제안을 끌어올린다(올해 실적 100%, 지난해 50%)
+  L.marketMul = function (state) {
+    var y = +state.date.slice(0, 4), r = state.record, mul = 1;
+    function w(s) { var m = /^(\d{4})/.exec(s) || /(\d{4})$/.exec(s); var yy = m ? +m[1] : y; return yy === y ? 1 : yy === y - 1 ? 0.5 : 0; }
+    r.awards.forEach(function (a) {
+      var k = w(a); if (!k) return;
+      if (/정규 시즌 MVP/.test(a)) mul += 0.3 * k; else if (/올-프로 1st/.test(a)) mul += 0.25 * k; else if (/올-프로 2nd/.test(a)) mul += 0.12 * k; else if (/올-프로 3rd/.test(a)) mul += 0.05 * k;
+    });
+    r.titles.forEach(function (t) { var k = w(t); if (!k) return; mul += (/월드|Worlds/.test(t) ? 0.3 : /MSI/.test(t) ? 0.15 : 0.1) * k; });
+    return Math.round(Math.min(mul, 1.6) * 100) / 100;
+  };
   L.offers = function (state, kind, n, checkOnly, transfer) {
     var w = state.world, rng = S.rng(state), p = state.p, ovr = R.ovr(p.stats), year = +state.date.slice(0, 4), out = [], cand = [];
     var stage = kind === 'academy' ? 'academy' : kind;
@@ -672,6 +829,7 @@
       if (stage === 'pro' && role === 'sub' && !transfer && rng.chance(50)) continue;
       var lgn = pt.league, years = stage === 'academy' ? 1 : rng.range(1, 3);
       var sal = R.rollSalary(rng, lgn, year, ovr, stage === 'pro' ? 'pro' : stage, role, state.fame);
+      if (stage !== 'academy') sal = Math.round(sal * L.marketMul(state) / 100) * 100;
       out.push({ team: team.id, teamName: team.name, league: lgn, stage: stage, role: role, salary: sal, years: years });
     }
     return out;
@@ -689,6 +847,18 @@
     if (offer.stage === 'cl' && !p.adapt.cl) p.adapt.cl = null;
     return offer.teamName + (offer.stage === 'academy' ? ' 연습생' : offer.stage === 'cl' ? ' 2군' : ' 1군') + ' 입단 (' + (offer.role === 'starter' ? '주전' : '후보') + ', 연봉 ' + R.fmtMoney(offer.salary) + ', ' + offer.years + '년)';
   };
+  // 팀 케미(동료와의 호흡)·코치 신뢰: 0~100, 50이 보통. 팀이 바뀌면 케미 40·신뢰 50에서 다시 시작한다
+  L.rel = function (state) {
+    var c = state.career, r = state.rel;
+    if (!r || r.team !== c.team) r = state.rel = { team: c.team || null, chem: c.team ? 40 : 50, coach: 50 };
+    return r;
+  };
+  L.relAdd = function (state, chem, coach) {
+    var r = L.rel(state); if (!state.career.team) return r;
+    r.chem = R.clamp(Math.round((r.chem + (chem || 0)) * 10) / 10, 0, 100); r.coach = R.clamp(Math.round((r.coach + (coach || 0)) * 10) / 10, 0, 100);
+    return r;
+  };
+  L.relWord = function (v) { return v >= 80 ? '최고' : v >= 62 ? '좋음' : v >= 40 ? '보통' : v >= 22 ? '나쁨' : '최악'; };
   L.leaveTeam = function (state) {
     var c = state.career, w = state.world;
     if (c.team && w.teams[c.team]) {
@@ -704,9 +874,9 @@
     if (!c.contract || !c.team || (c.stage !== 'pro' && c.stage !== 'cl')) return null;
     var cur = null, ovr = R.ovr(state.p.stats);
     w.teams[c.team].players.forEach(function (id) { if (id === 'PLAYER') return; var x = w.npcs[id]; if (x.pos === state.p.pos && (!cur || ovrOf(x.stats) > ovrOf(cur.stats))) cur = x; });
-    var co = cur ? ovrOf(cur.stats) : 0;
-    if (c.contract.role === 'sub' && ovr >= co + 3) { c.contract.role = 'starter'; return 'up'; }
-    if (c.contract.role === 'starter' && ovr < co - 15) { c.contract.role = 'sub'; return 'down'; }
+    var co = cur ? ovrOf(cur.stats) : 0, trust = (L.rel(state).coach - 50) / 5;   // 코치 신뢰 ±10
+    if (c.contract.role === 'sub' && ovr >= co + 3 - trust) { c.contract.role = 'starter'; return 'up'; }
+    if (c.contract.role === 'starter' && ovr < co - 15 - trust) { c.contract.role = 'sub'; return 'down'; }
     return null;
   };
 

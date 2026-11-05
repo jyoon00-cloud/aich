@@ -7,7 +7,8 @@
 
   function defaultLoader(path) {
     // app/index.html 에서 저장소 루트는 한 단계 위
-    return fetch('../' + path).then(function (r) {
+    var v = (typeof window !== 'undefined' && window.LP_VERSION) ? '?v=' + window.LP_VERSION : '';
+    return fetch('../' + path + v).then(function (r) {
       if (!r.ok) throw new Error(path + ' ' + r.status);
       return r.text();
     });
@@ -55,7 +56,7 @@
       if (/_u$/.test(id)) {
         db.traits.unique[id] = { id: id, name: cells[2], text: cells[3], fx: LP.rules.parseUniqueFx(cells[3]) };
       } else if (cells.length >= 6) {
-        db.traits.general[id] = { id: id, name: cells[2], cond: cells[3], text: cells[4] };
+        db.traits.general[id] = { id: id, name: cells[2], cond: cells[3], text: cells[4], neg: /부정 특성/.test(cells[4] || '') };
       }
     });
   }
